@@ -26,33 +26,33 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
 <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
 <link rel="stylesheet" href="{{ asset('css/plugins.min.css') }}">
-
 <link rel="stylesheet" href="{{ asset('css/styles.min.css') }}">
-
-<link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-<!-- Color css -->
-
-<link rel="stylesheet" href="{{ asset('css/color6e7b.css?primary_color=FF6A00') }}">
-
-<!-- Modernizr-->
+<link rel="stylesheet" href="{{ asset('css/responsive.css') }}"><!-- Color css -->
+<link rel="stylesheet" href="{{ asset('css/color6e7b.css?primary_color=FF6A00') }}"><!-- Modernizr-->
 <script type="text/javascript" src="{{ asset('js/modernizr.min.js') }}"></script>
 
 
 
-</style>
 
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
+<!--   Core JS Files   -->
+<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/jquery.3.6.0.min.js"></script>
+<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/popper.min.js"></script>
+<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/bootstrap.min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+
+<script type="text/javascript" src="{{ asset('js/shop.js') }}"></script>
 
 
 </head>

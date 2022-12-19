@@ -19,6 +19,7 @@ Route::get('/', 'ShopController@index')->name('index');
 Route::get('/shop', 'ShopController@shop')->name('shop');
 Route::get('/filter', 'ShopController@filter')->name('filter');
 Route::get('/brands', 'ShopController@brands')->name('filter');
+Route::get('/campaign', 'ShopController@campaign');
 
 Route::get('/Women-Clothing/feature_category/normal', 'ShopController@normal');
 Route::get('/get/Women-Clothing/popular_category/slider', 'ShopController@slider');

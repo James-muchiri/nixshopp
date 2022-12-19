@@ -318,9 +318,6 @@
 
 
 
-        catshow();
-    popshow();
-    proshow();
               // category wise product 
               function catshow(){
               

@@ -82,7 +82,7 @@
                             <h2 class="h3">Deals Of The Week</h2>
                             <div class="right-area">
                                     <div class="countdown countdown-alt" data-date-time="10/10/2022"></div>
-                                    <a class="right_link" href="campaign/products.html">View All <i class="icon-chevron-right"></i></a>
+                                    <a class="right_link" href="/campaign">View All <i class="icon-chevron-right"></i></a>
 
                             </div>
                         </div>
@@ -93,232 +93,15 @@
                     <div class="col-lg-12">
                     <div class="popular-category-slider owl-carousel">
 
-                        <div class="slider-item">
-                            <div class="product-card">
-                                <div class="product-thumb">
 
-              <div class="product-badge product-badge2 bg-info"> -29%</div>
-      <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134720QX6Hedf90cf6656546e7a8548d4980edc5bda.jpg" alt="Product">
-                                    <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/563.json" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a data-target="http://127.0.0.1:8000/compare/product/563" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                                                                                    <a class="product-button add_to_single_cart"  data-target="563" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
-                                            </a>
-                                                                            </div>
-                                </div>
-                                    <div class="product-card-body">
-
-                                        <div class="product-category"><a href="catalog2e44.html?category=men-clothing">Men Clothing</a></div>
-                                        <h3 class="product-title"><a href="product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro.html">
-                                            Men Shirt Custom Shirts Hot Sale Me
-                                        </a></h3>
-                                        <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                        </div>
-                                        <h4 class="product-price">
-                                                                                    <del>$1,893.26</del>
-
-                                        $1,362.81
-                                        </h4>
-
-                                    </div>
-
-                            </div>
-                        </div>
+     
+@foreach ($deals as $deal)
+    
 
                         <div class="slider-item">
                             <div class="product-card">
                                 <div class="product-thumb">
-
-                                                                            <div class="product-badge product-badge2 bg-info"> -18%</div>
-                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg" alt="Product">
-                                    <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/540.json" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a data-target="http://127.0.0.1:8000/compare/product/540" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                                                                                    <a class="product-button add_to_single_cart"  data-target="540" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
-                                            </a>
-                                                                            </div>
-                                </div>
-                                    <div class="product-card-body">
-
-                                        <div class="product-category"><a href="cataloge364.html?category=Electronics">Electronics</a></div>
-                                        <h3 class="product-title"><a href="product/UMIDIGI-A--Pro-Android-Mobile-Phone--g---MP-Quad-Camera------FHD--Full-Screen--GB-RAM.html">
-                                            UMIDIGI A9 Pro Android Mobile Phone
-                                        </a></h3>
-                                        <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                        </div>
-                                        <h4 class="product-price">
-                                                                                    <del>$1,910.11</del>
-
-                                        $1,573.03
-                                        </h4>
-
-                                    </div>
-
-                            </div>
-                        </div>
-
-                        <div class="slider-item">
-                            <div class="product-card">
-                                <div class="product-thumb">
-
-                                                                            <div class="product-badge product-badge2 bg-info"> -29%</div>
-                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16341353201KsH408d7d7e37b4437297de600584c1af1fL.jpg" alt="Product">
-                                    <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/535.json" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a data-target="http://127.0.0.1:8000/compare/product/535" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                                                                                    <a class="product-button add_to_single_cart"  data-target="535" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
-                                            </a>
-                                                                            </div>
-                                </div>
-                                    <div class="product-card-body">
-
-                                        <div class="product-category"><a href="catalog50ca.html?category=Women-Clothing">Women Clothing</a></div>
-                                        <h3 class="product-title"><a href="product/-----Summer-Women-Clothing-Ropa-Sexy-Lady-Cut-Out-Halter-Mini-Dresses.html">
-                                            2021 Summer Women Clothing Ropa Sex
-                                        </a></h3>
-                                        <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                        </div>
-                                        <h4 class="product-price">
-                                                                                    <del>$189.78</del>
-
-                                        $144.83
-                                        </h4>
-
-                                    </div>
-
-                            </div>
-                        </div>
-
-                        <div class="slider-item">
-                            <div class="product-card">
-                                <div class="product-thumb">
-
-                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634135337Pw5H948b3bef197c492d999473dffa5303f9P.jpg" alt="Product">
-                                    <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/534.json" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a data-target="http://127.0.0.1:8000/compare/product/534" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                                                                                    <a class="product-button add_to_single_cart"  data-target="534" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
-                                            </a>
-                                                                            </div>
-                                </div>
-                                    <div class="product-card-body">
-
-                                        <div class="product-category"><a href="catalog50ca.html?category=Women-Clothing">Women Clothing</a></div>
-                                        <h3 class="product-title"><a href="product/Top-Sale-High-Quality-Newest-Designs-Custom-Women-Clothing-Wholesale-from-China-Dresses.html">
-                                            Top Sale High Quality Newest Design
-                                        </a></h3>
-                                        <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                        </div>
-                                        <h4 class="product-price">
-
-                                        $69.55
-                                        </h4>
-
-                                    </div>
-
-                            </div>
-                        </div>
-
-                        <div class="slider-item">
-                            <div class="product-card">
-                                <div class="product-thumb">
-
-                                                                            <div class="product-badge product-badge2 bg-info"> -29%</div>
-                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634135061epkHd8364db18d9942a38e89779ca3b4fa7an.jpg" alt="Product">
-                                    <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/538.json" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a data-target="http://127.0.0.1:8000/compare/product/538" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                                                                                    <a class="product-button add_to_single_cart"  data-target="538" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
-                                            </a>
-                                                                            </div>
-                                </div>
-                                    <div class="product-card-body">
-
-                                        <div class="product-category"><a href="catalog50ca.html?category=Women-Clothing">Women Clothing</a></div>
-                                        <h3 class="product-title"><a href="product/New-Arrive-Spring-Fall-Women-Clothing-Plus-Size-Dresses-Floral-Layered-Ruffle-Off-Shoulder-Dress.html">
-                                            New Arrive Spring Fall Women Clothi
-                                        </a></h3>
-                                        <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                        </div>
-                                        <h4 class="product-price">
-                                                                                    <del>$189.78</del>
-
-                                        $144.83
-                                        </h4>
-
-                                    </div>
-
-                            </div>
-                        </div>
-
-                        <div class="slider-item">
-                            <div class="product-card">
-                                <div class="product-thumb">
-
-                                                                            <div class="product-badge product-badge2 bg-info"> -29%</div>
-                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134831EzTH75345266923349e280d5f5e5fd5c71e5a.jpg" alt="Product">
-                                    <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/545.json" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a data-target="http://127.0.0.1:8000/compare/product/545" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                                                                                    <a class="product-button add_to_single_cart"  data-target="545" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
-                                            </a>
-                                                                            </div>
-                                </div>
-                                    <div class="product-card-body">
-
-                                        <div class="product-category"><a href="cataloge364.html?category=Electronics">Electronics</a></div>
-                                        <h3 class="product-title"><a href="product/Dropshipping-EIS-----inch-LCD-Full-HD----P-Recording-----Mega-HD-DV-SLR-Camera.html">
-                                            Dropshipping EIS 2.4 inch LCD Full
-                                        </a></h3>
-                                        <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                        </div>
-                                        <h4 class="product-price">
-                                                                                    <del>$189.78</del>
-
-                                        $134.83
-                                        </h4>
-
-                                    </div>
-
-                            </div>
-                        </div>
-
-                        <div class="slider-item">
-                            <div class="product-card">
-                                <div class="product-thumb">
-
-                                                                            <div class="product-badge product-badge2 bg-info"> -31%</div>
-                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134888WQ3H624bc94495584b2384c07e2db9f2bdfcd.jpg" alt="Product">
-                                    <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/543.json" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a data-target="http://127.0.0.1:8000/compare/product/543" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                                                                                    <a class="product-button add_to_single_cart"  data-target="543" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
-                                            </a>
-                                                                            </div>
-                                </div>
-                                    <div class="product-card-body">
-
-                                        <div class="product-category"><a href="cataloge364.html?category=Electronics">Electronics</a></div>
-                                        <h3 class="product-title"><a href="product/New-product------Refurbished-used-smart-phone-for-I-phone-XS-MAX-XR---GB----GB--G.html">
-                                            New product 2019 Refurbished used s
-                                        </a></h3>
-                                        <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                        </div>
-                                        <h4 class="product-price">
-                                                                                    <del>$1,348.31</del>
-
-                                        $932.58
-                                        </h4>
-
-                                    </div>
-
-                            </div>
-                        </div>
-
-                        <div class="slider-item">
-                            <div class="product-card">
-                                <div class="product-thumb">
-
+                                    <div class="product-badge product-badge2 bg-info"> -29%</div>
                                                                         <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134777NcCH8fb00d2318bd48048dcd8bf2546f3f52h.jpg" alt="Product">
                                     <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/559.json" title="Wishlist"><i class="icon-heart"></i></a>
                                         <a data-target="http://127.0.0.1:8000/compare/product/559" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
@@ -344,6 +127,9 @@
 
                             </div>
                         </div>
+                        @endforeach
+
+
                                             </div>
 
                 </div>
@@ -1422,7 +1208,15 @@
         </section>
 
 
+<script>
 
+
+catshow();
+    popshow();
+    proshow();
+
+    
+</script>
 
 
 

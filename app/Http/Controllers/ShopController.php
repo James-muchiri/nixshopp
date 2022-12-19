@@ -8,6 +8,7 @@ use App\Banners;
 use App\Category;
 use App\Sub_Category;
 use App\Child_Category;
+use App\Products;
 use App\Featured_categories; 
 class ShopController extends Controller
 {
@@ -25,9 +26,10 @@ class ShopController extends Controller
         $category = Category::all();
         $sub_category = Sub_Category::all();
         $child_category = Child_Category::all();
+        $deals = Products::all();
         
         return view('index.index', compact('sliders', 'sub_category', 'child_category',
-        'header_banners', 'genius_banner', 'genius_banner2',
+        'header_banners', 'genius_banner', 'genius_banner2', 'deals',
          'genius_banner3', 'Featured_categories', 'category'
         
         ));
@@ -61,6 +63,24 @@ class ShopController extends Controller
         
         ));
     }
+
+
+
+    public function campaign()
+
+    {
+
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+        $deals = Products::all();
+        return view('index.campaign', compact('sub_category', 'child_category','deals',
+       'category'
+        
+        ));
+
+    }
+
 
     // compare functions 
 
@@ -107,8 +127,8 @@ class ShopController extends Controller
     return response()->json([
         "status" => 200,
         "message" => "action completed successfully",
-        "id" => $compare_count,
-        "ff" => $compare_product,
+        "quantity" => $compare_count,
+        "products" => $compare_product,
     ]);
       
         
