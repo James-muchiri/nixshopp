@@ -1,5 +1,5 @@
 
- 
+
       // Notifications
       function Notificationn(title){
         $.notify({
@@ -74,16 +74,16 @@
     }
     // Notifications Ends
 
-    
-    
-        
+
+
+
         // compare script start
 
         $(document).on("click", ".product_compare", function () {
             let compare_url = $(this).attr("data-target");
-       
+
             console.log("count compare record");
-        
+
             $.ajax({
             type: 'get',
             url: compare_url,
@@ -91,14 +91,17 @@
             success:
                 function( data ){
                     var count=0;
-             
+
                     if (data.status == 200) {
-                       Notificationn("data.message");
-                        toastr.success('success');
+                     //  Notificationn("data.message");
+                        toastr.success(data.message);
                     } else {
-                        dangerNotification("data.message");
+                       //dangerNotification("data.message");
+                       toastr.error(data.message);
+                    
                     }
-                    $(".compare_count").text(data.compare_count);
+                   // $(".compare_count").html(data.compare_count);
+                   Comparecount();
                 }
             });
 
@@ -109,22 +112,22 @@ function Comparecount(){
     console.log("count compare record");
     $.ajax({
         type: 'get',
-        url: compare_url,
+        url: "/compare/product",
         dataType: 'json',
         success:
             function( data ){
                 var count=0;
-                $.each(data, function(index, element) {
-                    // console.log(element);
-                    qty = element.quantity;
-                    count+=qty;
-                });
-            
-                $(".compare_count").text(data.compare_count);
+                // $.each(data, function(index, element) {
+                //     // console.log(element);
+                //     qty = element.quantity;
+                //     count+=qty;
+                // });
+
+                $(".compare_count").text(data.id);
             }
         });
 };
-    
 
 
-  
+
+

@@ -89,6 +89,12 @@ class ShopController extends Controller
     public function compare()
 
     {
+
+
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all(); 
+
         $compare_product = session()->get('compare_product');    
         
         if(!$compare_product) {
@@ -98,7 +104,7 @@ class ShopController extends Controller
         }
         session()->put('compare_product', $compare_product);
         $compare_count = count($compare_product);
-        return view('index.compare', compact('compare_product', 'compare_count'));
+        return view('index.compare', compact('category','sub_category', 'child_category','compare_product', 'compare_count'));
     }
 
  
@@ -115,22 +121,48 @@ class ShopController extends Controller
 
         }
 
-        if(in_array($dataId, $compare_product)){
-
-        }else{
-            array_push($compare_product, $dataId);
-        }
-
-        session()->put('compare_product', $compare_product);
         $compare_count = count($compare_product);
 
+        if ($compare_count <= 2){
+
+        if(in_array($dataId, $compare_product)){
+
+            session()->put('compare_product', $compare_product);
+            $compare_count = count($compare_product);
+
+            return response()->json([
+                "status" => 202,
+                "message" => "This product allready added to compare",
+                "quantity" => $compare_count,
+                "products" => $compare_product,
+            ]);
+
+        }else{
+            session()->put('compare_product', $compare_product);
+            $compare_count = count($compare_product);
+            array_push($compare_product, $dataId);
+        
+
+
+        return response()->json([
+            "status" => 200,
+            "message" => "action completed successfully",
+            "quantity" => $compare_count,
+            "products" => $compare_product,
+        ]);
+  
+      
+    }
+}
+else{
+
     return response()->json([
-        "status" => 200,
-        "message" => "action completed successfully",
+        "status" => 202,
+        "message" => "already added 2 compare product",
         "quantity" => $compare_count,
         "products" => $compare_product,
     ]);
-      
+}
         
     }
 

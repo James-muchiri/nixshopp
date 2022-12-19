@@ -47,25 +47,25 @@ $(function ($) {
 
 
         // announcement banner magnific popup
-        if (mainbs.is_announcement == 1) {
-            $('.announcement-banner').magnificPopup({
-                type: 'inline',
-                midClick: true,
-                mainClass: 'mfp-fade',
-                callbacks: {
-                    open: function () {
-                        $.magnificPopup.instance.close = function () {
-                            // Do whatever else you need to do here
-                            sessionStorage.setItem("announcement", "closed");
-                            // console.log(sessionStorage.getItem('announcement'));
+        // if (mainbs.is_announcement == 1) {
+        //     $('.announcement-banner').magnificPopup({
+        //         type: 'inline',
+        //         midClick: true,
+        //         mainClass: 'mfp-fade',
+        //         callbacks: {
+        //             open: function () {
+        //                 $.magnificPopup.instance.close = function () {
+        //                     // Do whatever else you need to do here
+        //                     sessionStorage.setItem("announcement", "closed");
+        //                     // console.log(sessionStorage.getItem('announcement'));
 
-                            // Call the original close method to close the announcement
-                            $.magnificPopup.proto.close.call(this);
-                        };
-                    }
-                }
-            });
-        }
+        //                     // Call the original close method to close the announcement
+        //                     $.magnificPopup.proto.close.call(this);
+        //                 };
+        //             }
+        //         }
+        //     });
+        // }
 
         // Mobile Category
         $('#category_list .has-children .category_search span').on('click', function (e) {
@@ -77,7 +77,7 @@ $(function ($) {
             $('.topbar .search-box-wrap').toggleClass('d-none');
         });
 
-
+        $(document).ready(function() {
         // Flash Deal Area Start
         var $hero_slider_main = $(".hero-slider-main");
         $hero_slider_main.owlCarousel({
@@ -92,6 +92,8 @@ $(function ($) {
             thumbs: false,
         });
 
+    });
+        $(document).ready(function() {
         // heroarea-slider
         var $testimonialSlider = $('.heroarea-slider');
         $testimonialSlider.owlCarousel({
@@ -124,7 +126,7 @@ $(function ($) {
             }
         });
 
-
+    });
         // popular_category_slider
         var $popular_category_slider = $(".popular-category-slider");
         $popular_category_slider.owlCarousel({
@@ -448,17 +450,6 @@ $(function ($) {
         });
 
 
-        $("[data-date-time]").each(function () {
-            var $this = $(this),
-                finalDate = $(this).attr("data-date-time");
-            $this.countdown(finalDate, function (event) {
-                $this.html(
-                    event.strftime(
-                        `<span>%D<small>${language.Days}</small></span></small> <span>%H<small>${language.Hrs}</small></span> <span>%M<small>${language.Min}</small></span> <span>%S<small>${language.Sec}</small></span>`
-                    )
-                );
-            });
-        });
 
         // Subscriber Form Submit
         $(document).on("submit", ".subscriber-form", function (e) {
@@ -1161,15 +1152,15 @@ $(window).on('load', function (event) {
     // Preloader
     $('#preloader').fadeOut(500);
     // announcement
-    if (mainbs.is_announcement == 1) {
-        // trigger announcement banner base on sessionStorage
-        let announcement = sessionStorage.getItem('announcement') != null ? false : true;
-        if (announcement) {
-            setTimeout(function () {
-                $('.announcement-banner').trigger('click');
-            }, mainbs.announcement_delay * 1000);
-        }
-    }
+    // if (mainbs.is_announcement == 1) {
+    //     // trigger announcement banner base on sessionStorage
+    //     let announcement = sessionStorage.getItem('announcement') != null ? false : true;
+    //     if (announcement) {
+    //         setTimeout(function () {
+    //             $('.announcement-banner').trigger('click');
+    //         }, mainbs.announcement_delay * 1000);
+    //     }
+    // }
 
 });
 

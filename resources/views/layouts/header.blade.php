@@ -77,7 +77,11 @@
                         </div>
 
                         <div class="toolbar-item hidden-on-mobile"><a href="/compare">
-                            <div><span class="compare-icon"><i class="fa fa-repeat"></i><span class="count-label compare_count">0</span></span><span class="text-label">Compare</span></div>
+                            <div><span class="compare-icon"><i class="fa fa-repeat"></i><span class="count-label compare_count">
+                                
+                            <script> Comparecount();</script>
+                            
+                            </span></span><span class="text-label">Compare</span></div>
                             </a>
                         </div>
                                                 <div class="toolbar-item hidden-on-mobile"><a href="/user/login">
