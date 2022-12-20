@@ -309,6 +309,7 @@
 
 
               // category wise product 
+              catshow();
               function catshow(){
               
             
@@ -332,7 +333,8 @@ $.get(geturl, function (response) {
 });
               }
 
-
+          
+              popshow();
               function popshow(){
               
             
@@ -355,7 +357,7 @@ $.get(geturl, function (response) {
 
 });
             }
-
+            proshow();
             function proshow(){
               
             
@@ -378,4 +380,6 @@ $.get(geturl, function (response) {
 
 });
             }
+
+      
     </script>

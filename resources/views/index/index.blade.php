@@ -1208,15 +1208,7 @@
         </section>
 
 
-<script>
 
-
-catshow();
-    popshow();
-    proshow();
-
-    
-</script>
 
 
 

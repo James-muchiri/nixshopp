@@ -17,7 +17,11 @@
     </div>
   </div>
   <!-- Page Content-->
-  {{-- <div class="container padding-bottom-3x mb-1">
+
+  @if ($compare_count == 0)
+      
+ 
+  <div class="container padding-bottom-3x mb-1">
         <div class="card">
             <div class="card-body">
                 <div class="comparison-table">
@@ -35,196 +39,200 @@
                   </div>
             </div>
         </div>
-  </div> --}}
+  </div>
 
-
+  @else
+      
+  
 
   <div class="container padding-bottom-3x mb-1">
     <div class="card">
         <div class="card-body">
-            <div class="comparison-table">
-                <table class="table table-bordered">
+                         <div class="container">
 
-                  <tbody>
-                                                <tr class="bg-secondary">
-                         <th class="text-uppercase">Summary</th>
-                                                      <td><span class="text-medium">Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro</span></td>
+                <div class="row">
+                    <div class="col">
+                        <div class="comparison-table">
+<table>
+                        <tbody>
+                            <tr class="bg-secondary">
+                                <th class="text-uppercase">Summary</th>
+                            </tr>
+                            <tr>
+                            <td>
+                                <h6>
+                                    Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro
+                                </h6>
+                                  <p><b>Brand</b> :  
+                                     , <b>Price</b> :  $1,362.81
+                                </p>
+      
+                                  <hr>
+                                  <h6 class="mt-2">
+                                    Shirts Menshirts Mens Cotton Shirt Factory Direct Various Style Customization
+                                </h6>
+                                  <p><b>Brand</b> :  
+                                    , <b>Price</b> :  $1,362.81</p>
+                                </td>
+                               
+                               </tr>
 
-                                                      <td><span class="text-medium">Shirts Menshirts Mens Cotton Shirt Factory Direct Various Style Customization</span></td>
-
-                                                   </tr>
-                                              <tr>
-                          <td>
-                          <h6>
-                              Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro
-                          </h6>
-                            <p><b>Brand</b> :  
-                               , <b>Price</b> :  $1,362.81
-                          </p>
-
-                            <hr>
-                            <h6 class="mt-2">
-                              Shirts Menshirts Mens Cotton Shirt Factory Direct Various Style Customization
-                          </h6>
-                            <p><b>Brand</b> :  
-                              , <b>Price</b> :  $1,362.81</p>
-                          </td>
-                         
-                         <td>
-                          <div class="comparison-item"><span class="remove-item compare_remove" data-href="https://geniusdevs.com/codecanyon/omnimart40/compare/remove/563"><i class="icon-x"></i></span><a class="comparison-item-thumb" href="https://geniusdevs.com/codecanyon/omnimart40/product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro"><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134720QX6Hedf90cf6656546e7a8548d4980edc5bda.jpg" alt="Image"></a><a class="comparison-item-title" href="https://geniusdevs.com/codecanyon/omnimart40/product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro">Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro</a><a class="btn btn-outline-primary btn-sm add_to_single_cart" href="javascript:;" data-target="563">Add to Cart</a></div>
-                        </td>
-                         
-                         <td>
-                          <div class="comparison-item"><span class="remove-item compare_remove" data-href="https://geniusdevs.com/codecanyon/omnimart40/compare/remove/559"><i class="icon-x"></i></span><a class="comparison-item-thumb" href="https://geniusdevs.com/codecanyon/omnimart40/product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf"><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134777NcCH8fb00d2318bd48048dcd8bf2546f3f52h.jpg" alt="Image"></a><a class="comparison-item-title" href="https://geniusdevs.com/codecanyon/omnimart40/product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf">Shirts Menshirts Mens Cotton Shirt Factory Direct Various Style Customization</a><a class="btn btn-outline-primary btn-sm add_to_single_cart" href="javascript:;" data-target="559">Add to Cart</a></div>
-                        </td>
-                                                   </tr>
-
-                                                <tr>
-                          <th>Product Type:</th>
-                          <td>                           Velvet elegant sleeveless evening dress
-                                                                                            </td>
-                          <td>
-                                                                                                Velvet elegant sleeveless evening dress
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Material:</th>
-                          <td>
-                                                                                               Polyester / Spandex
-                                                                                            </td>
-                          <td>
-                                                                                                Polyester / Spandex
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Lining Material:</th>
-                          <td>
-                                                                                               Polyester
-                                                                                            </td>
-                          <td>
-                                                                                                Polyester
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Fabric Type:</th>
-                          <td>
-                                                                                               Fleece
-                                                                                            </td>
-                          <td>
-                                                                                                Fleece
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Technics:</th>
-                          <td>
-                                                                                               Plain dyed
-                                                                                            </td>
-                          <td>
-                                                                                                Plain dyed
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Decoration:</th>
-                          <td>
-                                                                                               Sequins
-                                                                                            </td>
-                          <td>
-                                                                                                Sequins
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Size:</th>
-                          <td>
-                                                                                               S/M/L
-                                                                                            </td>
-                          <td>
-                                                                                                S/M/L
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Product Type:</th>
-                          <td>
-                                                                                               Velvet elegant sleeveless evening dress
-                                                                                            </td>
-                          <td>
-                                                                                                Velvet elegant sleeveless evening dress
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Material:</th>
-                          <td>
-                                                                                               Polyester / Spandex
-                                                                                            </td>
-                          <td>
-                                                                                                Polyester / Spandex
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Lining Material:</th>
-                          <td>
-                                                                                               Polyester
-                                                                                            </td>
-                          <td>
-                                                                                                Polyester
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Fabric Type:</th>
-                          <td>
-                                                                                               Fleece
-                                                                                            </td>
-                          <td>
-                                                                                                Fleece
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Technics:</th>
-                          <td>
-                                                                                               Plain dyed
-                                                                                            </td>
-                          <td>
-                                                                                                Plain dyed
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Decoration:</th>
-                          <td>
-                                                                                               Sequins
-                                                                                            </td>
-                          <td>
-                                                                                                Sequins
-                                                                                            </td>
-                       </tr>
-                                                <tr>
-                          <th>Size:</th>
-                          <td>
-                                                                                               S/M/L
-                                                                                            </td>
-                          <td>
-                                                                                                S/M/L
-                                                                                            </td>
-                       </tr>
-                                                
-                      <tr>
-                         <th></th>
-                                                      <td>
-                           <a class="btn btn-outline-primary btn-sm btn-block add_to_single_cart" href="javascript:;" data-target="563">Add to Cart</a>
-                          </td>
-
-                                                      <td>
-                           <a class="btn btn-outline-primary btn-sm btn-block add_to_single_cart" href="javascript:;" data-target="559">Add to Cart</a>
-                          </td>
-
-                                                   </tr>
-                                             </tbody>
+                               
+                        </tbody>
+                    </table>
+                        </div>
+                    </div>
 
 
+                    @foreach ($compare_product_d as $value)
+                   
+                    <div class="col">
+                        <div class="comparison-table">
+                        <table class="table table-bordered">
 
-                </table>
+                            <tbody>
+                                                          <tr class="bg-secondary">
+                                                         
+                                   
+                                                            <td colspan="2"> <span class="text-medium">  {{$value->name}}</span></td>
+          
+                                                             
+                                                             </tr>
+
+                                                             <tr>
+                                                           
+                                                               
+                                                                <td colspan="2"> 
+                                                                <div class="comparison-item"><span class="remove-item compare_remove" data-href="/compare/product_remove/{{$value->id}}"><i class="fa fa-times"></i></span><a class="comparison-item-thumb" href="https://geniusdevs.com/codecanyon/omnimart40/product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro"><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134720QX6Hedf90cf6656546e7a8548d4980edc5bda.jpg" alt="Image"></a><a class="comparison-item-title" href="https://geniusdevs.com/codecanyon/omnimart40/product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro">Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro</a><a class="btn btn-outline-primary btn-sm add_to_single_cart" href="javascript:;" data-target="563">Add to Cart</a></div>
+                                                              </td>
+                                                               
+                                                               
+                                                                                         </tr>
+                                      
+                                                                                      <tr>
+                                                                <th>Product Type:</th>
+                                                                <td>                           Velvet elegant sleeveless evening dress
+                                                                                                                                  </td>
+                                                         
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Material:</th>
+                                                                <td>
+                                                                                                                                     Polyester / Spandex
+                                                                                                                                  </td>
+                                                  
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Lining Material:</th>
+                                                                <td>
+                                                                                                                                     Polyester
+                                                                                                                                  </td>
+                                                      
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Fabric Type:</th>
+                                                                <td>
+                                                                                                                                     Fleece
+                                                                                                                                  </td>
+                                                           
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Technics:</th>
+                                                                <td>
+                                                                                                                                     Plain dyed
+                                                                                                                                  </td>
+                                                            
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Decoration:</th>
+                                                                <td>
+                                                                                                                                     Sequins
+                                                                                                                                  </td>
+                                                     
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Size:</th>
+                                                                <td>
+                                                                                                                                     S/M/L
+                                                                                                                                  </td>
+                                                           
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Product Type:</th>
+                                                         
+                                                                <td>
+                                                                                                                                      Velvet elegant sleeveless evening dress
+                                                                                                                                  </td>
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Material:</th>
+                                                           
+                                                                <td>
+                                                                                                                                      Polyester / Spandex
+                                                                                                                                  </td>
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Lining Material:</th>
+                                                              
+                                                                <td>
+                                                                                                                                      Polyester
+                                                                                                                                  </td>
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Fabric Type:</th>
+                                                                <td>
+                                                                                                                                     Fleece
+                                                                                                                                  </td>
+                                                               
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Technics:</th>
+                                                                <td>
+                                                                                                                                     Plain dyed
+                                                                                                                                  </td>
+                                                        
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Decoration:</th>
+                                                                <td>
+                                                                                                                                     Sequins
+                                                       
+                                                             </tr>
+                                                                                      <tr>
+                                                                <th>Size:</th>
+                                                        
+                                                                <td>
+                                                                                                                                      S/M/L
+                                                                                                                                  </td>
+                                                             </tr>
+                                                                                      
+                                                            <tr>
+                                                               <th></th>
+                                                                                            <td>
+                                                                 <a class="btn btn-outline-primary btn-sm btn-block add_to_single_cart" href="javascript:;" data-target="563">Add to Cart</a>
+                                                                </td>
+                                      
+                                                                  
+                                      
+                                                                                         </tr>
+                                                      
+                            </tbody>
+                        </table>
+                        </div>
+
+                    </div>
+              
+               @endforeach
+
+
+                </div>
               </div>
         </div>
     </div>
 </div>
+
+
+@endif
 
 <!--    announcement banner section start   -->
 <a class="announcement-banner" href="#announcement-modal"></a>

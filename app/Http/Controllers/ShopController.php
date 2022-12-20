@@ -100,12 +100,36 @@ class ShopController extends Controller
         if(!$compare_product) {
     
             $compare_product = [];
+            session()->put('compare_product', $compare_product);
+            $compare_count = count($compare_product);
+            return view('index.compare', compact('category','sub_category', 'child_category','compare_product', 'compare_count'));
+      
 
         }
-        session()->put('compare_product', $compare_product);
-        $compare_count = count($compare_product);
-        return view('index.compare', compact('category','sub_category', 'child_category','compare_product', 'compare_count'));
-    }
+        else{
+            $compare_product_d = [];
+foreach ( $compare_product as  $compare_pro){
+
+    $product = Products::find($compare_pro);
+
+   // if(!$compare_product_d) {
+
+    // $compare_product_d = [
+    //     $product->id => [$product ]
+    // ];
+    array_push($compare_product_d, $product);
+
+//}
+
+}
+//return $compare_product_d;
+         
+            $compare_count = count($compare_product);
+            return view('index.compare', compact('compare_product_d','category','sub_category', 'child_category','compare_product', 'compare_count'));
+      
+        }
+        
+  }
 
  
     
@@ -123,7 +147,7 @@ class ShopController extends Controller
 
         $compare_count = count($compare_product);
 
-        if ($compare_count <= 2){
+        if ($compare_count < 2){
 
         if(in_array($dataId, $compare_product)){
 
@@ -138,9 +162,10 @@ class ShopController extends Controller
             ]);
 
         }else{
+          
+            array_push($compare_product, $dataId);
             session()->put('compare_product', $compare_product);
             $compare_count = count($compare_product);
-            array_push($compare_product, $dataId);
         
 
 
@@ -247,9 +272,16 @@ public function compare_product1()
             $cart_product = [];
 
         }
+
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+
+      
         session()->put('cart_product', $cart_product);
         $cart_count = count($cart_product);
-        return view('index.cart', compact('cart_product', 'cart_count'));
+        return view('index.cart', compact('cart_product','cart_count','sub_category','child_category',
+        'category'));
     }
 
  
@@ -258,7 +290,7 @@ public function compare_product1()
     public function cart_product($dataId)
     {
       
-          
+          $product = Products::find($dataId);
         
        // $product = Product::find($dataId);       
         $cart_product = session()->get('cart_product');    
@@ -267,11 +299,11 @@ public function compare_product1()
     
             $cart_product = [
                 $dataId => [
-                    "id"=>'$product->id',
-                    "product" => '$product->item',
-                    "quantity" => 1,
-                    "price" => '$product->price',
-                    "image" => '$product->file_path',
+                    "id"=>$product->id,
+            "product" => $product->name,
+            "quantity" => 1,
+            "price" => $product->c_price,
+            "image" => $product->image,
                 ]
             ];
             // dd($cart_product);
@@ -294,11 +326,11 @@ public function compare_product1()
         // if item not exist in cart then add to cart with quantity = 1
         $cart_product[$dataId] = [
        
-            "id"=>'$product->id',
-            "product" => '$product->item',
+            "id"=>$product->id,
+            "product" => $product->name,
             "quantity" => 1,
-            "price" => '$product->price',
-            "image" => '$product->file_path',
+            "price" => $product->c_price,
+            "image" => $product->image,
     
         ];
     }
@@ -437,9 +469,12 @@ public function cart_product1()
     public function slider()
 
     {
+
+        $product = Products::all();
   
-        return view('index.popular');
+        return view('index.popular', compact('product'));
     }
+    
 
 
     public function mixed()

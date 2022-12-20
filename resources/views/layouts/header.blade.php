@@ -88,11 +88,22 @@
                           <div><span class="compare-icon"><i class="fa fa-heart"></i></span><span class="text-label">Wishlist</span></div>
                           </a>
                       </div>
-                                                <div class="toolbar-item"><a href="/cart">
-                            <div><span class="cart-icon"><i class="fa fa-cart-plus"></i><span class="count-label cart_count">0 </span></span><span class="text-label">Cart</span></div>
+                                                <div class="toolbar-item">
+                                                    <a href="/product/cart" onmouseover="fetchRecord()">
+                            <div><span class="cart-icon"><i class="fa fa-cart-plus"></i><span class="count-label cart_count">
+                                <script> Cartcount();</script>    
+                            </span></span><span class="text-label">Cart</span></div>
                             </a>
-                            <div class="toolbar-dropdown cart-dropdown widget-cart  cart_view_header" id="header_cart_load" data-target="https://geniusdevs.com/codecanyon/omnimart40/header/cart/load">
-                            Cart empty
+                            <div class="toolbar-dropdown cart-dropdown widget-cart  cart_view_header" id="header_cart_load" data-target="">
+                       <table>
+                    <thead>
+                        </thead>       
+                  
+                      <tbody id="cart_table">
+
+                     </tbody>
+
+                    </table>   
   </div>
 
 

@@ -72,7 +72,7 @@
                         {{-- <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/559" title="Wishlist"><i class="icon-heart"></i></a>
                          --}}
                         <a data-target="/compare/product/{{$deal->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
-                        <a class="product-button add_to_single_cart" data-target="559" href="javascript:;" title="To Cart"><i  class="fa fa-heart"></i>
+                        <a class="product-button add_to_single_cart" data-target="/cart/product/{{$deal->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-heart"></i>
 </a>
                         </div>
                 </div>

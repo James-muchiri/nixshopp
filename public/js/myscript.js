@@ -129,7 +129,7 @@ $(function ($) {
     });
         // popular_category_slider
         var $popular_category_slider = $(".popular-category-slider");
-        $popular_category_slider.owlCarousel({
+  var    popular_category_slider =   $popular_category_slider.owlCarousel({
             navText: ['<svg width="50%" height="50%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="50%" height="50%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
             nav: true,
             dots: false,
@@ -161,6 +161,9 @@ $(function ($) {
         });
 
 
+        function refreshowl(){
+            popular_category_slider.triger(refresh.owl.carousel);
+        }
 
         // Flash Deal Area Start
         var $flash_deal_slider = $(".flash-deal-slider");
@@ -939,7 +942,32 @@ $(function ($) {
             getData(1, 0, 0, 0, 1);
         });
         $(document).on("click", ".add_to_single_cart", function () {
-            getData(1, $(this).attr("data-target"));
+             
+            let compare_url = $(this).attr("data-target");
+
+            console.log("count compare record");
+
+            $.ajax({
+            type: 'get',
+            url: compare_url,
+            dataType: 'json',
+            success:
+                function( data ){
+                    var count=0;
+
+                    if (data.status == 200) {
+                     //  Notificationn("data.message");
+                        toastr.success(data.message);
+                    } else {
+                       //dangerNotification("data.message");
+                       toastr.error(data.message);
+                    
+                    }
+                   // $(".compare_count").html(data.compare_count);
+                   Cartcount();
+                }
+            });
+
         });
 
         function cartSubmit(item_key,item_id,cartQty,newOptionArray) {
