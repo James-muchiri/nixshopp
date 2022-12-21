@@ -96,7 +96,7 @@ function cart_table(){
         t_data = t_data +       
         '<tr role="row" class="odd">'+
         '<td>'+
-            '<img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632341620bbb.jpg" alt="Image Not Found">'+
+            '<img  src="/images/1632341620bbb.jpg" alt="Image Not Found">'+
         '</td>'+
         '<td>'+
             element.name+
@@ -120,10 +120,10 @@ function cart_table(){
                                   ' </td>'+
                                  '<td>'+
                          '<div class="action-list">'+
-                         '  <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/category/27/edit">'+
+                         '  <a class="btn btn-secondary btn-sm " href="/admin/category/27/edit">'+
                          '         <i class="fa fa-edit"></i>'+
                          '     </a>'+
-                         '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/category/27">'+
+                         '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/category/27">'+
                          '         <i class="fa fa-trash-alt"></i>'+
                          '      </a>'+
                          '   </div>'+
@@ -270,7 +270,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   t_data = t_data +       
   '<tr role="row" class="odd">'+
   '<td>'+
-      '<img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632341620bbb.jpg" alt="Image Not Found">'+
+      '<img src="/images/1632341620bbb.jpg" alt="Image Not Found">'+
   '</td>'+
   '<td>'+
       element.name+
@@ -294,10 +294,10 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                             ' </td>'+
                            '<td>'+
                    '<div class="action-list">'+
-                   '  <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/category/27/edit">'+
+                   '  <a class="btn btn-secondary btn-sm " href="/admin/category/27/edit">'+
                    '         <i class="fa fa-edit"></i>'+
                    '     </a>'+
-                   '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/category/27">'+
+                   '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/category/27">'+
                    '         <i class="fa fa-trash-alt"></i>'+
                    '      </a>'+
                    '   </div>'+
@@ -374,7 +374,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   t_data = t_data +       
   '<tr role="row" class="odd">'+
   '<td>'+
-      '<img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632341620bbb.jpg" alt="Image Not Found">'+
+      '<img src="/images/1632341620bbb.jpg" alt="Image Not Found">'+
   '</td>'+
   '<td>'+
       element.name+
@@ -398,10 +398,10 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                             ' </td>'+
                            '<td>'+
                    '<div class="action-list">'+
-                   '  <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/category/27/edit">'+
+                   '  <a class="btn btn-secondary btn-sm " href="/admin/category/27/edit">'+
                    '         <i class="fa fa-edit"></i>'+
                    '     </a>'+
-                   '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/category/27">'+
+                   '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/category/27">'+
                    '         <i class="fa fa-trash-alt"></i>'+
                    '      </a>'+
                    '   </div>'+
@@ -646,7 +646,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   '<tr id="product-bulk-delete" role="row" class="odd">'+
   '<td><input type="checkbox" class="bulk-item" value="586"></td>'+
   ' <td>'+
-    '     <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
+    '     <img src="/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
         ' </td>'+
     '  <td>'+
     element.name+
@@ -658,8 +658,8 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     '  <div class="dropdown">'+
     status +
             '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-            ' <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/1">Publish</a>'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/0">Unpublish</a>'+
+            ' <a class="dropdown-item" href="/admin/item/status/586/1">Publish</a>'+
+              '<a class="dropdown-item" href="/admin/item/status/586/0">Unpublish</a>'+
               ' </div>'+
             ' </div>'+
           '</td>'+
@@ -679,13 +679,13 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
             'Options'+
               '</button>'+
             '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-            '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/586/edit"><i class="fas fa-angle-double-right"></i> Edit</a>'+
-                            ' <a class="dropdown-item" target="_blank" href="https://geniusdevs.com/codecanyon/omnimart40/product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca"><i class="fas fa-angle-double-right"></i> View</a>'+
-                            ' <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/586/attribute"><i class="fas fa-angle-double-right"></i> Attributes</a>'+
-                                          '  <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/586/option"><i class="fas fa-angle-double-right"></i> Attribute Options</a>'+
-              ' <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/galleries/586"><i class="fas fa-angle-double-right"></i> Gallery Images</a>'+
-                            ' <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/highlight/586"><i class="fas fa-angle-double-right"></i> Highlight</a>'+
-              ' <a class="dropdown-item" data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/586"><i class="fas fa-angle-double-right"></i> Delete</a>'+
+            '<a class="dropdown-item" href="/admin/item/586/edit"><i class="fas fa-angle-double-right"></i> Edit</a>'+
+                            ' <a class="dropdown-item" target="_blank" href="//product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca"><i class="fas fa-angle-double-right"></i> View</a>'+
+                            ' <a class="dropdown-item" href="/admin/586/attribute"><i class="fas fa-angle-double-right"></i> Attributes</a>'+
+                                          '  <a class="dropdown-item" href="/admin/586/option"><i class="fas fa-angle-double-right"></i> Attribute Options</a>'+
+              ' <a class="dropdown-item" href="/admin/item/galleries/586"><i class="fas fa-angle-double-right"></i> Gallery Images</a>'+
+                            ' <a class="dropdown-item" href="/admin/item/highlight/586"><i class="fas fa-angle-double-right"></i> Highlight</a>'+
+              ' <a class="dropdown-item" data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/item/586"><i class="fas fa-angle-double-right"></i> Delete</a>'+
               ' </div>'+
             ' </div>'+
 
@@ -765,7 +765,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   '<tr role="row" class="odd">'+
 
   ' <td>'+
-    '     <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
+    '     <img src="/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
         ' </td>'+
     '  <td>'+
     element.name+
@@ -777,8 +777,8 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     '  <div class="dropdown">'+
     status +
             '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-            ' <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/1">Publish</a>'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/0">Unpublish</a>'+
+            ' <a class="dropdown-item" href="/admin/item/status/586/1">Publish</a>'+
+              '<a class="dropdown-item" href="/admin/item/status/586/0">Unpublish</a>'+
               ' </div>'+
             ' </div>'+
           '</td>'+
@@ -788,14 +788,14 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
               'Active'+
                 '</button>'+
               '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/1/is_feature">Active</a>'+
-                '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/0/is_feature">Deactive</a>'+
+              '<a class="dropdown-item" href="/admin/campaign/status/40/1/is_feature">Active</a>'+
+                '<a class="dropdown-item" href="/admin/campaign/status/40/0/is_feature">Deactive</a>'+
                 '</div>'+
               '</div>'+
             '</td>'+
     
       '<td>'+
-      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/40">'+
+      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
       ' <i class="fas fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
@@ -916,7 +916,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   '<tr role="row" class="odd">'+
 
   ' <td>'+
-    '     <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
+    '     <img src="/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
         ' </td>'+
     '  <td>'+
     element.name+
@@ -928,8 +928,8 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     '  <div class="dropdown">'+
     status +
             '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-            ' <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/1">Publish</a>'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/0">Unpublish</a>'+
+            ' <a class="dropdown-item" href="/admin/item/status/586/1">Publish</a>'+
+              '<a class="dropdown-item" href="/admin/item/status/586/0">Unpublish</a>'+
               ' </div>'+
             ' </div>'+
           '</td>'+
@@ -939,14 +939,14 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
               'Active'+
                 '</button>'+
               '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/1/is_feature">Active</a>'+
-                '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/0/is_feature">Deactive</a>'+
+              '<a class="dropdown-item" href="/admin/campaign/status/40/1/is_feature">Active</a>'+
+                '<a class="dropdown-item" href="/admin/campaign/status/40/0/is_feature">Deactive</a>'+
                 '</div>'+
               '</div>'+
             '</td>'+
     
       '<td>'+
-      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/40">'+
+      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
       ' <i class="fas fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
@@ -1069,7 +1069,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   '<tr role="row" class="odd">'+
 
   ' <td>'+
-    '     <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
+    '     <img src="/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
         ' </td>'+
     '  <td>'+
     element.name+
@@ -1081,8 +1081,8 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     '  <div class="dropdown">'+
     status +
             '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-            ' <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/1">Publish</a>'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/0">Unpublish</a>'+
+            ' <a class="dropdown-item" href="/admin/item/status/586/1">Publish</a>'+
+              '<a class="dropdown-item" href="/admin/item/status/586/0">Unpublish</a>'+
               ' </div>'+
             ' </div>'+
           '</td>'+
@@ -1092,14 +1092,14 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
               'Active'+
                 '</button>'+
               '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/1/is_feature">Active</a>'+
-                '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/0/is_feature">Deactive</a>'+
+              '<a class="dropdown-item" href="/admin/campaign/status/40/1/is_feature">Active</a>'+
+                '<a class="dropdown-item" href="/admin/campaign/status/40/0/is_feature">Deactive</a>'+
                 '</div>'+
               '</div>'+
             '</td>'+
     
       '<td>'+
-      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/40">'+
+      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
       ' <i class="fas fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
@@ -1222,7 +1222,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   '<tr role="row" class="odd">'+
 
   ' <td>'+
-    '     <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
+    '     <img src="/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
         ' </td>'+
     '  <td>'+
     element.name+
@@ -1234,8 +1234,8 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     '  <div class="dropdown">'+
     status +
             '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-            ' <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/1">Publish</a>'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/item/status/586/0">Unpublish</a>'+
+            ' <a class="dropdown-item" href="/admin/item/status/586/1">Publish</a>'+
+              '<a class="dropdown-item" href="/admin/item/status/586/0">Unpublish</a>'+
               ' </div>'+
             ' </div>'+
           '</td>'+
@@ -1245,14 +1245,14 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
               'Active'+
                 '</button>'+
               '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-              '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/1/is_feature">Active</a>'+
-                '<a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/0/is_feature">Deactive</a>'+
+              '<a class="dropdown-item" href="/admin/campaign/status/40/1/is_feature">Active</a>'+
+                '<a class="dropdown-item" href="/admin/campaign/status/40/0/is_feature">Deactive</a>'+
                 '</div>'+
               '</div>'+
             '</td>'+
     
       '<td>'+
-      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/40">'+
+      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
       ' <i class="fas fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+

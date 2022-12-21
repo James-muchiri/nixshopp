@@ -551,10 +551,10 @@
                           <tbody>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/132">w10xGWiN80</a>
+                                      <a href="/admin/order/invoice/132">w10xGWiN80</a>
                                   </td>
                                   <td>
                                       Stripe
@@ -565,10 +565,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/131">TyExwhsbeS</a>
+                                      <a href="/admin/order/invoice/131">TyExwhsbeS</a>
                                   </td>
                                   <td>
                                       Cash On Delivery
@@ -579,10 +579,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/130">j0W5sAeolz</a>
+                                      <a href="/admin/order/invoice/130">j0W5sAeolz</a>
                                   </td>
                                   <td>
                                       Cash On Delivery
@@ -593,10 +593,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/129">HhgjzEg09z</a>
+                                      <a href="/admin/order/invoice/129">HhgjzEg09z</a>
                                   </td>
                                   <td>
                                       Stripe
@@ -607,10 +607,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/128">JrV7oupswB</a>
+                                      <a href="/admin/order/invoice/128">JrV7oupswB</a>
                                   </td>
                                   <td>
                                       Stripe
@@ -621,10 +621,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/127">rTgJph3cv8</a>
+                                      <a href="/admin/order/invoice/127">rTgJph3cv8</a>
                                   </td>
                                   <td>
                                       Paypal
@@ -635,10 +635,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/126">Ffr4zOVXnf</a>
+                                      <a href="/admin/order/invoice/126">Ffr4zOVXnf</a>
                                   </td>
                                   <td>
                                       Stripe
@@ -649,10 +649,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/125">0HGakDhxlW</a>
+                                      <a href="/admin/order/invoice/125">0HGakDhxlW</a>
                                   </td>
                                   <td>
                                       Cash On Delivery
@@ -663,10 +663,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/124">GPt4RZ0RCq</a>
+                                      <a href="/admin/order/invoice/124">GPt4RZ0RCq</a>
                                   </td>
                                   <td>
                                       Cash On Delivery
@@ -677,10 +677,10 @@
                               </tr>
                                                             <tr>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/user/1">Alex Smith</a>
+                                      <a href="/admin/user/1">Alex Smith</a>
                                   </td>
                                   <td>
-                                      <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/order/invoice/123">ZN6ve2FsBf</a>
+                                      <a href="/admin/order/invoice/123">ZN6ve2FsBf</a>
                                   </td>
                                   <td>
                                       Stripe

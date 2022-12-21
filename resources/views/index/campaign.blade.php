@@ -10,10 +10,10 @@
       <div class="row">
           <div class="col-lg-12">
             <ul class="breadcrumbs">
-                <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a>
+                <li><a href="/">Home</a>
                 </li>
                 <li class="separator"></li>
-                <li><a href="https://geniusdevs.com/codecanyon/omnimart40/campaign/products">Campaign Products</a>
+                <li><a href="/campaign/products">Campaign Products</a>
                 </li>
               </ul>
           </div>
@@ -69,7 +69,7 @@
 
                     <img src="{{ asset('/uploads') }}/{{$deal->image}}" alt="Product">
                     <div class="product-button-group">
-                        {{-- <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/559" title="Wishlist"><i class="icon-heart"></i></a>
+                        {{-- <a class="product-button wishlist_store" href="//user/wishlist/store/559" title="Wishlist"><i class="icon-heart"></i></a>
                          --}}
                         <a data-target="/compare/product/{{$deal->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
                         <a class="product-button add_to_single_cart" data-target="/cart/product/{{$deal->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-heart"></i>
@@ -78,8 +78,8 @@
                 </div>
                 <div class="product-card-body">
 
-                    <div class="product-category"><a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=men-clothing">Men Clothing</a></div>
-                    <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf">
+                    <div class="product-category"><a href="//catalog?category=men-clothing">Men Clothing</a></div>
+                    <h3 class="product-title"><a href="//product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf">
                         Shirts Menshirts Mens Cotton Shirt 
                     </a></h3>
                     <div class="rating-stars">

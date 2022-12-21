@@ -12,7 +12,7 @@
         <div class="card-body">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <h3 class="mb-0 bc-title"><b>Create Brand</b> </h3>
-                <a class="btn btn-primary  btn-sm" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand"><i class="fas fa-chevron-left"></i> Back</a>
+                <a class="btn btn-primary  btn-sm" href="/admin/brand"><i class="fas fa-chevron-left"></i> Back</a>
                 </div>
         </div>
     </div>
@@ -27,14 +27,14 @@
 					<!-- Nested Row within Card Body -->
 					<div class="row justify-content-center">
 						<div class="col-lg-12">
-								<form class="admin-form" action="https://geniusdevs.com/codecanyon/omnimart40/admin/brand" method="POST" enctype="multipart/form-data">
+								<form class="admin-form" action="/admin/brand" method="POST" enctype="multipart/form-data">
 
                                     <input type="hidden" name="_token" value="JYjeTaAFpWxYxidkdeqcJDL5SdPTspOxaHQSdxD0">
 									
 									<div class="form-group">
 										<label for="name">Set Image *</label>
 										<br>
-											<img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/placeholder.png" alt="No Image Found">
+											<img class="admin-img" src="/images/placeholder.png" alt="No Image Found">
 										<br>
 										<span class="mt-1">Image Size Should Be 110 x 81.</span>
 									</div>

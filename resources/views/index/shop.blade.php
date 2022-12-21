@@ -8,7 +8,7 @@
       <div class="row">
           <div class="col-lg-12">
             <ul class="breadcrumbs">
-                <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a> </li>
+                <li><a href="/">Home</a> </li>
                 <li class="separator"></li>
                 <li>Shop</li>
               </ul>
@@ -68,19 +68,19 @@
                             </div>
                         
                                             <div class="product-thumb">
-                        <img class="lazy" alt="Product" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134811DFfH349db6b6a70c4604b507c446a7b06ae5k.jpg" style="">
+                        <img class="lazy" alt="Product" src="/images/1634134811DFfH349db6b6a70c4604b507c446a7b06ae5k.jpg" style="">
                         <div class="product-button-group">
-                            <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/546" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a class="product-button product_compare" href="javascript:;" data-target="https://geniusdevs.com/codecanyon/omnimart40/compare/product/546" title="Compare"><i class="icon-repeat"></i></a>
+                            <a class="product-button wishlist_store" href="//user/wishlist/store/546" title="Wishlist"><i class="icon-heart"></i></a>
+                            <a class="product-button product_compare" href="javascript:;" data-target="//compare/product/546" title="Compare"><i class="icon-repeat"></i></a>
                             <a class="product-button add_to_single_cart" data-target="546" href="javascript:;" title="To Cart"><i class="icon-shopping-cart"></i>
 </a>
                             </div>
                     </div>
                     <div class="product-card-body">
                         <div class="product-category">
-                            <a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=Electronics">Electronics</a>
+                            <a href="//catalog?category=Electronics">Electronics</a>
                         </div>
-                        <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/DC------DSLR-support---G-sd-card-video-camera----Mega-pixels-digital-camera-dslr-HD-professional">
+                        <h3 class="product-title"><a href="//product/DC------DSLR-support---G-sd-card-video-camera----Mega-pixels-digital-camera-dslr-HD-professional">
                             DC-7200 DSLR support 32G sd card video
                         </a></h3>
                         <div class="rating-stars">
@@ -102,19 +102,19 @@
                         
                                             <div class="product-badge product-badge2 bg-info"> -29%</div>
                                             <div class="product-thumb">
-                        <img class="lazy" alt="Product" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134831EzTH75345266923349e280d5f5e5fd5c71e5a.jpg" style="">
+                        <img class="lazy" alt="Product" src="/images/1634134831EzTH75345266923349e280d5f5e5fd5c71e5a.jpg" style="">
                         <div class="product-button-group">
-                            <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/545" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a class="product-button product_compare" href="javascript:;" data-target="https://geniusdevs.com/codecanyon/omnimart40/compare/product/545" title="Compare"><i class="icon-repeat"></i></a>
+                            <a class="product-button wishlist_store" href="//user/wishlist/store/545" title="Wishlist"><i class="icon-heart"></i></a>
+                            <a class="product-button product_compare" href="javascript:;" data-target="//compare/product/545" title="Compare"><i class="icon-repeat"></i></a>
                             <a class="product-button add_to_single_cart" data-target="545" href="javascript:;" title="To Cart"><i class="icon-shopping-cart"></i>
 </a>
                             </div>
                     </div>
                     <div class="product-card-body">
                         <div class="product-category">
-                            <a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=Electronics">Electronics</a>
+                            <a href="//catalog?category=Electronics">Electronics</a>
                         </div>
-                        <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/Dropshipping-EIS-----inch-LCD-Full-HD----P-Recording-----Mega-HD-DV-SLR-Camera">
+                        <h3 class="product-title"><a href="//product/Dropshipping-EIS-----inch-LCD-Full-HD----P-Recording-----Mega-HD-DV-SLR-Camera">
                             Dropshipping EIS 2.4 inch LCD Full HD 
                         </a></h3>
                         <div class="rating-stars">
@@ -137,19 +137,19 @@
                         
                                             <div class="product-badge product-badge2 bg-info"> -13%</div>
                                             <div class="product-thumb">
-                        <img class="lazy" alt="Product" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134872KxvHTB1BqH4aIfrK1RkSmLyq6xGApXaJ.jpg" style="">
+                        <img class="lazy" alt="Product" src="/images/1634134872KxvHTB1BqH4aIfrK1RkSmLyq6xGApXaJ.jpg" style="">
                         <div class="product-button-group">
-                            <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/544" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a class="product-button product_compare" href="javascript:;" data-target="https://geniusdevs.com/codecanyon/omnimart40/compare/product/544" title="Compare"><i class="icon-repeat"></i></a>
+                            <a class="product-button wishlist_store" href="//user/wishlist/store/544" title="Wishlist"><i class="icon-heart"></i></a>
+                            <a class="product-button product_compare" href="javascript:;" data-target="//compare/product/544" title="Compare"><i class="icon-repeat"></i></a>
                             <a class="product-button add_to_single_cart" data-target="544" href="javascript:;" title="To Cart"><i class="icon-shopping-cart"></i>
 </a>
                             </div>
                     </div>
                     <div class="product-card-body">
                         <div class="product-category">
-                            <a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=Electronics">Electronics</a>
+                            <a href="//catalog?category=Electronics">Electronics</a>
                         </div>
-                        <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/Wholesale-Price-----Mega-HD-DV-SLR-Camera------inch-LCD-Full-HD----P-Recording--EIS--Supply-Drops">
+                        <h3 class="product-title"><a href="//product/Wholesale-Price-----Mega-HD-DV-SLR-Camera------inch-LCD-Full-HD----P-Recording--EIS--Supply-Drops">
                             Wholesale Price 1.3 Mega HD DV SLR Cam
                         </a></h3>
                         <div class="rating-stars">
@@ -172,19 +172,19 @@
                         
                                             <div class="product-badge product-badge2 bg-info"> -31%</div>
                                             <div class="product-thumb">
-                        <img class="lazy" alt="Product" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134888WQ3H624bc94495584b2384c07e2db9f2bdfcd.jpg" style="">
+                        <img class="lazy" alt="Product" src="/images/1634134888WQ3H624bc94495584b2384c07e2db9f2bdfcd.jpg" style="">
                         <div class="product-button-group">
-                            <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/543" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a class="product-button product_compare" href="javascript:;" data-target="https://geniusdevs.com/codecanyon/omnimart40/compare/product/543" title="Compare"><i class="icon-repeat"></i></a>
+                            <a class="product-button wishlist_store" href="//user/wishlist/store/543" title="Wishlist"><i class="icon-heart"></i></a>
+                            <a class="product-button product_compare" href="javascript:;" data-target="//compare/product/543" title="Compare"><i class="icon-repeat"></i></a>
                             <a class="product-button add_to_single_cart" data-target="543" href="javascript:;" title="To Cart"><i class="icon-shopping-cart"></i>
 </a>
                             </div>
                     </div>
                     <div class="product-card-body">
                         <div class="product-category">
-                            <a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=Electronics">Electronics</a>
+                            <a href="//catalog?category=Electronics">Electronics</a>
                         </div>
-                        <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/New-product------Refurbished-used-smart-phone-for-I-phone-XS-MAX-XR---GB----GB--G">
+                        <h3 class="product-title"><a href="//product/New-product------Refurbished-used-smart-phone-for-I-phone-XS-MAX-XR---GB----GB--G">
                             New product 2019 Refurbished used smar
                         </a></h3>
                         <div class="rating-stars">
@@ -207,19 +207,19 @@
                         
                                             <div class="product-badge product-badge2 bg-info"> -15%</div>
                                             <div class="product-thumb">
-                        <img class="lazy" alt="Product" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134904Sy7H220c85b541d145789e167a4b23787dd5h.jpg" style="">
+                        <img class="lazy" alt="Product" src="/images/1634134904Sy7H220c85b541d145789e167a4b23787dd5h.jpg" style="">
                         <div class="product-button-group">
-                            <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/542" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a class="product-button product_compare" href="javascript:;" data-target="https://geniusdevs.com/codecanyon/omnimart40/compare/product/542" title="Compare"><i class="icon-repeat"></i></a>
+                            <a class="product-button wishlist_store" href="//user/wishlist/store/542" title="Wishlist"><i class="icon-heart"></i></a>
+                            <a class="product-button product_compare" href="javascript:;" data-target="//compare/product/542" title="Compare"><i class="icon-repeat"></i></a>
                             <a class="product-button add_to_single_cart" data-target="542" href="javascript:;" title="To Cart"><i class="icon-shopping-cart"></i>
 </a>
                             </div>
                     </div>
                     <div class="product-card-body">
                         <div class="product-category">
-                            <a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=Electronics">Electronics</a>
+                            <a href="//catalog?category=Electronics">Electronics</a>
                         </div>
-                        <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/Cheap-Price-Mobile-Phones-i---Pro----inch-FHD-Big-Screen-Smart-Phone-------GB">
+                        <h3 class="product-title"><a href="//product/Cheap-Price-Mobile-Phones-i---Pro----inch-FHD-Big-Screen-Smart-Phone-------GB">
                             Cheap Price Mobile Phones i13 Pro 6.6i
                         </a></h3>
                         <div class="rating-stars">
@@ -242,19 +242,19 @@
                         
                                             <div class="product-badge product-badge2 bg-info"> -29%</div>
                                             <div class="product-thumb">
-                        <img class="lazy" alt="Product" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16341349201T0Ha04a8a2d450544c9a80996bcdd70c543b.jpg" style="">
+                        <img class="lazy" alt="Product" src="/images/16341349201T0Ha04a8a2d450544c9a80996bcdd70c543b.jpg" style="">
                         <div class="product-button-group">
-                            <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/541" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a class="product-button product_compare" href="javascript:;" data-target="https://geniusdevs.com/codecanyon/omnimart40/compare/product/541" title="Compare"><i class="icon-repeat"></i></a>
+                            <a class="product-button wishlist_store" href="//user/wishlist/store/541" title="Wishlist"><i class="icon-heart"></i></a>
+                            <a class="product-button product_compare" href="javascript:;" data-target="//compare/product/541" title="Compare"><i class="icon-repeat"></i></a>
                             <a class="product-button add_to_single_cart" data-target="541" href="javascript:;" title="To Cart"><i class="icon-shopping-cart"></i>
 </a>
                             </div>
                     </div>
                     <div class="product-card-body">
                         <div class="product-category">
-                            <a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=Electronics">Electronics</a>
+                            <a href="//catalog?category=Electronics">Electronics</a>
                         </div>
-                        <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/Hot-Selling-s----Unlocked-----MP---Core-Dual-SIM--G---G-Cheap-Smart-Phone-----inch">
+                        <h3 class="product-title"><a href="//product/Hot-Selling-s----Unlocked-----MP---Core-Dual-SIM--G---G-Cheap-Smart-Phone-----inch">
                             Hot Selling s10+ Unlocked 8+16MP 8 Cor
                         </a></h3>
                         <div class="rating-stars">
@@ -277,19 +277,19 @@
                         
                                             <div class="product-badge product-badge2 bg-info"> -18%</div>
                                             <div class="product-thumb">
-                        <img class="lazy" alt="Product" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg" style="">
+                        <img class="lazy" alt="Product" src="/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg" style="">
                         <div class="product-button-group">
-                            <a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/540" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a class="product-button product_compare" href="javascript:;" data-target="https://geniusdevs.com/codecanyon/omnimart40/compare/product/540" title="Compare"><i class="icon-repeat"></i></a>
+                            <a class="product-button wishlist_store" href="//user/wishlist/store/540" title="Wishlist"><i class="icon-heart"></i></a>
+                            <a class="product-button product_compare" href="javascript:;" data-target="//compare/product/540" title="Compare"><i class="icon-repeat"></i></a>
                             <a class="product-button add_to_single_cart" data-target="540" href="javascript:;" title="To Cart"><i class="icon-shopping-cart"></i>
 </a>
                             </div>
                     </div>
                     <div class="product-card-body">
                         <div class="product-category">
-                            <a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=Electronics">Electronics</a>
+                            <a href="//catalog?category=Electronics">Electronics</a>
                         </div>
-                        <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/UMIDIGI-A--Pro-Android-Mobile-Phone--g---MP-Quad-Camera------FHD--Full-Screen--GB-RAM">
+                        <h3 class="product-title"><a href="//product/UMIDIGI-A--Pro-Android-Mobile-Phone--g---MP-Quad-Camera------FHD--Full-Screen--GB-RAM">
                             UMIDIGI A9 Pro Android Mobile Phone 4g
                         </a></h3>
                         <div class="rating-stars">
@@ -313,7 +313,7 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/catalog.js"></script>
+    <script type="text/javascript" src="/front/js/catalog.js"></script>
 
 
 

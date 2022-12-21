@@ -8,7 +8,7 @@
       <div class="row">
           <div class="col-lg-12">
             <ul class="breadcrumbs">
-                <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a> </li>
+                <li><a href="/">Home</a> </li>
                 <li class="separator"></li>
                 <li>Compare Products</li>
               </ul>
@@ -103,7 +103,7 @@
                                                            
                                                                
                                                                 <td colspan="2"> 
-                                                                <div class="comparison-item"><span class="remove-item compare_remove" data-href="/compare/product_remove/{{$value->id}}"><i class="fa fa-times"></i></span><a class="comparison-item-thumb" href="https://geniusdevs.com/codecanyon/omnimart40/product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro"><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134720QX6Hedf90cf6656546e7a8548d4980edc5bda.jpg" alt="Image"></a><a class="comparison-item-title" href="https://geniusdevs.com/codecanyon/omnimart40/product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro">Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro</a><a class="btn btn-outline-primary btn-sm add_to_single_cart" href="javascript:;" data-target="563">Add to Cart</a></div>
+                                                                <div class="comparison-item"><span class="remove-item compare_remove" data-href="/compare/product_remove/{{$value->id}}"><i class="fa fa-times"></i></span><a class="comparison-item-thumb" href="//product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro"><img src="/images/1634134720QX6Hedf90cf6656546e7a8548d4980edc5bda.jpg" alt="Image"></a><a class="comparison-item-title" href="//product/Men-Shirt-Custom-Shirts-Hot-Sale-Men-Women-Polyester-Cotton-Long-Sleeve-Casual-pro">Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro</a><a class="btn btn-outline-primary btn-sm add_to_single_cart" href="javascript:;" data-target="563">Add to Cart</a></div>
                                                               </td>
                                                                
                                                                
@@ -244,7 +244,7 @@
             <div class="right-area">
                 <h3 class="">Get 50% Discount.</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, facere nesciunt doloremque nobis debitis sint?</p>
-                <form class="subscriber-form" action="https://geniusdevs.com/codecanyon/omnimart40/subscriber/submit" method="post">
+                <form class="subscriber-form" action="//subscriber/submit" method="post">
                     <input type="hidden" name="_token" value="jhuKHsWUbrGg4b66oTz03vorQlvzqkd3R7p6RTYr">                    <div class="input-group">
                         <input class="form-control" type="email" name="email" placeholder="Your e-mail">
                         <span class="input-group-addon"><i class="icon-mail"></i></span> </div>

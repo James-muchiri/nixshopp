@@ -463,7 +463,9 @@ public function cart_product1()
 
     {
   
-        return view('index.normal');
+        $product = Products::all();
+  
+        return view('index.normal', compact('product'));
     }
 
     public function slider()
@@ -481,7 +483,9 @@ public function cart_product1()
 
     {
   
-        return view('index.mixed');
+        $product = Products::all();
+  
+        return view('index.mixed', compact('product'));
     }
 
   

@@ -1,10 +1,12 @@
 
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+     
+   
+   
 
-<script>
-refreshowl();
-</script>
-<div class="col-lg-12">
-    <div class="popular-category-slider owl-carousel owl-loaded owl-drag" id="">
+
+    <div class="popular-category-slider owl-carousel " id="">
                 
     
     @foreach ($product as $item)
@@ -14,16 +16,17 @@ refreshowl();
             <div class="product-card">
                 <div class="product-thumb">
                                                             <div class="product-badge product-badge2 bg-info"> -33%</div>
-                                            <img class="lazy" alt="Product" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134144s9RH03667d1e3ae44be08f32b72d840db095J.jpg" style="">
-                        <div class="product-button-group"><a class="product-button wishlist_store" href="https://geniusdevs.com/codecanyon/omnimart40/user/wishlist/store/587" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a data-target="https://geniusdevs.com/codecanyon/omnimart40/compare/product/587" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                            <a class="product-button add_to_single_cart" data-target="587" href="javascript:;" title="To Cart"><i class="icon-shopping-cart"></i>
+                                            <img class="lazy" alt="Product"     src="{{ asset('uploads') }}/{{$item->image}}"
+                                                        style="">
+                        <div class="product-button-group"><a class="product-button wishlist_store" href="//user/wishlist/store/587" title="Wishlist"><i class="icon-heart"></i></a>
+                            <a data-target="/compare/product/{{$item->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
+                            <a class="product-button add_to_single_cart" data-target="/cart/product/{{$item->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-heart"></i>
     </a>
                             </div>
                 </div>
                 <div class="product-card-body">
-                    <div class="product-category"><a href="https://geniusdevs.com/codecanyon/omnimart40/catalog?category=Women-Clothing">Women Clothing</a></div>
-                    <h3 class="product-title"><a href="https://geniusdevs.com/codecanyon/omnimart40/product/0AENew-French-Elegant-White-Bubble-Sleeve-Party-Dress-Casual-ALine-Dresses-Long-Sleeve-DressesnC">
+                    <div class="product-category"><a href="//catalog?category=Women-Clothing">Women Clothing</a></div>
+                    <h3 class="product-title"><a href="//product/0AENew-French-Elegant-White-Bubble-Sleeve-Party-Dress-Casual-ALine-Dresses-Long-Sleeve-DressesnC">
                         New French Elegant White Bubble Sle
                     </a></h3>
                     <div class="rating-stars">
@@ -39,7 +42,14 @@ refreshowl();
         </div>
     
         @endforeach
-       
-        
+
+
+     <!--   Core JS Files   -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>    
+      
+ 
+     <script type="text/javascript" src="{{ asset('js/extend.js') }}"></script>   
 
 </div>

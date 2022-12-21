@@ -48,10 +48,10 @@
 
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/slider/18/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/slider/18/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/slider/18">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/slider/18">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>

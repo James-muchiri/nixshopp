@@ -44,7 +44,7 @@
                                         <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/ONMF222.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/ONMF222.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -79,7 +79,7 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/24gX1111.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/24gX1111.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -114,7 +114,7 @@
                                  @csrf                                  <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16365336391.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/16365336391.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -150,7 +150,7 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16365336392.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/16365336392.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -185,7 +185,7 @@
                                         <div class="form-group">
                                             <label for="name">Image 3 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16365336393.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/16365336393.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -239,7 +239,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="subcategory_id1">Select Sub Category </label>
-                                        <select name="bannersubcategory_id1" id="bannersubcategory_id1" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                        <select name="bannersubcategory_id1" id="bannersubcategory_id1" class="form-control" data-href="/admin/get/childcategory">
                                             <option value="">Select one</option>
                                                                                  </select>
                                     </div>
@@ -255,7 +255,7 @@
                                     <h2 class=""><b>Category 2 :</b></h2>
                                     <div class="form-group">
                                         <label for="category_id2">Select Category *</label>
-                                        <select name="bannercategory_id2" id="bannercategory_id2" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/subcategory" class="form-control">
+                                        <select name="bannercategory_id2" id="bannercategory_id2" data-href="/admin/get/subcategory" class="form-control">
                                             <option disabled selected="">Select Category</option>
                                             @foreach ($category as $cat1)
                                             <option value="{{$cat1->id}}">{{$cat1->name}}</option>
@@ -264,7 +264,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="subcategory_id2">Select Sub Category </label>
-                                        <select name="bannersubcategory_id2" id="bannersubcategory_id2" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                        <select name="bannersubcategory_id2" id="bannersubcategory_id2" class="form-control" data-href="/admin/get/childcategory">
                                             <option value="">Select one</option>
                                                                                   </select>
                                     </div>
@@ -279,7 +279,7 @@
                                     <h2 class=""><b>Category 3 :</b></h2>
                                     <div class="form-group">
                                         <label for="category_id3">Select Category *</label>
-                                        <select name="bannercategory_id3" id="bannercategory_id3" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/subcategory" class="form-control">
+                                        <select name="bannercategory_id3" id="bannercategory_id3" data-href="/admin/get/subcategory" class="form-control">
                                             <option disabled selected="">Select Category</option>
                                             @foreach ($category as $cat1)
                                             <option value="{{$cat1->id}}">{{$cat1->name}}</option>
@@ -288,7 +288,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="subcategory_id3">Select Sub Category </label>
-                                        <select name="bannersubcategory_id3" id="bannersubcategory_id3" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                        <select name="bannersubcategory_id3" id="bannersubcategory_id3" class="form-control" data-href="/admin/get/childcategory">
                                             <option value="">Select one</option>
                                                                                     </select>
                                     </div>
@@ -303,7 +303,7 @@
                                     <h2 class=""><b>Category 4 :</b></h2>
                                     <div class="form-group">
                                         <label for="category_id4">Select Category *</label>
-                                        <select name="bannercategory_id4" id="bannercategory_id4" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/subcategory" class="form-control">
+                                        <select name="bannercategory_id4" id="bannercategory_id4" data-href="/admin/get/subcategory" class="form-control">
                                             <option disabled selected="">Select Category</option>
                                             @foreach ($category as $cat1)
                                             <option value="{{$cat1->id}}">{{$cat1->name}}</option>
@@ -312,7 +312,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="subcategory_id4">Select Sub Category </label>
-                                        <select name="bannersubcategory_id4" id="bannersubcategory_id4" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                        <select name="bannersubcategory_id4" id="bannersubcategory_id4" class="form-control" data-href="/admin/get/childcategory">
                                             <option value="">Select one</option>
                                         </select>
                                     </div>
@@ -336,7 +336,7 @@
                               @csrf                                  <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16365342794.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/16365342794.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -370,7 +370,7 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16365342795.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/16365342795.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -404,7 +404,7 @@
                                         <div class="form-group">
                                             <label for="name">Image 3 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16365342796.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/16365342796.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -455,7 +455,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="subcategory_id1">Select Sub Category </label>
-                                    <select name="threecolsubcategory_id1" id="threecolsubcategory_id1" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                    <select name="threecolsubcategory_id1" id="threecolsubcategory_id1" class="form-control" data-href="/admin/get/childcategory">
                                         <option value="">Select one</option>
                                                                              </select>
                                 </div>
@@ -471,7 +471,7 @@
                                 <h2 class=""><b>Category 2 :</b></h2>
                                 <div class="form-group">
                                     <label for="category_id2">Select Category *</label>
-                                    <select name="threecolcategory_id2" id="threecolcategory_id2" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/subcategory" class="form-control">
+                                    <select name="threecolcategory_id2" id="threecolcategory_id2" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
                                         <option value="{{$cat1->id}}">{{$cat1->name}}</option>
@@ -480,7 +480,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="subcategory_id2">Select Sub Category </label>
-                                    <select name="threecolsubcategory_id2" id="threecolsubcategory_id2" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                    <select name="threecolsubcategory_id2" id="threecolsubcategory_id2" class="form-control" data-href="/admin/get/childcategory">
                                         <option value="">Select one</option>
                                                                               </select>
                                 </div>
@@ -495,7 +495,7 @@
                                 <h2 class=""><b>Category 3 :</b></h2>
                                 <div class="form-group">
                                     <label for="category_id3">Select Category *</label>
-                                    <select name="threecolcategory_id3" id="threecolcategory_id3" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/subcategory" class="form-control">
+                                    <select name="threecolcategory_id3" id="threecolcategory_id3" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
                                         <option value="{{$cat1->id}}">{{$cat1->name}}</option>
@@ -504,7 +504,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="subcategory_id3">Select Sub Category </label>
-                                    <select name="threecolsubcategory_id3" id="threecolsubcategory_id3" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                    <select name="threecolsubcategory_id3" id="threecolsubcategory_id3" class="form-control" data-href="/admin/get/childcategory">
                                         <option value="">Select one</option>
                                                                                 </select>
                                 </div>
@@ -547,7 +547,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="subcategory_id1">Select Sub Category </label>
-                                    <select name="featuredsubcategory_id1" id="featuredsubcategory_id1" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                    <select name="featuredsubcategory_id1" id="featuredsubcategory_id1" class="form-control" data-href="/admin/get/childcategory">
                                         <option value="">Select one</option>
                                                                              </select>
                                 </div>
@@ -563,7 +563,7 @@
                                 <h2 class=""><b>Category 2 :</b></h2>
                                 <div class="form-group">
                                     <label for="category_id2">Select Category *</label>
-                                    <select name="featuredcategory_id2" id="featuredcategory_id2" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/subcategory" class="form-control">
+                                    <select name="featuredcategory_id2" id="featuredcategory_id2" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
                                         <option value="{{$cat1->id}}">{{$cat1->name}}</option>
@@ -572,7 +572,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="subcategory_id2">Select Sub Category </label>
-                                    <select name="featuredsubcategory_id2" id="featuredsubcategory_id2" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                    <select name="featuredsubcategory_id2" id="featuredsubcategory_id2" class="form-control" data-href="/admin/get/childcategory">
                                         <option value="">Select one</option>
                                                                               </select>
                                 </div>
@@ -587,7 +587,7 @@
                                 <h2 class=""><b>Category 3 :</b></h2>
                                 <div class="form-group">
                                     <label for="category_id3">Select Category *</label>
-                                    <select name="featuredcategory_id3" id="featuredcategory_id3" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/subcategory" class="form-control">
+                                    <select name="featuredcategory_id3" id="featuredcategory_id3" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
                                         <option value="{{$cat1->id}}">{{$cat1->name}}</option>
@@ -596,7 +596,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="subcategory_id3">Select Sub Category </label>
-                                    <select name="featuredsubcategory_id3" id="featuredsubcategory_id3" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                    <select name="featuredsubcategory_id3" id="featuredsubcategory_id3" class="form-control" data-href="/admin/get/childcategory">
                                         <option value="">Select one</option>
                                                                                 </select>
                                 </div>
@@ -611,7 +611,7 @@
                                 <h2 class=""><b>Category 4 :</b></h2>
                                 <div class="form-group">
                                     <label for="category_id4">Select Category *</label>
-                                    <select name="featuredcategory_id4" id="featuredcategory_id4" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/subcategory" class="form-control">
+                                    <select name="featuredcategory_id4" id="featuredcategory_id4" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
                                         <option value="{{$cat1->id}}">{{$cat1->name}}</option>
@@ -620,7 +620,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="subcategory_id4">Select Sub Category </label>
-                                    <select name="featuredsubcategory_id4" id="featuredsubcategory_id4" class="form-control" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/get/childcategory">
+                                    <select name="featuredsubcategory_id4" id="featuredsubcategory_id4" class="form-control" data-href="/admin/get/childcategory">
                                         <option value="">Select one</option>
                                     </select>
                                 </div>
@@ -643,7 +643,7 @@
                          @csrf                                      <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1636534291b22.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/1636534291b22.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -677,7 +677,7 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1636534291b11.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="/images/1636534291b11.jpg" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>

@@ -39,7 +39,7 @@
         Ascis
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336642ascis.jpg" alt="Image Not Found">
+        <img src="/images/1632336642ascis.jpg" alt="Image Not Found">
     </td>
     <td>
         Ascis
@@ -50,8 +50,8 @@
               Disabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/19/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/19/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/19/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/19/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -61,18 +61,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/19/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/19/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/19/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/19/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/19/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/19/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/19">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/19">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -82,7 +82,7 @@
         Loreal
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336591lora.jpg" alt="Image Not Found">
+        <img src="/images/1632336591lora.jpg" alt="Image Not Found">
     </td>
     <td>
         Loreal
@@ -93,8 +93,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/16/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/16/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/16/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/16/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -104,18 +104,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/16/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/16/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/16/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/16/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/16/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/16/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/16">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/16">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -125,7 +125,7 @@
         H.M
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336576hm.jpg" alt="Image Not Found">
+        <img src="/images/1632336576hm.jpg" alt="Image Not Found">
     </td>
     <td>
         HM
@@ -136,8 +136,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/15/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/15/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/15/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/15/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -147,18 +147,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/15/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/15/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/15/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/15/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/15/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/15/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/15">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/15">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -168,7 +168,7 @@
         Yamaha
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336551yamaha.png" alt="Image Not Found">
+        <img src="/images/1632336551yamaha.png" alt="Image Not Found">
     </td>
     <td>
         Yamaha
@@ -179,8 +179,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/14/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/14/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/14/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/14/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -190,18 +190,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/14/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/14/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/14/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/14/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/14/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/14/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/14">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/14">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -211,7 +211,7 @@
         Samsung
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336479samsung.png" alt="Image Not Found">
+        <img src="/images/1632336479samsung.png" alt="Image Not Found">
     </td>
     <td>
         Samsung
@@ -222,8 +222,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/11/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/11/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/11/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/11/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -233,18 +233,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/11/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/11/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/11/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/11/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/11/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/11/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/11">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/11">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -254,7 +254,7 @@
         Nike
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336489nike.jpg" alt="Image Not Found">
+        <img src="/images/1632336489nike.jpg" alt="Image Not Found">
     </td>
     <td>
         Nike
@@ -265,8 +265,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/10/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/10/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/10/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/10/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -276,18 +276,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/10/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/10/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/10/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/10/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/10/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/10/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/10">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/10">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -297,7 +297,7 @@
         Skyart
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336538skyart.png" alt="Image Not Found">
+        <img src="/images/1632336538skyart.png" alt="Image Not Found">
     </td>
     <td>
         Skyart
@@ -308,8 +308,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/9/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/9/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/9/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/9/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -319,18 +319,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/9/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/9/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/9/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/9/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/9/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/9/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/9">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/9">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -340,7 +340,7 @@
         Lavie
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336517leves.jpg" alt="Image Not Found">
+        <img src="/images/1632336517leves.jpg" alt="Image Not Found">
     </td>
     <td>
         Lavie
@@ -351,8 +351,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/8/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/8/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/8/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/8/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -362,18 +362,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/8/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/8/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/8/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/8/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/8/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/8/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/8">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/8">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -383,7 +383,7 @@
         Adidas
     </td>
     <td>
-        <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632336527add.png" alt="Image Not Found">
+        <img src="/images/1632336527add.png" alt="Image Not Found">
     </td>
     <td>
         Adidas
@@ -394,8 +394,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/7/1/status">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/7/0/status">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/7/1/status">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/7/0/status">Disable</a>
             </div>
         </div>
     </td>
@@ -405,18 +405,18 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/7/1/is_popular">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/status/7/0/is_popular">Disable</a>
+              <a class="dropdown-item" href="/admin/brand/status/7/1/is_popular">Enable</a>
+              <a class="dropdown-item" href="/admin/brand/status/7/0/is_popular">Disable</a>
             </div>
         </div>
 
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/7/edit">
+            <a class="btn btn-secondary btn-sm " href="/admin/brand/7/edit">
                 <i class="fas fa-edit"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/brand/7">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/brand/7">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>

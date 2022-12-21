@@ -51,11 +51,11 @@
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.js"></script>
 
 
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/popper.min.js"></script>
+    <script src="/back/js/core/popper.min.js"></script>
     
 
 
-    <script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script type="text/javascript" src="/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
 
 

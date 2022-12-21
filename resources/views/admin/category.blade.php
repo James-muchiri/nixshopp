@@ -77,7 +77,7 @@ cart_table();
 		<!-- Modal footer -->
         <div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-			<form action="https://geniusdevs.com/codecanyon/omnimart40/admin/category/26" class="d-inline btn-ok" method="POST">
+			<form action="/admin/category/26" class="d-inline btn-ok" method="POST">
 
                 <input type="hidden" name="_token" value="JYjeTaAFpWxYxidkdeqcJDL5SdPTspOxaHQSdxD0">
                 <input type="hidden" name="_method" value="DELETE">

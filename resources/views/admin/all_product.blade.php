@@ -10,8 +10,8 @@
             <div class="d-sm-flex align-items-center justify-content-between">
                 <h3 class="mb-0 bc-title"><b>All Products</b></h3>
                     <div class="right">
-                        <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/product/csv/export" class="btn btn-info btn-sm d-inline-block">CSV Export</a>
-                        <form class="d-inline-block" action="https://geniusdevs.com/codecanyon/omnimart40/admin/bulk/deletes" method="get">
+                        <a href="/admin/product/csv/export" class="btn btn-info btn-sm d-inline-block">CSV Export</a>
+                        <form class="d-inline-block" action="/admin/bulk/deletes" method="get">
                             <input type="hidden" value="" name="ids[]" id="bulk_delete">
                             <input type="hidden" value="items" name="table">
                             <button class="btn btn-danger btn-sm">Bulk Delete</button>
@@ -21,12 +21,12 @@
         </div>
     </div>
 
-    <input type="hidden" id="product_url" value="https://geniusdevs.com/codecanyon/omnimart40/admin/item">
+    <input type="hidden" id="product_url" value="/admin/item">
 
 	<!-- DataTales -->
 	<div class="card shadow mb-4">
 		<div class="card-body">
-                        <form action="https://geniusdevs.com/codecanyon/omnimart40/admin/item" method="GET">
+                        <form action="/admin/item" method="GET">
                 <div class="product-filter-area">
                     <div class="row">
                         <div class="col-lg-12">

@@ -211,14 +211,11 @@
 //Comparecount();
 </script>
 
-{{-- <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/extraindex.js"></script>
 
-
-     --}}
 
 
 <script type="text/javascript">
-    let mainurl = 'https://geniusdevs.com/codecanyon/omnimart40';
+    let mainurl = '/';
 
     $(document).on('click','.color__check',function(){
         var color = $(this).attr('data-href');

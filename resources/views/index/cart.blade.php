@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="breadcrumbs">
-                    <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a> </li>
+                    <li><a href="/">Home</a> </li>
                     <li class="separator"></li>
                     <li>Cart</li>
                   </ul>
@@ -37,7 +37,7 @@ cartfetchRecord();
                   <th>Product Price</th>
                   <th class="text-center">Quantity</th>
                   <th class="text-center">Subtotal</th>
-                  <th class="text-center"><a class="btn btn-sm btn-primary" href="https://geniusdevs.com/codecanyon/omnimart40/front/cart/clear"><span>Clear Cart</span></a></th>
+                  <th class="text-center"><a class="btn btn-sm btn-primary" href="//front/cart/clear"><span>Clear Cart</span></a></th>
                 </tr>
               </thead>
 
@@ -55,7 +55,7 @@ cartfetchRecord();
       <div class="card-body">
         <div class="shopping-cart-footer">
             <div class="column">
-                <form class="coupon-form" method="post" id="coupon_form" action="https://geniusdevs.com/codecanyon/omnimart40/promo/submit">
+                <form class="coupon-form" method="post" id="coupon_form" action="//promo/submit">
                 <input type="hidden" name="_token" value="oIHxzDq2SVue90PBhW1r8UUzRiFukzfQhC5EzAha">                <input class="form-control form-control-sm" name="code" type="text" placeholder="Coupon code" required="">
                 <button class="btn btn-primary btn-sm" type="submit"><span>Apply Coupon</span></button>
                 </form>
@@ -68,8 +68,8 @@ cartfetchRecord();
 
         </div>
         <div class="shopping-cart-footer">
-            <div class="column"><a class="btn btn-primary " href="https://geniusdevs.com/codecanyon/omnimart40/catalog"><span><i class="icon-arrow-left"></i> Back to Shopping</span></a></div>
-            <div class="column"><a class="btn btn-primary" href="https://geniusdevs.com/codecanyon/omnimart40/checkout/billing/address"><span>Checkout</span></a></div>
+            <div class="column"><a class="btn btn-primary " href="//catalog"><span><i class="icon-arrow-left"></i> Back to Shopping</span></a></div>
+            <div class="column"><a class="btn btn-primary" href="//checkout/billing/address"><span>Checkout</span></a></div>
         </div>
       </div>
   </div>

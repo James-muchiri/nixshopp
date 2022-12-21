@@ -353,7 +353,7 @@ visibility:hidden
         <div class="card-header">
             <h4 class="card-title">Product Added for Campaign</h4>
             <div class="row">
-                <form action="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign" method="POST">
+                <form action="/admin/campaign" method="POST">
                             <div class="col-md-6">
                         <div class="form-group ">
                             <select id="featured_item" name="item_id" class="form-control">
@@ -391,7 +391,7 @@ visibility:hidden
                                                              
                     
                 <tr role="row" class="odd">
-                              <td><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134720Hedf90cf6656546e7a8548d4980edc5bda.jpg" alt=""></td>
+                              <td><img src="/images/1634134720Hedf90cf6656546e7a8548d4980edc5bda.jpg" alt=""></td>
                               <td>Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro</td>
                               <td> $1,352.81</td>
                               <td>
@@ -400,8 +400,8 @@ visibility:hidden
                                       Publish
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/1/status">Publish</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/0/status">Unpublish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/40/1/status">Publish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/40/0/status">Unpublish</a>
                                     </div>
                                   </div>
                             </td>
@@ -411,17 +411,17 @@ visibility:hidden
                                       Active
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/40/0/is_feature">Deactive</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/40/1/is_feature">Active</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/40/0/is_feature">Deactive</a>
                                     </div>
                                   </div>
                             </td>
                               <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/40">
+                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="even">
-                              <td><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134938Hcb62dec2d6a241fc90ce2bb04059684em.jpg" alt=""></td>
+                              <td><img src="/images/1634134938Hcb62dec2d6a241fc90ce2bb04059684em.jpg" alt=""></td>
                               <td>UMIDIGI A9 Pro Android Mobile Phone 4g 48MP Quad Camera 6.3" FHD+ Full Screen 6GB RAM</td>
                               <td> $1,573.03</td>
                               <td>
@@ -430,8 +430,8 @@ visibility:hidden
                                       Publish
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/39/1/status">Publish</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/39/0/status">Unpublish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/39/1/status">Publish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/39/0/status">Unpublish</a>
                                     </div>
                                   </div>
                             </td>
@@ -441,17 +441,17 @@ visibility:hidden
                                       Active
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/39/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/39/0/is_feature">Deactive</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/39/1/is_feature">Active</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/39/0/is_feature">Deactive</a>
                                     </div>
                                   </div>
                             </td>
                               <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/39">
+                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/39">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="odd">
-                              <td><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634135320H408d7d7e37b4437297de600584c1af1fL.jpg" alt=""></td>
+                              <td><img src="/images/1634135320H408d7d7e37b4437297de600584c1af1fL.jpg" alt=""></td>
                               <td>2021 Summer Women Clothing Ropa Sexy Lady Cut Out Halter Mini Dresses</td>
                               <td> $134.83</td>
                               <td>
@@ -460,8 +460,8 @@ visibility:hidden
                                       Publish
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/38/1/status">Publish</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/38/0/status">Unpublish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/38/1/status">Publish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/38/0/status">Unpublish</a>
                                     </div>
                                   </div>
                             </td>
@@ -471,17 +471,17 @@ visibility:hidden
                                       Active
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/38/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/38/0/is_feature">Deactive</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/38/1/is_feature">Active</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/38/0/is_feature">Deactive</a>
                                     </div>
                                   </div>
                             </td>
                               <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/38">
+                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/38">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="even">
-                              <td><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634135337H948b3bef197c492d999473dffa5303f9P.jpg" alt=""></td>
+                              <td><img src="/images/1634135337H948b3bef197c492d999473dffa5303f9P.jpg" alt=""></td>
                               <td>Top Sale High Quality Newest Designs Custom Women Clothing Wholesale from China Dresses</td>
                               <td> $59.55</td>
                               <td>
@@ -490,8 +490,8 @@ visibility:hidden
                                       Publish
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/37/1/status">Publish</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/37/0/status">Unpublish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/37/1/status">Publish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/37/0/status">Unpublish</a>
                                     </div>
                                   </div>
                             </td>
@@ -501,17 +501,17 @@ visibility:hidden
                                       Active
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/37/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/37/0/is_feature">Deactive</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/37/1/is_feature">Active</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/37/0/is_feature">Deactive</a>
                                     </div>
                                   </div>
                             </td>
                               <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/37">
+                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/37">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="odd">
-                              <td><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634135061Hd8364db18d9942a38e89779ca3b4fa7an.jpg" alt=""></td>
+                              <td><img src="/images/1634135061Hd8364db18d9942a38e89779ca3b4fa7an.jpg" alt=""></td>
                               <td>New Arrive Spring Fall Women Clothing Plus Size Dresses Floral Layered Ruffle Off Shoulder Dress</td>
                               <td> $134.83</td>
                               <td>
@@ -520,8 +520,8 @@ visibility:hidden
                                       Publish
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/36/1/status">Publish</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/36/0/status">Unpublish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/36/1/status">Publish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/36/0/status">Unpublish</a>
                                     </div>
                                   </div>
                             </td>
@@ -531,17 +531,17 @@ visibility:hidden
                                       Active
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/36/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/36/0/is_feature">Deactive</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/36/1/is_feature">Active</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/36/0/is_feature">Deactive</a>
                                     </div>
                                   </div>
                             </td>
                               <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/36">
+                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/36">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="even">
-                              <td><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134831H75345266923349e280d5f5e5fd5c71e5a.jpg" alt=""></td>
+                              <td><img src="/images/1634134831H75345266923349e280d5f5e5fd5c71e5a.jpg" alt=""></td>
                               <td>Dropshipping EIS 2.4 inch LCD Full HD 720P Recording 1.3 Mega HD DV SLR Camera</td>
                               <td> $134.83</td>
                               <td>
@@ -550,8 +550,8 @@ visibility:hidden
                                       Publish
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/35/1/status">Publish</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/35/0/status">Unpublish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/35/1/status">Publish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/35/0/status">Unpublish</a>
                                     </div>
                                   </div>
                             </td>
@@ -561,17 +561,17 @@ visibility:hidden
                                       Active
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/35/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/35/0/is_feature">Deactive</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/35/1/is_feature">Active</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/35/0/is_feature">Deactive</a>
                                     </div>
                                   </div>
                             </td>
                               <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/35">
+                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/35">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="odd">
-                              <td><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134888H624bc94495584b2384c07e2db9f2bdfcd.jpg" alt=""></td>
+                              <td><img src="/images/1634134888H624bc94495584b2384c07e2db9f2bdfcd.jpg" alt=""></td>
                               <td>New product 2019 Refurbished used smart phone for I phone XS MAX XR 64GB 256GB 4G</td>
                               <td> $932.58</td>
                               <td>
@@ -580,8 +580,8 @@ visibility:hidden
                                       Publish
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/34/1/status">Publish</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/34/0/status">Unpublish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/34/1/status">Publish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/34/0/status">Unpublish</a>
                                     </div>
                                   </div>
                             </td>
@@ -591,17 +591,17 @@ visibility:hidden
                                       Active
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/34/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/34/0/is_feature">Deactive</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/34/1/is_feature">Active</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/34/0/is_feature">Deactive</a>
                                     </div>
                                   </div>
                             </td>
                               <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/34">
+                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/34">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="even">
-                              <td><img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134777H8fb00d2318bd48048dcd8bf2546f3f52h.jpg" alt=""></td>
+                              <td><img src="/images/1634134777H8fb00d2318bd48048dcd8bf2546f3f52h.jpg" alt=""></td>
                               <td>Shirts Menshirts Mens Cotton Shirt Factory Direct Various Style Customization</td>
                               <td> $1,352.81</td>
                               <td>
@@ -610,8 +610,8 @@ visibility:hidden
                                       Publish
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/33/1/status">Publish</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/33/0/status">Unpublish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/33/1/status">Publish</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/33/0/status">Unpublish</a>
                                     </div>
                                   </div>
                             </td>
@@ -621,13 +621,13 @@ visibility:hidden
                                       Active
                                     </button>
                                     <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/33/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/status/33/0/is_feature">Deactive</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/33/1/is_feature">Active</a>
+                                      <a class="dropdown-item" href="/admin/campaign/status/33/0/is_feature">Deactive</a>
                                     </div>
                                   </div>
                             </td>
                               <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/campaign/33">
+                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/33">
                                     <i class="fas fa-trash-alt"></i>
                                 </a>
                           </td></tr></tbody>

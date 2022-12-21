@@ -31,7 +31,7 @@
     </td>
 
     <td>
-        <a href="https://geniusdevs.com/codecanyon/omnimart40/product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca">BREYLEE facial mask hyaluronic acid facial firming mask beauty</a>
+        <a href="//product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca">BREYLEE facial mask hyaluronic acid facial firming mask beauty</a>
     </td>
     <td>
         5
@@ -42,8 +42,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/review/status/2/1">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/review/status/2/0">Disable</a>
+              <a class="dropdown-item" href="/admin/review/status/2/1">Enable</a>
+              <a class="dropdown-item" href="/admin/review/status/2/0">Disable</a>
             </div>
           </div>
 
@@ -51,10 +51,10 @@
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/review/2">
+            <a class="btn btn-secondary btn-sm " href="/admin/review/2">
                 <i class="fas fa-eye"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/review/2">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/review/2">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>
@@ -65,7 +65,7 @@
     </td>
 
     <td>
-        <a href="https://geniusdevs.com/codecanyon/omnimart40/product/0AENew-French-Elegant-White-Bubble-Sleeve-Party-Dress-Casual-ALine-Dresses-Long-Sleeve-DressesnC">New French Elegant White Bubble Sleeve Party Dress Casual A-Line Dresses, Long Sleeve Dresses</a>
+        <a href="//product/0AENew-French-Elegant-White-Bubble-Sleeve-Party-Dress-Casual-ALine-Dresses-Long-Sleeve-DressesnC">New French Elegant White Bubble Sleeve Party Dress Casual A-Line Dresses, Long Sleeve Dresses</a>
     </td>
     <td>
         5
@@ -76,8 +76,8 @@
               Enabled
             </button>
             <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/review/status/1/1">Enable</a>
-              <a class="dropdown-item" href="https://geniusdevs.com/codecanyon/omnimart40/admin/review/status/1/0">Disable</a>
+              <a class="dropdown-item" href="/admin/review/status/1/1">Enable</a>
+              <a class="dropdown-item" href="/admin/review/status/1/0">Disable</a>
             </div>
           </div>
 
@@ -85,10 +85,10 @@
     </td>
     <td>
         <div class="action-list">
-            <a class="btn btn-secondary btn-sm " href="https://geniusdevs.com/codecanyon/omnimart40/admin/review/1">
+            <a class="btn btn-secondary btn-sm " href="/admin/review/1">
                 <i class="fas fa-eye"></i>
             </a>
-            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="https://geniusdevs.com/codecanyon/omnimart40/admin/review/1">
+            <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/review/1">
                 <i class="fas fa-trash-alt"></i>
             </a>
         </div>

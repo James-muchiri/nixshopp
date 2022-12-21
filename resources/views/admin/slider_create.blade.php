@@ -38,7 +38,7 @@
                                      <div class="form-group">
                                             <label id="change_label" for="name">Brand Logo </label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/placeholder.png" alt="No Image Found">
+                                                <img class="admin-img" src="/images/placeholder.png" alt="No Image Found">
                                             <br>
                                             <span id="change_message" class="mt-1">Image Size Should Be 130 x 40</span>
                                         </div>
@@ -68,7 +68,7 @@
                                         <div class="form-group">
                                             <label id="slider_text" for="name">Set Slider Image *</label>
                                             <br>
-                                                <img class="admin-img" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/placeholder.png" alt="No Image Found">
+                                                <img class="admin-img" src="/images/placeholder.png" alt="No Image Found">
                                             <br>
                                             <span id="chenge_label2" class="mt-1">Image Size Should Be 968 x 530 </span>
                                         </div>

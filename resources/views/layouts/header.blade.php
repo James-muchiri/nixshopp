@@ -226,7 +226,7 @@
                           @foreach ($category as $cart_menu)
                           <div class="c-item">
                             <a class="d-block navi-link" href="#">
-                                <img class="lazy" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1629616296pexels-juan-mendez-1536619.jpg" style="">
+                                <img class="lazy" src="/images/1629616296pexels-juan-mendez-1536619.jpg" style="">
                                 <span class="text-gray-dark">{{$cart_menu->name}}</span>
                                                         <i class="icon-chevron-right"></i>
                                                     </a>
@@ -263,7 +263,7 @@
                            
                 
                     <a href="/catalog" class="d-block navi-link view-all-category">
-            <img class="lazy" alt="" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/category.jpg" style="">
+            <img class="lazy" alt="" src="/images/category.jpg" style="">
             <span class="text-gray-dark">All Categories</span>
         </a>
     </div>

@@ -102,11 +102,11 @@
                             <div class="product-card">
                                 <div class="product-thumb">
                                     <div class="product-badge product-badge2 bg-info"> -29%</div>
-                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134777NcCH8fb00d2318bd48048dcd8bf2546f3f52h.jpg" alt="Product">
+                                                                        <img class="lazy" data-src="{{ asset('uploads') }}/{{$deal->image}}" alt="Product">
                                     <div class="product-button-group"><a class="product-button wishlist_store" href="user/wishlist/store/559.json" title="Wishlist"><i class="icon-heart"></i></a>
-                                        <a data-target="http://127.0.0.1:8000/compare/product/559" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
-                                                                                    <a class="product-button add_to_single_cart"  data-target="559" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
-                                            </a>
+                                        <a data-target="/compare/product/{{$deal->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
+                                        <a class="product-button add_to_single_cart" data-target="/cart/product/{{$deal->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-heart"></i>
+                </a>
                                                                             </div>
                                 </div>
                                     <div class="product-card-body">
@@ -361,7 +361,7 @@
                                     <div class="product-card ">
                                         <div class="product-thumb">
                                                                                                                                     <div class="product-badge product-badge2 bg-info"> -29%</div>
-                                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134738rC1H7e01b6c3e996405db8555c5e81c8ade0b.jpg" alt="Product">
+                                                                                        <img class="lazy" data-src="/images/1634134738rC1H7e01b6c3e996405db8555c5e81c8ade0b.jpg" alt="Product">
                                             <div class="product-button-group"><a class="product-button" href="user/wishlist/store/562.json" title="Wishlist"><i class="icon-heart"></i></a>
                                                 <a data-target="http://127.0.0.1:8000/compare/product/562" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
                                                 <a class="product-button add_to_single_cart"  data-target="562" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
@@ -394,7 +394,7 @@
                                     <div class="product-card ">
                                         <div class="product-thumb">
                                                                                                                                     <div class="product-badge product-badge2 bg-info"> -29%</div>
-                                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134831EzTH75345266923349e280d5f5e5fd5c71e5a.jpg" alt="Product">
+                                                                                        <img class="lazy" data-src="/images/1634134831EzTH75345266923349e280d5f5e5fd5c71e5a.jpg" alt="Product">
                                             <div class="product-button-group"><a class="product-button" href="user/wishlist/store/545.json" title="Wishlist"><i class="icon-heart"></i></a>
                                                 <a data-target="http://127.0.0.1:8000/compare/product/545" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
                                                 <a class="product-button add_to_single_cart"  data-target="545" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
@@ -427,7 +427,7 @@
                                     <div class="product-card ">
                                         <div class="product-thumb">
                                                                                                                                     <div class="product-badge product-badge2 bg-info"> -15%</div>
-                                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134904Sy7H220c85b541d145789e167a4b23787dd5h.jpg" alt="Product">
+                                                                                        <img class="lazy" data-src="/images/1634134904Sy7H220c85b541d145789e167a4b23787dd5h.jpg" alt="Product">
                                             <div class="product-button-group"><a class="product-button" href="user/wishlist/store/542.json" title="Wishlist"><i class="icon-heart"></i></a>
                                                 <a data-target="http://127.0.0.1:8000/compare/product/542" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
                                                 <a class="product-button add_to_single_cart"  data-target="542" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
@@ -460,7 +460,7 @@
                                     <div class="product-card ">
                                         <div class="product-thumb">
                                                                                                                                     <div class="product-badge product-badge2 bg-info"> -18%</div>
-                                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg" alt="Product">
+                                                                                        <img class="lazy" data-src="/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg" alt="Product">
                                             <div class="product-button-group"><a class="product-button" href="user/wishlist/store/540.json" title="Wishlist"><i class="icon-heart"></i></a>
                                                 <a data-target="http://127.0.0.1:8000/compare/product/540" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
                                                 <a class="product-button add_to_single_cart"  data-target="540" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
@@ -493,7 +493,7 @@
                                     <div class="product-card ">
                                         <div class="product-thumb">
                                                                                                                                     <div class="product-badge product-badge2 bg-info"> -29%</div>
-                                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634135382cOuUff4a9015ea454a79a2b9e3249bd2e19bg.jpg" alt="Product">
+                                                                                        <img class="lazy" data-src="/images/1634135382cOuUff4a9015ea454a79a2b9e3249bd2e19bg.jpg" alt="Product">
                                             <div class="product-button-group"><a class="product-button" href="user/wishlist/store/532.json" title="Wishlist"><i class="icon-heart"></i></a>
                                                 <a data-target="http://127.0.0.1:8000/compare/product/532" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
                                                 <a class="product-button add_to_single_cart"  data-target="532" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
@@ -526,7 +526,7 @@
                                     <div class="product-card ">
                                         <div class="product-thumb">
                                                                                                                                     <div class="product-badge product-badge2 bg-info"> -29%</div>
-                                                                                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634135412IgjH98f42eece72a4cf3980c64ab58dbfd890.jpg" alt="Product">
+                                                                                        <img class="lazy" data-src="/images/1634135412IgjH98f42eece72a4cf3980c64ab58dbfd890.jpg" alt="Product">
                                             <div class="product-button-group"><a class="product-button" href="user/wishlist/store/531.json" title="Wishlist"><i class="icon-heart"></i></a>
                                                 <a data-target="http://127.0.0.1:8000/compare/product/531" class="product-button product_compare" href="javascript:;" title="Compare"><i class="icon-repeat"></i></a>
                                                 <a class="product-button add_to_single_cart"  data-target="531" href="javascript:;"  title="To Cart"><i class="icon-shopping-cart"></i>
@@ -575,7 +575,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/fgcBest-Online-Wholesale-Website-Design-and-development-company--Ecommerce-shopping-webdesign8q.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16341344113y6Ucc4d26e9889041dc899c3522859ed3f88.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/16341344113y6Ucc4d26e9889041dc899c3522859ed3f88.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/fgcBest-Online-Wholesale-Website-Design-and-development-company--Ecommerce-shopping-webdesign8q.html">
                                                     Best Online Wholesale Website Design and
@@ -592,7 +592,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Create-a-Wordpress-Website-Designers-Ecommerce--Multivendor-Website-Software.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134428tuCU4431f054a85341a5a36101d8df36f90a7.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134428tuCU4431f054a85341a5a36101d8df36f90a7.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Create-a-Wordpress-Website-Designers-Ecommerce--Multivendor-Website-Software.html">
                                                     Create a Wordpress Website Designers Eco
@@ -608,7 +608,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/qzswordpress-shopify-Start-Your-Own-eCommerce-Site-Create-Your-Online-Store-Today-online-store-websit5l.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134442OSWHf435248807dd438aaf4d8a53e6f7eaedP.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134442OSWHf435248807dd438aaf4d8a53e6f7eaedP.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/qzswordpress-shopify-Start-Your-Own-eCommerce-Site-Create-Your-Online-Store-Today-online-store-websit5l.html">
                                                     wordpress shopify Start Your Own eCommer
@@ -625,7 +625,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Website-Development-Payment-Gateway-Website-Online-Business-Webdesign-Responsive.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16341344598AFHd8e8ee6b580644beba14f0866d6a1269l.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/16341344598AFHd8e8ee6b580644beba14f0866d6a1269l.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Website-Development-Payment-Gateway-Website-Online-Business-Webdesign-Responsive.html">
                                                     Website Development Payment Gateway Webs
@@ -645,7 +645,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/e0ACustom-Website-Builder-Shopping-Website-Design-and-DevelopmenthV.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134470aUCH32e77b35ed3e4f359723b0893abdf333y.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134470aUCH32e77b35ed3e4f359723b0893abdf333y.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/e0ACustom-Website-Builder-Shopping-Website-Design-and-DevelopmenthV.html">
                                                     Custom Website Builder Shopping Website
@@ -662,7 +662,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Wordpress-Ecommerce-Online-Store-B-C-Online-Shop-Website-Design-Business-Online-Website.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16341344897saU32feef72859d4a018dc33710b3647992j.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/16341344897saU32feef72859d4a018dc33710b3647992j.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Wordpress-Ecommerce-Online-Store-B-C-Online-Shop-Website-Design-Business-Online-Website.html">
                                                     Wordpress Ecommerce Online Store B2C Onl
@@ -692,7 +692,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca.html">
                                                     BREYLEE facial mask hyaluronic acid faci
@@ -708,7 +708,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/p5lHome-Use-Beauty-Device-Face-Massager-Facial-Lifting-Tool-Beauty-AntiAgingbD.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134210aEUHTB1K4CyX6DuK1Rjy1zjq6zraFXaj.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134210aEUHTB1K4CyX6DuK1Rjy1zjq6zraFXaj.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/p5lHome-Use-Beauty-Device-Face-Massager-Facial-Lifting-Tool-Beauty-AntiAgingbD.html">
                                                     Home Use Beauty Device Face Massager Fac
@@ -725,7 +725,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/sEcLatex-free-makeup-sponge-Customized-beauty-make-up-blender-makeup-spongpD.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134231tV8HTB1HSCEe25G3KVjSZPxq6zI3XXao.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134231tV8HTB1HSCEe25G3KVjSZPxq6zI3XXao.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/sEcLatex-free-makeup-sponge-Customized-beauty-make-up-blender-makeup-spongpD.html">
                                                     Latex free makeup sponge Customized beau
@@ -742,7 +742,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Beauty-Beauty-Anti-wrinkle-USB-Charging-Neck-Wrinkle-Removal-Neck-Care.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/163413424721nHe4cca751c6c94532958892118104e47ck.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/163413424721nHe4cca751c6c94532958892118104e47ck.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Beauty-Beauty-Anti-wrinkle-USB-Charging-Neck-Wrinkle-Removal-Neck-Care.html">
                                                     Beauty Beauty Anti-wrinkle USB Charging
@@ -762,7 +762,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Mini-Electric-Silicone-Face-Brush-Massager-Cepillo-Facial-Beautiful-Silicone-Facial-Cleansing-Brush.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134262rpfHdee8e662b5c747d69275ffd10450d8c1u.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134262rpfHdee8e662b5c747d69275ffd10450d8c1u.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Mini-Electric-Silicone-Face-Brush-Massager-Cepillo-Facial-Beautiful-Silicone-Facial-Cleansing-Brush.html">
                                                     Mini Electric Silicone Face Brush Massag
@@ -779,7 +779,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/CGtFace-Lift-Band-Facial-Beauty-Slimming-Double-Chin-Bandage-Strap-Weight1U.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134273FQVHcfd42cbddf7b40b08d3f9048f4d425e5A.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134273FQVHcfd42cbddf7b40b08d3f9048f4d425e5A.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/CGtFace-Lift-Band-Facial-Beauty-Slimming-Double-Chin-Bandage-Strap-Weight1U.html">
                                                     Face Lift Band Facial Beauty Slimming Do
@@ -795,7 +795,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Mask-stick-to-your-face-moisture-skin-care-clay-facial-natural-moisturiser-low-moq.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16341342918rPHabf8df421e5b4d99b802fc6120d050a7N.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/16341342918rPHabf8df421e5b4d99b802fc6120d050a7N.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Mask-stick-to-your-face-moisture-skin-care-clay-facial-natural-moisturiser-low-moq.html">
                                                     Mask stick to your face moisture skin ca
@@ -812,7 +812,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Korean-Beauty-Organic-Brightening-Peel-off-Hyaluronic-Acid-Facial-Jelly-Powder.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134515gdzH8064fa369ca644958a52846035a40641p.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134515gdzH8064fa369ca644958a52846035a40641p.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Korean-Beauty-Organic-Brightening-Peel-off-Hyaluronic-Acid-Facial-Jelly-Powder.html">
                                                     Korean Beauty Organic Brightening Peel o
@@ -832,7 +832,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/OEM-ODM-Fullerene-essence-best-face-moisturizer-whitening-anti-aging-cream.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134534qTHH1575ae72d5e144cfbf237196d6ea139bj.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134534qTHH1575ae72d5e144cfbf237196d6ea139bj.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/OEM-ODM-Fullerene-essence-best-face-moisturizer-whitening-anti-aging-cream.html">
                                                     OEM ODM Fullerene essence best face mois
@@ -849,7 +849,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/AMEIZII-Beauty-And-Personal-Care-Face-Skin-Masks-Nose-Blackhead-Remover.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16341345587a1H6e71ffd70a134245aaab2261bf685508j.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/16341345587a1H6e71ffd70a134245aaab2261bf685508j.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/AMEIZII-Beauty-And-Personal-Care-Face-Skin-Masks-Nose-Blackhead-Remover.html">
                                                     AMEIZII Beauty And Personal Care Face Sk
@@ -879,7 +879,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/DC------DSLR-support---G-sd-card-video-camera----Mega-pixels-digital-camera-dslr-HD-professional.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134811DFfH349db6b6a70c4604b507c446a7b06ae5k.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134811DFfH349db6b6a70c4604b507c446a7b06ae5k.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/DC------DSLR-support---G-sd-card-video-camera----Mega-pixels-digital-camera-dslr-HD-professional.html">
                                                     DC-7200 DSLR support 32G sd card video c
@@ -895,7 +895,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Dropshipping-EIS-----inch-LCD-Full-HD----P-Recording-----Mega-HD-DV-SLR-Camera.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134831EzTH75345266923349e280d5f5e5fd5c71e5a.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134831EzTH75345266923349e280d5f5e5fd5c71e5a.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Dropshipping-EIS-----inch-LCD-Full-HD----P-Recording-----Mega-HD-DV-SLR-Camera.html">
                                                     Dropshipping EIS 2.4 inch LCD Full HD 72
@@ -912,7 +912,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Wholesale-Price-----Mega-HD-DV-SLR-Camera------inch-LCD-Full-HD----P-Recording--EIS--Supply-Drops.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134872KxvHTB1BqH4aIfrK1RkSmLyq6xGApXaJ.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134872KxvHTB1BqH4aIfrK1RkSmLyq6xGApXaJ.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Wholesale-Price-----Mega-HD-DV-SLR-Camera------inch-LCD-Full-HD----P-Recording--EIS--Supply-Drops.html">
                                                     Wholesale Price 1.3 Mega HD DV SLR Camer
@@ -929,7 +929,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/New-product------Refurbished-used-smart-phone-for-I-phone-XS-MAX-XR---GB----GB--G.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134888WQ3H624bc94495584b2384c07e2db9f2bdfcd.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134888WQ3H624bc94495584b2384c07e2db9f2bdfcd.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/New-product------Refurbished-used-smart-phone-for-I-phone-XS-MAX-XR---GB----GB--G.html">
                                                     New product 2019 Refurbished used smart
@@ -949,7 +949,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Cheap-Price-Mobile-Phones-i---Pro----inch-FHD-Big-Screen-Smart-Phone-------GB.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134904Sy7H220c85b541d145789e167a4b23787dd5h.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134904Sy7H220c85b541d145789e167a4b23787dd5h.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Cheap-Price-Mobile-Phones-i---Pro----inch-FHD-Big-Screen-Smart-Phone-------GB.html">
                                                     Cheap Price Mobile Phones i13 Pro 6.6inc
@@ -966,7 +966,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/Hot-Selling-s----Unlocked-----MP---Core-Dual-SIM--G---G-Cheap-Smart-Phone-----inch.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/16341349201T0Ha04a8a2d450544c9a80996bcdd70c543b.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/16341349201T0Ha04a8a2d450544c9a80996bcdd70c543b.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/Hot-Selling-s----Unlocked-----MP---Core-Dual-SIM--G---G-Cheap-Smart-Phone-----inch.html">
                                                     Hot Selling s10+ Unlocked 8+16MP 8 Core
@@ -983,7 +983,7 @@
                                                                                 <div class="product-card p-col">
                                             <a class="product-thumb" href="product/UMIDIGI-A--Pro-Android-Mobile-Phone--g---MP-Quad-Camera------FHD--Full-Screen--GB-RAM.html">
 
-                                                <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg" alt="Product"></a>
+                                                <img class="lazy" data-src="/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg" alt="Product"></a>
                                             <div class="product-card-body">
                                                 <h3 class="product-title"><a href="product/UMIDIGI-A--Pro-Android-Mobile-Phone--g---MP-Quad-Camera------FHD--Full-Screen--GB-RAM.html">
                                                     UMIDIGI A9 Pro Android Mobile Phone 4g 4
@@ -1074,7 +1074,7 @@
                     </div>
                 </div>
                 <div class="feature_category_view d-none">
-                    <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/ajax_loader.gif" alt="">
+                    <img src="/images/ajax_loader.gif" alt="">
                 </div>
                 <div class="row g-3" id="feature_category_view">
                                        
@@ -1169,7 +1169,7 @@
                 <div class="row">
                                             <div class="col-lg-3 col-sm-6 text-center mb-30">
                             <div class="single-service single-service2">
-                                <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/162196463701.png" alt="Shipping">
+                                <img src="/images/162196463701.png" alt="Shipping">
                                 <div class="content">
                                     <h6 class="mb-2">Free Worldwide Shipping</h6>
                                     <p class="text-sm text-muted mb-0">Free shipping for all orders over $100 Contrary to popular belie</p>
@@ -1178,7 +1178,7 @@
                         </div>
                                             <div class="col-lg-3 col-sm-6 text-center mb-30">
                             <div class="single-service single-service2">
-                                <img src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/162196467602.png" alt="Shipping">
+                                <img src="/images/162196467602.png" alt="Shipping">
                                 <div class="content">
                                     <h6 class="mb-2">Money Back Guarantee</h6>
                                     <p class="text-sm text-muted mb-0">We return money within 30 days</p>
@@ -1187,7 +1187,7 @@
                         </div>
                                             <div class="col-lg-3 col-sm-6 text-center mb-30">
                             <div class="single-service single-service2">
-                                <img src="	https://geniusdevs.com/codecanyon/omnimart40/assets/images/162196471103.png" alt="Shipping">
+                                <img src="	/images/162196471103.png" alt="Shipping">
                                 <div class="content">
                                     <h6 class="mb-2">24/7 Customer Support</h6>
                                     <p class="text-sm text-muted mb-0">Friendly 24/7 customer support</p>
@@ -1196,7 +1196,7 @@
                         </div>
                                             <div class="col-lg-3 col-sm-6 text-center mb-30">
                             <div class="single-service single-service2">
-                                <img src="	https://geniusdevs.com/codecanyon/omnimart40/assets/images/162196474904.png" alt="Shipping">
+                                <img src="	/images/162196474904.png" alt="Shipping">
                                 <div class="content">
                                     <h6 class="mb-2">Secure Online Payment</h6>
                                     <p class="text-sm text-muted mb-0">We posess SSL / Secure Certificate</p>

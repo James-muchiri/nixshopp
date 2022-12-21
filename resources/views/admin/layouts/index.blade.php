@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>OmniMart</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon"  type="image/x-icon" href="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1629651232pre.png"/>
+    <link rel="icon"  type="image/x-icon" href="/images/1629651232pre.png"/>
 
 	<!-- Fonts and icons -->
 
@@ -22,14 +22,14 @@
 
     <link href="{{ asset('backend/css/custom.css') }}" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://geniusdevs.com/codecanyon/omnimart40/assets/back/css/select2.css">
+	<link rel="stylesheet" href="/back/css/select2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
 
     	<!--   Core JS Files   -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/jquery.3.6.0.min.js"></script>
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/popper.min.js"></script>
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/bootstrap.min.js"></script>
+	<script src="/back/js/core/jquery.3.6.0.min.js"></script>
+	<script src="/back/js/core/popper.min.js"></script>
+	<script src="/back/js/core/bootstrap.min.js"></script>
 
     <script src="{{ asset('backend/js/main.js') }}"></script>
 
@@ -67,54 +67,54 @@
 
 
 	<!-- jQuery UI -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<script src="/back/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="/back/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 
 	<!-- jQuery Scrollbar -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="/back/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 
 	<!-- Moment JS -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/moment/moment.min.js"></script>
+	<script src="/back/js/plugin/moment/moment.min.js"></script>
 
 	<!-- Datatables -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/datatables/datatables.min.js"></script>
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/datatables/dataTables.bootstrap4.min.js"></script>
+	<script src="/back/js/plugin/datatables/datatables.min.js"></script>
+	<script src="/back/js/plugin/datatables/dataTables.bootstrap4.min.js"></script>
 
 	<!-- Bootstrap Notify -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+	<script src="/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
 
 	<!-- Bootstrap Notify -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+	<script src="/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
 	<!-- Chartjs -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/chart.min.js"></script>
+	<script src="/back/js/plugin/chart.min.js"></script>
 
 	<!-- Editor -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/editor.js"></script>
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
+	<script src="/back/js/plugin/editor.js"></script>
+    <script src="/back/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
 
     <!-- Tagify -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/tagify.js"></script>
+    <script src="/back/js/tagify.js"></script>
 
     <!-- JS Color -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/jscolor.js"></script>
+    <script src="/back/js/jscolor.js"></script>
 
     <!-- Magnific Popup -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/jquery.magnific-popup.min.js"></script>
+    <script src="/back/js/jquery.magnific-popup.min.js"></script>
 
     <!-- Sortable -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/sortable.js"></script>
+    <script src="/back/js/sortable.js"></script>
 
     <!-- Icon Picker -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/bootstrap-iconpicker.bundle.min.js"></script>
+    <script src="/back/js/bootstrap-iconpicker.bundle.min.js"></script>
 
 <!-- Azzara JS -->
 <script src="{{ asset('backend/js/ready.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
 
 	<!-- Custom JS -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/custom.js"></script>
+	<script src="/back/js/custom.js"></script>
 	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js"></script>
 

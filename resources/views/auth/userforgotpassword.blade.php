@@ -103,7 +103,7 @@ body_theme4
                 <div class="col-lg-12">
                     <div class="d-flex justify-content-between">
                         <!-- Logo-->
-                        <div class="site-branding"><a class="site-logo align-self-center" href="https://geniusdevs.com/codecanyon/omnimart40"><img src="../assets/images/1634218044logoforsite.png" alt="OmniMart"></a></div>
+                        <div class="site-branding"><a class="site-logo align-self-center" href="/"><img src="../assets/images/1634218044logoforsite.png" alt="OmniMart"></a></div>
                         <!-- Search / Categories-->
                         <div class="search-box-wrap d-none d-lg-block d-flex">
                         <div class="search-box-inner align-self-center">
@@ -120,12 +120,12 @@ body_theme4
                                                                         <option value="Medicine-Health-Care">Medicine &amp; Health Care</option>
                                                                         <option value="Web-Themes--Templates">Web Themes &amp; Templates</option>
                                     									</select>
-                                <form class="input-group" id="header_search_form" action="https://geniusdevs.com/codecanyon/omnimart40/catalog" method="get">
+                                <form class="input-group" id="header_search_form" action="//catalog" method="get">
                                     <input type="hidden" name="category" value="" id="search__category">
                                     <span class="input-group-btn">
                                     <button type="submit"><i class="icon-search"></i></button>
                                     </span>
-                                    <input class="form-control" type="text" data-target="https://geniusdevs.com/codecanyon/omnimart40/search/suggest" id="__product__search" name="search" placeholder="Search by product name">
+                                    <input class="form-control" type="text" data-target="//search/suggest" id="__product__search" name="search" placeholder="Search by product name">
                                     <div class="serch-result d-none">
 
                                     </div>
@@ -159,7 +159,7 @@ body_theme4
                                                 <div class="toolbar-item"><a href="../cart.html">
                             <div><span class="cart-icon"><i class="icon-shopping-cart"></i><span class="count-label cart_count">0 </span></span><span class="text-label">Cart</span></div>
                             </a>
-                            <div class="toolbar-dropdown cart-dropdown widget-cart  cart_view_header" id="header_cart_load" data-target="https://geniusdevs.com/codecanyon/omnimart40/header/cart/load">
+                            <div class="toolbar-dropdown cart-dropdown widget-cart  cart_view_header" id="header_cart_load" data-target="//header/cart/load">
                             Cart empty
   </div>
 
@@ -192,7 +192,7 @@ body_theme4
                                 <div class="tab-pane fade show active" id="mmenu" role="tabpanel" aria-labelledby="mmenu-tab">
                                     <nav class="slideable-menu">
                                         <ul>
-                                            <li class=""><a href="https://geniusdevs.com/codecanyon/omnimart40"><i class="icon-chevron-right"></i>Home</a></li>
+                                            <li class=""><a href="/"><i class="icon-chevron-right"></i>Home</a></li>
                                                                                         <li class=""><a href="../catalog.html"><i class="icon-chevron-right"></i>Shop</a></li>
                                                                                                                                     <li class=""><a href="../campaign/products.html"><i class="icon-chevron-right"></i>Campaign</a></li>
                                                                                                                                     <li class=""><a href="../brands.html"><i class="icon-chevron-right"></i>Brand</a></li>
@@ -509,7 +509,7 @@ body_theme4
         <div class="category-list">
                             <div class="c-item">
                     <a class="d-block navi-link" href="../catalog50ca.html?category=Women-Clothing">
-                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1629616296pexels-juan-mendez-1536619.jpg">
+                        <img class="lazy" data-src="/images/1629616296pexels-juan-mendez-1536619.jpg">
                         <span class="text-gray-dark">Women Clothing</span>
                                                 <i class="icon-chevron-right"></i>
                                             </a>
@@ -567,7 +567,7 @@ body_theme4
                                     </div>
                             <div class="c-item">
                     <a class="d-block navi-link" href="../catalog2e44.html?category=men-clothing">
-                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1629616281pexels-moose-photos-1036627.jpg">
+                        <img class="lazy" data-src="/images/1629616281pexels-moose-photos-1036627.jpg">
                         <span class="text-gray-dark">Men Clothing</span>
                                                 <i class="icon-chevron-right"></i>
                                             </a>
@@ -614,7 +614,7 @@ body_theme4
                                     </div>
                             <div class="c-item">
                     <a class="d-block navi-link" href="../cataloge364.html?category=Electronics">
-                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1629616270computer.jpg">
+                        <img class="lazy" data-src="/images/1629616270computer.jpg">
                         <span class="text-gray-dark">Electronics</span>
                                                 <i class="icon-chevron-right"></i>
                                             </a>
@@ -666,7 +666,7 @@ body_theme4
                                     </div>
                             <div class="c-item">
                     <a class="d-block navi-link" href="../cataloge5e2.html?category=Vehicles--Accessories">
-                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1629616254pexels-thales-silva-772393.jpg">
+                        <img class="lazy" data-src="/images/1629616254pexels-thales-silva-772393.jpg">
                         <span class="text-gray-dark">Vehicles &amp; Accessories</span>
                                                 <i class="icon-chevron-right"></i>
                                             </a>
@@ -685,7 +685,7 @@ body_theme4
                                     </div>
                             <div class="c-item">
                     <a class="d-block navi-link" href="../catalogbcbe.html?category=Beauty--Personal-Care">
-                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1631023636ballll.jpg">
+                        <img class="lazy" data-src="/images/1631023636ballll.jpg">
                         <span class="text-gray-dark">Beauty &amp; Personal Care</span>
                                                 <i class="icon-chevron-right"></i>
                                             </a>
@@ -719,7 +719,7 @@ body_theme4
                                     </div>
                             <div class="c-item">
                     <a class="d-block navi-link" href="../catalogde8b.html?category=Web-Themes--Templates">
-                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1632341620bbb.jpg">
+                        <img class="lazy" data-src="/images/1632341620bbb.jpg">
                         <span class="text-gray-dark">Web Themes &amp; Templates</span>
                                                 <i class="icon-chevron-right"></i>
                                             </a>
@@ -743,18 +743,18 @@ body_theme4
                                     </div>
                             <div class="c-item">
                     <a class="d-block navi-link" href="../catalog5263.html?category=Sports--Entertainment">
-                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1629616243pexels-karolina-grabowska-4498574.jpg">
+                        <img class="lazy" data-src="/images/1629616243pexels-karolina-grabowska-4498574.jpg">
                         <span class="text-gray-dark">Sports &amp; Entertainment</span>
                                             </a>
                                     </div>
                             <div class="c-item">
                     <a class="d-block navi-link" href="../catalogc203.html?category=Home--Garden">
-                        <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1629616234pexels-cup-of-couple-8015784.jpg">
+                        <img class="lazy" data-src="/images/1629616234pexels-cup-of-couple-8015784.jpg">
                         <span class="text-gray-dark">Home &amp; Garden</span>
                                             </a>
                                     </div>
                     <a href="../catalog.html" class="d-block navi-link view-all-category">
-            <img class="lazy" data-src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/category.jpg" alt="">
+            <img class="lazy" data-src="/images/category.jpg" alt="">
             <span class="text-gray-dark">All Categories</span>
         </a>
     </div>
@@ -769,12 +769,12 @@ body_theme4
                         <nav class="site-menu">
                             <ul>
                                 <li class="t-h-dropdown  ">
-                                    <a class="main-link" href="https://geniusdevs.com/codecanyon/omnimart40">Home <i class="icon-chevron-down"></i></a>
+                                    <a class="main-link" href="/">Home <i class="icon-chevron-down"></i></a>
                                     <div class="t-h-dropdown-menu">
-                                        <a class="" href="https://geniusdevs.com/codecanyon/omnimart40"><i class="icon-chevron-right pr-2"></i>Home 1</a>
-                                        <a class="" href="https://geniusdevs.com/codecanyon/omnimart40"><i class="icon-chevron-right pr-2"></i>Home 2</a>
-                                        <a class="" href="https://geniusdevs.com/codecanyon/omnimart40"><i class="icon-chevron-right pr-2"></i>Home 3</a>
-                                        <a class="active" href="https://geniusdevs.com/codecanyon/omnimart40"><i class="icon-chevron-right pr-2"></i>Home 4</a>
+                                        <a class="" href="/"><i class="icon-chevron-right pr-2"></i>Home 1</a>
+                                        <a class="" href="/"><i class="icon-chevron-right pr-2"></i>Home 2</a>
+                                        <a class="" href="/"><i class="icon-chevron-right pr-2"></i>Home 3</a>
+                                        <a class="active" href="/"><i class="icon-chevron-right pr-2"></i>Home 4</a>
                                     </div>
                                 </li>
                                                                 <li class=""><a href="../catalog.html">Shop</a></li>
@@ -813,7 +813,7 @@ body_theme4
         <div class="row">
             <div class="col-lg-12">
                 <ul class="breadcrumbs">
-                    <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a> </li>
+                    <li><a href="/">Home</a> </li>
                     <li class="separator"></li>
                     <li>Password Reset</li>
                   </ul>
@@ -825,7 +825,7 @@ body_theme4
   <div class="container padding-bottom-3x mb-1">
   <div class="row justify-content-center">
           <div class="col-lg-8 col-md-10">
-            <form class="card mt-4" method="POST" action="https://geniusdevs.com/codecanyon/omnimart40/user/forgot-submit">
+            <form class="card mt-4" method="POST" action="//user/forgot-submit">
                 <input type="hidden" name="_token" value="jhuKHsWUbrGg4b66oTz03vorQlvzqkd3R7p6RTYr">              <div class="card-body">
                 <div class="form-group">
                 <h4 class="d-block text-center mb-4">Forgot your password?</h4>
@@ -853,7 +853,7 @@ body_theme4
             <div class="right-area">
                 <h3 class="">Get 50% Discount.</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, facere nesciunt doloremque nobis debitis sint?</p>
-                <form class="subscriber-form" action="https://geniusdevs.com/codecanyon/omnimart40/subscriber/submit" method="post">
+                <form class="subscriber-form" action="//subscriber/submit" method="post">
                     <input type="hidden" name="_token" value="jhuKHsWUbrGg4b66oTz03vorQlvzqkd3R7p6RTYr">                    <div class="input-group">
                         <input class="form-control" type="email" name="email" placeholder="Your e-mail">
                         <span class="input-group-addon"><i class="icon-mail"></i></span> </div>
@@ -921,7 +921,7 @@ body_theme4
             <!-- Subscription-->
             <section class="widget">
               <h3 class="widget-title">Newsletter</h3>
-              <form class="row subscriber-form" action="https://geniusdevs.com/codecanyon/omnimart40/subscriber/submit" method="post">
+              <form class="row subscriber-form" action="//subscriber/submit" method="post">
                 <input type="hidden" name="_token" value="jhuKHsWUbrGg4b66oTz03vorQlvzqkd3R7p6RTYr">                <div class="col-sm-12">
                   <div class="input-group">
                     <input class="form-control" type="email" name="email" placeholder="Your e-mail">
@@ -1056,7 +1056,7 @@ body_theme4
 
 
 <script type="text/javascript">
-    let mainurl = 'https://geniusdevs.com/codecanyon/omnimart40';
+    let mainurl = '/';
 
     $(document).on('click','.color__check',function(){
         var color = $(this).attr('data-href');

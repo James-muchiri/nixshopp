@@ -8,7 +8,7 @@
       <div class="row">
           <div class="col-lg-12">
             <ul class="breadcrumbs">
-                <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a> </li>
+                <li><a href="/">Home</a> </li>
                 <li class="separator"></li>
                 <li>Compare Products</li>
               </ul>
@@ -47,7 +47,7 @@
             <div class="right-area">
                 <h3 class="">Get 50% Discount.</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, facere nesciunt doloremque nobis debitis sint?</p>
-                <form class="subscriber-form" action="https://geniusdevs.com/codecanyon/omnimart40/subscriber/submit" method="post">
+                <form class="subscriber-form" action="//subscriber/submit" method="post">
                     <input type="hidden" name="_token" value="jhuKHsWUbrGg4b66oTz03vorQlvzqkd3R7p6RTYr">                    <div class="input-group">
                         <input class="form-control" type="email" name="email" placeholder="Your e-mail">
                         <span class="input-group-addon"><i class="icon-mail"></i></span> </div>

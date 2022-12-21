@@ -102,7 +102,7 @@
             <!-- Subscription-->
             <section class="widget">
               <h3 class="widget-title">Newsletter</h3>
-              <form class="row subscriber-form" action="https://geniusdevs.com/codecanyon/omnimart40/subscriber/submit" method="post">
+              <form class="row subscriber-form" action="//subscriber/submit" method="post">
                 <input type="hidden" name="_token" value="jhuKHsWUbrGg4b66oTz03vorQlvzqkd3R7p6RTYr">                <div class="col-sm-12">
                   <div class="input-group">
                     <input class="form-control" type="email" name="email" placeholder="Your e-mail">
@@ -241,7 +241,7 @@
 
 
 <script type="text/javascript">
-    let mainurl = 'https://geniusdevs.com/codecanyon/omnimart40';
+    let mainurl = '/';
 
     $(document).on('click','.color__check',function(){
         var color = $(this).attr('data-href');

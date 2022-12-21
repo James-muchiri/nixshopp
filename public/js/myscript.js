@@ -159,10 +159,11 @@ $(function ($) {
                 }
             },
         });
+     
 
 
         function refreshowl(){
-            popular_category_slider.triger(refresh.owl.carousel);
+      
         }
 
         // Flash Deal Area Start
@@ -596,6 +597,7 @@ $(function ($) {
             $.get(geturl, function (response) {
                 $('#' + view).html(response);
                 $('.' + view).addClass('d-none');
+
 
                 if (response.data === undefined) {
                     $('.' + view + '_not_found').removeClass('d-none');
