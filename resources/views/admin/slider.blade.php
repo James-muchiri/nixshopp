@@ -8,7 +8,7 @@
         <div class="card-body">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <h3 class=" mb-0  pl-3"><b>Sliders</b></h3>
-                <a class="btn btn-primary  btn-sm" href="/admin/slider/create"><i class="fas fa-plus"></i> Add</a>
+                <a class="btn btn-primary  btn-sm" href="/admin/slider/create"><i class="fa fa-plus"></i> Add</a>
                 </div>
         </div>
     </div>
@@ -49,10 +49,10 @@
     <td>
         <div class="action-list">
             <a class="btn btn-secondary btn-sm " href="/admin/slider/18/edit">
-                <i class="fas fa-edit"></i>
+                <i class="fa fa-edit"></i>
             </a>
             <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/slider/18">
-                <i class="fas fa-trash-alt"></i>
+                <i class="fa fa-trash-alt"></i>
             </a>
         </div>
     </td>

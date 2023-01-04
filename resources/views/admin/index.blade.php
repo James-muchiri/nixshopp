@@ -23,7 +23,7 @@
                 <div class="row align-items-center">
                     <div class="col-icon">
                         <div class="icon-big text-center icon-success bubble-shadow-small">
-                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                     <div class="col col-stats ml-3 ml-sm-0">
@@ -43,7 +43,7 @@
                 <div class="row align-items-center">
                     <div class="col-icon">
                         <div class="icon-big text-center icon-success bubble-shadow-small">
-                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                     <div class="col col-stats ml-3 ml-sm-0">
@@ -62,7 +62,7 @@
                 <div class="row align-items-center">
                     <div class="col-icon">
                         <div class="icon-big text-center icon-success bubble-shadow-small">
-                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                     <div class="col col-stats ml-3 ml-sm-0">
@@ -82,7 +82,7 @@
                 <div class="row align-items-center">
                     <div class="col-icon">
                         <div class="icon-big text-center icon-success bubble-shadow-small">
-                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fa fa-shopping-cart"></i>
                         </div>
                     </div>
                     <div class="col col-stats ml-3 ml-sm-0">
@@ -181,7 +181,7 @@
                 <div class="row align-items-center">
                     <div class="col-icon">
                         <div class="icon-big text-center icon-danger  bubble-shadow-small">
-                            <i class="fas fa-money-bill-wave"></i>
+                            <i class="fa fa-money-bill-wave"></i>
                         </div>
                     </div>
                     <div class="col col-stats ml-3 ml-sm-0">
@@ -203,7 +203,7 @@
                 <div class="row align-items-center">
                     <div class="col-icon">
                         <div class="icon-big text-center icon-danger  bubble-shadow-small">
-                            <i class="fas fa-money-bill-wave"></i>
+                            <i class=" fa-money-bill-wave"></i>
                         </div>
                     </div>
                     <div class="col col-stats ml-3 ml-sm-0">
@@ -223,7 +223,7 @@
                 <div class="row align-items-center">
                     <div class="col-icon">
                         <div class="icon-big text-center icon-danger  bubble-shadow-small">
-                            <i class="fas fa-money-bill-wave"></i>
+                            <i class="fa fa-money-bill-wave"></i>
                         </div>
                     </div>
                     <div class="col col-stats ml-3 ml-sm-0">
@@ -243,7 +243,7 @@
                 <div class="row align-items-center">
                     <div class="col-icon">
                         <div class="icon-big text-center icon-danger  bubble-shadow-small">
-                            <i class="fas fa-money-bill-wave"></i>
+                            <i class="fa fa-money-bill-wave"></i>
                         </div>
                     </div>
                     <div class="col col-stats ml-3 ml-sm-0">

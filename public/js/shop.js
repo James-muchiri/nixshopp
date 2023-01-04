@@ -5,7 +5,7 @@
         $.notify({
             title: ` <strong>${title}</strong>`,
             message: '',
-            icon: 'fas fa-check-circle'
+            icon: 'fa fa-check-circle'
             },{
             element: 'body',
             position: null,
@@ -41,7 +41,7 @@
             // options
             title: ` <strong>${title}</strong>`,
             message: '',
-            icon: 'fas fa-exclamation-triangle'
+            icon: ' fa-exclamation-triangle'
             },{
             // settings
             element: 'body',

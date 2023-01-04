@@ -26,7 +26,7 @@
                     <div class="col-md-10 gd-text-sm-center">
                         <div class="sptfl">
                             <div class="quickFilter">
-                                <h4 class="quickFilter-title"><i class="fas fa-filter"></i>Quick filter</h4>
+                                <h4 class="quickFilter-title"><i class="fa fa-filter"></i>Quick filter</h4>
                                 <ul id="quick_filter">
                                     <li><a datahref=""><i class="icon-chevron-right pr-2"></i>All products </a></li>
                                     <li class=""><a href="javascript:;" data-href="feature"><i class="icon-chevron-right pr-2"></i>Featured products </a></li>

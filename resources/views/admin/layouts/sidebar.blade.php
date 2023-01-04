@@ -8,7 +8,7 @@
 				<div class="sidebar-content">
 					<div class="user">
 						<div class="avatar-sm float-left mr-2">
-							<img src="/assets/images/1631023655pexels-moose-photos-1036627.jpg" alt="..." class="avatar-img rounded-circle">
+							<img src="{{ asset('images/1634491069HTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg') }}" alt="..." class="avatar-img rounded-circle">
 						</div>
 						<div class="info">
 							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -24,14 +24,14 @@
 
     <li class="nav-item">
         <a href="/admin">
-            <i class="fas fa-home"></i>
+            <i class="fa fa-home"></i>
             <p>Dashboard</p>
         </a>
     </li>
 
     <li class="nav-item">
         <a data-toggle="collapse" href="#category">
-            <i class="fas fa-list-alt"></i>
+            <i class="fa fa-list-alt"></i>
             <p>Manage Categories</p>
             <span class="caret"></span>
         </a>
@@ -188,14 +188,14 @@
 
     <li class="nav-item">
         <a  href="/admin/transactions">
-            <i class="fas fa-random"></i>
+            <i class="fa fa-random"></i>
           <p>Transactions</p>
         </a>
     </li>
 
     <li class="nav-item">
         <a data-toggle="collapse" href="#ecommerce">
-            <i class="fas fa-newspaper"></i>
+            <i class="fa fa-newspaper"></i>
             <p>Ecommerce</p>
             <span class="caret"></span>
         </a>
@@ -236,17 +236,17 @@
 
     <li class="nav-item">
         <a href="/admin/user">
-          <i class="fas fa-users"></i>
+          <i class="fa fa-users"></i>
           <p>Customer List</p></a>
     </li>
     <li class="nav-item">
         <a href="/admin/ticket">
-            <i class="fas fa-comments"></i>
+            <i class="fa fa-comments"></i>
           <p>Manages Tickets</p></a>
     </li>
     <li class="nav-item">
         <a data-toggle="collapse" href="#content">
-            <i class="fas fa-tasks"></i>
+            <i class="fa fa-tasks"></i>
             <p>Manage Site</p>
             <span class="caret"></span>
         </a>
@@ -322,7 +322,7 @@
 
     <li class="nav-item">
         <a data-toggle="collapse" href="#faqs">
-            <i class="fas fa-question-circle"></i>
+            <i class="fa fa-question-circle"></i>
             <p>Manage Faqs</p>
             <span class="caret"></span>
         </a>
@@ -344,7 +344,7 @@
 
     <li class="nav-item">
         <a data-toggle="collapse" href="#post">
-            <i class="fas fa-rss-square"></i>
+            <i class="fa fa-rss-square"></i>
             <p>Manage Blogs</p>
             <span class="caret"></span>
         </a>
@@ -365,7 +365,7 @@
     </li>
     <li class="nav-item">
         <a href="/admin/page">
-            <i class="fas fa-book"></i>
+            <i class="fa fa-book"></i>
             <p>Manages Pages</p>
         </a>
     </li>
@@ -401,7 +401,7 @@
     </li>
     <!--<li class="nav-item">-->
     <!--    <a data-toggle="collapse" href="#backup">-->
-    <!--        <i class="fas fa-hdd"></i>-->
+    <!--        <i class="fa fa-hdd"></i>-->
     <!--        <p>Systeam Backup</p>-->
     <!--        <span class="caret"></span>-->
     <!--    </a>-->
@@ -423,7 +423,7 @@
 
     <li class="nav-item">
         <a href="/cache/clear">
-            <i class="fas fa-broom"></i>
+            <i class="fa fa-broom"></i>
             <p>Cache Clear</p>
         </a>
     </li>

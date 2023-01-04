@@ -32,7 +32,7 @@
                         <!-- Nav Item - Alerts -->
                         <li class="nav-item dropdown no-arrow mx-1">
                             <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-bell fa-fw"></i>
+                            <i class="fa fa-bell fa-fw"></i>
                             <!-- Counter - Alerts -->
                             <span  class="badge badge-danger badge-counter">0</span>
                             </a>
@@ -52,13 +52,13 @@
 						<li class="nav-item dropdown hidden-caret">
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="/admin" aria-expanded="false">
 								<div class="avatar-sm avatar avatar-sm">
-									<img src="/images/1631023655pexels-moose-photos-1036627.jpg" alt="..." class="avatar-img rounded-circle">
+									<img src="{{ asset('images/1634491069HTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg') }}" alt="..." class="avatar-img rounded-circle">
 								</div>
 							</a>
 							<ul class="dropdown-menu dropdown-user animated fadeIn">
 								<li>
 									<div class="user-box">
-										<div class="avatar-lg"><img src="/images/1631023655pexels-moose-photos-1036627.jpg" alt="image profile" class="avatar-img rounded"></div>
+										<div class="avatar-lg"><img src="{{ asset('images/1634491069HTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg') }}" alt="image profile" class="avatar-img rounded"></div>
 
 										<div class="u-text">
 											<h4>Admin</h4>

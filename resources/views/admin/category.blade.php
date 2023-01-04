@@ -10,7 +10,7 @@
         <div class="card-body">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <h3 class="mb-0 bc-title"><b>Categories</b></h3>
-                <a class="btn btn-primary  btn-sm" href="/admin/store-category"><i class="fas fa-plus"></i> Add</a>
+                <a class="btn btn-primary  btn-sm" href="/admin/store-category"><i class="fa fa-plus"></i> Add</a>
                 </div>
         </div>
     </div>
@@ -77,10 +77,10 @@ cart_table();
 		<!-- Modal footer -->
         <div class="modal-footer">
 			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-			<form action="/admin/category/26" class="d-inline btn-ok" method="POST">
+			<form action="" class="d-inline btn-ok" method="get">
 
-                <input type="hidden" name="_token" value="JYjeTaAFpWxYxidkdeqcJDL5SdPTspOxaHQSdxD0">
-                <input type="hidden" name="_method" value="DELETE">
+                @csrf
+            
                 <button type="submit" class="btn btn-danger">Delete</button>
 
 			</form>

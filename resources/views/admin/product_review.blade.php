@@ -52,10 +52,10 @@
     <td>
         <div class="action-list">
             <a class="btn btn-secondary btn-sm " href="/admin/review/2">
-                <i class="fas fa-eye"></i>
+                <i class="fa fa-eye"></i>
             </a>
             <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/review/2">
-                <i class="fas fa-trash-alt"></i>
+                <i class="fa fa-trash-alt"></i>
             </a>
         </div>
     </td>
@@ -86,10 +86,10 @@
     <td>
         <div class="action-list">
             <a class="btn btn-secondary btn-sm " href="/admin/review/1">
-                <i class="fas fa-eye"></i>
+                <i class="fa fa-eye"></i>
             </a>
             <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/review/1">
-                <i class="fas fa-trash-alt"></i>
+                <i class="fa fa-trash-alt"></i>
             </a>
         </div>
     </td>

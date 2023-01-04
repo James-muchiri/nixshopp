@@ -9,7 +9,7 @@
         <div class="card-body">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <h3 class="mb-0 bc-title"><b>Sub Categories</b></h3>
-                <a href="/admin/store-childcategory" class="btn btn-sm btn-primary"> <i class="fas fa-plus"></i> Add </a>
+                <a href="/admin/store-childcategory" class="btn btn-sm btn-primary"> <i class="fa fa-plus"></i> Add </a>
             </div>
         </div>
     </div>

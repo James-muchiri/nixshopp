@@ -454,7 +454,7 @@ featured_product_table();
                             </td>
                               <td>
                                 <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i class="fa fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="even">
                               <td><img src="/images/1634134938Hcb62dec2d6a241fc90ce2bb04059684em.jpg" alt=""></td>
@@ -484,7 +484,7 @@ featured_product_table();
                             </td>
                               <td>
                                 <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/39">
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i class="fa fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="odd">
                               <td><img src="/images/1634135320H408d7d7e37b4437297de600584c1af1fL.jpg" alt=""></td>
@@ -514,7 +514,7 @@ featured_product_table();
                             </td>
                               <td>
                                 <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/38">
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i class="fa fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="even">
                               <td><img src="/images/1634135337H948b3bef197c492d999473dffa5303f9P.jpg" alt=""></td>
@@ -544,7 +544,7 @@ featured_product_table();
                             </td>
                               <td>
                                 <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/37">
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i class="fa fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="odd">
                               <td><img src="/images/1634135061Hd8364db18d9942a38e89779ca3b4fa7an.jpg" alt=""></td>
@@ -574,7 +574,7 @@ featured_product_table();
                             </td>
                               <td>
                                 <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/36">
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i class="fa fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="even">
                               <td><img src="/images/1634134831H75345266923349e280d5f5e5fd5c71e5a.jpg" alt=""></td>
@@ -604,7 +604,7 @@ featured_product_table();
                             </td>
                               <td>
                                 <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/35">
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i class="fa fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="odd">
                               <td><img src="/images/1634134888H624bc94495584b2384c07e2db9f2bdfcd.jpg" alt=""></td>
@@ -634,7 +634,7 @@ featured_product_table();
                             </td>
                               <td>
                                 <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/34">
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i class="fa fa-trash-alt"></i>
                                 </a>
                           </td></tr><tr role="row" class="even">
                               <td><img src="/images/1634134777H8fb00d2318bd48048dcd8bf2546f3f52h.jpg" alt=""></td>
@@ -664,7 +664,7 @@ featured_product_table();
                             </td>
                               <td>
                                 <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/33">
-                                    <i class="fas fa-trash-alt"></i>
+                                    <i class="fa fa-trash-alt"></i>
                                 </a>
                           </td></tr></tbody>
 

@@ -12,7 +12,7 @@
         <div class="card-body">
             <div class="d-sm-flex align-items-center justify-content-between">
                 <h3 class="mb-0 bc-title"><b>Create Brand</b> </h3>
-                <a class="btn btn-primary  btn-sm" href="/admin/brand"><i class="fas fa-chevron-left"></i> Back</a>
+                <a class="btn btn-primary  btn-sm" href="/admin/brand"><i class="fa fa-chevron-left"></i> Back</a>
                 </div>
         </div>
     </div>

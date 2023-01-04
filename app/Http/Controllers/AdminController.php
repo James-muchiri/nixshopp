@@ -54,6 +54,42 @@ class AdminController extends Controller
 
     }
 
+    public function  store_editcategory_post(Request $request){
+
+
+        $category = Category::find($request->id);
+
+        if($request->file){
+            $fileName = $request->name.'_cp'.'.'.$request->file->extension();
+            $request->file->move(public_path('uploads'), $fileName);
+            $category->photo =  $fileName;
+        }
+
+      if($request->meta_keywords){
+        $category->meta_keywords = $request->meta_keywords;
+
+      }
+
+      if($request->meta_description){
+        $category->meta_description = $request->meta_description;
+
+      }
+        $category->name = $request->name;
+        $category->slug = $request->slug;
+      
+ 
+
+
+        $category->save();
+
+        return response()->json([
+            "status" => 200,
+            "message" => "action completed successfully",
+
+        ]);
+
+    }
+
     public function  cart_statusdisable($dataId)
     {
         $category = Category::find($dataId);
@@ -84,6 +120,19 @@ class AdminController extends Controller
 
         ]);
 
+    }
+    public function  edit_category($dataid)
+    {
+        $category = Category::find($dataid);
+       
+        return view('admin.edit_category', compact('category'));
+    }
+    public function categorydelete($dataid)
+    {
+        $category = Category::find($dataid);
+        $category->delete();
+        
+        return redirect()->route('category')->with('status','deleted');
     }
     public function    getcategory()
     {
@@ -168,6 +217,7 @@ class AdminController extends Controller
         ]);
 
     }
+    
     public function  subcategory()
     {
 
@@ -355,7 +405,8 @@ class AdminController extends Controller
 
     public function   brand()
     {
-        return view('admin.brands');
+        $brands = brands::all();
+        return view('admin.brands', compact('brands'));
     }
 
     public function   stock_out()

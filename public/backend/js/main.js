@@ -53,6 +53,63 @@ $(document).ready(function (e) {
 
 });
 
+$(document).ready(function (e) {
+    // Submit form data via Ajax
+    $("#store_editcategory_form").on('submit', function (e) {
+        e.preventDefault();
+
+
+        next_fs = $('#store_editcategory_form');
+
+        curInputs = next_fs.find("input[type='text']");
+        isValid = true;
+        console.log(curInputs);
+        // for (var i = 0; i < curInputs.length; i++) {
+        //     //  console.log(curInputs[i].value);
+        //     if (!curInputs[i].value) {
+        //         isValid = false;
+        //         $(curInputs[i]).closest(".form-group").addClass("has-error");
+        //         //   console.log(curInputs[i].value);
+        //     }
+        // }
+        if (isValid) {
+
+            // AJAX code to submit form.
+            $.ajax({
+                type: "POST",
+                url: "/admin/store_editcategories", //call  to store form data
+                data: new FormData($(this)[0]),
+                dataType: 'json',
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function (data) {
+                    console.log(data.status);
+
+                    if (data.status == 200) {
+                        toastr.success('success');
+                        $("#store_editcategory_form").reset();
+
+
+                    }
+
+
+
+
+                },
+                error: function (xhr) {
+                    console.log(xhr.responseText)
+                },
+
+            });
+
+        }
+    });
+
+});
+
+
+
 function cart_table(){
 
 
@@ -96,7 +153,7 @@ function cart_table(){
         t_data = t_data +       
         '<tr role="row" class="odd">'+
         '<td>'+
-            '<img  src="/images/1632341620bbb.jpg" alt="Image Not Found">'+
+            '<img  src="/uploads/'+element.photo+'" alt="Image Not Found">'+
         '</td>'+
         '<td>'+
             element.name+
@@ -120,11 +177,11 @@ function cart_table(){
                                   ' </td>'+
                                  '<td>'+
                          '<div class="action-list">'+
-                         '  <a class="btn btn-secondary btn-sm " href="/admin/category/27/edit">'+
+                         '  <a class="btn btn-secondary btn-sm " href="/admin/category/'+element.id+'/edit">'+
                          '         <i class="fa fa-edit"></i>'+
                          '     </a>'+
-                         '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/category/27">'+
-                         '         <i class="fa fa-trash-alt"></i>'+
+                         '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/category/delete/'+element.id+'">'+
+                         '         <i class="fa fa-trash"></i>'+
                          '      </a>'+
                          '   </div>'+
                          ' </td>'+
@@ -270,7 +327,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   t_data = t_data +       
   '<tr role="row" class="odd">'+
   '<td>'+
-      '<img src="/images/1632341620bbb.jpg" alt="Image Not Found">'+
+    +element.category_id+
   '</td>'+
   '<td>'+
       element.name+
@@ -298,7 +355,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                    '         <i class="fa fa-edit"></i>'+
                    '     </a>'+
                    '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/category/27">'+
-                   '         <i class="fa fa-trash-alt"></i>'+
+                   '         <i class="fa fa-trash"></i>'+
                    '      </a>'+
                    '   </div>'+
                    ' </td>'+
@@ -374,8 +431,11 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
   t_data = t_data +       
   '<tr role="row" class="odd">'+
   '<td>'+
-      '<img src="/images/1632341620bbb.jpg" alt="Image Not Found">'+
-  '</td>'+
+  +element.category_id+
+'</td>'+
+'<td>'+
++element.subcategory_id+
+'</td>'+
   '<td>'+
       element.name+
   '</td>'+
@@ -679,13 +739,13 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
             'Options'+
               '</button>'+
             '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
-            '<a class="dropdown-item" href="/admin/item/586/edit"><i class="fas fa-angle-double-right"></i> Edit</a>'+
-                            ' <a class="dropdown-item" target="_blank" href="//product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca"><i class="fas fa-angle-double-right"></i> View</a>'+
-                            ' <a class="dropdown-item" href="/admin/586/attribute"><i class="fas fa-angle-double-right"></i> Attributes</a>'+
-                                          '  <a class="dropdown-item" href="/admin/586/option"><i class="fas fa-angle-double-right"></i> Attribute Options</a>'+
-              ' <a class="dropdown-item" href="/admin/item/galleries/586"><i class="fas fa-angle-double-right"></i> Gallery Images</a>'+
-                            ' <a class="dropdown-item" href="/admin/item/highlight/586"><i class="fas fa-angle-double-right"></i> Highlight</a>'+
-              ' <a class="dropdown-item" data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/item/586"><i class="fas fa-angle-double-right"></i> Delete</a>'+
+            '<a class="dropdown-item" href="/admin/item/586/edit"><i class="fa fa-angle-double-right"></i> Edit</a>'+
+                            ' <a class="dropdown-item" target="_blank" href="//product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca"><i class="fa fa-angle-double-right"></i> View</a>'+
+                            ' <a class="dropdown-item" href="/admin/586/attribute"><i class="fa fa-angle-double-right"></i> Attributes</a>'+
+                                          '  <a class="dropdown-item" href="/admin/586/option"><i class="fa fa-angle-double-right"></i> Attribute Options</a>'+
+              ' <a class="dropdown-item" href="/admin/item/galleries/586"><i class="fa fa-angle-double-right"></i> Gallery Images</a>'+
+                            ' <a class="dropdown-item" href="/admin/item/highlight/586"><i class="fa fa-angle-double-right"></i> Highlight</a>'+
+              ' <a class="dropdown-item" data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/item/586"><i class="fa fa-angle-double-right"></i> Delete</a>'+
               ' </div>'+
             ' </div>'+
 
@@ -796,7 +856,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-      ' <i class="fas fa-trash-alt"></i>'+
+      ' <i class="fa fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
@@ -947,7 +1007,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-      ' <i class="fas fa-trash-alt"></i>'+
+      ' <i class="fa fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
@@ -1100,7 +1160,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-      ' <i class="fas fa-trash-alt"></i>'+
+      ' <i class="fa fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
@@ -1253,7 +1313,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
     
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-      ' <i class="fas fa-trash-alt"></i>'+
+      ' <i class="fa fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';

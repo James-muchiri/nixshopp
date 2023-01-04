@@ -3132,7 +3132,7 @@ body_theme1
 </a>
 
 <div class="color-picker">
-    <span class="spiner"><i class="fas fa-cog fa-spin"></i></span>
+    <span class="spiner"><i class="fa fa-cog fa-spin"></i></span>
     <a href="javascript:;" class="color__check " style="background: #FF6A00;" data-href="FF6A00"></a>
     <a href="javascript:;" class="color__check " style="background: #ff4719;" data-href="ff4719"></a>
     <a href="javascript:;" class="color__check " style="background: #03a9f4;" data-href="03a9f4"></a>
@@ -3157,12 +3157,12 @@ body_theme1
 </script>
 
 <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
-<script type="text/javascript" src="/front/js/plugins.min.js"></script>
-<script type="text/javascript" src="/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script type="text/javascript" src="/front/js/scripts.min.js"></script>
-<script type="text/javascript" src="/front/js/lazy.min.js"></script>
-<script type="text/javascript" src="/front/js/lazy.plugin.js"></script>
-<script type="text/javascript" src="/front/js/myscript.js"></script>
+<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/plugins.min.js"></script>
+<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/scripts.min.js"></script>
+<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/lazy.min.js"></script>
+<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/lazy.plugin.js"></script>
+<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/myscript.js"></script>
 
 
 <script type="text/javascript">

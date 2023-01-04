@@ -496,7 +496,7 @@ $(function ($) {
                 {
                     title: ` <strong>${title}</strong>`,
                     message: "",
-                    icon: "fas fa-check-circle",
+                    icon: "fa fa-check-circle",
                 },
                 {
                     // settings
@@ -536,7 +536,7 @@ $(function ($) {
                     // options
                     title: ` <strong>${title}</strong>`,
                     message: "",
-                    icon: "fas fa-exclamation-triangle",
+                    icon: "fa fa-exclamation-triangle",
                 },
                 {
                     // settings

@@ -75,7 +75,8 @@ Route::post('/admin/2-column-banner1', 'AdminController@a2_column_banner1');
 Route::post('/admin/2-column-banner2', 'AdminController@a2_column_banner2');
 
 
-
+Route::get('/admin/category/{dataid}/edit', 'AdminController@edit_category');
+Route::get('/admin/category/delete/{dataid}', 'AdminController@categorydelete')->name('categorydelete');
 Route::get('/admin/store-category', 'AdminController@store_category')->name('store-category');
 Route::get('/admin/category', 'AdminController@category')->name('category');
 Route::get('/admin/getcategory', 'AdminController@getcategory')->name('getcategory');
@@ -84,7 +85,7 @@ Route::get('/admin/cart_statusenable/{dataid}', 'AdminController@cart_statusenab
 Route::get('/admin/getsubcategory', 'AdminController@getsubcategory');
 Route::get('/admin/getchildcategory', 'AdminController@getchildcategory');
 
-
+Route::post('/admin/store_editcategories', 'AdminController@store_editcategory_post');
 Route::post('/admin/store_categories', 'AdminController@store_category_post');
 Route::get('/admin/store-subcategory', 'AdminController@store_subcategory')->name('store-subcategory');
 Route::get('/admin/subcategory', 'AdminController@subcategory')->name('subcategory');
