@@ -117,8 +117,8 @@ function cart_table(){
           $.ajax({
             type: "GET",
             url: "/admin/getcategory", //call  to store form data
-         
-       
+
+
             contentType: false,
             cache: false,
             processData: false,
@@ -136,21 +136,21 @@ function cart_table(){
 
 
         if (element.status == "enabled"){
-                    
+
         var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
           'Enabled'+
         '</button>';
     }
    else{
-        
+
     var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
         'Disabled'+
       '</button>';
-    
+
     }
 
 
-        t_data = t_data +       
+        t_data = t_data +
         '<tr role="row" class="odd">'+
         '<td>'+
             '<img  src="/uploads/'+element.photo+'" alt="Image Not Found">'+
@@ -158,22 +158,22 @@ function cart_table(){
         '<td>'+
             element.name+
         '</td>'+
-    
+
                         '<td>'+
                             '<div class="dropdown">'+
-                    
-                
+
+
                             status+
-                    
-                    
+
+
                                 '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; transform: translate3d(110px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">'+
                                   '<a class="dropdown-item" onclick="cart_statusenable('+element.id+')">Enable</a>'+
                                   '<a class="dropdown-item" onclick="cart_statusdisable('+element.id+')">Disable</a>'+
                                   ' </div>'+
                                   ' </div>'+
-                    
-                    
-                    
+
+
+
                                   ' </td>'+
                                  '<td>'+
                          '<div class="action-list">'+
@@ -186,9 +186,9 @@ function cart_table(){
                          '   </div>'+
                          ' </td>'+
                          ' </tr>';
-                
-                
-                
+
+
+
                     });
 
                 }
@@ -198,7 +198,7 @@ function cart_table(){
 
 
 
-                
+
 
 
 
@@ -219,8 +219,8 @@ function cart_statusdisable(dataId){
           $.ajax({
             type: "GET",
             url: "/admin/cart_statusdisable/"+ dataId, //call  to store form data
-         
-       
+
+
             contentType: false,
             cache: false,
             processData: false,
@@ -254,8 +254,8 @@ function cart_statusenable(dataId){
     $.ajax({
       type: "GET",
       url: "/admin/cart_statusenable/"+ dataId, //call  to store form data
-   
- 
+
+
       contentType: false,
       cache: false,
       processData: false,
@@ -291,8 +291,8 @@ function sub_cart_table(){
     $.ajax({
       type: "GET",
       url: "/admin/getsubcategory", //call  to store form data
-   
- 
+
+
       contentType: false,
       cache: false,
       processData: false,
@@ -310,13 +310,13 @@ $.each(data.category, function (index, element) {
 
 
   if (element.status == "enabled"){
-              
+
   var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
     'Enabled'+
   '</button>';
 }
 else{
-  
+
 var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
   'Disabled'+
 '</button>';
@@ -324,7 +324,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 }
 
 
-  t_data = t_data +       
+  t_data = t_data +
   '<tr role="row" class="odd">'+
   '<td>'+
     +element.category_id+
@@ -335,19 +335,19 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
                   '<td>'+
                       '<div class="dropdown">'+
-              
-          
+
+
                       status+
-              
-              
+
+
                           '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; transform: translate3d(110px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">'+
                             '<a class="dropdown-item" onclick="cart_statusenable('+element.id+')">Enable</a>'+
                             '<a class="dropdown-item" onclick="cart_statusdisable('+element.id+')">Disable</a>'+
                             ' </div>'+
                             ' </div>'+
-              
-              
-              
+
+
+
                             ' </td>'+
                            '<td>'+
                    '<div class="action-list">'+
@@ -360,9 +360,9 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                    '   </div>'+
                    ' </td>'+
                    ' </tr>';
-          
-          
-          
+
+
+
               });
 
           }
@@ -372,7 +372,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
 
 
-          
+
 
 
 
@@ -395,8 +395,8 @@ function child_cart_table(){
     $.ajax({
       type: "GET",
       url: "/admin/getchildcategory", //call  to store form data
-   
- 
+
+
       contentType: false,
       cache: false,
       processData: false,
@@ -414,13 +414,13 @@ $.each(data.category, function (index, element) {
 
 
   if (element.status == "enabled"){
-              
+
   var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
     'Enabled'+
   '</button>';
 }
 else{
-  
+
 var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
   'Disabled'+
 '</button>';
@@ -428,7 +428,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 }
 
 
-  t_data = t_data +       
+  t_data = t_data +
   '<tr role="row" class="odd">'+
   '<td>'+
   +element.category_id+
@@ -442,19 +442,19 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
                   '<td>'+
                       '<div class="dropdown">'+
-              
-          
+
+
                       status+
-              
-              
+
+
                           '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton" x-placement="bottom-start" style="position: absolute; transform: translate3d(110px, 32px, 0px); top: 0px; left: 0px; will-change: transform;">'+
                             '<a class="dropdown-item" onclick="cart_statusenable('+element.id+')">Enable</a>'+
                             '<a class="dropdown-item" onclick="cart_statusdisable('+element.id+')">Disable</a>'+
                             ' </div>'+
                             ' </div>'+
-              
-              
-              
+
+
+
                             ' </td>'+
                            '<td>'+
                    '<div class="action-list">'+
@@ -467,9 +467,9 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                    '   </div>'+
                    ' </td>'+
                    ' </tr>';
-          
-          
-          
+
+
+
               });
 
           }
@@ -479,7 +479,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
 
 
-          
+
 
 
 
@@ -669,8 +669,8 @@ function product_table(){
     $.ajax({
       type: "GET",
       url: "/admin/getproducts", //call  to store form data
-   
- 
+
+
       contentType: false,
       cache: false,
       processData: false,
@@ -688,13 +688,13 @@ $.each(data.Products, function (index, element) {
 
 
   if (element.status == "enabled"){
-              
+
   var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
     'Enabled'+
   '</button>';
 }
 else{
-  
+
 var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
   'Disabled'+
 '</button>';
@@ -702,11 +702,12 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 }
 
 
-  t_data = t_data +       
+  t_data = t_data +
   '<tr id="product-bulk-delete" role="row" class="odd">'+
   '<td><input type="checkbox" class="bulk-item" value="586"></td>'+
   ' <td>'+
-    '     <img src="/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Image Not Found">'+
+    '     <img src="/uploads/'+element.image=0
+    +'" alt="Image Not Found">'+
         ' </td>'+
     '  <td>'+
     element.name+
@@ -749,12 +750,12 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
               ' </div>'+
             ' </div>'+
 
-        
+
           '</td>'+
 '</tr>';
-          
-          
-          
+
+
+
               });
 
           }
@@ -764,7 +765,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
 
 
-          
+
 
 
 
@@ -788,8 +789,8 @@ function featured_product_table(){
     $.ajax({
       type: "GET",
       url: "/admin/getfeatured_product", //call  to store form data
-   
- 
+
+
       contentType: false,
       cache: false,
       processData: false,
@@ -807,13 +808,13 @@ $.each(data.Products, function (index, element) {
 
 
   if (element.status == "enabled"){
-              
+
   var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
     'Enabled'+
   '</button>';
 }
 else{
-  
+
 var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
   'Disabled'+
 '</button>';
@@ -821,7 +822,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 }
 
 
-  t_data = t_data +       
+  t_data = t_data +
   '<tr role="row" class="odd">'+
 
   ' <td>'+
@@ -853,16 +854,16 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                 '</div>'+
               '</div>'+
             '</td>'+
-    
+
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
       ' <i class="fa fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
-          
-          
-          
+
+
+
               });
 
           }
@@ -872,7 +873,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
 
 
-          
+
 
 
 
@@ -893,8 +894,8 @@ $(document).ready(function (e) {
     $("#add_featured_product").on('submit', function (e) {
         e.preventDefault();
 
- 
-   
+
+
             // AJAX code to submit form.
             $.ajax({
                 type: "POST",
@@ -923,8 +924,8 @@ $(document).ready(function (e) {
                 },
 
             });
-    
-      
+
+
     });
 
 });
@@ -939,8 +940,8 @@ function new_arrival_product_table(){
     $.ajax({
       type: "GET",
       url: "/admin/getnew_arrival_product", //call  to store form data
-   
- 
+
+
       contentType: false,
       cache: false,
       processData: false,
@@ -958,13 +959,13 @@ $.each(data.Products, function (index, element) {
 
 
   if (element.status == "enabled"){
-              
+
   var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
     'Enabled'+
   '</button>';
 }
 else{
-  
+
 var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
   'Disabled'+
 '</button>';
@@ -972,7 +973,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 }
 
 
-  t_data = t_data +       
+  t_data = t_data +
   '<tr role="row" class="odd">'+
 
   ' <td>'+
@@ -1004,16 +1005,16 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                 '</div>'+
               '</div>'+
             '</td>'+
-    
+
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
       ' <i class="fa fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
-          
-          
-          
+
+
+
               });
 
           }
@@ -1023,7 +1024,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
 
 
-          
+
 
 
 
@@ -1044,8 +1045,8 @@ $(document).ready(function (e) {
     $("#add_new_arrival_product").on('submit', function (e) {
         e.preventDefault();
 
- 
-   
+
+
             // AJAX code to submit form.
             $.ajax({
                 type: "POST",
@@ -1076,8 +1077,8 @@ $(document).ready(function (e) {
                 },
 
             });
-    
-      
+
+
     });
 
 });
@@ -1092,8 +1093,8 @@ function top_product_table(){
     $.ajax({
       type: "GET",
       url: "/admin/gettop_product", //call  to store form data
-   
- 
+
+
       contentType: false,
       cache: false,
       processData: false,
@@ -1111,13 +1112,13 @@ $.each(data.Products, function (index, element) {
 
 
   if (element.status == "enabled"){
-              
+
   var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
     'Enabled'+
   '</button>';
 }
 else{
-  
+
 var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
   'Disabled'+
 '</button>';
@@ -1125,7 +1126,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 }
 
 
-  t_data = t_data +       
+  t_data = t_data +
   '<tr role="row" class="odd">'+
 
   ' <td>'+
@@ -1157,16 +1158,16 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                 '</div>'+
               '</div>'+
             '</td>'+
-    
+
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
       ' <i class="fa fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
-          
-          
-          
+
+
+
               });
 
           }
@@ -1176,7 +1177,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
 
 
-          
+
 
 
 
@@ -1197,8 +1198,8 @@ $(document).ready(function (e) {
     $("#add_top_product").on('submit', function (e) {
         e.preventDefault();
 
- 
-   
+
+
             // AJAX code to submit form.
             $.ajax({
                 type: "POST",
@@ -1229,8 +1230,8 @@ $(document).ready(function (e) {
                 },
 
             });
-    
-      
+
+
     });
 
 });
@@ -1245,8 +1246,8 @@ function best_product_table(){
     $.ajax({
       type: "GET",
       url: "/admin/getbest_product", //call  to store form data
-   
- 
+
+
       contentType: false,
       cache: false,
       processData: false,
@@ -1264,13 +1265,13 @@ $.each(data.Products, function (index, element) {
 
 
   if (element.status == "enabled"){
-              
+
   var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
     'Enabled'+
   '</button>';
 }
 else{
-  
+
 var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
   'Disabled'+
 '</button>';
@@ -1278,7 +1279,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 }
 
 
-  t_data = t_data +       
+  t_data = t_data +
   '<tr role="row" class="odd">'+
 
   ' <td>'+
@@ -1310,16 +1311,16 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                 '</div>'+
               '</div>'+
             '</td>'+
-    
+
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
       ' <i class="fa fa-trash-alt"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
-          
-          
-          
+
+
+
               });
 
           }
@@ -1329,7 +1330,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
 
 
-          
+
 
 
 
@@ -1350,8 +1351,8 @@ $(document).ready(function (e) {
     $("#add_best_product").on('submit', function (e) {
         e.preventDefault();
 
- 
-   
+
+
             // AJAX code to submit form.
             $.ajax({
                 type: "POST",
@@ -1382,8 +1383,8 @@ $(document).ready(function (e) {
                 },
 
             });
-    
-      
+
+
     });
 
 });
