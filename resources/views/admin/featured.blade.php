@@ -76,7 +76,7 @@ visibility:hidden
 .SumoSelect.open>.CaptionCont,.SumoSelect:focus>.CaptionCont,.SumoSelect:hover>.CaptionCont {
   box-shadow:0 0 2px #7799D0;
   border-color:#7799D0
-} 
+}
 .SumoSelect>.CaptionCont {
   position:relative;
   border-bottom:1px solid #A4A4A4;
@@ -247,7 +247,7 @@ visibility:hidden
   width:14px;
   height:14px;
   border:1px solid #AEAEAE;
- 
+
   box-shadow:inset 0 1px 3px rgba(0,0,0,.15);
   background-color:#fff
 }
@@ -284,13 +284,13 @@ visibility:hidden
 }
 .SumoSelect>.optWrapper.multiple>.MultiControls>p.btnOk {
   border-right:1px solid #DBDBDB;
-  border-radius:0 0 0 3px 
+  border-radius:0 0 0 3px
 }
 .SumoSelect>.optWrapper.multiple>.MultiControls>p.btnCancel {
   border-radius:0 0 3px
 }
 .SumoSelect>.optWrapper.isFloating>.options li.opt {
-  padding:12px 6px 
+  padding:12px 6px
 }
 .SumoSelect>.optWrapper.multiple.isFloating>.options li.opt {
   padding-left:35px
@@ -345,7 +345,7 @@ visibility:hidden
         </div>
     </div>
 
-    
+
 <script>
 $(document).ready(function () {
     // Country dependent ajax
@@ -356,7 +356,7 @@ $(document).ready(function () {
         url: "/admin/getproducts", //call  to store form data
         cache: false,
         success: function (data) {
-            //  console.log(data);  
+            //  console.log(data);
             var Products = '<option selected="" disabled="" >Select Product</option>';
 
             $.each(data.Products, function (index, element) {
@@ -368,7 +368,7 @@ $(document).ready(function () {
             }
             });
 
-            //  console.log(Products);  
+            //  console.log(Products);
 
             $('#featured_item').html(Products);
             $('#featured_item').SumoSelect({ search: true, searchText: 'Enter here.' });
@@ -387,7 +387,7 @@ $(document).ready(function () {
 
 
 </script>
-	
+
 
 	<div class="card shadow mb-4">
         <div class="card-header">
@@ -398,7 +398,7 @@ $(document).ready(function () {
                             <div class="col-md-6">
                         <div class="form-group ">
                             <select id="featured_item" name="featured_item" class="form-control">
-                   
+
                                                    </select>
 
                                                     </div>
@@ -411,10 +411,11 @@ $(document).ready(function () {
                 </form>
             </div>
         </div>
-       
+
 		<div class="card-body">
 
-            <div id="admin-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row add-btn-area"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="admin-table_length"><label>Show <select name="admin-table_length" aria-controls="admin-table" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="admin-table_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="admin-table"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable no-footer" id="admin-table" width="100%" cellspacing="0" role="grid" aria-describedby="admin-table_info" style="width: 100%;">
+            <div id="admin-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+<div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable no-footer" id="admin-table" width="100%" cellspacing="0" role="grid" aria-describedby="admin-table_info" style="width: 100%;">
 
                 <thead>
                     <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 90.9531px;">Image</th><th width="40%" class="sorting_disabled" rowspan="1" colspan="1" style="width: 365px;">Name</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 77.2969px;">Price</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 100.594px;">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 137.984px;">Show Home Page</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 54.1719px;">Action</th></tr>
@@ -424,251 +425,11 @@ $(document).ready(function () {
 featured_product_table();
                                   </script>
                 <tbody id="featured_product_table">
-                                                                    
-     
-                <tr role="row" class="odd">
-                              <td><img src="/images/1634134720Hedf90cf6656546e7a8548d4980edc5bda.jpg" alt=""></td>
-                              <td>Men Shirt Custom Shirts Hot Sale Men Women Polyester Cotton Long Sleeve Casual pro</td>
-                              <td> $1,352.81</td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Publish
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/40/1/status">Publish</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/40/0/status">Unpublish</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/40/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/40/0/is_feature">Deactive</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">
-                                    <i class="fa fa-trash-alt"></i>
-                                </a>
-                          </td></tr><tr role="row" class="even">
-                              <td><img src="/images/1634134938Hcb62dec2d6a241fc90ce2bb04059684em.jpg" alt=""></td>
-                              <td>UMIDIGI A9 Pro Android Mobile Phone 4g 48MP Quad Camera 6.3" FHD+ Full Screen 6GB RAM</td>
-                              <td> $1,573.03</td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Publish
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/39/1/status">Publish</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/39/0/status">Unpublish</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/39/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/39/0/is_feature">Deactive</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/39">
-                                    <i class="fa fa-trash-alt"></i>
-                                </a>
-                          </td></tr><tr role="row" class="odd">
-                              <td><img src="/images/1634135320H408d7d7e37b4437297de600584c1af1fL.jpg" alt=""></td>
-                              <td>2021 Summer Women Clothing Ropa Sexy Lady Cut Out Halter Mini Dresses</td>
-                              <td> $134.83</td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Publish
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/38/1/status">Publish</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/38/0/status">Unpublish</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/38/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/38/0/is_feature">Deactive</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/38">
-                                    <i class="fa fa-trash-alt"></i>
-                                </a>
-                          </td></tr><tr role="row" class="even">
-                              <td><img src="/images/1634135337H948b3bef197c492d999473dffa5303f9P.jpg" alt=""></td>
-                              <td>Top Sale High Quality Newest Designs Custom Women Clothing Wholesale from China Dresses</td>
-                              <td> $59.55</td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Publish
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/37/1/status">Publish</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/37/0/status">Unpublish</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/37/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/37/0/is_feature">Deactive</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/37">
-                                    <i class="fa fa-trash-alt"></i>
-                                </a>
-                          </td></tr><tr role="row" class="odd">
-                              <td><img src="/images/1634135061Hd8364db18d9942a38e89779ca3b4fa7an.jpg" alt=""></td>
-                              <td>New Arrive Spring Fall Women Clothing Plus Size Dresses Floral Layered Ruffle Off Shoulder Dress</td>
-                              <td> $134.83</td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Publish
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/36/1/status">Publish</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/36/0/status">Unpublish</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/36/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/36/0/is_feature">Deactive</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/36">
-                                    <i class="fa fa-trash-alt"></i>
-                                </a>
-                          </td></tr><tr role="row" class="even">
-                              <td><img src="/images/1634134831H75345266923349e280d5f5e5fd5c71e5a.jpg" alt=""></td>
-                              <td>Dropshipping EIS 2.4 inch LCD Full HD 720P Recording 1.3 Mega HD DV SLR Camera</td>
-                              <td> $134.83</td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Publish
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/35/1/status">Publish</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/35/0/status">Unpublish</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/35/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/35/0/is_feature">Deactive</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/35">
-                                    <i class="fa fa-trash-alt"></i>
-                                </a>
-                          </td></tr><tr role="row" class="odd">
-                              <td><img src="/images/1634134888H624bc94495584b2384c07e2db9f2bdfcd.jpg" alt=""></td>
-                              <td>New product 2019 Refurbished used smart phone for I phone XS MAX XR 64GB 256GB 4G</td>
-                              <td> $932.58</td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Publish
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/34/1/status">Publish</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/34/0/status">Unpublish</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/34/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/34/0/is_feature">Deactive</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/34">
-                                    <i class="fa fa-trash-alt"></i>
-                                </a>
-                          </td></tr><tr role="row" class="even">
-                              <td><img src="/images/1634134777H8fb00d2318bd48048dcd8bf2546f3f52h.jpg" alt=""></td>
-                              <td>Shirts Menshirts Mens Cotton Shirt Factory Direct Various Style Customization</td>
-                              <td> $1,352.81</td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Publish
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/33/1/status">Publish</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/33/0/status">Unpublish</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <div class="dropdown">
-                                    <button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      Active
-                                    </button>
-                                    <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">
-                                      <a class="dropdown-item" href="/admin/campaign/status/33/1/is_feature">Active</a>
-                                      <a class="dropdown-item" href="/admin/campaign/status/33/0/is_feature">Deactive</a>
-                                    </div>
-                                  </div>
-                            </td>
-                              <td>
-                                <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/33">
-                                    <i class="fa fa-trash-alt"></i>
-                                </a>
-                          </td></tr></tbody>
 
-            </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="admin-table_info" role="status" aria-live="polite">Showing 1 to 8 of 8 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="admin-table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="admin-table_previous"><a href="#" aria-controls="admin-table" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="admin-table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="admin-table_next"><a href="#" aria-controls="admin-table" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+
+                </tbody>
+
+            </table></div></div></div>
 		</div>
 	</div>
 

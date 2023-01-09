@@ -14,14 +14,14 @@
         </div>
     </div>
 
- 
+
 	<!-- DataTales -->
 	<div class="card shadow mb-4">
 		<div class="card-body">
-                     
+
             <br>
 			<div class="gd-responsive-table">
-				<div id="admin-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row add-btn-area"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="admin-table_length"><label>Show <select name="admin-table_length" aria-controls="admin-table" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="admin-table_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="admin-table"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable no-footer" id="admin-table" width="100%" cellspacing="0" role="grid" aria-describedby="admin-table_info" style="width: 100%;">
+				<div id="admin-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable no-footer" id="admin-table" width="100%" cellspacing="0" role="grid" aria-describedby="admin-table_info" style="width: 100%;">
 
 					<thead>
 						<tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 16.0625px;"> <input type="checkbox" data-target="product-bulk-delete" class="form-control bulk_all_delete"> </th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 79.4844px;">Image</th><th width="30%" class="sorting_disabled" rowspan="1" colspan="1" style="width: 272px;">Name</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 67.2969px;">Price</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 81.0469px;">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 65.1562px;">Type</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 118.344px;">Item Type</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 91.6094px;">Actions</th></tr>
@@ -30,15 +30,15 @@
 					<tbody>
 
 
-						
+
                         					</tbody>
 
 
 
 
 				</table>
-			
-			
+
+
 			</div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="admin-table_info" role="status" aria-live="polite">Showing 0 to 0 of 0 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="admin-table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="admin-table_previous"><a href="#" aria-controls="admin-table" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item next disabled" id="admin-table_next"><a href="#" aria-controls="admin-table" data-dt-idx="1" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
 			</div>
 		</div>

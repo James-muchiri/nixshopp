@@ -97,7 +97,7 @@
 
             <br>
 			<div class="gd-responsive-table">
-				<div id="admin-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row add-btn-area"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="admin-table_length"><label>Show <select name="admin-table_length" aria-controls="admin-table" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="admin-table_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="admin-table"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable no-footer" id="admin-table" width="100%" cellspacing="0" role="grid" aria-describedby="admin-table_info" style="width: 100%;">
+				<div id="admin-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable no-footer" id="admin-table" width="100%" cellspacing="0" role="grid" aria-describedby="admin-table_info" style="width: 100%;">
 
 					<thead>
 						<tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 16.5px;"> <input type="checkbox" data-target="product-bulk-delete" class="form-control bulk_all_delete"> </th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 78.75px;">Image</th><th width="30%" class="sorting_disabled" rowspan="1" colspan="1" style="width: 267.5px;">Name</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 66.5312px;">Price</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 103.609px;">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 82.2656px;">Type</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 70.2969px;">Item Type</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 90.5469px;">Actions</th></tr>
@@ -109,7 +109,7 @@
 product_table();
                 </script>
 					<tbody id="product_table">
-                        
+
 
 
 
@@ -162,7 +162,7 @@ product_table();
 
 
 
-  
+
 
 
 

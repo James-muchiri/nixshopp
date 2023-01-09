@@ -76,7 +76,7 @@ visibility:hidden
 .SumoSelect.open>.CaptionCont,.SumoSelect:focus>.CaptionCont,.SumoSelect:hover>.CaptionCont {
   box-shadow:0 0 2px #7799D0;
   border-color:#7799D0
-} 
+}
 .SumoSelect>.CaptionCont {
   position:relative;
   border-bottom:1px solid #A4A4A4;
@@ -247,7 +247,7 @@ visibility:hidden
   width:14px;
   height:14px;
   border:1px solid #AEAEAE;
- 
+
   box-shadow:inset 0 1px 3px rgba(0,0,0,.15);
   background-color:#fff
 }
@@ -284,13 +284,13 @@ visibility:hidden
 }
 .SumoSelect>.optWrapper.multiple>.MultiControls>p.btnOk {
   border-right:1px solid #DBDBDB;
-  border-radius:0 0 0 3px 
+  border-radius:0 0 0 3px
 }
 .SumoSelect>.optWrapper.multiple>.MultiControls>p.btnCancel {
   border-radius:0 0 3px
 }
 .SumoSelect>.optWrapper.isFloating>.options li.opt {
-  padding:12px 6px 
+  padding:12px 6px
 }
 .SumoSelect>.optWrapper.multiple.isFloating>.options li.opt {
   padding-left:35px
@@ -345,7 +345,7 @@ visibility:hidden
         </div>
     </div>
 
-    
+
 <script>
 
 $(document).ready(function () {
@@ -357,7 +357,7 @@ $(document).ready(function () {
         url: "/admin/getproducts", //call  to store form data
         cache: false,
         success: function (data) {
-            //  console.log(data);  
+            //  console.log(data);
             var Products = '<option selected="" disabled="" >Select Product</option>';
 
             $.each(data.Products, function (index, element) {
@@ -369,7 +369,7 @@ $(document).ready(function () {
             }
             });
 
-            //  console.log(Products);  
+            //  console.log(Products);
 
             $('#best_product_item').html(Products);
             $('#best_product_item').SumoSelect({ search: true, searchText: 'Enter here.' });
@@ -387,7 +387,7 @@ $(document).ready(function () {
 
 
 </script>
-	
+
 
 	<div class="card shadow mb-4">
         <div class="card-header">
@@ -398,7 +398,7 @@ $(document).ready(function () {
                             <div class="col-md-6">
                         <div class="form-group ">
                             <select id="best_product_item" name="best_product_item" class="form-control">
-                   
+
                                                    </select>
 
                                                     </div>
@@ -411,10 +411,10 @@ $(document).ready(function () {
                 </form>
             </div>
         </div>
-       
+
 		<div class="card-body">
 
-            <div id="admin-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row add-btn-area"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="admin-table_length"><label>Show <select name="admin-table_length" aria-controls="admin-table" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="admin-table_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="admin-table"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable no-footer" id="admin-table" width="100%" cellspacing="0" role="grid" aria-describedby="admin-table_info" style="width: 100%;">
+            <div id="admin-table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12"><table class="table table-bordered table-striped dataTable no-footer" id="admin-table" width="100%" cellspacing="0" role="grid" aria-describedby="admin-table_info" style="width: 100%;">
 
                 <thead>
                     <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 90.9531px;">Image</th><th width="40%" class="sorting_disabled" rowspan="1" colspan="1" style="width: 365px;">Name</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 77.2969px;">Price</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 100.594px;">Status</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 137.984px;">Show Home Page</th><th class="sorting_disabled" rowspan="1" colspan="1" style="width: 54.1719px;">Action</th></tr>
@@ -424,10 +424,10 @@ $(document).ready(function () {
 best_product_table();
                                   </script>
                 <tbody id="best_product_table">
-                                                                    
+
      </tbody>
 
-            </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="admin-table_info" role="status" aria-live="polite">Showing 1 to 8 of 8 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="admin-table_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="admin-table_previous"><a href="#" aria-controls="admin-table" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="admin-table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="admin-table_next"><a href="#" aria-controls="admin-table" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+            </table></div></div></div>
 		</div>
 	</div>
 

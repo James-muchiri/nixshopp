@@ -76,8 +76,8 @@ class AdminController extends Controller
       }
         $category->name = $request->name;
         $category->slug = $request->slug;
-      
- 
+
+
 
 
         $category->save();
@@ -124,21 +124,21 @@ class AdminController extends Controller
     public function  edit_category($dataid)
     {
         $category = Category::find($dataid);
-       
+
         return view('admin.edit_category', compact('category'));
     }
     public function categorydelete($dataid)
     {
         $category = Category::find($dataid);
         $category->delete();
-        
+
         return redirect()->route('category')->with('status','deleted');
     }
     public function    getcategory()
     {
 
         $category = Category::all();
-   
+
 
 
         return response()->json([
@@ -153,7 +153,7 @@ class AdminController extends Controller
     {
 
         $category = Sub_Category::all();
-   
+
 
 
         return response()->json([
@@ -169,7 +169,7 @@ class AdminController extends Controller
     {
 
         $category = Child_Category::all();
-   
+
 
 
         return response()->json([
@@ -217,7 +217,7 @@ class AdminController extends Controller
         ]);
 
     }
-    
+
     public function  subcategory()
     {
 
@@ -306,7 +306,7 @@ class AdminController extends Controller
 
         ]);
     }
-    
+
 
 
     public function  getnew_arrival_product()
@@ -341,7 +341,7 @@ class AdminController extends Controller
         ]);
     }
     public function  add_featured_product(Request $request){
-    
+
 
         $Products = Products::find($request->featured_item);
         $Products->type = "featured";
@@ -354,7 +354,7 @@ class AdminController extends Controller
         ]);
     }
     public function  add_new_arrival_product(Request $request){
-    
+
 
         $Products = Products::find($request->new_arrival_item);
         $Products->type = "new_arrival";
@@ -368,7 +368,7 @@ class AdminController extends Controller
     }
 
     public function  add_top_product(Request $request){
-    
+
 
         $Products = Products::find($request->top_product_item);
         $Products->type = "top_products";
@@ -381,7 +381,7 @@ class AdminController extends Controller
         ]);
     }
     public function  add_best_product(Request $request){
-    
+
 
         $Products = Products::find($request->best_product_item);
         $Products->type = "best_products";
@@ -393,7 +393,7 @@ class AdminController extends Controller
 
         ]);
     }
-   
+
 
     public function  store_product()
     {
@@ -592,7 +592,19 @@ class AdminController extends Controller
     public function   Banner()
     {
         $category = Category::all();
-        return view('admin.Banner', compact('category'));
+        $header_banner1= Banners::where('banner', 'header banner')->where('img_id', 1)->first();
+        $header_banner2= Banners::where('banner', 'header banner')->where('img_id', 2)->first();
+        $banneer21= Banners::where('banner', '3banneer')->where('img_id', 1)->first();
+        $banneer22= Banners::where('banner', '3banneer')->where('img_id', 2)->first();
+        $banneer23= Banners::where('banner', '3banneer')->where('img_id', 3)->first();
+        $banneer31= Banners::where('banner', 'column_banner_Second')->where('img_id', 1)->first();
+        $banneer32= Banners::where('banner', 'column_banner_Second')->where('img_id', 2)->first();
+        $banneer33= Banners::where('banner', 'column_banner_Second')->where('img_id', 3)->first();
+        $banneer41= Banners::where('banner', 'a2_column_banner')->where('img_id', 1)->first();
+        $banneer42= Banners::where('banner', 'a2_column_banner')->where('img_id', 2)->first();
+     
+
+        return view('admin.Banner', compact('category', 'header_banner1', 'header_banner2', 'banneer21', 'banneer22', 'banneer23','banneer31', 'banneer32', 'banneer33','banneer41', 'banneer42'));
     }
 
 
@@ -601,6 +613,11 @@ class AdminController extends Controller
         $fileName1 = 'hero1'.'_banner'.'.'.$request->img1->extension();
 
         $request->img1->move(public_path('uploads'), $fileName1);
+
+        $header_banner1= Banners::where('banner', 'header banner')->where('img_id', 1)->first();
+        if($header_banner1){
+            $header_banner1->delete();
+        }
 
         $slider = new Banners;
         $slider->banner = $request->banner;
@@ -629,6 +646,11 @@ class AdminController extends Controller
 
         $request->img2->move(public_path('uploads'), $fileName1);
 
+        $header_banner2= Banners::where('banner', 'header banner')->where('img_id', 2)->first();
+        if($header_banner2){
+            $header_banner2->delete();
+        }
+
         $slider = new Banners;
         $slider->banner = $request->banner;
         $slider->title = $request->title2;
@@ -650,6 +672,11 @@ class AdminController extends Controller
         $fileName1 = '3banner'.'_banner'.'.'.$request->img1->extension();
 
         $request->img1->move(public_path('uploads'), $fileName1);
+
+          $slider= Banners::where('banner', '3banneer')->where('img_id', 1)->first();
+        if(  $slider){
+            $slider->delete();
+        }
 
         $slider = new Banners;
         $slider->banner = "3banneer";
@@ -673,6 +700,11 @@ class AdminController extends Controller
 
         $request->img2->move(public_path('uploads'), $fileName1);
 
+
+        $slider= Banners::where('banner', '3banneer')->where('img_id', 2)->first();
+        if(  $slider){
+            $slider->delete();
+        } 
         $slider = new Banners;
         $slider->banner = "3banneer";
         $slider->title = $request->title2;
@@ -693,6 +725,11 @@ class AdminController extends Controller
         $fileName1 = '3banner'.'_banner3'.'.'.$request->img3->extension();
 
         $request->img3->move(public_path('uploads'), $fileName1);
+
+        $slider= Banners::where('banner', '3banneer')->where('img_id', 3)->first();
+        if(  $slider){
+            $slider->delete();
+        }
 
         $slider = new Banners;
         $slider->banner = "3banneer";

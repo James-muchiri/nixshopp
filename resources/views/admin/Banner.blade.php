@@ -38,13 +38,13 @@
                         <div class="tab-pane fade active show" id="v-pills-t9" role="tabpanel" aria-labelledby="v-pills-t9-tab">
                             <form class="admin-form" id="heroimg1" enctype="multipart/form-data">
                                 @csrf
-                                        <input type="hidden" name="banner" value="header banner">          
-                                        
-                                        
+                                        <input type="hidden" name="banner" value="header banner">
+
+
                                         <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/ONMF222.jpg" alt="No Image Found">
+                                                <img class="admin-img" src="{{ asset('uploads') }}/{{$header_banner1->photo}}" alt="No Image Found">
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -57,15 +57,15 @@
 
                                         <div class="form-group">
                                             <label for="title1">Title *</label>
-                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="Watch">
+                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$header_banner1->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle1">Subtitle </label>
-                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="50% OFF">
+                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="{{$header_banner1->subtitle}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="url1">URL 1 *</label>
-                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Url" value="#">
+                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Url" value="{{$header_banner1->url}}">
                                         </div>
 
                                         <div class="form-group">
@@ -75,12 +75,12 @@
                                         <hr>
                                 <form id="heroimg2">
                                     @csrf
-                                    <input type="hidden" name="banner" value="header banner">      
+                                    <input type="hidden" name="banner" value="header banner">
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/24gX1111.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$header_banner2->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -92,15 +92,15 @@
 
                                         <div class="form-group">
                                             <label for="title2">Title *</label>
-                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="Man">
+                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$header_banner2->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle2">Subtitle </label>
-                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="40% OFF">
+                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$header_banner1->subtitle}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="url2">URL 2 *</label>
-                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Url" value="#">
+                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Url" value="{{$header_banner1->url}}">
                                         </div>
 
 
@@ -114,8 +114,8 @@
                                  @csrf                                  <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/16365336391.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer21->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -127,16 +127,16 @@
 
                                         <div class="form-group">
                                             <label for="title1">Title *</label>
-                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="Watch">
+                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$banneer21->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle1">Subtitle *</label>
-                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="50% OFF">
+                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle"value="{{$banneer21->subtitle}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL 1 *</label>
-                                            <input type="text" name="firsturl1" class="form-control" id="firsturl1" placeholder="Enter Banner Url" value="#">
+                                            <input type="text" name="firsturl1" class="form-control" id="firsturl1" placeholder="Enter Banner Url" value="{{$banneer21->url}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -150,8 +150,8 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/16365336392.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer22->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -163,16 +163,16 @@
 
                                         <div class="form-group">
                                             <label for="title2">Title *</label>
-                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="Drone">
+                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$banneer22->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle2">Subtitle *</label>
-                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="40% OFF">
+                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$banneer22->subtitle}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="firsturl2">URL 2 *</label>
-                                            <input type="text" name="firsturl2" class="form-control" id="firsturl2" placeholder="Enter Banner Url" value="#">
+                                            <input type="text" name="firsturl2" class="form-control" id="firsturl2" placeholder="Enter Banner Url" value="{{$banneer22->url}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -185,8 +185,8 @@
                                         <div class="form-group">
                                             <label for="name">Image 3 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/16365336393.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer23->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -198,17 +198,17 @@
 
                                         <div class="form-group">
                                             <label for="title3">Title *</label>
-                                            <input type="text" name="title3" class="form-control" id="title3" placeholder="Enter Title" value="Phone">
+                                            <input type="text" name="title3" class="form-control" id="title3" placeholder="Enter Title" value="{{$banneer23->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle3">Subtitle *</label>
-                                            <input type="text" name="subtitle3" class="form-control" id="subtitle3" placeholder="Enter Subtitle" value="30% OFF">
+                                            <input type="text" name="subtitle3" class="form-control" id="subtitle3" placeholder="Enter Subtitle" value="{{$banneer23->subtitle}}">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="firsturl3">URL 3 *</label>
-                                            <input type="text" name="firsturl3" class="form-control" id="firsturl3" placeholder="Enter Banner Url" value="#">
+                                            <input type="text" name="firsturl3" class="form-control" id="firsturl3" placeholder="Enter Banner Url" value="{{$banneer23->url}}">
                                         </div>
 
                                     <div class="form-group">
@@ -219,7 +219,7 @@
                         <div class="tab-pane fade" id="v-pills-t2" role="tabpanel" aria-labelledby="v-pills-t2-tab">
 
                             <form class="admin-form" id="popular_cat_form">
-                                    @csrf             
+                                    @csrf
                                         <div class="form-group">
                                         <label for="popular_title">Section Title *</label>
                                         <input type="text" disabled name="popular_title" class="form-control" id="popular_title" placeholder="Popular Category" value="Popular Categories">
@@ -336,8 +336,8 @@
                               @csrf                                  <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/16365342794.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer31->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -349,16 +349,16 @@
 
                                         <div class="form-group">
                                             <label for="title1">Title *</label>
-                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="Watch">
+                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title"  value="{{$banneer31->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle1">Subtitle *</label>
-                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="50% OFF">
+                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle"  value="{{$banneer31->subtitle}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL 1 *</label>
-                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Banner Url" value="#">
+                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Banner Url"  value="{{$banneer31->url}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -370,8 +370,8 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/16365342795.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer32->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -383,16 +383,16 @@
 
                                         <div class="form-group">
                                             <label for="title2">Title *</label>
-                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="Man">
+                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title"  value="{{$banneer32->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle2">Subtitle *</label>
-                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="40% OFF">
+                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle"  value="{{$banneer32->subtitle}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL 2 *</label>
-                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Banner Url" value="#">
+                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Banner Url" value="{{$banneer32->url}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -404,8 +404,8 @@
                                         <div class="form-group">
                                             <label for="name">Image 3 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/16365342796.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer33->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -417,17 +417,17 @@
 
                                         <div class="form-group">
                                             <label for="title3">Title *</label>
-                                            <input type="text" name="title3" class="form-control" id="title3" placeholder="Enter Title" value="Headphone">
+                                            <input type="text" name="title3" class="form-control" id="title3" placeholder="Enter Title" value="{{$banneer33->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle3">Subtitle *</label>
-                                            <input type="text" name="subtitle3" class="form-control" id="subtitle3" placeholder="Enter Subtitle" value="60% OFF">
+                                            <input type="text" name="subtitle3" class="form-control" id="subtitle3" placeholder="Enter Subtitle" value="{{$banneer33->subtitle}}">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="url">URL 3 *</label>
-                                            <input type="text" name="url3" class="form-control" id="url3" placeholder="Enter Banner Url" value="#">
+                                            <input type="text" name="url3" class="form-control" id="url3" placeholder="Enter Banner Url" value="{{$banneer33->url}}">
                                         </div>
 
                                     <div class="form-group">
@@ -438,8 +438,8 @@
 
                         <div class="tab-pane fade" id="v-pills-t3" role="tabpanel" aria-labelledby="v-pills-t3-tab">
                             <form class="admin-form" id="Three_column_category_form">
-                                @csrf             
-                                  
+                                @csrf
+
                                 <hr>
                                 <h2 class=""><b>Category 1 :</b></h2>
 
@@ -515,8 +515,8 @@
                                         <option value="">Select one</option>
                                     </select>
                                 </div>
-                               
-                               
+
+
 
 
                             <div class="form-group">
@@ -527,7 +527,7 @@
 
                         <div class="tab-pane fade" id="v-pills-t4" role="tabpanel" aria-labelledby="v-pills-t4-tab">
                             <form class="admin-form" id="featured_cat_form">
-                                @csrf             
+                                @csrf
                                     <div class="form-group">
                                     <label for="popular_title">Section Title *</label>
                                     <input type="text" disabled name="popular_title" class="form-control" id="popular_title" placeholder="Popular Category" value="Featured Categories">
@@ -643,8 +643,8 @@
                          @csrf                                      <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/1636534291b22.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer41->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -655,30 +655,29 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="title1">Title *</label>
-                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="Watch">
-                                        </div>
+                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$banneer41->title}}">
                                         <div class="form-group">
                                             <label for="subtitle1">Subtitle *</label>
-                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="50% OFF">
+                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="{{$banneer41->subtitle}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL 1 *</label>
-                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Banner Url" value="#">
+                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Banner Url" value="{{$banneer41->url}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
                                 </div>
                             </form>
-                                
+
                                         <hr>
                                         <form class="admin-form" id="2-column-banner2" enctype="multipart/form-data">
 @csrf
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
-                                                <img class="admin-img" src="/images/1636534291b11.jpg" alt="No Image Found">
-                                            <br>
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer42->photo}}" alt="No Image Found">
+                                        <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -690,15 +689,15 @@
 
                                         <div class="form-group">
                                             <label for="title2">Title *</label>
-                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="Headphones">
+                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$banneer42->title}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle2">Subtitle *</label>
-                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="40% OFF">
+                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$banneer42->subtitle}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="url">URL 2 *</label>
-                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Banner Url" value="#">
+                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Banner Url" value="{{$banneer42->url}}">
                                         </div>
 
                                     <div class="form-group">
@@ -707,8 +706,8 @@
                             </form>
                         </div>
 
-         
-                    
+
+
 
                         </div>
                     </div>
