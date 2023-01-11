@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use App\Slider;
 use App\Banners;
 use App\Category;
@@ -10,6 +11,7 @@ use App\Sub_Category;
 use App\Child_Category;
 use App\Products;
 use App\Featured_categories; 
+use App\E_users;
 class ShopController extends Controller
 {
     //
@@ -34,8 +36,74 @@ class ShopController extends Controller
         
         ));
     }
+    public function getusersignIn(Request $request)
+    {
+ 
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
 
+        return view('auth.userlogin', compact('sub_category', 'child_category',
+       'category'
+        
+        ));
+    }
 
+    public function dashboard()
+    {
+ 
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+
+        return view('index.dashboard', compact('sub_category', 'child_category',
+        'category'
+        
+        ));
+    }
+
+    public function wishlist()
+    {
+ 
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+
+        return view('index.wishlist', compact('sub_category', 'child_category',
+        'category'
+        
+        ));
+    }
+
+    public function store_user_reg(Request $request)
+{
+
+//    $details= request()->validate([
+//     'first_name' => ['required', 'string', 'max:255'],
+//     'middle_name' => ['required', 'string', 'max:255'],
+//     'last_name' => ['required', 'string', 'max:255'],
+//     'phone_no' => ['required', 'string', 'max:255'],
+//         'email' => ['required', 'string', 'email','max:255', 'unique:users'],
+//         'address' => ['required', 'string', 'max:255'],
+//         'password' => ['required', 'string', 'min:8', 'confirmed']
+//     ]);
+
+    $tecshop_user =  E_users::create([
+        'first_name'=>$request->first_name,
+        'middle_name'=>$request->last_name,
+        'last_name'=>$request->last_name,
+        'tel_no'=>$request->phone_no,        
+        'email'=>$request->email,
+        'password'=> Hash::make($request->password)
+        ]);
+
+        return response()->json([
+            "status" => 200,
+            "message" => "action completed successfully",
+
+        ]);
+
+        }
     public function shop()
 
     {

@@ -11,13 +11,34 @@
                 <div class="col-sm-6">
                     <div class="right-area">
 
+                        @if (Auth::guard('e-users')->check()) 
+                        <div class="login-register ">
+                            <div class="t-h-dropdown">
+    <div class="main-link">
+        <i class="icon-user pr-2"></i> <span class="text-label">{{auth()->guard('e-users')->user()->first_name}} {{auth()->guard('e-users')->user()->last_name}}</span>
+    </div>
+    <div class="t-h-dropdown-menu">
+        <a href="/user/dashboard"><i class="icon-chevron-right pr-2"></i>Dashboard</a>
+        <a href="/user/logout"><i class="icon-chevron-right pr-2"></i>Logout</a>
+    </div>
+</div>
+                        </div>
+
+                        @else
+                        
+                        <div class="login-register ">
+                            <a class="track-order-link mr-0" href="user/login">
+Login/Register
+</a>
+                        </div>
+     
+            @endif
+
                       
 
-                        <div class="login-register ">
-                                                        <a class="track-order-link mr-0" href="user/login">
-                            Login/Register
-                            </a>
-                                                    </div>
+                                                
+
+
                     </div>
                 </div>
             </div>

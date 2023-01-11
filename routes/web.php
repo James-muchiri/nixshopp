@@ -28,6 +28,18 @@ Route::get('/get/Women-Clothing/popular_category/slider', 'ShopController@slider
 Route::get('get/type/feature', 'ShopController@mixed');
 
 
+//login routes           getadminSignIn
+
+Route::get('/user/login', 'ShopController@getusersignIn')->name('getadminSignIn');
+Route::get('/user/logout', 'Auth\LoginController@usersignOut');
+
+
+Route::post('/user/userlogin', 'Auth\LoginController@usersignIn');
+Route::post('/user/user_register', 'ShopController@store_user_reg');
+
+//after login routes
+Route::get('/user/dashboard', 'ShopController@dashboard');
+Route::get('/user/wishlists', 'ShopController@wishlist');
 
 // compare routes 
 Route::get('/compare', 'ShopController@compare')->name('compare'); //compare view
@@ -138,3 +150,7 @@ Route::get('/admin/orders/Canceled', 'AdminController@orders_Canceled')->name('o
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
