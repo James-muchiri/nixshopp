@@ -39,7 +39,20 @@ Route::post('/user/user_register', 'ShopController@store_user_reg');
 
 //after login routes
 Route::get('/user/dashboard', 'ShopController@dashboard');
-Route::get('/user/wishlists', 'ShopController@wishlist');
+Route::get('/user/wishlists', 'ShopController@wishlist')->name('wishlist');
+Route::get('/user/profile', 'ShopController@profile');
+Route::get('/user/orders', 'ShopController@orders');
+Route::get('/user/tickets', 'ShopController@tickets');
+Route::get('/user/storewishlists/{dataId}', 'ShopController@storeWishlist');
+Route::get('/user/fetchwishlists', 'ShopController@fetchWishlist');
+Route::get('/user/countwishlists', 'ShopController@countWishlist');
+Route::get('/user/removewishlists/{dataId}', 'ShopController@removeWishlist');
+Route::get('/user/wishlist/deleteall', 'ShopController@deleteWishlist');
+
+Route::post('/user/profile/update', 'ShopController@profile_update');
+
+
+
 
 // compare routes 
 Route::get('/compare', 'ShopController@compare')->name('compare'); //compare view

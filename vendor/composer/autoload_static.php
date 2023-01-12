@@ -452,6 +452,7 @@ class ComposerStaticInita3abfe72bce397f4039538f2d865c538
         'App\\Sub_Category' => __DIR__ . '/../..' . '/app/Sub_Category.php',
         'App\\Three_column_category' => __DIR__ . '/../..' . '/app/Three_column_category.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\wishlist' => __DIR__ . '/../..' . '/app/wishlist.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'BeyondCode\\DumpServer\\DumpServerCommand' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
         'BeyondCode\\DumpServer\\DumpServerServiceProvider' => __DIR__ . '/..' . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',

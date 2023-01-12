@@ -22,6 +22,7 @@ class CreateEUsersTable extends Migration
             $table->string('tel_no')->unique();  
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('image')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

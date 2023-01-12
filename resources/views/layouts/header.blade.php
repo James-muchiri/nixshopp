@@ -105,9 +105,33 @@ Login/Register
                             </span></span><span class="text-label">Compare</span></div>
                             </a>
                         </div>
-                                                <div class="toolbar-item hidden-on-mobile"><a href="/user/login">
-                          <div><span class="compare-icon"><i class="fa fa-heart"></i></span><span class="text-label">Wishlist</span></div>
-                          </a>
+                                                <div class="toolbar-item hidden-on-mobile">
+                                                    
+                                                    
+                          
+
+
+                            @if (Auth::guard('e-users')->check()) 
+     
+                     
+                            <a href="/user/wishlists">
+                                <div><span class="compare-icon"><i class="fa fa-heart"></i> <script>wishlistcount1();</script><span class="count-label wishlist_count"></span></span><span class="text-label">Wishlist</span></div>
+                                </a>
+    
+    
+                            @else
+                            
+                            <a href="/user/login">
+                                <div><span class="compare-icon"><i class="fa fa-heart"></i></span><span class="text-label">Wishlist</span></div>
+                                </a>
+      
+         
+                @endif
+    
+
+
+
+
                       </div>
                                                 <div class="toolbar-item">
                                                     <a href="/product/cart" onmouseover="fetchRecord()">
@@ -116,15 +140,14 @@ Login/Register
                             </span></span><span class="text-label">Cart</span></div>
                             </a>
                             <div class="toolbar-dropdown cart-dropdown widget-cart  cart_view_header" id="header_cart_load" data-target="">
-                       <table>
-                    <thead>
-                        </thead>       
+                
                   
-                      <tbody id="cart_table">
+                      
+                   
 
-                     </tbody>
 
-                    </table>   
+
+                     
   </div>
 
 

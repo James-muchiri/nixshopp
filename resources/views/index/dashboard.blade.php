@@ -29,15 +29,15 @@
           </div>
   
           <div class="user-data">
-            <h4 class="h5">{{auth()->guard('e-users')->user()->first_name}} {{auth()->guard('e-users')->user()->last_name}}</h4><span>Joined {{auth()->guard('e-users')->user()->created_at}}</span>
+            <h4 class="h5">{{auth()->guard('e-users')->user()->first_name}} {{auth()->guard('e-users')->user()->last_name}}</h4><span>Joined  {{auth()->guard('e-users')->user()->created_at->format('Y-m-d')}}</span>
           </div>
         </div>
         <nav class="list-group">
           <a class="list-group-item active" href="/user/dashboard"><i class="fa fa-terminal"></i>Dashboard</a>
           <a class="list-group-item " href="/user/profile"><i class="fa fa-user"></i>Profile</a>
-          <a class="list-group-item " href="/user/ticket"><i class="fa fa-file-text"></i>Support Ticket</a>
+          <a class="list-group-item " href="/user/tickets"><i class="fa fa-file-text"></i>Support Ticket</a>
           <a class="list-group-item with-badge " href="/user/orders"><i class="fa fa-shopping-bag"></i>Orders<span class="badge badge-default badge-pill">11</span></a>
-          <a class="list-group-item " href="/user/addresses"><i class="fa fa-map-pin"></i>Address</a>
+          {{-- <a class="list-group-item " href="/user/addresses"><i class="fa fa-map-pin"></i>Address</a> --}}
           <a class="list-group-item  with-badge " href="/user/wishlists"><i class="fa fa-heart"></i>Wishlist<span class="badge badge-default badge-pill">3</span></a>
           <a class="list-group-item remove-account with-badge" data-bs-toggle="modal" data-bs-target=".modal" href="javascript:;"><i class="fa fa-trash"></i>Delete Account</a>
           <a class="list-group-item with-badge" href="/user/logout"><i class="fa fa-sign-out"></i>Log out</a>

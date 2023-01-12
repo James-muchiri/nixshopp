@@ -18,10 +18,11 @@
                                                             <div class="product-badge product-badge2 bg-info"> -33%</div>
                                             <img class="lazy" alt="Product"     src="{{ asset('uploads') }}/{{$item->image}}"
                                                         style="">
-                        <div class="product-button-group"><a class="product-button wishlist_store" href="//user/wishlist/store/587" title="Wishlist"><i class="icon-heart"></i></a>
-                            <a data-target="/compare/product/{{$item->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
-                            <a class="product-button add_to_single_cart" data-target="/cart/product/{{$item->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-heart"></i>
-    </a>
+                        <div class="product-button-group">
+                            <a class="product-button wishlist_store" href="user/storewishlists/{{$item->id}}" title="Wishlist"><i class="fa fa-heart"></i></a>
+                                        <a data-target="/compare/product/{{$item->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
+                                        <a class="product-button add_to_single_cart" data-target="/cart/product/{{$item->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-cart-plus"></i>
+                </a>
                             </div>
                 </div>
                 <div class="product-card-body">

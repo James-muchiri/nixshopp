@@ -43,6 +43,7 @@ return array(
     'App\\Sub_Category' => $baseDir . '/app/Sub_Category.php',
     'App\\Three_column_category' => $baseDir . '/app/Three_column_category.php',
     'App\\User' => $baseDir . '/app/User.php',
+    'App\\wishlist' => $baseDir . '/app/wishlist.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'BeyondCode\\DumpServer\\DumpServerCommand' => $vendorDir . '/beyondcode/laravel-dump-server/src/DumpServerCommand.php',
     'BeyondCode\\DumpServer\\DumpServerServiceProvider' => $vendorDir . '/beyondcode/laravel-dump-server/src/DumpServerServiceProvider.php',

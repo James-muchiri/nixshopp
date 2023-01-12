@@ -657,20 +657,35 @@ $(function ($) {
             e.preventDefault();
             let wishlist_url = $(this).attr('href');
             $.get(wishlist_url, function (response) {
-                if (response.status == 0) {
-                    location.href = response.link;
-                } else if (response.status == 2) {
+                if (response.status == 202) {
+                    location.href = "/user/login";
+                } else if (response.status == 201) {
                     dangerNotification(response.message);
+                    wishlistcount1();
                 } else {
-                    $('.wishlist1').addClass('d-none');
-                    $('.wishlist2').removeClass('d-none');
-                    $('.wishlist_count').text(response.count)
+                    // $('.wishlist1').addClass('d-none');
+                    // $('.wishlist2').removeClass('d-none');
+                    // $('.wishlist_count').text(response.count)
                     successNotification(response.message);
+                    wishlistcount1();
                 }
             })
         })
 
 
+        $(document).on('click', '#entry-delete', function (e) {
+            e.preventDefault();
+            let cartdel_url = $(this).attr('href');
+            console.log(cartdel_url);
+            $.get(cartdel_url, function (response) {
+             
+                    successNotification(response.message);
+                    fetchRecord();
+                    Cartcount();
+                    cartfetchRecord();
+                
+            })
+        })
         // catalog js start
         $(document).on("click", ".brand-select", function () {
             $('.brand-select').prop('checked', false);

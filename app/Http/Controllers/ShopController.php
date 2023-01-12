@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Response;
+use Redirect;
 use Illuminate\Support\Facades\Hash;
 use App\Slider;
 use App\Banners;
@@ -12,6 +14,7 @@ use App\Child_Category;
 use App\Products;
 use App\Featured_categories; 
 use App\E_users;
+use App\wishlist;
 class ShopController extends Controller
 {
     //
@@ -69,12 +72,205 @@ class ShopController extends Controller
         $sub_category = Sub_Category::all();
         $child_category = Child_Category::all();
 
+        $user=auth()->guard('e-users')->user();
+        if (!$user) {
+            return view('auth.userlogin', compact('sub_category', 'child_category',
+            'category'
+             
+             ));
+        }else{
+        
+        $user = auth()->guard('e-users')->user();
+        $user_id=$user['id'];
+        $wishlists=Wishlist::join('products', 'products.id','=','wishlists.products_id' )
+        ->where('users_id', $user_id)
+        ->get(['products.name','products.image','products.c_price','products.id']);
+
+
+
+
+   
+
         return view('index.wishlist', compact('sub_category', 'child_category',
-        'category'
+        'category', 'wishlists'
         
         ));
     }
 
+}
+  
+    public function fetchWishlist(){
+        
+        
+      
+        
+        $user = auth()->guard('e-users')->user();
+        $user_id=$user['id'];
+     
+    
+        $wishlists=Wishlist::join('products', 'products.id','=','wishlists.products_id' )
+            ->where('users_id', $user_id)
+            ->get(['products.name','products.image','products.c_price','products.id']);
+       
+      return $wishlists;
+    
+   
+    }
+    
+    
+    
+    public function storeWishlist(Request $request,$dataId){
+    
+      
+        
+        $user = auth()->guard('e-users')->user();
+        if (!$user) {
+            return response()->json([
+                "status" => 202,
+                "message" => "please login",
+    
+            ]); 
+        }else{
+    
+    
+            $products = Products::find($dataId);
+            // dd($products);
+            $product_id=$products['id'];
+            // dd($product_id);
+        
+        $user_id=$user['id'];
+    
+        $status=Wishlist::where('users_id', $user_id)
+        ->where('products_id',$product_id)
+        ->first();
+    
+        // dd($status);
+        if(isset($status)){
+    
+            
+           
+           
+             
+        return response()->json([
+            "status" => 201,
+            "message" => "Item Already saved",
+
+        ]);  
+               
+        }else{
+            $wishlist = new Wishlist;
+            $wishlist->users_id = $user_id;
+            $wishlist->products_id = $product_id;
+            $wishlist->save();
+            // dd($wishlist);
+            
+            return response()->json([
+                "status" => 200,
+                "message" => "Item saved successfuly",
+    
+            ]); 
+           }
+            }
+    }
+    
+    public function countWishlist(){
+  
+        $user = auth()->guard('e-users')->user();
+        $user_id=$user['id'];
+    
+        $wishlists=Wishlist::join('products', 'products.id','=','wishlists.products_id' )
+        ->where('users_id', $user_id)
+        ->get(['products.name','products.image','products.c_price','products.id']);
+            // dd($wishlists);
+            return response()->json($wishlists);
+    }
+    
+    public function removeWishlist($id){
+        $user = auth()->guard('e-users')->user();
+        $user_id=$user['id'];
+        $wishlist = Wishlist::where('products_id', $id)
+            ->where('users_id', $user_id)
+            ->first();
+        //   dd($wishlist)
+        if (isset($wishlist)) {
+            $wishlist->delete();
+            return redirect()->route('wishlist');
+        }
+    }
+
+    public function deleteWishlist(){
+  
+        $user = auth()->guard('e-users')->user();
+        $user_id=$user['id'];
+    
+        $wishlists=Wishlist::join('products', 'products.id','=','wishlists.products_id' )
+        ->where('users_id', $user_id)
+        ->get(['products.name','products.image','products.c_price','products.id']);
+            // dd($wishlists);
+           foreach($wishlists as $wishlist){
+               $wishlist->delete();
+           }
+           return redirect()->route('wishlist');
+    }
+
+    public function profile()
+    {
+ 
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+
+        return view('index.profile', compact('sub_category', 'child_category',
+        'category'
+        
+        ));
+    }
+    public function profile_update(Request $request)
+    {
+        $user = E_users::find($request->user_id);
+        $user->first_name = $request->first_name;
+        $user->last_name = $request->last_name;
+        $user->email = $request->email;
+        $user->tel_no= $request->phone;
+
+        if($request->password){
+            $user->password = Hash::make($request->password);
+        }
+
+        if($request->photo){
+            $fileName = $user->first_name.$user->last_name.'_ppp'.'.'.$request->file->extension();
+
+            $request->file->move(public_path('uploads'), $fileName);
+            $user->image = $fileName;
+        }
+            $user->save();
+            return Redirect::back();
+      
+    }
+    public function orders()
+    {
+   
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+
+        return view('index.orders', compact('sub_category', 'child_category',
+        'category'
+        
+        ));
+    }
+    public function tickets()
+    {
+ 
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+
+        return view('index.ticket', compact('sub_category', 'child_category',
+        'category'
+        
+        ));
+    }
     public function store_user_reg(Request $request)
 {
 

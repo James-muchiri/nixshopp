@@ -169,21 +169,24 @@ function fetchRecord(){
             var total=0;
             var count=0;
             var item_id=[];
-            $("#cart_table").html("");
+            $("#header_cart_load").html("");
             $.each(data, function(index, element) {
                 // console.log(element.id);
                 var imag=element.image;
-               var link='product/'+element.image;
-            //  console.log(link);
+               var link='uploads/'+element.image;
+             // console.log(element);
                 t_data=t_data+
-                '<tr id="t_data">'+
-                    '<td>'+'<img src="'+link+'" style="height:60px; width:60px;">'+ '</td>'+
-                    '<td>'+element.product+'</td>'+
-                 
-                    '<td>'+'Ksh '+element.price+'</td>'+
-            
-                    '<td>'+'<a class="remove_cart_item"  data-target="/cart/product_remove/'+element.id+'"  href="javascript:;" ><i class="fa fa-times"></i></a> '+'</td>'+
-                '</tr>';
+                    '<div class="entry">'+
+                    '<div class="entry-thumb"><a href="/product/'+element.id+'"><img src="/'+link+'" alt="Product"></a></div>'+
+                    '<div class="entry-content">'+
+                      '<h4 class="entry-title">'+
+                      '<a href="/product/'+element.id+'">'+element.product+'</a></h4>'+
+                      '<span class="entry-meta">1 x Ksh '+element.price+'</span>'+
+                     
+                   '</div>'+
+                    '<div class="entry-delete"><a id="entry-delete" href="/cart/product_remove/'+element.id+'"><i class="fa fa-times"></i></a></div>'+
+                  '</div>';
+                  
                 qty = element.quantity;
                 price = element.price;
                 prod = qty*price;
@@ -194,8 +197,14 @@ function fetchRecord(){
                 // console.log(item_id);
             });
 
+            var t_dta = '<div class="d-flex justify-content-between">'+
+            '<div class="w-50 d-block"><a class="btn btn-primary btn-sm  mb-0" href="/product/cart"><span>Cart</span></a></div>'+
+            '<div class="w-50 d-block text-end"><a class="btn btn-primary btn-sm  mb-0" href="/checkout/billing/address"><span>Checkout</span></a></div>'+
+            '</div>';
+            t_data=t_data+t_dta ;
+
         //    $("#total_price").html("Total Amount: Ksh "+total);
-            $("#cart_table").append(t_data);
+            $("#header_cart_load").append(t_data);
           //  $("#total_price_header").html('<h4>'+"Your Total Amount is : Ksh "+total+'</h4>');
           //  $("#form_amount").html('<input type="hidden" name="total" id="amount"  placeholder="" value='+total+' >');
           //  $("#item_count").html('<input type="hidden" name="item_count" id="item_count"  placeholder="" value='+count+' >');
@@ -203,6 +212,9 @@ function fetchRecord(){
         }
     });
 };
+
+
+
 
 
 
@@ -294,4 +306,45 @@ function cartfetchRecord(){
 function ress () {
      popular_category_slider.trigger('refresh.owl.carousel');
 
+};
+
+
+function wishlistcount(){
+    console.log("count compare record");
+    $.ajax({
+        type: 'get',
+        url: "/user/countwishlists",
+        dataType: 'json',
+        success:
+            function( data ){
+                var count=0;
+                $.each(data, function(index, element) {
+                    // console.log(element);
+                 
+                    count++;
+                });
+
+                $("#wishlistcount").text(count);
+            }
+        });
+};
+
+function wishlistcount1(){
+    console.log("count compare record");
+    $.ajax({
+        type: 'get',
+        url: "/user/countwishlists",
+        dataType: 'json',
+        success:
+            function( data ){
+                var count=0;
+                $.each(data, function(index, element) {
+                    // console.log(element);
+                 
+                    count++;
+                });
+
+                $(".wishlist_count").text(count);
+            }
+        });
 };
