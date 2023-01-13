@@ -23,7 +23,7 @@ Route::get('/brands/{data}', 'ShopController@brandshow');
 Route::get('/campaign', 'ShopController@campaign');
 
 
-Route::get('/Women-Clothing/feature_category/normal', 'ShopController@normal');
+Route::get('/{dataId}/feature_category/normal', 'ShopController@normal');
 Route::get('/get/Women-Clothing/popular_category/slider', 'ShopController@slider');
 Route::get('get/type/feature', 'ShopController@mixed');
 

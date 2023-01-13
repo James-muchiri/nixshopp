@@ -603,9 +603,81 @@ class AdminController extends Controller
         $banneer33= Banners::where('banner', 'column_banner_Second')->where('img_id', 3)->first();
         $banneer41= Banners::where('banner', 'a2_column_banner')->where('img_id', 1)->first();
         $banneer42= Banners::where('banner', 'a2_column_banner')->where('img_id', 2)->first();
-     
+        $cat1 = Popular_categories::where('category_level', '1')->first();
+        $Popular_categories= "";
+        if($cat1){
+        $Popular_categories = Child_Category::where('id',  $cat1->childcategory_id)->first();
+       
+        }
+        $cat2 = Popular_categories::where('category_level', '2')->first();
+        $Popular_categories2= "";
+        if($cat2){
+        $Popular_categories2 = Child_Category::where('id',  $cat2->childcategory_id)->first();
+       
+        }
+        $cat3 = Popular_categories::where('category_level', '3')->first();
+        $Popular_categories3= "";
+        if($cat3){
+        $Popular_categories3 = Child_Category::where('id',  $cat3->childcategory_id)->first();
+       
+        }
+        $cat4 = Popular_categories::where('category_level', '4')->first();
+        $Popular_categories4= "";
+        if($cat4){
+        $Popular_categories4 = Child_Category::where('id',  $cat4->childcategory_id)->first();
+       
+        }
 
-        return view('admin.Banner', compact('category', 'header_banner1', 'header_banner2', 'banneer21', 'banneer22', 'banneer23','banneer31', 'banneer32', 'banneer33','banneer41', 'banneer42'));
+
+        $Threecat1 = Three_column_category::where('category_level', '1')->first();
+        $Three_column_category= "";
+        if($Threecat1){
+        $Three_column_category = Child_Category::where('id',  $Threecat1->childcategory_id)->first();
+       
+        }
+        $Threecat3 = Three_column_category::where('category_level', '3')->first();
+        $Three_column_category3= "";
+        if($Threecat3){
+        $Three_column_category3 = Child_Category::where('id',  $Threecat3->childcategory_id)->first();
+       
+        }
+        
+        $Threecat2 = Three_column_category::where('category_level', '2')->first();
+        $Three_column_category2= "";
+        if($Threecat2){
+        $Three_column_category2 = Child_Category::where('id',  $Threecat2->childcategory_id)->first();
+       
+        }
+
+    
+        
+        $Featuredcat1 =     Featured_categories::where('category_level', '1')->first();
+        $Featured_categories1= "";
+        if($Featuredcat1){
+            $Featured_categories1 = Child_Category::where('id',  $Featuredcat1->childcategory_id)->first();
+       
+        }
+        $Featuredcat2 =     Featured_categories::where('category_level', '2')->first();
+        $Featured_categories2= "";
+        if($Featuredcat2){
+            $Featured_categories2 = Child_Category::where('id',  $Featuredcat2->childcategory_id)->first();
+       
+        }
+        $Featuredcat3 =     Featured_categories::where('category_level', '3')->first();
+        $Featured_categories3= "";
+        if($Featuredcat3){
+            $Featured_categories3 = Child_Category::where('id',  $Featuredcat3->childcategory_id)->first();
+       
+        }
+        $Featuredcat4 =     Featured_categories::where('category_level', '4')->first();
+        $Featured_categories4= "";
+        if($Featuredcat4){
+            $Featured_categories4 = Child_Category::where('id',  $Featuredcat4->childcategory_id)->first();
+       
+        }
+
+
+        return view('admin.Banner', compact('Featured_categories1', 'Featured_categories2', 'Featured_categories3', 'Featured_categories4', 'Three_column_category', 'Three_column_category2', 'Three_column_category3', 'Popular_categories','Popular_categories2','Popular_categories3','Popular_categories4', 'category', 'header_banner1', 'header_banner2', 'banneer21', 'banneer22', 'banneer23','banneer31', 'banneer32', 'banneer33','banneer41', 'banneer42'));
     }
 
 

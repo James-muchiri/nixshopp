@@ -44,10 +44,10 @@
               <li><span class=""><strong>Saturday: </strong></span>9:27 PM - 9:27 PM</li>
             </ul>
                         <div class="footer-social-links">
-                                <a href="https://www.facebook.com/"><span><i class="fab fa-facebook-f"></i></span></a>
-                                <a href="https://www.twitter.com/"><span><i class="fab fa-twitter"></i></span></a>
-                                <a href="https://www.youtube.com/"><span><i class="fab fa-youtube"></i></span></a>
-                                <a href="https://www.linkedin.com/"><span><i class="fab fa-linkedin-in"></i></span></a>
+                                <a href="https://www.facebook.com/"><span><i class="fa fa-facebook"></i></span></a>
+                                <a href="https://www.twitter.com/"><span><i class="fa fa-twitter"></i></span></a>
+                                <a href="https://www.youtube.com/"><span><i class="fa fa-youtube"></i></span></a>
+                                <a href="https://www.linkedin.com/"><span><i class="fa fa-linkedin-in"></i></span></a>
                             </div>
           </section>
         </div>
@@ -56,9 +56,7 @@
           <div class="widget widget-links widget-light-skin">
             <h3 class="widget-title">Usefull Links</h3>
             <ul>
-                                <li>
-                    <a class="" href="faq.html">Faq</a>
-                </li>
+                
                                                 <li><a href="/about-us">About Us</a></li>
 
                                 <li><a href="/privacy-policy">Privacy Policy</a></li>
@@ -96,7 +94,7 @@
                     <p class="text-sm opacity-80 pt-2">Subscribe to our Newsletter to receive early discount offers, latest news, sales and promo information.</p>
                 </div>
               </form>
-              <div class="pt-3"><img class="d-block gateway_image" src="assets/images/16305963101621960148credit-cards-footer.png"></div>
+              {{-- <div class="pt-3"><img class="d-block gateway_image" src="assets/images/16305963101621960148credit-cards-footer.png"></div> --}}
             </section>
           </div>
       </div>
@@ -110,15 +108,7 @@
     <i class="icon-chevron-up"></i>
 </a>
 
-<div class="color-picker">
-    <span class="spiner"><i class="fa fa-cog fa-spin"></i></span>
-    <a href="javascript:;" class="color__check " style="background: #003366;" data-href="FF6A00"></a>
-    <a href="javascript:;" class="color__check " style="background: #ff4719;" data-href="ff4719"></a>
-    <a href="javascript:;" class="color__check " style="background: #03a9f4;" data-href="03a9f4"></a>
-    <a href="javascript:;" class="color__check " style="background: #A120CB;" data-href="A120CB"></a>
-    <a href="javascript:;" class="color__check " style="background: #12A05C;" data-href="12A05C"></a>
-    <a href="javascript:;" class="color__check " style="background: #000;" data-href="000"></a>
-</div>
+
 
 <!-- Backdrop-->
 <div class="site-backdrop"></div>

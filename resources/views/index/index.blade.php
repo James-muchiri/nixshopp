@@ -101,7 +101,18 @@
                         <div class="slider-item">
                             <div class="product-card">
                                 <div class="product-thumb">
-                                    <div class="product-badge product-badge2 bg-info"> -29%</div>
+                                   
+
+@php
+    if($deal->c_price < $deal->p_price){
+        $per = ($deal->c_price - $deal->p_price) / $deal->p_price * 100;
+        $num = floatval($per);
+echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
+    }
+@endphp
+
+
+                                    
                                                                         <img class="lazy" data-src="{{ asset('uploads') }}/{{$deal->image}}" alt="Product">
                                     <div class="product-button-group">
                                         <a class="product-button wishlist_store" href="user/storewishlists/{{$deal->id}}" title="Wishlist"><i class="fa fa-heart"></i></a>
@@ -112,17 +123,20 @@
                                 </div>
                                     <div class="product-card-body">
 
-                                        <div class="product-category"><a href="catalog2e44.html?category=men-clothing">Men Clothing</a></div>
+                                        <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{$deal->child__categories_name}}</a></div>
                                         <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
-                                            Shirts Menshirts Mens Cotton Shirt
+                                            {{$deal->name}}
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
-                                        <h4 class="product-price">
+                                        
 
-                                        $1,362.81
-                                        </h4>
+                                        <h4 class="product-price">
+                                            <del>Ksh {{$deal->p_price}}</del>
+
+                                            Ksh {{$deal->c_price}}
+</h4>
 
                                     </div>
 
@@ -566,6 +580,9 @@
             <div class="flash-sell-area mt-50">
             <div class="container">
                 <div class="row gx-3 justify-content-center">
+                    @foreach ($Three_column_categories as $Three_column_category)
+                        
+                
                                         <div class="col-xl-4 col-lg-6">
                         <div class="section-title">
                             <h2 class="h3">Web Themes &amp; Templates</h2>
@@ -683,6 +700,9 @@
 
                         </div>
                     </div>
+
+                    @endforeach
+
                                         <div class="col-xl-4 col-lg-6">
                         <div class="section-title">
                             <h2 class="h3">Beauty &amp; Personal Care</h2>
@@ -1066,11 +1086,11 @@
                         <div class="section-title">
                             <h2 class="h3">Featured Categories</h2>
                             <div class="links" id="foo">
-                <a class="category_get active" data-target="feature_category_view"  data-href="/Women-Clothing/feature_category/normal" href="javascript:;" class="active">Women Clothing</a>
-                <a class="category_get " data-target="feature_category_view"  data-href="/Women-Clothing/feature_category/normal"href="javascript:;" class="">Web Themes &amp; Templates</a>
-                <a class="category_get " data-target="feature_category_view"  data-href="/Women-Clothing/feature_category/normal" href="javascript:;" class="">Electronics</a>
-                <a class="category_get " data-target="feature_category_view" data-href="/Women-Clothing/feature_category/normal" href="javascript:;" class="">Beauty &amp; Personal Care</a>
-            </div>
+                                @foreach ( $Featured_categories as $index => $Featured_category)
+                                <a class="category_get {{ $index == 0 ? 'active' : '' }}"  data-target="feature_category_view"  data-href="/{{$Featured_category->childcategory_id}}/feature_category/normal" href="javascript:;" >{{$Featured_category->child__categories_name}}</a>
+               
+                                @endforeach
+        </div>
                         </div>
                     </div>
                 </div>
@@ -1102,63 +1122,19 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="brand-slider owl-carousel">
-                                                        <div class="slider-item">
-                                <a class="text-center" href="catalog4c54.html?brand=Adidas">
+                            @foreach ($Brands as $brand)
+                            <div class="slider-item">
+                                <a class="text-center" href="catalog/?brand="{{$brand->name}}"">
                                     <img class="d-block hi-50 lazy"
-                                    data-src="assets/images/1632336527add.png"
-                                        alt="Adidas" title="Adidas">
+                                  
+                                    data-src="{{ asset('uploads') }}/{{$brand->photo}}" 
+                                        alt="{{$brand->name}}" title="{{$brand->name}}">
                                 </a>
                             </div>
-                                                        <div class="slider-item">
-                                <a class="text-center" href="catalogd1fb.html?brand=Lavie">
-                                    <img class="d-block hi-50 lazy"
-                                    data-src="assets/images/1632336517leves.jpg"
-                                        alt="Lavie" title="Lavie">
-                                </a>
-                            </div>
-                                                        <div class="slider-item">
-                                <a class="text-center" href="catalog6e7b.html?brand=Skyart">
-                                    <img class="d-block hi-50 lazy"
-                                    data-src="assets/images/1632336538skyart.png"
-                                        alt="Skyart" title="Skyart">
-                                </a>
-                            </div>
-                                                        <div class="slider-item">
-                                <a class="text-center" href="cataloge327.html?brand=Nike">
-                                    <img class="d-block hi-50 lazy"
-                                    data-src="assets/images/1632336489nike.jpg"
-                                        alt="Nike" title="Nike">
-                                </a>
-                            </div>
-                                                        <div class="slider-item">
-                                <a class="text-center" href="catalog4ad2.html?brand=Samsung">
-                                    <img class="d-block hi-50 lazy"
-                                    data-src="assets/images/1632336479samsung.png"
-                                        alt="Samsung" title="Samsung">
-                                </a>
-                            </div>
-                                                        <div class="slider-item">
-                                <a class="text-center" href="catalog33dc.html?brand=Yamaha">
-                                    <img class="d-block hi-50 lazy"
-                                    data-src="assets/images/1632336551yamaha.png"
-                                        alt="Yamaha" title="Yamaha">
-                                </a>
-                            </div>
-                                                        <div class="slider-item">
-                                <a class="text-center" href="catalogd4ed.html?brand=HM">
-                                    <img class="d-block hi-50 lazy"
-                                    data-src="assets/images/1632336576hm.jpg"
-                                        alt="H.M" title="H.M">
-                                </a>
-                            </div>
-                                                        <div class="slider-item">
-                                <a class="text-center" href="catalog99f3.html?brand=Loreal">
-                                    <img class="d-block hi-50 lazy"
-                                    data-src="assets/images/1632336591lora.jpg"
-                                        alt="Loreal" title="Loreal">
-                                </a>
-                            </div>
-                                                    </div>
+                            @endforeach
+                             
+                            
+                              </div>
                     </div>
                 </div>
             </div>

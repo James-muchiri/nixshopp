@@ -5284,7 +5284,7 @@ a.alert {
 
 .hero-slider .item {
     overflow: hidden;
-    height: 440px;
+    height: 390px;
     display: flex;   
     align-items: flex-end;
     padding: 0 60px;
@@ -5693,9 +5693,9 @@ video {
     content: ''
 }
 
-.widget {
+/* .widget {
     margin-bottom: 54px
-}
+} */
 
 .widget .form-group {
     margin-bottom: 0
@@ -7412,7 +7412,7 @@ video {
 }
 
 .site-footer {
-    padding-top: 56px;
+    padding-top: 36px;
     background-position: center bottom;
     background-color: #fff;
     background-repeat: no-repeat
@@ -9210,6 +9210,7 @@ screen and (-ms-high-contrast:none) {
 
 .genius-banner img {
     width: 100%;
+    max-height: 250px;
     transform: scale(1);
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
@@ -10268,7 +10269,7 @@ screen and (-ms-high-contrast:none) {
     background: #fff;
     position: relative;
     overflow: hidden;
-    height: 205px;
+    height: 180px;
     margin-bottom: 30px;
     border-radius: 10px;
     display: block;

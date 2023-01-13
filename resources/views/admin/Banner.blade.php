@@ -225,7 +225,7 @@
                                         <input type="text" disabled name="popular_title" class="form-control" id="popular_title" placeholder="Popular Category" value="Popular Categories">
                                     </div>
                                     <hr>
-                                    <h2 class=""><b>Category 1 :</b></h2>
+                                    <h2 class="">Category 1 : <b>{{    $Popular_categories->name }}</b></h2>
 
                                     <div class="form-group">
                                         <label for="category_id1">Select Category *</label>
@@ -252,7 +252,7 @@
                                     </div>
 
                                     <hr>
-                                    <h2 class=""><b>Category 2 :</b></h2>
+                                    <h2 class="">Category 2 :<b>{{    $Popular_categories2->name }}</b></h2>
                                     <div class="form-group">
                                         <label for="category_id2">Select Category *</label>
                                         <select name="bannercategory_id2" id="bannercategory_id2" data-href="/admin/get/subcategory" class="form-control">
@@ -276,7 +276,7 @@
                                                                              </select>
                                     </div>
                                     <hr>
-                                    <h2 class=""><b>Category 3 :</b></h2>
+                                    <h2 class="">Category 3 : <b>{{    $Popular_categories3->name }}</b></h2>
                                     <div class="form-group">
                                         <label for="category_id3">Select Category *</label>
                                         <select name="bannercategory_id3" id="bannercategory_id3" data-href="/admin/get/subcategory" class="form-control">
@@ -300,7 +300,7 @@
                                         </select>
                                     </div>
                                     <hr>
-                                    <h2 class=""><b>Category 4 :</b></h2>
+                                    <h2 class="">Category 4 :<b> {{    $Popular_categories4->name }}</b></h2>
                                     <div class="form-group">
                                         <label for="category_id4">Select Category *</label>
                                         <select name="bannercategory_id4" id="bannercategory_id4" data-href="/admin/get/subcategory" class="form-control">
@@ -441,7 +441,7 @@
                                 @csrf
 
                                 <hr>
-                                <h2 class=""><b>Category 1 :</b></h2>
+                                <h2 class="">Category 1 : <b>{{$Three_column_category->name}}</b></h2>
 
                                 <div class="form-group">
                                     <label for="category_id1">Select Category *</label>
@@ -468,7 +468,7 @@
                                 </div>
 
                                 <hr>
-                                <h2 class=""><b>Category 2 :</b></h2>
+                                <h2 class="">Category 2 :<b>{{$Three_column_category2->name}}</b></h2>
                                 <div class="form-group">
                                     <label for="category_id2">Select Category *</label>
                                     <select name="threecolcategory_id2" id="threecolcategory_id2" data-href="/admin/get/subcategory" class="form-control">
@@ -492,7 +492,7 @@
                                                                          </select>
                                 </div>
                                 <hr>
-                                <h2 class=""><b>Category 3 :</b></h2>
+                                <h2 class="">Category 3 :<b>{{$Three_column_category3->name}}</b></h2>
                                 <div class="form-group">
                                     <label for="category_id3">Select Category *</label>
                                     <select name="threecolcategory_id3" id="threecolcategory_id3" data-href="/admin/get/subcategory" class="form-control">
@@ -533,7 +533,7 @@
                                     <input type="text" disabled name="popular_title" class="form-control" id="popular_title" placeholder="Popular Category" value="Featured Categories">
                                 </div>
                                 <hr>
-                                <h2 class=""><b>Category 1 :</b></h2>
+                                <h2 class="">Category 1 :<b>{{$Featured_categories1->name}}</b></h2>
 
                                 <div class="form-group">
                                     <label for="category_id1">Select Category *</label>
@@ -560,7 +560,7 @@
                                 </div>
 
                                 <hr>
-                                <h2 class=""><b>Category 2 :</b></h2>
+                                <h2 class="">Category 2 :<b>{{$Featured_categories2->name}}</b></h2>
                                 <div class="form-group">
                                     <label for="category_id2">Select Category *</label>
                                     <select name="featuredcategory_id2" id="featuredcategory_id2" data-href="/admin/get/subcategory" class="form-control">
@@ -584,7 +584,7 @@
                                                                          </select>
                                 </div>
                                 <hr>
-                                <h2 class=""><b>Category 3 :</b></h2>
+                                <h2 class="">Category 3 :<b>{{$Featured_categories3->name}}</b></h2>
                                 <div class="form-group">
                                     <label for="category_id3">Select Category *</label>
                                     <select name="featuredcategory_id3" id="featuredcategory_id3" data-href="/admin/get/subcategory" class="form-control">
@@ -608,7 +608,7 @@
                                     </select>
                                 </div>
                                 <hr>
-                                <h2 class=""><b>Category 4 :</b></h2>
+                                <h2 class="">Category 4 :<b>{{$Featured_categories4->name}}</b></h2>
                                 <div class="form-group">
                                     <label for="category_id4">Select Category *</label>
                                     <select name="featuredcategory_id4" id="featuredcategory_id4" data-href="/admin/get/subcategory" class="form-control">

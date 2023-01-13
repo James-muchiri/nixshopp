@@ -15,9 +15,12 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('category_id');
-            $table->string('subcategory_id');
-            $table->string('childcategory_id');
+     $table->bigInteger('category_id')->length(20)->unsigned();          
+            $table->foreign('category_id')->references('id')->on('categories');
+            $table->bigInteger('subcategory_id')->length(20)->unsigned();          
+            $table->foreign('subcategory_id')->references('id')->on('sub__categories'); 
+            $table->bigInteger('childcategory_id')->length(20)->unsigned();          
+            $table->foreign('childcategory_id')->references('id')->on('child__categories');
             $table->string('total_stock');
             $table->string('tax');
             $table->string('sku');

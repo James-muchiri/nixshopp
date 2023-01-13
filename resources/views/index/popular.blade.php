@@ -28,7 +28,7 @@
                 <div class="product-card-body">
                     <div class="product-category"><a href="//catalog?category=Women-Clothing">Women Clothing</a></div>
                     <h3 class="product-title"><a href="//product/0AENew-French-Elegant-White-Bubble-Sleeve-Party-Dress-Casual-ALine-Dresses-Long-Sleeve-DressesnC">
-                        New French Elegant White Bubble Sle
+                        {{$item->name}}
                     </a></h3>
                     <div class="rating-stars">
                     <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>

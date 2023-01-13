@@ -58,7 +58,7 @@
 
     <li class="nav-item">
         <a data-toggle="collapse" href="#items">
-            <i class="fab fa-product-hunt"></i>
+            <i class="fa fa-product-hunt"></i>
             <p>Manage Products</p>
             <span class="caret"></span>
         </a>
@@ -100,7 +100,7 @@
 
     <li class="nav-item">
         <a data-toggle="collapse" href="#offers">
-            <i class="fab fa-product-hunt"></i>
+            <i class="fa fa-product-hunt"></i>
             <p>Campaign Offers</p>
             <span class="caret"></span>
         </a>
@@ -150,7 +150,7 @@
 
     <li class="nav-item ">
         <a data-toggle="collapse" href="#order">
-            <i class="fab fa-first-order"></i>
+            <i class="fa fa-first-order"></i>
             <p>Manage Orders </p>
             <span class="caret"></span>
         </a>
@@ -193,7 +193,7 @@
         </a>
     </li>
 
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a data-toggle="collapse" href="#ecommerce">
             <i class="fa fa-newspaper"></i>
             <p>Ecommerce</p>
@@ -232,7 +232,7 @@
                 </li>
             </ul>
         </div>
-    </li>
+    </li> --}}
 
     <li class="nav-item">
         <a href="/admin/user">
@@ -295,32 +295,17 @@
                         <span class="sub-item">SMS Settings</span>
                     </a>
                 </li>
-                <li>
-                    <a class="sub-link" href="/admin/announcement">
-                      <span class="sub-item">Announcement</span></a>
-                </li>
-                <li>
+                              <li>
                     <a class="sub-link" href="/admin/cookie/alert">
                       <span class="sub-item">Cookies Alert</span></a>
                 </li>
 
-                <li>
-                    <a class="sub-link" href="/admin/maintainance">
-                      <span class="sub-item">Maintainance</span></a>
-                </li>
-                <li>
-                    <a class="sub-link" href="/admin/sitemap">
-                      <span class="sub-item">Sitemap</span></a>
-                </li>
-                <li>
-                    <a class="sub-link" href="/admin/language">
-                      <span class="sub-item">Language</span></a>
-                </li>
+      
             </ul>
         </div>
     </li>
 
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a data-toggle="collapse" href="#faqs">
             <i class="fa fa-question-circle"></i>
             <p>Manage Faqs</p>
@@ -340,9 +325,9 @@
                 </li>
             </ul>
         </div>
-    </li>
+    </li> --}}
 
-    <li class="nav-item">
+    {{-- <li class="nav-item">
         <a data-toggle="collapse" href="#post">
             <i class="fa fa-rss-square"></i>
             <p>Manage Blogs</p>
@@ -362,25 +347,25 @@
                 </li>
             </ul>
         </div>
-    </li>
-    <li class="nav-item">
+    </li> --}}
+    {{-- <li class="nav-item">
         <a href="/admin/page">
             <i class="fa fa-book"></i>
             <p>Manages Pages</p>
         </a>
-    </li>
+    </li> --}}
 
 
     <li class="nav-item">
         <a href="/admin/subscribers">
-            <i class="fab fa-telegram-plane"></i>
+            <i class="fa fa-telegram"></i>
             <p>Subscribers List</p>
         </a>
     </li>
 
     <li class="nav-item">
         <a data-toggle="collapse" href="#user">
-            <i class="far fa-user"></i>
+            <i class="fa fa-user"></i>
             <p>System User</p>
             <span class="caret"></span>
         </a>

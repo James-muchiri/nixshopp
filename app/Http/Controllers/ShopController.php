@@ -15,6 +15,8 @@ use App\Products;
 use App\Featured_categories; 
 use App\E_users;
 use App\wishlist;
+use App\Brands;
+use App\Three_column_category;
 class ShopController extends Controller
 {
     //
@@ -27,15 +29,25 @@ class ShopController extends Controller
         $genius_banner= Banners::where('banner', 'column_banner_Second')->get();
         $genius_banner2= Banners::where('banner', '3banneer')->get();
         $genius_banner3= Banners::where('banner', 'a2_column_banner')->get();
-        $Featured_categories = Featured_categories::all();
+        $Featured_categories = Featured_categories::join('child__categories', 'child__categories.id','=','featured_categories.childcategory_id' )
+        ->get(['child__categories.name as child__categories_name', 'featured_categories.*']);
         $category = Category::all();
         $sub_category = Sub_Category::all();
         $child_category = Child_Category::all();
-        $deals = Products::all();
-        
+        $Brands = Brands::all();
+        $Three_column_categories = Three_column_category::join('child__categories', 'child__categories.id','=','three_column_categories.childcategory_id' )
+        ->join('products', 'products.childcategory_id','=','three_column_categories.childcategory_id' )
+        ->get(['child__categories.name as child__categories_name', 'products.*']);
+      
+
+        $deals=Products::join('child__categories', 'child__categories.id','=','products.childcategory_id' )
+        ->get(['child__categories.name as child__categories_name', 'products.*']);
+      
+
+       // return $Three_column_categories;
         return view('index.index', compact('sliders', 'sub_category', 'child_category',
         'header_banners', 'genius_banner', 'genius_banner2', 'deals',
-         'genius_banner3', 'Featured_categories', 'category'
+         'genius_banner3', 'Featured_categories', 'category','Brands','Three_column_categories'
         
         ));
     }
@@ -723,12 +735,12 @@ public function cart_product1()
 
 
 
-    public function normal()
+    public function normal($dataId)
 
     {
   
+       // $product = Products::where('childcategory_id', $dataId);
         $product = Products::all();
-  
         return view('index.normal', compact('product'));
     }
 
