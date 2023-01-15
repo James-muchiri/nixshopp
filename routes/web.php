@@ -48,6 +48,11 @@ Route::get('/user/fetchwishlists', 'ShopController@fetchWishlist');
 Route::get('/user/countwishlists', 'ShopController@countWishlist');
 Route::get('/user/removewishlists/{dataId}', 'ShopController@removeWishlist');
 Route::get('/user/wishlist/deleteall', 'ShopController@deleteWishlist');
+Route::get('/checkout', 'ShopController@checkout');
+
+
+Route::post('/checkout/store', 'ShopController@checkout_store');
+
 
 Route::post('/user/profile/update', 'ShopController@profile_update');
 

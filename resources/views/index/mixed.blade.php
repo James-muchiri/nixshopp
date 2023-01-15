@@ -19,31 +19,48 @@
           
    
 <div class="slider-item">
-           <div class="product-card">
-               <div class="product-thumb">
-                                                           <div class="product-badge product-badge2 bg-info"> -33%</div>
-                                           <img class="lazy" alt="Product" src="{{ asset('uploads') }}/{{$item->image}}" style="">
-                       <div class="product-button-group"><a class="product-button wishlist_store" href="//user/wishlist/store/587" title="Wishlist"><i class="icon-heart"></i></a>
-                           <a data-target="/compare/product/{{$item->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
-                           <a class="product-button add_to_single_cart" data-target="/cart/product/{{$item->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-heart"></i>
-   </a>
-                           </div>
-               </div>
-               <div class="product-card-body">
-                   <div class="product-category"><a href="//catalog?category=Women-Clothing">Women Clothing</a></div>
-                   <h3 class="product-title"><a href="//product/0AENew-French-Elegant-White-Bubble-Sleeve-Party-Dress-Casual-ALine-Dresses-Long-Sleeve-DressesnC">
-                       New French Elegant White Bubble Sle
-                   </a></h3>
-                   <div class="rating-stars">
-                   <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
-                   </div>
-                   <h4 class="product-price">
-                                               <del>$500.78</del>
-                                               $344.83
-                       </h4>
-               </div>
+    <div class="product-card">
+        <div class="product-thumb">
+           
 
-           </div>
+@php
+if( $item->c_price <  $item->p_price){
+$per = ( $item->c_price -  $item->p_price) /  $item->p_price * 100;
+$num = floatval($per);
+echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
+}
+@endphp
+
+
+            
+                                                <img class="lazy" data-src="{{ asset('uploads') }}/{{ $item->image}}" alt="Product">
+            <div class="product-button-group">
+                <a class="product-button wishlist_store" href="user/storewishlists/{{ $item->id}}" title="Wishlist"><i class="fa fa-heart"></i></a>
+                <a data-target="/compare/product/{{ $item->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
+                <a class="product-button add_to_single_cart" data-target="/cart/product/{{ $item->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-cart-plus"></i>
+</a>
+                                                    </div>
+        </div>
+            <div class="product-card-body">
+
+                <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{ $item->child__categories_name}}</a></div>
+                <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
+                    {{ $item->name}}
+                </a></h3>
+                <div class="rating-stars">
+                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
+                </div>
+                
+
+                <h4 class="product-price">
+                    <del>Ksh {{ $item->p_price}}</del>
+
+                    Ksh {{ $item->c_price}}
+</h4>
+
+            </div>
+
+    </div>
        </div>
    
        @endforeach

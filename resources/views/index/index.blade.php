@@ -580,450 +580,75 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
             <div class="flash-sell-area mt-50">
             <div class="container">
                 <div class="row gx-3 justify-content-center">
-                    @foreach ($Three_column_categories as $Three_column_category)
-                        
-                
-                                        <div class="col-xl-4 col-lg-6">
+                   
+                              @foreach($Three_column_categories  as $categories => $categoryItems)
+                              <div class="row gx-3 justify-content-center">
+                                        <div class="col-xl-12 col-lg-12">
                         <div class="section-title">
-                            <h2 class="h3">Web Themes &amp; Templates</h2>
+                            <h2 class="h3">{{$categories}}</h2>
                         </div>
                         <div class="main-content">
                             <div class="newproduct-slider owl-carousel">
-                                                                    <div class="slider-item">
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/fgcBest-Online-Wholesale-Website-Design-and-development-company--Ecommerce-shopping-webdesign8q.html">
+                                                                   
+                                                                        @foreach($categoryItems  as $post)
+                                                                        <div class="slider-item">
+                                                                            <div class="product-card">
+                                                                                <div class="product-thumb">
+                                                                                   
+                                                                        
+                                                                        @php
+                                                                        if($post->c_price < $post->p_price){
+                                                                        $per = ($post->c_price - $post->p_price) / $post->p_price * 100;
+                                                                        $num = floatval($per);
+                                                                        echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
+                                                                        }
+                                                                        @endphp
+                                                                        
+                                                                        
+                                                                                    
+                                                                                                                        <img class="lazy" data-src="{{ asset('uploads') }}/{{$post->image}}" alt="Product">
+                                                                                    <div class="product-button-group">
+                                                                                        <a class="product-button wishlist_store" href="user/storewishlists/{{$post->id}}" title="Wishlist"><i class="fa fa-heart"></i></a>
+                                                                                        <a data-target="/compare/product/{{$post->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
+                                                                                        <a class="product-button add_to_single_cart" data-target="/cart/product/{{$post->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-cart-plus"></i>
+                                                                        </a>
+                                                                                                                            </div>
+                                                                                </div>
+                                                                                    <div class="product-card-body">
+                                                                        
+                                                                                        <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{$post->child__categories_name}}</a></div>
+                                                                                        <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
+                                                                                            {{$post->name}}
+                                                                                        </a></h3>
+                                                                                        <div class="rating-stars">
+                                                                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
+                                                                                        </div>
+                                                                                        
+                                                                        
+                                                                                        <h4 class="product-price">
+                                                                                            <del>Ksh {{$post->p_price}}</del>
+                                                                        
+                                                                                            Ksh {{$post->c_price}}
+                                                                        </h4>
+                                                                        
+                                                                                    </div>
+                                                                        
+                                                                            </div>
+                                                                        </div>
+                                        @endforeach
 
-                                                <img class="lazy" data-src="/images/16341344113y6Ucc4d26e9889041dc899c3522859ed3f88.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/fgcBest-Online-Wholesale-Website-Design-and-development-company--Ecommerce-shopping-webdesign8q.html">
-                                                    Best Online Wholesale Website Design and
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$70.00</del>
-                                                                                                    $35.00
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Create-a-Wordpress-Website-Designers-Ecommerce--Multivendor-Website-Software.html">
+                                 
+                       
 
-                                                <img class="lazy" data-src="/images/1634134428tuCU4431f054a85341a5a36101d8df36f90a7.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Create-a-Wordpress-Website-Designers-Ecommerce--Multivendor-Website-Software.html">
-                                                    Create a Wordpress Website Designers Eco
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                    $35.00
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/qzswordpress-shopify-Start-Your-Own-eCommerce-Site-Create-Your-Online-Store-Today-online-store-websit5l.html">
-
-                                                <img class="lazy" data-src="/images/1634134442OSWHf435248807dd438aaf4d8a53e6f7eaedP.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/qzswordpress-shopify-Start-Your-Own-eCommerce-Site-Create-Your-Online-Store-Today-online-store-websit5l.html">
-                                                    wordpress shopify Start Your Own eCommer
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$70.00</del>
-                                                                                                    $35.00
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Website-Development-Payment-Gateway-Website-Online-Business-Webdesign-Responsive.html">
-
-                                                <img class="lazy" data-src="/images/16341344598AFHd8e8ee6b580644beba14f0866d6a1269l.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Website-Development-Payment-Gateway-Website-Online-Business-Webdesign-Responsive.html">
-                                                    Website Development Payment Gateway Webs
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$70.00</del>
-                                                                                                    $35.00
-                                                </h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                                                    <div class="slider-item">
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/e0ACustom-Website-Builder-Shopping-Website-Design-and-DevelopmenthV.html">
-
-                                                <img class="lazy" data-src="/images/1634134470aUCH32e77b35ed3e4f359723b0893abdf333y.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/e0ACustom-Website-Builder-Shopping-Website-Design-and-DevelopmenthV.html">
-                                                    Custom Website Builder Shopping Website
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$70.00</del>
-                                                                                                    $35.00
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Wordpress-Ecommerce-Online-Store-B-C-Online-Shop-Website-Design-Business-Online-Website.html">
-
-                                                <img class="lazy" data-src="/images/16341344897saU32feef72859d4a018dc33710b3647992j.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Wordpress-Ecommerce-Online-Store-B-C-Online-Shop-Website-Design-Business-Online-Website.html">
-                                                    Wordpress Ecommerce Online Store B2C Onl
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$70.00</del>
-                                                                                                    $35.00
-                                                </h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
                                                             </div>
 
                         </div>
                     </div>
-
+                </div>
                     @endforeach
 
-                                        <div class="col-xl-4 col-lg-6">
-                        <div class="section-title">
-                            <h2 class="h3">Beauty &amp; Personal Care</h2>
-                        </div>
-                        <div class="main-content">
-                            <div class="newproduct-slider owl-carousel">
-                                                                    <div class="slider-item">
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca.html">
-
-                                                <img class="lazy" data-src="/images/1634134188F6gHTB1ymRhXfjsK1Rjy1Xaq6zispXad.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Td5BREYLEE-facial-mask-hyaluronic-acid-facial-firming-mask-beautyca.html">
-                                                    BREYLEE facial mask hyaluronic acid faci
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/p5lHome-Use-Beauty-Device-Face-Massager-Facial-Lifting-Tool-Beauty-AntiAgingbD.html">
-
-                                                <img class="lazy" data-src="/images/1634134210aEUHTB1K4CyX6DuK1Rjy1zjq6zraFXaj.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/p5lHome-Use-Beauty-Device-Face-Massager-Facial-Lifting-Tool-Beauty-AntiAgingbD.html">
-                                                    Home Use Beauty Device Face Massager Fac
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,893.26</del>
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/sEcLatex-free-makeup-sponge-Customized-beauty-make-up-blender-makeup-spongpD.html">
-
-                                                <img class="lazy" data-src="/images/1634134231tV8HTB1HSCEe25G3KVjSZPxq6zI3XXao.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/sEcLatex-free-makeup-sponge-Customized-beauty-make-up-blender-makeup-spongpD.html">
-                                                    Latex free makeup sponge Customized beau
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,893.26</del>
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Beauty-Beauty-Anti-wrinkle-USB-Charging-Neck-Wrinkle-Removal-Neck-Care.html">
-
-                                                <img class="lazy" data-src="/images/163413424721nHe4cca751c6c94532958892118104e47ck.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Beauty-Beauty-Anti-wrinkle-USB-Charging-Neck-Wrinkle-Removal-Neck-Care.html">
-                                                    Beauty Beauty Anti-wrinkle USB Charging
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,893.26</del>
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                                                    <div class="slider-item">
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Mini-Electric-Silicone-Face-Brush-Massager-Cepillo-Facial-Beautiful-Silicone-Facial-Cleansing-Brush.html">
-
-                                                <img class="lazy" data-src="/images/1634134262rpfHdee8e662b5c747d69275ffd10450d8c1u.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Mini-Electric-Silicone-Face-Brush-Massager-Cepillo-Facial-Beautiful-Silicone-Facial-Cleansing-Brush.html">
-                                                    Mini Electric Silicone Face Brush Massag
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,893.26</del>
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/CGtFace-Lift-Band-Facial-Beauty-Slimming-Double-Chin-Bandage-Strap-Weight1U.html">
-
-                                                <img class="lazy" data-src="/images/1634134273FQVHcfd42cbddf7b40b08d3f9048f4d425e5A.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/CGtFace-Lift-Band-Facial-Beauty-Slimming-Double-Chin-Bandage-Strap-Weight1U.html">
-                                                    Face Lift Band Facial Beauty Slimming Do
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Mask-stick-to-your-face-moisture-skin-care-clay-facial-natural-moisturiser-low-moq.html">
-
-                                                <img class="lazy" data-src="/images/16341342918rPHabf8df421e5b4d99b802fc6120d050a7N.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Mask-stick-to-your-face-moisture-skin-care-clay-facial-natural-moisturiser-low-moq.html">
-                                                    Mask stick to your face moisture skin ca
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,893.26</del>
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Korean-Beauty-Organic-Brightening-Peel-off-Hyaluronic-Acid-Facial-Jelly-Powder.html">
-
-                                                <img class="lazy" data-src="/images/1634134515gdzH8064fa369ca644958a52846035a40641p.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Korean-Beauty-Organic-Brightening-Peel-off-Hyaluronic-Acid-Facial-Jelly-Powder.html">
-                                                    Korean Beauty Organic Brightening Peel o
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,893.26</del>
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                                                    <div class="slider-item">
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/OEM-ODM-Fullerene-essence-best-face-moisturizer-whitening-anti-aging-cream.html">
-
-                                                <img class="lazy" data-src="/images/1634134534qTHH1575ae72d5e144cfbf237196d6ea139bj.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/OEM-ODM-Fullerene-essence-best-face-moisturizer-whitening-anti-aging-cream.html">
-                                                    OEM ODM Fullerene essence best face mois
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,893.26</del>
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/AMEIZII-Beauty-And-Personal-Care-Face-Skin-Masks-Nose-Blackhead-Remover.html">
-
-                                                <img class="lazy" data-src="/images/16341345587a1H6e71ffd70a134245aaab2261bf685508j.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/AMEIZII-Beauty-And-Personal-Care-Face-Skin-Masks-Nose-Blackhead-Remover.html">
-                                                    AMEIZII Beauty And Personal Care Face Sk
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,893.26</del>
-                                                                                                    $1,362.81
-                                                </h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                                            </div>
-
-                        </div>
-                    </div>
-                                        <div class="col-xl-4 col-lg-6">
-                        <div class="section-title">
-                            <h2 class="h3">Electronics</h2>
-                        </div>
-                        <div class="main-content">
-                            <div class="newproduct-slider owl-carousel">
-                                                                    <div class="slider-item">
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/DC------DSLR-support---G-sd-card-video-camera----Mega-pixels-digital-camera-dslr-HD-professional.html">
-
-                                                <img class="lazy" data-src="/images/1634134811DFfH349db6b6a70c4604b507c446a7b06ae5k.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/DC------DSLR-support---G-sd-card-video-camera----Mega-pixels-digital-camera-dslr-HD-professional.html">
-                                                    DC-7200 DSLR support 32G sd card video c
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                    $1,352.81
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Dropshipping-EIS-----inch-LCD-Full-HD----P-Recording-----Mega-HD-DV-SLR-Camera.html">
-
-                                                <img class="lazy" data-src="/images/1634134831EzTH75345266923349e280d5f5e5fd5c71e5a.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Dropshipping-EIS-----inch-LCD-Full-HD----P-Recording-----Mega-HD-DV-SLR-Camera.html">
-                                                    Dropshipping EIS 2.4 inch LCD Full HD 72
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$189.78</del>
-                                                                                                    $134.83
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Wholesale-Price-----Mega-HD-DV-SLR-Camera------inch-LCD-Full-HD----P-Recording--EIS--Supply-Drops.html">
-
-                                                <img class="lazy" data-src="/images/1634134872KxvHTB1BqH4aIfrK1RkSmLyq6xGApXaJ.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Wholesale-Price-----Mega-HD-DV-SLR-Camera------inch-LCD-Full-HD----P-Recording--EIS--Supply-Drops.html">
-                                                    Wholesale Price 1.3 Mega HD DV SLR Camer
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$167.30</del>
-                                                                                                    $156.07
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/New-product------Refurbished-used-smart-phone-for-I-phone-XS-MAX-XR---GB----GB--G.html">
-
-                                                <img class="lazy" data-src="/images/1634134888WQ3H624bc94495584b2384c07e2db9f2bdfcd.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/New-product------Refurbished-used-smart-phone-for-I-phone-XS-MAX-XR---GB----GB--G.html">
-                                                    New product 2019 Refurbished used smart
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,348.31</del>
-                                                                                                    $932.58
-                                                </h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                                                    <div class="slider-item">
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Cheap-Price-Mobile-Phones-i---Pro----inch-FHD-Big-Screen-Smart-Phone-------GB.html">
-
-                                                <img class="lazy" data-src="/images/1634134904Sy7H220c85b541d145789e167a4b23787dd5h.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Cheap-Price-Mobile-Phones-i---Pro----inch-FHD-Big-Screen-Smart-Phone-------GB.html">
-                                                    Cheap Price Mobile Phones i13 Pro 6.6inc
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,460.67</del>
-                                                                                                    $1,235.96
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/Hot-Selling-s----Unlocked-----MP---Core-Dual-SIM--G---G-Cheap-Smart-Phone-----inch.html">
-
-                                                <img class="lazy" data-src="/images/16341349201T0Ha04a8a2d450544c9a80996bcdd70c543b.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/Hot-Selling-s----Unlocked-----MP---Core-Dual-SIM--G---G-Cheap-Smart-Phone-----inch.html">
-                                                    Hot Selling s10+ Unlocked 8+16MP 8 Core
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$189.78</del>
-                                                                                                    $134.83
-                                                </h4>
-                                            </div>
-                                        </div>
-                                                                                <div class="product-card p-col">
-                                            <a class="product-thumb" href="product/UMIDIGI-A--Pro-Android-Mobile-Phone--g---MP-Quad-Camera------FHD--Full-Screen--GB-RAM.html">
-
-                                                <img class="lazy" data-src="/images/1634134938VjgHcb62dec2d6a241fc90ce2bb04059684em.jpg" alt="Product"></a>
-                                            <div class="product-card-body">
-                                                <h3 class="product-title"><a href="product/UMIDIGI-A--Pro-Android-Mobile-Phone--g---MP-Quad-Camera------FHD--Full-Screen--GB-RAM.html">
-                                                    UMIDIGI A9 Pro Android Mobile Phone 4g 4
-                                                </a></h3>
-                                                <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
-                                                </div>
-                                                <h4 class="product-price">
-                                                                                                <del>$1,910.11</del>
-                                                                                                    $1,573.03
-                                                </h4>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                                            </div>
-
-                        </div>
-                    </div>
+                     
+                    
 
                 </div>
             </div>

@@ -252,7 +252,8 @@ function fetchRecord(){
 
 function cartfetchRecord(){
     console.log("fetch record");
-
+    var basePath = '{{ env("APP_URL") }}';
+    console.log(basePath);
     $.ajax({
     type: 'get',
     url: '/cart/product',
@@ -261,7 +262,7 @@ function cartfetchRecord(){
         function( data ){
 
            // console.log(data);
-               
+      
             var t_data="";
             var total=0;
             var count=0;
@@ -269,8 +270,9 @@ function cartfetchRecord(){
             $("#cart_view_load").html("");
             $.each(data, function(index, element) {
                 // console.log(element.id);
+           
                 var imag=element.image;
-               var link='product/'+element.image;
+                var link= basePath+'/uploads/'+element.image;
             //  console.log(link);
                 t_data=t_data+
                 '<tr id="t_data">'+
@@ -301,6 +303,64 @@ function cartfetchRecord(){
     });
 };
 
+
+
+function checkoutcart(){
+    console.log("fetch record");
+
+    $.ajax({
+    type: 'get',
+    url: '/cart/product',
+    dataType: 'json',
+    success:
+        function( data ){
+
+           // console.log(data);
+               
+            var t_data="";
+            var total=0;
+            var count=0;
+            var item_id=[];
+            $("#checkoucart").html("");
+            $.each(data, function(index, element) {
+                // console.log(element.id);
+                var imag=element.image;
+               var link='uploads/'+element.image;
+             // console.log(element);
+                t_data=t_data+
+                    '<div class="entry">'+
+                    '<div class="entry-thumb"><a href="/product/'+element.id+'"><img src="/'+link+'" alt="Product"></a></div>'+
+                    '<div class="entry-content">'+
+                      '<h4 class="entry-title">'+
+                      '<a href="/product/'+element.id+'">'+element.product+'</a></h4>'+
+                      '<span class="entry-meta">1 x Ksh '+element.price+'</span>'+
+                     
+                   '</div>'+
+                    '<div class="entry-delete"><a id="entry-delete" href="/cart/product_remove/'+element.id+'"><i class="fa fa-times"></i></a></div>'+
+                  '</div>';
+                  
+                qty = element.quantity;
+                price = element.price;
+                prod = qty*price;
+                total +=prod;
+                qty = element.quantity;
+                count+=qty;
+                item_id=element.id;
+                // console.log(item_id);
+            });
+
+            
+
+            $("#total_price").html("Ksh "+total);
+            $(".grand_total_set").html("Ksh "+total);
+            $("#checkoucart").append(t_data);
+          //  $("#total_price_header").html('<h4>'+"Your Total Amount is : Ksh "+total+'</h4>');
+          //  $("#form_amount").html('<input type="hidden" name="total" id="amount"  placeholder="" value='+total+' >');
+          //  $("#item_count").html('<input type="hidden" name="item_count" id="item_count"  placeholder="" value='+count+' >');
+       
+        }
+    });
+};
 
 
 function ress () {

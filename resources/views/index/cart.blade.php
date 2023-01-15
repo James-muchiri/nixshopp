@@ -56,8 +56,9 @@ cartfetchRecord();
         <div class="shopping-cart-footer">
             <div class="column">
                 <form class="coupon-form" method="post" id="coupon_form" action="//promo/submit">
-                <input type="hidden" name="_token" value="oIHxzDq2SVue90PBhW1r8UUzRiFukzfQhC5EzAha">                <input class="form-control form-control-sm" name="code" type="text" placeholder="Coupon code" required="">
-                <button class="btn btn-primary btn-sm" type="submit"><span>Apply Coupon</span></button>
+                <input type="hidden" name="_token" value="oIHxzDq2SVue90PBhW1r8UUzRiFukzfQhC5EzAha">     
+                           <input disabled class="form-control form-control-sm" name="code" type="text" placeholder="Coming soon" required="">
+                <button class="btn btn-primary btn-sm" disabled type="submit"><span>Apply Coupon</span></button>
                 </form>
             </div>
 
@@ -68,8 +69,8 @@ cartfetchRecord();
 
         </div>
         <div class="shopping-cart-footer">
-            <div class="column"><a class="btn btn-primary " href="//catalog"><span><i class="icon-arrow-left"></i> Back to Shopping</span></a></div>
-            <div class="column"><a class="btn btn-primary" href="//checkout/billing/address"><span>Checkout</span></a></div>
+            <div class="column"><a class="btn btn-primary " href="/"><span><i class="icon-arrow-left"></i> Back to Shopping</span></a></div>
+            <div class="column"><a class="btn btn-primary" href="/checkout"><span>Checkout</span></a></div>
         </div>
       </div>
   </div>
