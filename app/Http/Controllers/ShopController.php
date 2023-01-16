@@ -16,7 +16,9 @@ use App\Featured_categories;
 use App\E_users;
 use App\wishlist;
 use App\Brands;
+use App\Orders;
 use App\Three_column_category;
+use App\Http\Controllers\MpesaController;
 class ShopController extends Controller
 {
     //
@@ -90,19 +92,96 @@ class ShopController extends Controller
 
         ));
     }
-    public function checkout_store()
+
+    function random_strings($length_of_string)
     {
+      
+        // String of all alphanumeric character
+        $str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      
+        // Shuffle the $str_result and returns substring
+        // of specified length
+        return substr(str_shuffle($str_result), 
+                           0, $length_of_string);
+    }
+
+
+    public function checkout_store(Request $request)
+    {
+
+
+        $controler = new ShopController;
+        $cart = session()->get('cart_product');
+
+
+        $order = new  Orders;
+
+            $order->names = $request->input('bill_first_name')." ".$request->input('bill_last_name');
+            // $request->input('bill_last_name');
+          
+            $order->phone_number = $request->input('bill_phone');
+            $order->email = $request->input('bill_email');
+            $order->area = $request->input('bill_address1');
+          //  $order->region = $request->input('bill_zip');
+          $order->delivery_fee =0;
+            $order->total = 20;
+            $order->item_count = 5;
+            $order->order_number = $controler->random_strings(8);
+            $order->cart = serialize($cart);
+            auth()->guard('e-users')->user()->orders()->save($order);
+            session()->put('order_number',  $order->order_number);
+        
+            session()->forget('cart_product');
+        
+
 
         $category = Category::all();
         $sub_category = Sub_Category::all();
         $child_category = Child_Category::all();
-        $cart_product = session()->get('cart_product');
-//return $cart_product;
-        return view('index.checkout_store', compact('sub_category', 'child_category','cart_product',
-        'category'
+        $cart_product = Orders::where('order_number', $order->order_number)->first();
 
-        ));
+        return redirect()->route('make_payment');
     }
+
+
+
+    public function make_payment()
+    {
+
+
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+
+        return view('index.checkout_store', compact('sub_category', 'child_category',
+        'category'
+    ));
+    }
+
+    public function orderremove()
+    {
+
+        $order_number = session()->get('order_number');
+
+        $order = Orders::where('order_number', $order_number)->first();
+        $order->delete();
+        session()->forget('order_number');
+
+        return redirect()->route('index');
+    }
+    public function paylater()
+    {
+
+        $order_number = session()->get('order_number');
+
+       
+        session()->forget('order_number');
+        
+        return redirect()->route('index');
+    }
+
+    
+    
     public function wishlist()
     {
 
@@ -815,8 +894,28 @@ public function cart_product1()
     }
 
 
+    public function stkpush(Request $request){
 
 
+        $order_number = session()->get('order_number');
+
+        $order = Orders::where('order_number', $order_number)->first();
+        
+
+        $Mpesacontroller = new MpesaController;
+
+
+      $stkpush =  $Mpesacontroller->lipaNaMpesa($order->total,$request->txn_id,$order_number);
+
+
+              return response()->json([
+                  "status" => 200,
+                  "message" => "action completed successfully",
+                  "stkpush" => $stkpush,
+              
+              ]);
+              }
+        
 
 
 }

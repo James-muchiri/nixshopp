@@ -199,7 +199,7 @@ function fetchRecord(){
 
             var t_dta = '<div class="d-flex justify-content-between">'+
             '<div class="w-50 d-block"><a class="btn btn-primary btn-sm  mb-0" href="/product/cart"><span>Cart</span></a></div>'+
-            '<div class="w-50 d-block text-end"><a class="btn btn-primary btn-sm  mb-0" href="/checkout/billing/address"><span>Checkout</span></a></div>'+
+            '<div class="w-50 d-block text-end"><a class="btn btn-primary btn-sm  mb-0" href="/checkout"><span>Checkout</span></a></div>'+
             '</div>';
             t_data=t_data+t_dta ;
 

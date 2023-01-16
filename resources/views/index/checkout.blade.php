@@ -22,11 +22,11 @@
       <!-- Billing Adress-->
       <div class="col-xl-9 col-lg-8">
         <div class="steps flex-sm-nowrap mb-5">
-            <a class="step active" href="https://geniusdevs.com/codecanyon/omnimart40/checkout/billing/address">
+            <a class="step active" >
           <h4 class="step-title">1. Billing Address:</h4>
           </a>
-          <a class="step" href="https://geniusdevs.com/codecanyon/omnimart40/checkout/review/payment">
-          <h4 class="step-title">3. Review and pay</h4>
+          <a class="step" >
+          <h4 class="step-title">2. Review and pay</h4>
           </a>
         </div>
         <div class="card">

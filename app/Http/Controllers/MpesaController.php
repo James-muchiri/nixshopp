@@ -1,74 +1,47 @@
 <?php
 
-namespace App\Repositories;
+namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use App\Http\Controllers\MpesaController;
 use Carbon\Carbon;
 use function Psy\sh;
 
-class MpesaStkpush
+class MpesaController extends Controller
 {
-    protected $consumer_key;
-    protected $consumer_secret;
-    protected $passkey;
-    protected $amount;
-    protected $accountReference;
-    protected $phone;
-    protected $env;
-    protected $short_code;
-    protected $parent_short_code;
-    protected $initiatorName;
-    protected $initiatorPassword ;
-
-    public function __construct(){
-
-        $this->short_code = '7854001';
-        $this->parent_short_code='5868111';
-        $this->consumer_key=" "; //Your Consumer key
-        $this->consumer_secret=" "; //Your Secret key
-        $this->passkey = " "; //Your Passkey
-        $this->CallBackURL = " "; //Your callback URL
-        $this->env = "sandbox"; //Your Environment sandbox or Live
-        $this->initiatorName = "testapi"; //Username of your choice
-        $this->initiatorPassword = "Safaricom978!"; //Password of your choice
-
-    }
-
-    /** Lipa na M-PESA password **/
+    
     public function getPassword()
     {
         $timestamp = Carbon::now()->format('YmdHms');
-        $password  = base64_encode($this->short_code. "" . $this->passkey ."". $timestamp);
-
+       // $password  = base64_encode($this->short_code. "" . $this->passkey ."". $timestamp);
+        $password  ='MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjMwMTE2MTAwMzU4';
         return $password;
     }
+
+
 
     public function lipaNaMpesa($amount,$phone,$accountReference){
         $this->phone = $phone;
         $this->amount=$amount;
         $this->accountReference=$accountReference;
 
-        $Password = getPassword()
+        $Mpesacontroller = new MpesaController;
+
+        $Password =  $Mpesacontroller->getPassword();
+
+        $timestamp = Carbon::now()->format('YmdHms');
 
         $headers = ['Content-Type:application/json; charset=utf8'];
 
-        $access_token_url = ($this->env  == "live") ? "https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials" : "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"; 
-        $initiate_url = ($this->env == "live") ? "https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest" : "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"; 
+        $access_token_url ='IMB6Si8na1C7dqQm2XMvgJJ8W0pV';
+        $initiate_url =  "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"; 
 
 
-        $curl = curl_init($access_token_url);
-        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-        curl_setopt($curl, CURLOPT_HEADER, FALSE);
-        curl_setopt($curl, CURLOPT_USERPWD, $this->consumer_key.':'.$this->consumer_secret);
-        $result = curl_exec($curl);
-        $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-        $result = json_decode($result);
-        $access_token = $result->access_token;
-        curl_close($curl);
+ 
 
 
         # header for stk push
-        $stkheader = ['Content-Type:application/json','Authorization:Bearer '.$access_token];
+        $stkheader = ['Content-Type:application/json','Authorization:Bearer '.$access_token_url];
         # initiating the transaction
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $initiate_url);
@@ -76,17 +49,17 @@ class MpesaStkpush
 
         $curl_post_data = array(
             //Fill in the request parameters with valid values
-            'BusinessShortCode' => $this->short_code,
+            'BusinessShortCode' => 174379,
             'Password' => $Password,
-            'Timestamp' => $Timestamp,
+            'Timestamp' => "20230116100358",
             'TransactionType' => 'CustomerBuyGoodsOnline',
             'Amount' => $this->amount,
             'PartyA' => $phone,
-            'PartyB' => $this->parent_short_code,
+            'PartyB' => 174379,
             'PhoneNumber' => $phone,
-            'CallBackURL' => $this->CallBackURL,
+            'CallBackURL' => "https://f503-197-232-142-104.ngrok.io/api/confirmstkpush",
             'AccountReference' => $this->accountReference,
-            'TransactionDesc' => $phone." has paid ".$this->amount." to ".$this->short_code
+            'TransactionDesc' => $phone." has paid ".$this->amount." to 174379",
         );
 
         $data_string = json_encode($curl_post_data);
@@ -162,5 +135,35 @@ class MpesaStkpush
         $result = json_decode($response); 
         
         return $result;
+
+}
+
+public function storeResults(Request $requests){
+        
+    $request=file_get_contents('php://input');
+    
+    //process the received content into an array
+    $array = json_decode($request, true);
+    $transactiontype= $array['TransactionType']; 
+    $transid=$array['TransID']; 
+    $transtime=$array['TransTime']; 
+    $transamount=$array['TransAmount']; 
+    $businessshortcode=$array['BusinessShortCode']; 
+    $billrefno=$array['BillRefNumber']; 
+    $invoiceno=$array['InvoiceNumber']; 
+    $msisdn=$array['MSISDN']; 
+    $orgaccountbalance=$array['OrgAccountBalance']; 
+    $firstname=$array['FirstName']; 
+    $middlename=$array['MiddleName']; 
+    $lastname=$array['LastName'];
+    
+   // Log::info('RECEIVED TRANSAMOUNT: '.$transamount);
+    
+    
+                        
+echo'{"ResultCode":0,"ResultDesc":"Confirmation received successfully"}';
+    
+}
+
 
 }

@@ -12,5 +12,8 @@ class E_users extends Authenticatable
         'first_name','middle_name','last_name','tel_no', 'email','password'
     ];
 
+    public function orders(){
 
+        return $this->hasMany(Orders::class);
+    }
 }

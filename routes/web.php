@@ -49,6 +49,11 @@ Route::get('/user/countwishlists', 'ShopController@countWishlist');
 Route::get('/user/removewishlists/{dataId}', 'ShopController@removeWishlist');
 Route::get('/user/wishlist/deleteall', 'ShopController@deleteWishlist');
 Route::get('/checkout', 'ShopController@checkout');
+Route::get('/make/payment', 'ShopController@make_payment')->name('make_payment');
+Route::get('/user/remove/order', 'ShopController@orderremove');
+Route::get('/user/paylater/order', 'ShopController@paylater');
+
+Route::post('/user/stkpush', 'ShopController@stkpush');
 
 
 Route::post('/checkout/store', 'ShopController@checkout_store');

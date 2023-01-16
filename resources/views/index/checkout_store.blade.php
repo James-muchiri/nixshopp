@@ -2,6 +2,19 @@
 @extends('layouts.index')
 
 @section('content')
+<style>
+  .card .row.number {
+    background-color: #242852;
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1.2px solid #292C58;
+}
+.cardholder .info, .number .info {
+    position: relative;
+    margin: 0 40px;
+}
+
+</style>
 <div class="page-title">
     <div class="container">
       <div class="column">
@@ -53,9 +66,10 @@
 
         </div>
 
-        <h6>Pay with :</h6>
-        <div class="row mt-4">
-          <div class="col-12">
+       
+        <div class="row mt-4" id="stk-mpesa">
+          <h6>Pay with :</h6>
+          <div class="col-12" >
             <div class="payment-methods">
                                                         <div class="single-payment-method">
                 <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#cod">
@@ -69,7 +83,7 @@
 
 
               <div class="single-payment-method">
-                <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#bank">
+                <a class="text-decoration-none" href="/checkout/lipa_mpesa" data-bs-toggle="modal" data-bs-target="#bank">
                     <img class="" src="{{ asset('images/mpesa.png') }}" alt="Bank Transfer" title="Bank Transfer">
                     <p>Lipa Na M-pesa</p>
                 </a>
@@ -80,6 +94,11 @@
 
 
             </div>
+
+            <div class="d-flex justify-content-between paddin-top-1x mt-4">
+              <a data-bs-toggle="modal" data-bs-target="#cancel" class="btn btn-primary btn-sm" href="#"><span class="hidden-xs-down"><i class="icon-arrow-left"></i>Cancel Order</span></a>
+                          <a data-bs-toggle="modal" data-bs-target="#paylater"  class="btn btn-primary  btn-sm" type="button"><span class="hidden-xs-down">Pay Later</span><i class="icon-arrow-right"></i></a>
+                        </div>
           </div>
         </div>
 
@@ -123,31 +142,65 @@
             <h6 class="modal-title">Transactions via Bank Transfer</h6>
             <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
           </div>
-          <form action="https://geniusdevs.com/codecanyon/omnimart40/checkout-submit" method="POST">
-          <div class="modal-body">
+          <form id="stk_push">
+          <div class="modal-body" id="stk_push_body">
             <div class="col-lg-12 form-group">
               <label for="transaction">Transaction Number</label>
               <input class="form-control" name="txn_id" id="transaction" placeholder="Enter Your Transaction Number" required="">
           </div>
-            <p></p>
-            <p>Account Number : 434 3434 3334</p>
-            <p>Pay With Bank Transfer.</p>
-            <p>Account Name : Jhon Due</p>
-            <p>Account Email : demo@gmail.com</p>
-            <p></p>
-          </div>
-          <div class="modal-footer">
+        </div>
+          <div class="modal-footer" id="stk_push_footer">
 
-              <input type="hidden" name="_token" value="jXvMJLOlJgrqnNJeoxgy5vUIqJUCm26Q8s9L1q3x">              <input type="hidden" name="payment_method" value="Bank">
-              <input type="hidden" name="state_id" value="" class="state_id_setup">
+                
+        
             <button class="btn btn-primary btn-sm" type="button" data-bs-dismiss="modal">Cancel</button>
-            <button class="btn btn-primary btn-sm" type="submit"><span>Checkout With Bank Transfer</span></button>
+            <button class="btn btn-primary btn-sm" type="submit"><span>Confirm and Pay</span></button>
 
           </div></form>
         </div>
       </div>
     </div>
 
+  <!-- cancel-->
+  <div class="modal fade" id="cancel" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cancel Order</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Are You Sure?</p>
+            <p>Do you to cancel your order?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <a href="/user/remove/order" type="button" class="btn btn-danger">Remove Account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- pay later-->
+  <div class="modal fade" id="cancel" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Remove Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Are You Sure?</p>
+          <p>Do you remove you account?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="/user/paylater/order" type="button" class="btn btn-danger">Pay Later</a>
+        </div>
+      </div>
+    </div>
+  </div>
       </div>
       <div class="col-xl-3 col-lg-4">
     <aside class="sidebar">
@@ -194,4 +247,137 @@
   </div>
     </div>
   </div>
+
+
+
+  <script>
+    var basePath ='{{ env("APP_URL") }}';
+
+    console.log(basePath);
+
+ 
+   $(document).ready(function (e) {
+     // Submit form data via Ajax
+     $("#stk_push").on('submit', function (e) {
+         e.preventDefault();
+ 
+ 
+         next_fs = $('#stk_push');
+ 
+         curInputs = next_fs.find("input[type='text']");
+         isValid = true;
+         console.log(curInputs);
+         for (var i = 0; curInputs.length; i++) {
+             //  console.log(curInputs[i].value);
+             if (!curInputs[i].value) {
+                 isValid = false;
+                 $(curInputs[i]).closest(".form-group").addClass("has-error");
+                 //   console.log(curInputs[i].value);
+             }
+         }
+         if (isValid) {
+ 
+           var formData = new FormData($(this)[0]);
+     formData.append("_token", "{{ csrf_token() }}");
+ 
+     $('#bank').modal('hide');
+
+        
+     var loader = '';
+
+              loader = loader +
+             '<div id="view_loader_div" class="">'+
+             '<div class="product-not-found">'+
+               '<img class="loader_image" src="' + basePath+  'images/preloader.gif" alt="">'+
+             '</div>'+
+           '</div>';
+           
+             
+             $('#stk-mpesa').html(loader);
+          
+            
+             // AJAX code to submit form.
+             $.ajax({
+                 type: "POST",
+          
+                 url: "/user/stkpush", //call  to store form data
+                 data: formData,
+                 dataType: 'json',
+                 contentType: false,
+                 cache: false,
+                 processData: false,
+                 success: function (data) {
+                     console.log(data);
+
+                   
+
+ 
+                     var loader = '';
+
+                     loader = loader +
+                     '<div class="card">'+
+                      '<div class="card-body"> '+  
+            '<div class="row">'+
+                    '<img src="' + basePath+  'images/mpesal.png" style="width:30%;margin: 0 35%;">'+
+                    
+            '</div>'+
+            '<div class="row number">'+
+                '<div class="info">'+
+                     '<p style="color:#8F92C3;line-height:1.7;">After recieving the payment confirmation message, press "Confirm Payment" to finish making your order</p>'+
+                     '<input type="hidden" name="phone_number" value="" />'+
+                     '<input type="hidden" name="orderNo" value=""/>'+
+                '</div>'+
+            '</div>'+
+        '</div>'+
+        '<div class="card-footer">   '+
+         
+        '<div class="d-flex justify-content-between paddin-top-1x mt-4">'+
+              '<a data-bs-toggle="modal" data-bs-target="#cancel" class="btn btn-primary btn-sm" href="#"><span class="hidden-xs-down"><i class="icon-arrow-left"></i>Resend Request</span></a>'+
+                          '<a data-bs-toggle="modal" onclick="confirm_payment()"  class="btn btn-primary  btn-sm" type="button"><span class="hidden-xs-down">Confirm Payment</span><i class="icon-arrow-right"></i></a>'+
+                        '</div>'+
+                      '</div>'+
+                    '</div>';
+           
+            $('#stk-mpesa').html(loader);
+
+                     if (data.status == 200) {
+                         toastr.success('success');
+                         //$("#userlogin").reset();
+ 
+               
+                         
+ 
+                     }
+ 
+ 
+ 
+ 
+                 },
+                 error: function (xhr) {
+                     console.log(xhr.responseText)
+                 },
+ 
+             });
+ 
+         }
+     });
+ 
+ });
+
+ function confirm_payment(){
+
+  let loader = `
+             <div id="view_loader_div" class="">
+             <div class="product-not-found">
+               <img class="loader_image" src="/images/preloader.gif" alt="">
+             </div>
+           </div>
+             `;
+            
+             
+             $('#stk-mpesa').html(loader);
+
+ }
+</script>
+
 @stop
