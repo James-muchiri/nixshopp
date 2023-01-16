@@ -52,6 +52,8 @@ Route::get('/checkout', 'ShopController@checkout');
 Route::get('/make/payment', 'ShopController@make_payment')->name('make_payment');
 Route::get('/user/remove/order', 'ShopController@orderremove');
 Route::get('/user/paylater/order', 'ShopController@paylater');
+Route::get('/user/confirmpayment', 'ShopController@confirmpayment');
+Route::get('/user/invoice/{dataId}', 'ShopController@invoice');
 
 Route::post('/user/stkpush', 'ShopController@stkpush');
 

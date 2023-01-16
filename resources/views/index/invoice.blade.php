@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="breadcrumbs">
-                    <li><a href="https://geniusdevs.com/codecanyon/omnimart40/user/orders">Orders</a> </li>
+                    <li><a href="/user/orders">Orders</a> </li>
                     <li class="separator"></li>
                     <li>Order Invoice</li>
                   </ul>
@@ -22,15 +22,15 @@
     <div class="card card-body p-5">
                 <div class="row">
                     <div class="col-lg-12">
-                        <a href="https://geniusdevs.com/codecanyon/omnimart40/user/orders" class="btn btn-sm btn-primary d-inline-block"><span>Back</span></a>
-                        <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/print/111" target="_blank" class="btn btn-sm btn-primary invoice_price d-inline-block"><span>Print</span></a>
+                        <a href="/user/orders" class="btn btn-sm btn-primary d-inline-block"><span>Back</span></a>
+                        <a href="/order/print/111" target="_blank" class="btn btn-sm btn-primary invoice_price d-inline-block"><span>Print</span></a>
                     </div>
                 </div> <!-- / .row -->
                 <div class="row">
                   <div class="col text-center">
 
                     <!-- Logo -->
-                    <img class="img-fluid mb-5 mh-70" alt="Logo" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1634218044logoforsite.png">
+                    <img class="img-fluid mb-5 mh-70" alt="Logo" src="{{ asset('images/image.png') }}" >
 
                   </div>
                 </div> <!-- / .row -->

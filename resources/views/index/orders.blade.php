@@ -81,10 +81,11 @@
               </tr>
             </thead>
             <tbody>
+                @foreach($orders as $order)
                           <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">PSzwetzzdC</a></td>
+              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">{{$order->order_number}}</a></td>
               <td>
-                                ৳29,246.98
+                                {{$order->total}}
                 
               </td>
               <td>
@@ -96,189 +97,10 @@
 
               <td>Tue/Jan/2022</td>
               <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/111" class="btn btn-info btn-sm">Invoice</a>
+                  <a href="/user/invoice/{{$order->id}}" class="btn btn-info btn-sm">Invoice</a>
               </td>
             </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">h6BgCEQdkO</a></td>
-              <td>
-                                $353.18
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-danger">Unpaid</span>
-                              </td>
-
-              <td>Tue/Jan/2022</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/109" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">5hauHHR4TV</a></td>
-              <td>
-                                $348.18
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-success">Paid</span>
-                              </td>
-
-              <td>Tue/Jan/2022</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/108" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">l8BKLorUHn</a></td>
-              <td>
-                                $353.18
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-danger">Unpaid</span>
-                              </td>
-
-              <td>Tue/Jan/2022</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/107" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">65lAjs1S0p</a></td>
-              <td>
-                                $348.18
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-danger">Unpaid</span>
-                              </td>
-
-              <td>Tue/Jan/2022</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/106" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">VR1FwSi6BR</a></td>
-              <td>
-                                $1,376.34
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-success">Paid</span>
-                              </td>
-
-              <td>Sun/Dec/2021</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/105" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">vvMW7bC6vC</a></td>
-              <td>
-                                $1,376.34
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-success">Paid</span>
-                              </td>
-
-              <td>Sat/Dec/2021</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/104" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">e2KL4EJZxo</a></td>
-              <td>
-                                $146.18
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-success">Paid</span>
-                              </td>
-
-              <td>Sat/Dec/2021</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/103" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">eKPMC3ueDA</a></td>
-              <td>
-                                ₹2,615.90
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-danger">Unpaid</span>
-                              </td>
-
-              <td>Fri/Dec/2021</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/102" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">LUIOKYI3iN</a></td>
-              <td>
-                                $35.35
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-danger">Unpaid</span>
-                              </td>
-
-              <td>Fri/Dec/2021</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/101" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
-                          <tr>
-              <td><a class="navi-link" href="#" data-toggle="modal" data-target="#orderDetails">xRUcGkXljN</a></td>
-              <td>
-                                $5,929.47
-                
-              </td>
-              <td>
-                                <span class="text-info">Pending</span>
-                              </td>
-              <td>
-                                <span class="text-danger">Unpaid</span>
-                              </td>
-
-              <td>Fri/Dec/2021</td>
-              <td>
-                  <a href="https://geniusdevs.com/codecanyon/omnimart40/user/order/invoice/100" class="btn btn-info btn-sm">Invoice</a>
-              </td>
-            </tr>
+            @endforeach            
                          </tbody>
           </table>
         </div>

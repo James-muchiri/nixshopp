@@ -47,12 +47,12 @@ class MpesaStkpush
         $this->amount=$amount;
         $this->accountReference=$accountReference;
 
-        $Password = getPassword()
+        $Password = getPassword();
 
         $headers = ['Content-Type:application/json; charset=utf8'];
 
-        $access_token_url = ($this->env  == "live") ? "https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials" : "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"; 
-        $initiate_url = ($this->env == "live") ? "https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest" : "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest"; 
+        $access_token_url = ($this->env  == "live") ? "https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials" : "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
+        $initiate_url = ($this->env == "live") ? "https://api.safaricom.co.ke/mpesa/stkpush/v1/processrequest" : "https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
 
 
         $curl = curl_init($access_token_url);
@@ -101,50 +101,50 @@ class MpesaStkpush
     public function status($transactionCode){
         $type = 4;
         $command = "TransactionStatusQuery";
-        $remarks = "Transaction Status Query"; 
+        $remarks = "Transaction Status Query";
         $occasion = "Transaction Status Query";
         $results_url = "https://mydomain.com/TransactionStatus/result/"; //Endpoint to receive results Body
         $timeout_url = "https://mydomain.com/TransactionStatus/queue/"; //Endpoint to to go to on timeout
 
-        $access_token = ($this->env == "live") ? "https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials" : "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials"; 
-        $credentials = base64_encode($this->consumer_key . ':' . $this->consumer_secret); 
-        
+        $access_token = ($this->env == "live") ? "https://api.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials" : "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
+        $credentials = base64_encode($this->consumer_key . ':' . $this->consumer_secret);
+
         $ch = curl_init($access_token);
         curl_setopt($ch, CURLOPT_HTTPHEADER, ["Authorization: Basic " . $credentials]);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $response = curl_exec($ch);
         curl_close($ch);
-        
-        $result = json_decode($response); 
+
+        $result = json_decode($response);
 
         //echo $result->{'access_token'};
-        
+
         $token = isset($result->{'access_token'}) ? $result->{'access_token'} : "N/A";
 
-        $publicKey = file_get_contents(__DIR__ . "/mpesa_public_cert.cer"); 
-        $isvalid = openssl_public_encrypt($this->initiatorPassword, $encrypted, $publicKey, OPENSSL_PKCS1_PADDING); 
+        $publicKey = file_get_contents(__DIR__ . "/mpesa_public_cert.cer");
+        $isvalid = openssl_public_encrypt($this->initiatorPassword, $encrypted, $publicKey, OPENSSL_PKCS1_PADDING);
         $password = base64_encode($encrypted);
 
         //echo $token;
 
-        $curl_post_data = array( 
-            "Initiator" => $this->initiatorName, 
-            "SecurityCredential" => $password, 
-            "CommandID" => $command, 
-            "TransactionID" => $transactionCode, 
-            "PartyA" => $this->short_code, 
-            "IdentifierType" => $type, 
-            "ResultURL" => $results_url, 
-            "QueueTimeOutURL" => $timeout_url, 
-            "Remarks" => $remarks, 
+        $curl_post_data = array(
+            "Initiator" => $this->initiatorName,
+            "SecurityCredential" => $password,
+            "CommandID" => $command,
+            "TransactionID" => $transactionCode,
+            "PartyA" => $this->short_code,
+            "IdentifierType" => $type,
+            "ResultURL" => $results_url,
+            "QueueTimeOutURL" => $timeout_url,
+            "Remarks" => $remarks,
             "Occasion" => $occasion,
-        ); 
+        );
 
         $data_string = json_encode($curl_post_data);
 
         //echo $data_string;
 
-        $endpoint = ($env == "live") ? "https://api.safaricom.co.ke/mpesa/transactionstatus/v1/query" : "https://sandbox.safaricom.co.ke/mpesa/transactionstatus/v1/query"; 
+        $endpoint = ($env == "live") ? "https://api.safaricom.co.ke/mpesa/transactionstatus/v1/query" : "https://sandbox.safaricom.co.ke/mpesa/transactionstatus/v1/query";
 
         $ch2 = curl_init($endpoint);
         curl_setopt($ch2, CURLOPT_HTTPHEADER, [
@@ -159,8 +159,8 @@ class MpesaStkpush
 
         //echo "Authorization: ". $response;
 
-        $result = json_decode($response); 
-        
+        $result = json_decode($response);
+
         return $result;
 
 }

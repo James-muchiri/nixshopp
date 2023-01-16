@@ -377,6 +377,48 @@
              
              $('#stk-mpesa').html(loader);
 
+
+             / AJAX code to submit form.
+             $.ajax({
+                 type: "get",
+          
+                 url: "/user/confirmpayment", //call  to store form data
+                 data: formData,
+                 dataType: 'json',
+                 contentType: false,
+                 cache: false,
+                 processData: false,
+                 success: function (data) {
+                     console.log(data);
+
+                
+                     if (data.status == 200) {
+                       
+               
+                        var basePath = '{{ env('APP_URL') }}';
+                        var rlink = "/user/invoice/"+data.order_number;
+                        console.log(basePath);
+                        window.location.href = basePath + rlink;
+}   
+ 
+                     }
+                     else
+                     
+                     {
+
+
+                     }
+ 
+ 
+ 
+ 
+                 },
+                 error: function (xhr) {
+                     console.log(xhr.responseText)
+                 },
+ 
+             });
+
  }
 </script>
 

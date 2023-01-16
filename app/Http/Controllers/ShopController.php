@@ -366,12 +366,12 @@ class ShopController extends Controller
     }
     public function orders()
     {
-
+            $orders = Orders::all();
         $category = Category::all();
         $sub_category = Sub_Category::all();
         $child_category = Child_Category::all();
 
-        return view('index.orders', compact('sub_category', 'child_category',
+        return view('index.orders', compact('sub_category', 'child_category','orders',
         'category'
 
         ));
@@ -916,6 +916,47 @@ public function cart_product1()
               ]);
               }
         
+              
+              public function confirmpayment()
+
+              {
+
+                $order_number = session()->get('order_number');
+
+                $order = Orders::where('order_number', $order_number)->first();
+                
+          if($order->status == "completed"){
+            return response()->json([
+                "status" => 200,
+                "message" => "action completed successfully",
+                "order_number" => $order->order_number,
+              
+            
+            ]);
+
+          }else{
 
 
+                return response()->json([
+                    "status" => 200,
+                    "message" => "action completed successfully",
+                  
+                
+                ]);
+
+            }
+              }
+          
+              public function invoice($dataId)
+              {
+          
+                  $category = Category::all();
+                  $sub_category = Sub_Category::all();
+                  $child_category = Child_Category::all();
+          
+                  return view('index.invoice', compact('sub_category', 'child_category',
+                 'category'
+          
+                  ));
+              }
 }
