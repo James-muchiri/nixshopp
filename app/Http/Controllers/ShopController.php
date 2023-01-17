@@ -873,22 +873,161 @@ public function cart_product1()
     ///
     public function filter(Request $request)
 
-    {
+    { 
+        
+        if($request->quick_filter){
+                
+
+
+    }
+
+
+           if($request->category)
+            {
+                if($request->quick_filter){
+
+                                
+                    if($request->brand){
+                
+                        $products = Products::where('category_id', $request->category)
+                        ->where('type', $request->quick_filter)
+                        ->where('brand', $request->brand)
+                        ->get();
+
+                    }
+                    else{
+                        $products = Products::where('category_id', $request->category)
+                        ->where('type', $request->quick_filter)
+                        ->get();
+
+                    }
+
+                }
+                else{
+  if($request->brand){
+                
+    $products = Products::where('category_id', $request->category)  
+    ->where('brand', $request->brand)
+    ->get();
+
+                    }
+                    else{
+                        $products = Products::where('category_id', $request->category)
+                           ->get();
+                        
+                    }
+                }
+
+            }
+            
+            elseif($request->subcategory)
+            {
+                if($request->quick_filter){
+
+                                
+                    if($request->brand){
+                
+                        $products = Products::where('subcategory_id', $request->category)
+                        ->where('type', $request->quick_filter)
+                        ->where('brand', $request->brand)
+                        ->get();
+
+                    }
+                    else{
+                        $products = Products::where('subcategory_id', $request->category)
+                        ->where('type', $request->quick_filter)
+                        ->get();
+
+                    }
+
+                }
+                else{
+  if($request->brand){
+                
+    $products = Products::where('subcategory_id', $request->category)  
+    ->where('brand', $request->brand)
+    ->get();
+
+                    }
+                    else{
+                        $products = Products::where('subcategory_id', $request->category)
+                         ->get();
+                        
+                    }
+                }
+           
+            }
+
+            elseif($request->childcategory)
+            {
+                if($request->quick_filter){
+
+                                
+                    if($request->brand){
+                
+                        $products = Products::where('childcategory_id', $request->category)
+                        ->where('type', $request->quick_filter)
+                        ->where('brand', $request->brand)
+                        ->get();
+
+                    }
+                    else{
+                        $products = Products::where('childcategory_id', $request->category)
+                        ->where('type', $request->quick_filter)
+                        ->get();
+
+                    }
+
+                }
+                else{
+  if($request->brand){
+                
+    $products = Products::where('childcategory_id', $request->category)  
+    ->where('brand', $request->brand)
+    ->get();
+
+                    }
+                    else{
+                        $products = Products::where('childcategory_id', $request->category)
+                        ->get();
+                        
+                    }
+                }
+           
+            }
+
+            else    
+               {
+           
+            }
+
+            if($request->sorting == "low_to_high"){
+
+
+                $products = $products->orderBy('c_price', 'asc');
+             
+            }
+            elseif($request->sorting == "high_to_low")
+            {
+               
+                $products = $products->orderBy('c_price', 'DESC');
+    
+     }
+            
+
 
 
         if($request->view_check == "list"){
 
-
-
-            return view('index.filter_listview');
+             return view('index.filter_listview', compact('products' ));
         }
         else{
 
 
 
+            return view('index.filter_blockview', compact('products' ));
 
-
-            return view('index.filter_blockview');
+       
         }
 
     }
@@ -905,13 +1044,13 @@ public function cart_product1()
         $Mpesacontroller = new MpesaController;
 
 
-      $stkpush =  $Mpesacontroller->lipaNaMpesa($order->total,$request->txn_id,$order_number);
+    //  $stkpush =  $Mpesacontroller->lipaNaMpesa($order->total,$request->txn_id,$order_number);
 
 
               return response()->json([
                   "status" => 200,
                   "message" => "action completed successfully",
-                  "stkpush" => $stkpush,
+                 // "stkpush" => $stkpush,
               
               ]);
               }
@@ -950,13 +1089,61 @@ public function cart_product1()
               public function invoice($dataId)
               {
           
+
+                $order = Orders::where('order_number', $dataId)->first();
                   $category = Category::all();
                   $sub_category = Sub_Category::all();
                   $child_category = Child_Category::all();
           
-                  return view('index.invoice', compact('sub_category', 'child_category',
+                  return view('index.invoice', compact('sub_category', 'child_category','order',
                  'category'
           
                   ));
               }
+              public function print_order($dataId)
+              {
+          
+
+                $order = Orders::where('order_number', $dataId)->first();
+             
+          
+                  return view('index.print', compact('order'    
+                  ));
+              }
+
+
+              public function search(Request $request){
+
+
+                if($request->search)
+                {
+                    if($request->category){
+                        $products = Products::where('name', 'LIKE', "%{$request->search}%" )
+                        ->orWhere('category_id',  $request->category)->get();
+    
+                    }
+                    else 
+                    {
+                        $products = Products::where('name', 'LIKE', "%{$request->search}%" )->get();
+                    }
+                }
+                else
+                 {
+                    $products = Products::where('status', 'enabled')->limit(15)->get();  
+
+                }
+
+             
+                $category = Category::all();
+                $sub_category = Sub_Category::all();
+                $child_category = Child_Category::all();
+   
+                return view('index.search', compact('sub_category', 'child_category','products',
+                'category'
+         
+                 ));
+                
+              }
+
+        
 }

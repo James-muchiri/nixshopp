@@ -378,12 +378,11 @@
              $('#stk-mpesa').html(loader);
 
 
-             / AJAX code to submit form.
+             // AJAX code to submit form.
              $.ajax({
                  type: "get",
           
                  url: "/user/confirmpayment", //call  to store form data
-                 data: formData,
                  dataType: 'json',
                  contentType: false,
                  cache: false,
@@ -401,13 +400,8 @@
                         window.location.href = basePath + rlink;
 }   
  
-                     }
-                     else
-                     
-                     {
-
-
-                     }
+             
+                   
  
  
  

@@ -69,26 +69,29 @@
 
                     <img src="{{ asset('/uploads') }}/{{$deal->image}}" alt="Product">
                     <div class="product-button-group">
-                        {{-- <a class="product-button wishlist_store" href="//user/wishlist/store/559" title="Wishlist"><i class="icon-heart"></i></a>
-                         --}}
+                        <a class="product-button wishlist_store" href="user/storewishlists/{{$deal->id}}" title="Wishlist"><i class="fa fa-heart"></i></a>
                         <a data-target="/compare/product/{{$deal->id}}" class="product-button product_compare" href="javascript:;" title="Compare"><i class="fa fa-repeat"></i></a>
-                        <a class="product-button add_to_single_cart" data-target="/cart/product/{{$deal->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-heart"></i>
-</a>
+                        <a class="product-button add_to_single_cart" data-target="/cart/product/{{$deal->id}}" href="javascript:;" title="To Cart"><i  class="fa fa-cart-plus"></i>
+        </a>
                         </div>
                 </div>
                 <div class="product-card-body">
 
-                    <div class="product-category"><a href="//catalog?category=men-clothing">Men Clothing</a></div>
-                    <h3 class="product-title"><a href="//product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf">
-                        Shirts Menshirts Mens Cotton Shirt 
+                    <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{$deal->child__categories_name}}</a></div>
+                    <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
+                        {{$deal->name}}
                     </a></h3>
                     <div class="rating-stars">
-                        <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                     </div>
+                    
+    
                     <h4 class="product-price">
-                                            $1,362.81
-                    </h4>
-
+                        <del>Ksh {{$deal->p_price}}</del>
+    
+                        Ksh {{$deal->c_price}}
+    </h4>
+    
                 </div>
 
             </div>
@@ -99,6 +102,12 @@
                         </div>
     </div>
 </div>
+
+
+
+
+
+
 
 
 

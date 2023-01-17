@@ -756,6 +756,7 @@ $(function ($) {
                 filter = $(this).attr('data-href');
             }
             $("#search_form #quick_filter").val(filter);
+            // $("#search_form #filter").val(filter);
             removePage();
             $("#search_button").click();
         });

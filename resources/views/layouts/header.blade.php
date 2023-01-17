@@ -56,6 +56,7 @@ Login/Register
                         <div class="search-box-wrap d-none d-lg-block d-flex">
                         <div class="search-box-inner align-self-center">
                             <div class="search-box d-flex">
+                        
                                 <select name="category" id="category_select" class="categoris">
 									<option value="">All</option>
 
@@ -69,9 +70,9 @@ Login/Register
                                             @endforeach
 
                                      </select>
-                                <form class="input-group" id="header_search_form">
+                                     <form class="input-group" id="header_search_form" action="/search" method="GET">
                                     <input class="form-control" type="text" id="__product__search" name="search" placeholder="Search by product name">
-                                    
+                                    <input type="hidden" name="category" value="" id="search__category">
                                     <span class="input-group-btn">
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                     </span>

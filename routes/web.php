@@ -16,7 +16,7 @@ Auth::routes();
 
 
 Route::get('/', 'ShopController@index')->name('index');
-Route::get('/shop', 'ShopController@shop')->name('shop');
+Route::get('/shop', 'ShopController@search')->name('shop');
 Route::get('/filter', 'ShopController@filter')->name('filter');
 Route::get('/brands', 'ShopController@brands');
 Route::get('/brands/{data}', 'ShopController@brandshow');
@@ -54,6 +54,8 @@ Route::get('/user/remove/order', 'ShopController@orderremove');
 Route::get('/user/paylater/order', 'ShopController@paylater');
 Route::get('/user/confirmpayment', 'ShopController@confirmpayment');
 Route::get('/user/invoice/{dataId}', 'ShopController@invoice');
+Route::get('/order/print/{dataId}', 'ShopController@print_order');
+Route::get('/search', 'ShopController@search');
 
 Route::post('/user/stkpush', 'ShopController@stkpush');
 

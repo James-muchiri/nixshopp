@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Payments_notification;
+use App\Orders;
 use Carbon\Carbon;
+use App\Products;
 use function Psy\sh;
 
 class MpesaController extends Controller
@@ -29,8 +31,8 @@ class MpesaController extends Controller
 
         $this->short_code = '7854001';
         $this->parent_short_code='5868111';
-        $this->consumer_key=" "; //Your Consumer key
-        $this->consumer_secret=" "; //Your Secret key
+        $this->consumer_key="0zbpDYBemE8AFUkA5P3H4yij8uU4plDd"; //Your Consumer key
+        $this->consumer_secret="vc3fYgA2Dq90NZhM"; //Your Secret key
         $this->passkey = " "; //Your Passkey
         $this->CallBackURL = " "; //Your callback URL
         $this->env = "sandbox"; //Your Environment sandbox or Live
@@ -77,7 +79,7 @@ class MpesaController extends Controller
         $access_token = $result->access_token;
         curl_close($curl);
 
-
+        return $access_token ;
 
         # header for stk push
         $stkheader = ['Content-Type:application/json','Authorization:Bearer '.$access_token];
@@ -198,6 +200,41 @@ public function storeResults(Request $requests){
     $lastname=$array['LastName'];
 
    // Log::info('RECEIVED TRANSAMOUNT: '.$transamount);
+
+
+  $payment_notification= new Payments_notification;
+  $payment_notification->TransactionType = $transactiontype;
+  $payment_notification->TransID = $transid;
+  $payment_notification->TransTime = $transtime;
+  $payment_notification->TransAmount = $transamount;  
+  $payment_notification->BusinessShortCode = $businessshortcode;
+  $payment_notification->MSISDN = $msisdn;
+  $payment_notification->FirstName = $firstname;
+  $payment_notification->MiddleName = $middlename;
+  $payment_notification->BillRefNumber = $billrefno;
+  $payment_notification->OrgAccountBalance =  $orgaccountbalance;
+  $payment_notification->save();
+
+
+
+   $posts=  Orders::where('order_number', $billrefno)->first();
+    
+   $posts->status='completed';
+   $posts->save();
+   $carts = unserialize($posts->cart);
+  
+   foreach($carts as $cart)
+   {
+    //   return  ;
+       $product = Products::find($cart['id']); 
+       
+       $quantity = $product->total_stock;
+      
+       $cart_q = $cart['quantity'];
+       $quantity = $quantity - $cart_q;
+       $product->total_stock = $quantity;
+       $product->save();
+   }
 
 
 
