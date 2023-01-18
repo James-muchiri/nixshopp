@@ -134,7 +134,7 @@
         window.laravelCookieConsent = (function () {
 
             const COOKIE_VALUE = 1;
-            const COOKIE_DOMAIN = 'geniusdevs.com';
+            const COOKIE_DOMAIN = 'https://a505-197-232-142-104.ngrok.io/';
 
             function consentWithCookies() {
                 setCookie('laravel_cookie_consent', COOKIE_VALUE, 7300);
@@ -161,12 +161,13 @@
                     + ';domain=' + COOKIE_DOMAIN
                     + ';path=/'
                     + '';
+                  
             }
 
             if (cookieExists('laravel_cookie_consent')) {
                 hideCookieDialog();
             }
-
+          
             const buttons = document.getElementsByClassName('js-cookie-consent-agree');
 
             for (let i = 0; i < buttons.length; ++i) {
@@ -185,11 +186,7 @@
 
 
 
-<script>
-    var mainbs = {"is_announcement":"1","announcement_delay":"1.00","overlay":null};
-    var decimal_separator = '.';
-    var thousand_separator = ',';
-</script>
+
 
 <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
 
@@ -205,18 +202,8 @@
 
 
 <script type="text/javascript">
-    let mainurl = '/';
+    let mainurl = '{{ env("APP_URL") }}';
 
-    $(document).on('click','.color__check',function(){
-        var color = $(this).attr('data-href');
-
-        $.get(`${mainurl}/set/color?color=${color}`,function(){
-          location.reload();
-        });
-    })
-    $(document).on('click','.spiner',function(){
-        $('.color-picker').toggleClass('active');
-    })
 
     let view_extra_index = 0;
       // Notifications

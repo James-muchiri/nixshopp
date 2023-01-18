@@ -863,13 +863,14 @@ $(function ($) {
             let loader = `
             <div id="view_loader_div" class="">
             <div class="product-not-found">
-              <img class="loader_image" src="${mainurl + '/assets/images/ajax_loader.gif'}" alt="">
+              <img class="loader_image" src="${mainurl + 'images/ajax_loader.gif'}" alt="">
             </div>
           </div>
             `;
             $('#list_view_ajax').html(loader);
 
             let form_url = $(this).attr('action');
+            console.log(form_url);
             let method = $(this).attr('method');
             $.ajax({
                 type: method,

@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '17c436643d6c6d0117cc7bfcf32f19aed94a1e1a',
+        'reference' => '569fd427cfe1d8d19504b0a796ed4282dd9494b4',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -328,7 +328,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '17c436643d6c6d0117cc7bfcf32f19aed94a1e1a',
+            'reference' => '569fd427cfe1d8d19504b0a796ed4282dd9494b4',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -730,6 +730,15 @@
             'install_path' => __DIR__ . '/../sebastian/version',
             'aliases' => array(),
             'dev_requirement' => true,
+        ),
+        'spatie/laravel-cookie-consent' => array(
+            'pretty_version' => '2.12.9',
+            'version' => '2.12.9.0',
+            'reference' => '423f17b60aaca47431414d0a0ef07614711f73d0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../spatie/laravel-cookie-consent',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'swiftmailer/swiftmailer' => array(
             'pretty_version' => 'v6.3.0',

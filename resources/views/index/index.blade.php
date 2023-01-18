@@ -106,7 +106,7 @@
 @php
     if($deal->c_price < $deal->p_price){
         $per = ($deal->c_price - $deal->p_price) / $deal->p_price * 100;
-        $num = floatval($per);
+        $num = round($per);
 echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
     }
 @endphp
@@ -599,7 +599,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                                         @php
                                                                         if($post->c_price < $post->p_price){
                                                                         $per = ($post->c_price - $post->p_price) / $post->p_price * 100;
-                                                                        $num = floatval($per);
+                                                                        $num = round($per);
                                                                         echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                                         }
                                                                         @endphp

@@ -3721,13 +3721,24 @@ a.card {
     font-size: .8em
 }
 
-.pagination li {
+.simple-pagination ul {
+	margin: 0 0 20px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.simple-pagination li {
+
+	margin-right: 5px;
+}
+.simple-pagination li {
     display: inline-block;
     margin: 0 3px
 }
 
-.pagination li a,
-.pagination li span {
+.simple-pagination li a,
+.simple-pagination li span {
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -3745,10 +3756,10 @@ a.card {
     border: 0
 }
 
-.pagination li a:hover,
-.pagination li span:hover,
-.pagination li.active a,
-.pagination li.active span {
+.simple-pagination li a:hover,
+.simple-pagination li span:hover,
+.simple-pagination li.active a,
+.simple-pagination li.active span {
     background: #377dff;
     color: #fff
 }
@@ -9464,7 +9475,7 @@ screen and (-ms-high-contrast:none) {
     color: #0052f5
 }
 
-.pagination {
+.simple-pagination {
     text-align: center;
     justify-content: center
 }

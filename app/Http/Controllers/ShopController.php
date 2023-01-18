@@ -889,14 +889,14 @@ public function cart_product1()
                                 
                     if($request->brand){
                 
-                        $products = Products::where('category_id', $request->category)
+                        $products = Products::where('category_id', 1)
                         ->where('type', $request->quick_filter)
                         ->where('brand', $request->brand)
                         ->get();
 
                     }
                     else{
-                        $products = Products::where('category_id', $request->category)
+                        $products = Products::where('category_id', 1)
                         ->where('type', $request->quick_filter)
                         ->get();
 
@@ -906,13 +906,13 @@ public function cart_product1()
                 else{
   if($request->brand){
                 
-    $products = Products::where('category_id', $request->category)  
+    $products = Products::where('category_id', 1)  
     ->where('brand', $request->brand)
     ->get();
 
                     }
                     else{
-                        $products = Products::where('category_id', $request->category)
+                        $products = Products::where('category_id', 1)
                            ->get();
                         
                     }
@@ -998,7 +998,7 @@ public function cart_product1()
 
             else    
                {
-           
+                $products = Products::where('status', 'enabled')->limit(15)->get();  
             }
 
             if($request->sorting == "low_to_high"){

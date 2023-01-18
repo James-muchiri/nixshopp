@@ -90,7 +90,7 @@
 @php
 if($product->c_price < $product->p_price){
  $per = ($product->c_price - $product->p_price) / $product->p_price * 100;
- $num = floatval($per);
+ $num = round($per);
 echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
 }
 @endphp
