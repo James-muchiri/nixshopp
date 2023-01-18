@@ -13,6 +13,7 @@ use App\Banners;
 use App\Popular_categories;
 use App\Featured_categories;
 use App\Three_column_category;
+use App\Orders;
 class AdminController extends Controller
 {
     //
@@ -424,7 +425,9 @@ class AdminController extends Controller
     }
     public function   orders()
     {
-        return view('admin.all_orders');
+        $orders = Orders::all();
+
+        return view('admin.all_orders', compact('orders'));
     }
     public function   orders_Pending()
     {
