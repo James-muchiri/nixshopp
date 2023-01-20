@@ -58,7 +58,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/remove/account" type="button" class="btn btn-danger">Remove Account</a>
+              <a href="/admin/remove/account" type="button" class="btn btn-danger">Remove Account</a>
             </div>
           </div>
         </div>
@@ -70,7 +70,7 @@
                       <div class="card">
                           <div class="card-body d-flex flex-row justify-content-between align-items-center">
                               <h5 class="mb-0">All Tickets</h5>
-                              <a href="https://geniusdevs.com/codecanyon/omnimart40/user/ticket/new" class="btn btn-primary btn-sm"><span>Add New</span></a>
+                              <a href="/user/ticket/new" class="btn btn-primary btn-sm"><span>Add New</span></a>
                           </div>
                       </div>
                   </div>
@@ -94,11 +94,11 @@
                                       </td>
                                                                           <td>1 year ago</td>
                                                                           <td>
-                                          <a class="btn btn-info btn-sm" href="https://geniusdevs.com/codecanyon/omnimart40/user/ticket/view/1">
-                                              <i class="fas fa-eye"> </i> View
+                                          <a class="btn btn-info btn-sm" href="/user/ticket/view/1">
+                                              <i class="fa fa-eye"> </i> View
                                           </a>
-                                          <a class="btn btn-sm btn-danger" href="https://geniusdevs.com/codecanyon/omnimart40/user/ticket/delete/1">
-                                              <i class="fas fa-trash"> </i> Delete
+                                          <a class="btn btn-sm btn-danger" href="/user/ticket/delete/1">
+                                              <i class="fa fa-trash"> </i> Delete
                                           </a>
                                       </td>
                                   </tr>

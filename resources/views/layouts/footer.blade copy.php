@@ -195,11 +195,6 @@
 
 
 
-<script>
-    var mainbs = {"is_announcement":"1","announcement_delay":"1.00","overlay":null};
-    var decimal_separator = '.';
-    var thousand_separator = ',';
-</script>
 
 <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
 

@@ -391,7 +391,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                     Men Leather Jacket Men New Men High Quality Collar
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -424,7 +424,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                     Dropshipping EIS 2.4 inch LCD Full HD 720P Recordi
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -457,7 +457,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                     Cheap Price Mobile Phones i13 Pro 6.6inch FHD Big
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,460.67</del>
@@ -490,7 +490,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                     UMIDIGI A9 Pro Android Mobile Phone 4g 48MP Quad C
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,910.11</del>
@@ -523,7 +523,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                     Shein Womens Clothing 2021 Summer Fashion Design C
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -556,7 +556,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                     Women Women Fall 2021 Women Clothes Backless Halte
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>

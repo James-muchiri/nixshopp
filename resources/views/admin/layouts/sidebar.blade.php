@@ -235,7 +235,7 @@
     </li> --}}
 
     <li class="nav-item">
-        <a href="/admin/user">
+        <a href="/admin/customer">
           <i class="fa fa-users"></i>
           <p>Customer List</p></a>
     </li>
@@ -252,11 +252,11 @@
         </a>
         <div class="collapse" id="content">
             <ul class="nav nav-collapse">
-                <li>
+                {{-- <li>
                     <a class="sub-link" href="/admin/setting/system">
                         <span class="sub-item">General Settings</span>
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a class="sub-link" href="/admin/Banner">
                         <span class="sub-item">Home Page Banners</span>
@@ -268,22 +268,22 @@
                     </a>
                 </li>
 
-                <li>
+                {{-- <li>
                     <a class="sub-link" href="/admin/service">
                         <span class="sub-item">Services</span>
                     </a>
-                </li>
-                <li>
+                </li> --}}
+                {{-- <li>
                     <a class="sub-link" href="/admin/setting/section">
                         <span class="sub-item">Visibility</span>
                     </a>
-                </li>
+                </li> --}}
 
-                <li>
+                {{-- <li>
                     <a class="sub-link" href="/admin/setting/social">
                         <span class="sub-item">Social Login</span>
                     </a>
-                </li>
+                </li> --}}
 
                 <li>
                     <a class="sub-link" href="/admin/setting/email">
@@ -295,10 +295,7 @@
                         <span class="sub-item">SMS Settings</span>
                     </a>
                 </li>
-                              <li>
-                    <a class="sub-link" href="/admin/cookie/alert">
-                      <span class="sub-item">Cookies Alert</span></a>
-                </li>
+               
 
       
             </ul>

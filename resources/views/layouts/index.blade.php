@@ -36,26 +36,14 @@
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}"><!-- Color css -->
     <link rel="stylesheet" href="{{ asset('css/color6e7b.css?primary_color=FF6A00') }}"><!-- Modernizr-->
     <script type="text/javascript" src="{{ asset('js/modernizr.min.js') }}"></script>
-  
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
     <!--   Core JS Files   -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.css" />
-
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.10.25/datatables.min.js"></script>
-
-
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/popper.min.js"></script>
-    
-
-
-    <script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
 
 
 
@@ -103,7 +91,10 @@
 
 
 <script type="text/javascript" src="{{ asset('js/plugins.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/bootstrap-notify.min.js') }}"></script>
+
+	<!-- Bootstrap Notify  -->
+	<script src="{{ asset('backend/js/plugin/bootstrap-notify.min.js') }}"></script>
+
 
 <script type="text/javascript" src="{{ asset('js/scripts.min.js') }}"></script>
 
@@ -112,5 +103,3 @@
 <script type="text/javascript" src="{{ asset('js/lazy.plugin.js') }}"></script>
 
 <script type="text/javascript" src="{{ asset('js/myscript.js') }}"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<!-- Header-->

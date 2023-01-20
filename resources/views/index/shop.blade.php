@@ -84,7 +84,7 @@
                             DC-7200 DSLR support 32G sd card video
                         </a></h3>
                         <div class="rating-stars">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                         </div>
                         <h4 class="product-price">
                                                             $1,352.81
@@ -118,7 +118,7 @@
                             Dropshipping EIS 2.4 inch LCD Full HD 
                         </a></h3>
                         <div class="rating-stars">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                         </div>
                         <h4 class="product-price">
                                                             <del>$189.78</del>
@@ -153,7 +153,7 @@
                             Wholesale Price 1.3 Mega HD DV SLR Cam
                         </a></h3>
                         <div class="rating-stars">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                         </div>
                         <h4 class="product-price">
                                                             <del>$167.30</del>
@@ -188,7 +188,7 @@
                             New product 2019 Refurbished used smar
                         </a></h3>
                         <div class="rating-stars">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                         </div>
                         <h4 class="product-price">
                                                             <del>$1,348.31</del>
@@ -223,7 +223,7 @@
                             Cheap Price Mobile Phones i13 Pro 6.6i
                         </a></h3>
                         <div class="rating-stars">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                         </div>
                         <h4 class="product-price">
                                                             <del>$1,460.67</del>
@@ -258,7 +258,7 @@
                             Hot Selling s10+ Unlocked 8+16MP 8 Cor
                         </a></h3>
                         <div class="rating-stars">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                         </div>
                         <h4 class="product-price">
                                                             <del>$189.78</del>
@@ -293,7 +293,7 @@
                             UMIDIGI A9 Pro Android Mobile Phone 4g
                         </a></h3>
                         <div class="rating-stars">
-                            <i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
                         </div>
                         <h4 class="product-price">
                                                             <del>$1,910.11</del>

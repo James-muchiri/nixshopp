@@ -55,7 +55,7 @@
                 <i class="fa fa-eye"></i>
             </a>
             <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/review/2">
-                <i class="fa fa-trash-alt"></i>
+                <i class="fa fa-trash"></i>
             </a>
         </div>
     </td>
@@ -89,7 +89,7 @@
                 <i class="fa fa-eye"></i>
             </a>
             <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/review/1">
-                <i class="fa fa-trash-alt"></i>
+                <i class="fa fa-trash"></i>
             </a>
         </div>
     </td>

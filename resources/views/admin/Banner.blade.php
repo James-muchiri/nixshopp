@@ -44,7 +44,13 @@
                                         <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
-                                                <img class="admin-img" src="{{ asset('uploads') }}/{{$header_banner1->photo}}" alt="No Image Found">
+                                            @if ($header_banner1)
+                                            <img class="admin-img" src="{{ asset('uploads') }}/{{$header_banner1->photo}}" alt="No Image Found">
+                                           
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
                                             <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -79,8 +85,14 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
+                                            @if ($header_banner1)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$header_banner2->photo}}" alt="No Image Found">
-                                        <br>
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
+                                       <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
                                         <div class="form-group position-relative">
@@ -114,7 +126,15 @@
                                  @csrf                                  <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
+                                      
+
+                                            @if ($banneer21)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer21->photo}}" alt="No Image Found">
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
                                         <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -150,7 +170,13 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
+                                       @if ($banneer22)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer22->photo}}" alt="No Image Found">
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
                                         <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -185,7 +211,15 @@
                                         <div class="form-group">
                                             <label for="name">Image 3 *</label>
                                             <br>
+                                        
+                                            @if ($banneer23)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer23->photo}}" alt="No Image Found">
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
+                                            
                                         <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -354,7 +388,16 @@
                               @csrf                                  <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
+  
+                                            @if ($banneer31)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer31->photo}}" alt="No Image Found">
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
+                                            
+                                            
                                         <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -388,7 +431,16 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
+
+
+                                            @if ($banneer32)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer32->photo}}" alt="No Image Found">
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
+                                            
                                         <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -422,7 +474,15 @@
                                         <div class="form-group">
                                             <label for="name">Image 3 *</label>
                                             <br>
+      
+                                            @if ($banneer33)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer33->photo}}" alt="No Image Found">
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
+                                            
                                         <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -688,7 +748,15 @@
                          @csrf                                      <div class="form-group">
                                             <label for="name">Image 1 *</label>
                                             <br>
+    
+                                            @if ($banneer41)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer41->photo}}" alt="No Image Found">
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
+                                            
                                         <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>
@@ -721,7 +789,15 @@
                                         <div class="form-group">
                                             <label for="name">Image 2 *</label>
                                             <br>
+   
+                                            @if ($banneer42)
                                             <img class="admin-img" src="{{ asset('uploads') }}/{{$banneer42->photo}}" alt="No Image Found">
+                                      
+                                            @else
+                                            <img class="admin-img" src="{{ asset('/images/placeholder.png') }}" alt="No Image Found">
+                                           
+                                            @endif
+                                            
                                         <br>
                                             <span class="mt-1">Image Size Should Be 496 x 204.</span>
                                         </div>

@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Response;
-use Redirect;
 use Illuminate\Support\Facades\Hash;
 use App\Slider;
 use App\Banners;
@@ -1144,6 +1142,32 @@ public function cart_product1()
                  ));
                 
               }
+              
 
-        
+              public function track_order()
+              {
+          
+
+                // $order = Orders::where('order_number', $dataId)->first();
+                  $category = Category::all();
+                  $sub_category = Sub_Category::all();
+                  $child_category = Child_Category::all();
+          
+                  return view('index.track_order', compact('sub_category', 'child_category',
+                 'category'
+          
+                  ));
+              }
+
+              public function track_order_submit(Request $request){
+
+
+                if($request->order_number){
+                    $order = Orders::where('order_number', $request->order_number)->first();
+                }
+
+
+                return view('index.track_order_submit', compact('order'));
+
+              }
 }

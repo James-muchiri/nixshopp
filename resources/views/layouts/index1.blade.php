@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from geniusdevs.com/codecanyon/omnimart40/compare/products by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Nov 2022 19:13:29 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="utf-8">
 <title>OmniMart -    Compare
@@ -221,11 +219,7 @@
 
 
 
-<script>
-    var mainbs = {"is_announcement":"1","announcement_delay":"1.00","overlay":null};
-    var decimal_separator = '.';
-    var thousand_separator = ',';
-</script>
+
 
 <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
 <script type="text/javascript" src="{{ asset('js/plugins.min.js') }}"></script>
@@ -333,6 +327,5 @@
 
 </body>
 
-<!-- Mirrored from geniusdevs.com/codecanyon/omnimart40/compare/products by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Nov 2022 19:13:38 GMT -->
 </html>
 

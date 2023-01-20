@@ -17,7 +17,7 @@
                 New French Elegant White Bubble Sle
             </a></h3>
             <div class="rating-stars">
-            <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+            <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
             </div>
             <h4 class="product-price">
                                             <del>$500.78</del>

@@ -19,7 +19,7 @@
     <div class="container">
       <div class="column">
         <ul class="breadcrumbs">
-          <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a> </li>
+          <li><a href="">Home</a> </li>
           <li class="separator"></li>
           <li>Review your order and pay</li>
         </ul>
@@ -31,10 +31,10 @@
     <div class="row">
       <!-- Payment Methode-->
       <div class="col-xl-9 col-lg-8">
-        <div class="steps flex-sm-nowrap mb-5"> <a class="step" href="https://geniusdevs.com/codecanyon/omnimart40/checkout/billing/address">
+        <div class="steps flex-sm-nowrap mb-5"> <a class="step" href="/checkout/billing/address">
           <h4 class="step-title"><i class="icon-check-circle"></i>1. Invoice to:</h4>
           </a>
-          <a class="step active" href="https://geniusdevs.com/codecanyon/omnimart40/checkout/review/payment">
+          <a class="step active" href="/checkout/review/payment">
           <h4 class="step-title">3. Review and pay</h4>
           </a>
         </div>
@@ -73,7 +73,7 @@
             <div class="payment-methods">
                                                         <div class="single-payment-method">
                 <a class="text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#cod">
-                    <img class="" src="https://geniusdevs.com/codecanyon/omnimart40/assets/images/1631032407index.png" alt="Cash On Delivery" title="Cash On Delivery">
+                    <img class="" src="/assets/images/1631032407index.png" alt="Cash On Delivery" title="Cash On Delivery">
                     <p>Cash On Delivery</p>
                 </a>
               </div>
@@ -113,7 +113,7 @@
             <h6 class="modal-title">Transaction Cash On Delivery</h6>
             <button class="close" type="button" data-bs-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
           </div>
-          <form action="https://geniusdevs.com/codecanyon/omnimart40/checkout-submit" method="POST">
+          <form action="/checkout-submit" method="POST">
             <input type="hidden" name="_token" value="jXvMJLOlJgrqnNJeoxgy5vUIqJUCm26Q8s9L1q3x">            <input type="hidden" name="payment_method" value="Cash On Delivery" id="">
             <input type="hidden" name="state_id" value="" class="state_id_setup">
             <div class="card-body">

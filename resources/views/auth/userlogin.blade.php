@@ -9,7 +9,7 @@
     <div class="row">
         <div class="col-lg-12">
           <ul class="breadcrumbs">
-              <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a> </li>
+              <li><a href="">Home</a> </li>
               <li class="separator"></li>
               <li>Login/Register</li>
             </ul>
@@ -38,16 +38,16 @@
                   <div class="custom-control custom-checkbox">
                     <input class="custom-control-input" type="checkbox" id="remember_me">
                     <label class="custom-control-label" for="remember_me">Remember me</label>
-                  </div><a class="navi-link" href="https://geniusdevs.com/codecanyon/omnimart40/user/forgot">Forgot password?</a>
+                  </div><a class="navi-link" href="/user/forgot">Forgot password?</a>
                 </div>
                 <div class="text-center">
                   <button class="btn btn-primary margin-bottom-none" type="submit"><span>Login</span></button>
                 </div>
                 {{-- <div class="row">
                     <div class="col-lg-12 text-center mt-3">
-                                        <a class="facebook-btn mr-2" href="https://geniusdevs.com/codecanyon/omnimart40/auth/facebook">Facebook login
+                                        <a class="facebook-btn mr-2" href="/auth/facebook">Facebook login
                     </a>
-                                                            <a class="google-btn" href="https://geniusdevs.com/codecanyon/omnimart40/auth/google"> Google login
+                                                            <a class="google-btn" href="/auth/google"> Google login
                     </a>
                                       </div>
                   </div> --}}

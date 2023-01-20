@@ -15,16 +15,24 @@
 Auth::routes();
 
 
+
+ //Clear route cache:
+Route::get('/cache/clear', 'AdminController@cache')->name('cache');
+
+
+
 Route::get('/', 'ShopController@index')->name('index');
 Route::get('/shop', 'ShopController@search')->name('shop');
 Route::get('/filter', 'ShopController@filter')->name('filter');
 Route::get('/brands', 'ShopController@brands');
 Route::get('/brands/{data}', 'ShopController@brandshow');
 Route::get('/campaign', 'ShopController@campaign');
+Route::get('/track/order', 'ShopController@track_order');
+Route::get('/order/track/submit', 'ShopController@track_order_submit');
 
 
 Route::get('/{dataId}/feature_category/normal', 'ShopController@normal');
-Route::get('/get/Women-Clothing/popular_category/slider', 'ShopController@slider');
+Route::get('/get/{dataId}/popular_category/slider', 'ShopController@slider');
 Route::get('get/type/feature', 'ShopController@mixed');
 
 
@@ -172,12 +180,12 @@ Route::get('/admin/orders/Pending', 'AdminController@orders_Pending')->name('ord
 Route::get('/admin/orders/Progress', 'AdminController@orders_Progress')->name('orders_Progress');
 Route::get('/admin/orders/Delivered', 'AdminController@orders_Delivered')->name('orders_Delivered');
 Route::get('/admin/orders/Canceled', 'AdminController@orders_Canceled')->name('orders_Canceled');
+Route::get('/admin/invoice/{dataId}', 'AdminController@invoice')->name('invoice');
+Route::get('/admin/transactions', 'AdminController@transactions')->name('transactions');
+Route::get('/admin/customer', 'AdminController@customerlist')->name('customerlist');
+Route::get('/admin/user/{dataId}', 'AdminController@customerview')->name('customerview');
+Route::post('/admin/saveuser/{dataId}', 'AdminController@customersave')->name('customersave');
+Route::get('/admin/subscribers', 'AdminController@subscribers')->name('adminsubscribers');
+Route::get('/admin/subscribers/send-mail', 'AdminController@subscribers_send_mail')->name('adminsubscribers_send-mail');
 
 
-
-
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

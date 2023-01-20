@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="breadcrumbs">
-                    <li><a href="https://geniusdevs.com/codecanyon/omnimart40">Home</a> </li>
+                    <li><a href="">Home</a> </li>
                     <li class="separator"></li>
                     <li>Welcome Back, Alex</li>
                   </ul>
@@ -56,7 +56,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <a href="https://geniusdevs.com/codecanyon/omnimart40/admin/remove/account" type="button" class="btn btn-danger">Remove Account</a>
+              <a href="/admin/remove/account" type="button" class="btn btn-danger">Remove Account</a>
             </div>
           </div>
         </div>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Artisan;
 use App\Category;
 use App\Sub_Category;
 use App\Child_Category;
@@ -14,16 +16,44 @@ use App\Popular_categories;
 use App\Featured_categories;
 use App\Three_column_category;
 use App\Orders;
+use App\Payments_notification;
+use App\E_users;
+use Response;
+use Redirect;
 class AdminController extends Controller
 {
     //
 
     public function index()
     {
-        return view('admin.index');
+
+
+
+        $Orders = Orders::all();
+        $Orderspending = Orders::where('status', 'pending')->get();
+        $Ordersprocessing = Orders::where('status', 'processing')->get();
+        $Orderscompleted = Orders::where('status', 'completed')->get();
+        $Ordersdecline = Orders::where('status', 'decline')->get();
+        $products = Products::all();
+        $E_users = E_users::all();
+        $Ordersrecent = Orders::limit(10)->get();  
+    
+
+        return view('admin.index', compact('Ordersrecent', 'E_users', 'products', 'Orders', 'Orderspending', 'Ordersprocessing','Orderscompleted', 'Ordersdecline'));
     }
 
-  
+
+    public function cache()
+    {
+    $exitCode = Artisan::call('route:cache'); 
+    $exitCode = Artisan::call('config:cache');
+    $exitCode = Artisan::call('cache:clear');
+    $exitCode = Artisan::call('view:clear');
+
+
+ return redirect()->back()->with('cache','deleted');
+}
+
 
     public function  store_category()
     {
@@ -423,31 +453,135 @@ class AdminController extends Controller
     {
         return view('admin.product_review');
     }
-    public function   orders()
-    {
-        $orders = Orders::all();
+    public function   orders(Request $request){
+
+        if($request->start_date){
+
+            $from = $request->start_date;
+            $to = $request->end_date;
+
+            $orders = Orders::whereBetween('created_at', [$from, $to])->get();
+       
+        }
+        else
+        {
+            $orders = Orders::all();
+        }
+   
 
         return view('admin.all_orders', compact('orders'));
     }
-    public function   orders_Pending()
+    public function   orders_Pending(Request $request)
     {
-        return view('admin.pending_orders');
+
+        if($request->start_date){
+
+            $from = $request->start_date;
+            $to = $request->end_date;
+
+            $orders = Orders::whereBetween('created_at', [$from, $to])->get();
+       
+        }
+        else
+        {
+            $orders = Orders::all();
+        }
+   
+
+        return view('admin.pending_orders', compact('orders'));
+   
     }
-    public function   orders_Progress()
+    public function   orders_Progress(Request $request)
     {
-        return view('admin.progress_orders');
+        
+        if($request->start_date){
+
+            $from = $request->start_date;
+            $to = $request->end_date;
+
+            $orders = Orders::whereBetween('created_at', [$from, $to])->get();
+       
+        }
+        else
+        {
+            $orders = Orders::all();
+        }
+   
+
+        return view('admin.progress_orders', compact('orders'));
+
     }
 
-    public function   orders_Delivered()
+    public function   orders_Delivered(Request $request)
     {
-        return view('admin.delivered_orders');
+
+        if($request->start_date){
+
+            $from = $request->start_date;
+            $to = $request->end_date;
+
+            $orders = Orders::whereBetween('created_at', [$from, $to])->get();
+       
+        }
+        else
+        {
+            $orders = Orders::all();
+        }
+   
+
+        return view('admin.delivered_orders', compact('orders'));
+    
     }
 
-    public function   orders_Canceled()
+    public function   orders_Canceled(Request $request)
     {
-        return view('admin.canceled_order');
+
+        if($request->start_date){
+
+            $from = $request->start_date;
+            $to = $request->end_date;
+
+            $orders = Orders::whereBetween('created_at', [$from, $to])->get();
+       
+        }
+        else
+        {
+            $orders = Orders::all();
+        }
+   
+
+        return view('admin.canceled_order', compact('orders'));
+      
     }
 
+    
+    public function customerview($dataId)
+    {
+
+        $user = E_users::find($dataId);
+
+        $order = Orders::where('e_users_id', $user->id)->get();
+        $orders =  $order->count();
+        return view('admin.customer_view', compact('user', 'orders'));
+    }
+    public function   invoice($dataId)
+    {
+
+        $order = Orders::find($dataId);
+        return view('admin.invoice', compact('order'));
+    }
+    
+    public function   transactions()
+    {
+        $transactions = Payments_notification::all();
+        return view('admin.Transactions', compact('transactions'));
+    }
+    
+    public function   customerlist()
+    {
+        $users = E_users::all();
+        return view('admin.customer_list', compact('users'));
+    }
     public function   brand_create()
     {
         return view('admin.add_brands');
@@ -1037,6 +1171,39 @@ class AdminController extends Controller
 
 
 
+    
+    public function customersave(Request $request, $dataId)
+    {
 
+        $user = E_users::find($dataId);
+
+
+        if($request->email){
+            $user->email = $request->email;
+        }
+
+        if($request->phone){
+            $user->tel_no = $request->phone;
+        }
+        if($request->password){
+            $user->password = Hash::make($request->password);
+        }
+        
+        $user->save();
+
+        return Redirect::back()->with('status','saved');
+    }
+
+
+
+    public function   subscribers()
+    {
+        return view('admin.subscribers');
+    }   
+    public function   subscribers_send_mail()
+    {
+        return view('admin.subscribers_send_mail');
+    } 
+    
 
 }

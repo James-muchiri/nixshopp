@@ -963,7 +963,7 @@ body_theme1
                                             Men Shirt Custom Shirts Hot Sale Me
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                     <del>$1,893.26</del>
@@ -995,7 +995,7 @@ body_theme1
                                             UMIDIGI A9 Pro Android Mobile Phone
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                     <del>$1,910.11</del>
@@ -1027,7 +1027,7 @@ body_theme1
                                             2021 Summer Women Clothing Ropa Sex
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                     <del>$189.78</del>
@@ -1058,7 +1058,7 @@ body_theme1
                                             Top Sale High Quality Newest Design
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
                                         <h4 class="product-price">
                                         
@@ -1089,7 +1089,7 @@ body_theme1
                                             New Arrive Spring Fall Women Clothi
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                     <del>$189.78</del>
@@ -1121,7 +1121,7 @@ body_theme1
                                             Dropshipping EIS 2.4 inch LCD Full 
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                     <del>$189.78</del>
@@ -1153,7 +1153,7 @@ body_theme1
                                             New product 2019 Refurbished used s
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                     <del>$1,348.31</del>
@@ -1184,7 +1184,7 @@ body_theme1
                                             Shirts Menshirts Mens Cotton Shirt 
                                         </a></h3>
                                         <div class="rating-stars">
-                                            <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                            <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                         </div>
                                         <h4 class="product-price">
                                         
@@ -1280,7 +1280,7 @@ body_theme1
                                             Women&#039;s Women Clothing Women Dresse
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         <del>$189.78</del>
@@ -1307,7 +1307,7 @@ body_theme1
                                             New Women&#039;s Square Collar Pleated L
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         $144.83
@@ -1334,7 +1334,7 @@ body_theme1
                                             OEM Morden Fashion Design Women Clo
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         <del>$189.78</del>
@@ -1362,7 +1362,7 @@ body_theme1
                                             New arrivals Hot Sale Summer New Wo
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         <del>$189.78</del>
@@ -1389,7 +1389,7 @@ body_theme1
                                             Bodycon Tube Tie Dye Summer Dress S
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         $144.83
@@ -1416,7 +1416,7 @@ body_theme1
                                             Plus size women Clothing floral pri
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         <del>$189.78</del>
@@ -1444,7 +1444,7 @@ body_theme1
                                             Best Sale Fashion Elegant Muslim st
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         <del>$189.78</del>
@@ -1472,7 +1472,7 @@ body_theme1
                                             Women Women Fall 2021 Women Clothes
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         <del>$189.78</del>
@@ -1500,7 +1500,7 @@ body_theme1
                                             New French Elegant White Bubble Sle
                                         </a></h3>
                                         <div class="rating-stars">
-                                        <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                        <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                         </div>
                                         <h4 class="product-price">
                                                                                         <del>$500.78</del>
@@ -1591,7 +1591,7 @@ body_theme1
                                                     BREYLEE facial mask hyaluronic acid
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i>
+                                                    <i class = 'fa fa-star filled'></i><i class = 'fa fa-star filled'></i><i class = 'fa fa-star filled'></i><i class = 'fa fa-star filled'></i><i class = 'fa fa-star filled'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 $1,362.81
@@ -1619,7 +1619,7 @@ body_theme1
                                                     Custom Website Builder Shopping Web
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$70.00</del>
@@ -1648,7 +1648,7 @@ body_theme1
                                                     Men Shirt Custom Shirts High Qualit
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -1676,7 +1676,7 @@ body_theme1
                                                     Top Sale High Quality Newest Design
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 $69.55
@@ -1704,7 +1704,7 @@ body_theme1
                                                     Plus size women Clothing floral pri
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -1733,7 +1733,7 @@ body_theme1
                                                     Women&#039;s Women Clothing Women Dresse
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -1783,7 +1783,7 @@ body_theme1
                                                     Men Leather Jacket Men New Men High Quality Collar
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -1816,7 +1816,7 @@ body_theme1
                                                     Dropshipping EIS 2.4 inch LCD Full HD 720P Recordi
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -1849,7 +1849,7 @@ body_theme1
                                                     Cheap Price Mobile Phones i13 Pro 6.6inch FHD Big 
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,460.67</del>
@@ -1882,7 +1882,7 @@ body_theme1
                                                     UMIDIGI A9 Pro Android Mobile Phone 4g 48MP Quad C
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,910.11</del>
@@ -1915,7 +1915,7 @@ body_theme1
                                                     Shein Womens Clothing 2021 Summer Fashion Design C
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -1948,7 +1948,7 @@ body_theme1
                                                     Women Women Fall 2021 Women Clothes Backless Halte
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -1988,7 +1988,7 @@ body_theme1
                                                     Best Online Wholesale Website Design and
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$70.00</del>
@@ -2005,7 +2005,7 @@ body_theme1
                                                     Create a Wordpress Website Designers Eco
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                     $35.00
@@ -2021,7 +2021,7 @@ body_theme1
                                                     wordpress shopify Start Your Own eCommer
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$70.00</del>
@@ -2038,7 +2038,7 @@ body_theme1
                                                     Website Development Payment Gateway Webs
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$70.00</del>
@@ -2058,7 +2058,7 @@ body_theme1
                                                     Custom Website Builder Shopping Website 
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$70.00</del>
@@ -2075,7 +2075,7 @@ body_theme1
                                                     Wordpress Ecommerce Online Store B2C Onl
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$70.00</del>
@@ -2105,7 +2105,7 @@ body_theme1
                                                     BREYLEE facial mask hyaluronic acid faci
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i><i class = 'far fa-star filled'></i>
+                                                    <i class = 'fa fa-star filled'></i><i class = 'fa fa-star filled'></i><i class = 'fa fa-star filled'></i><i class = 'fa fa-star filled'></i><i class = 'fa fa-star filled'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                     $1,362.81
@@ -2121,7 +2121,7 @@ body_theme1
                                                     Home Use Beauty Device Face Massager Fac
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -2138,7 +2138,7 @@ body_theme1
                                                     Latex free makeup sponge Customized beau
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -2155,7 +2155,7 @@ body_theme1
                                                     Beauty Beauty Anti-wrinkle USB Charging 
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -2175,7 +2175,7 @@ body_theme1
                                                     Mini Electric Silicone Face Brush Massag
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -2192,7 +2192,7 @@ body_theme1
                                                     Face Lift Band Facial Beauty Slimming Do
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                     $1,362.81
@@ -2208,7 +2208,7 @@ body_theme1
                                                     Mask stick to your face moisture skin ca
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -2225,7 +2225,7 @@ body_theme1
                                                     Korean Beauty Organic Brightening Peel o
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -2245,7 +2245,7 @@ body_theme1
                                                     OEM ODM Fullerene essence best face mois
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -2262,7 +2262,7 @@ body_theme1
                                                     AMEIZII Beauty And Personal Care Face Sk
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,893.26</del>
@@ -2292,7 +2292,7 @@ body_theme1
                                                     DC-7200 DSLR support 32G sd card video c
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                     $1,352.81
@@ -2308,7 +2308,7 @@ body_theme1
                                                     Dropshipping EIS 2.4 inch LCD Full HD 72
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -2325,7 +2325,7 @@ body_theme1
                                                     Wholesale Price 1.3 Mega HD DV SLR Camer
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$167.30</del>
@@ -2342,7 +2342,7 @@ body_theme1
                                                     New product 2019 Refurbished used smart 
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,348.31</del>
@@ -2362,7 +2362,7 @@ body_theme1
                                                     Cheap Price Mobile Phones i13 Pro 6.6inc
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,460.67</del>
@@ -2379,7 +2379,7 @@ body_theme1
                                                     Hot Selling s10+ Unlocked 8+16MP 8 Core 
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$189.78</del>
@@ -2396,7 +2396,7 @@ body_theme1
                                                     UMIDIGI A9 Pro Android Mobile Phone 4g 4
                                                 </a></h3>
                                                 <div class="rating-stars">
-                                                    <i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i><i class = 'far fa-star'></i>
+                                                    <i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i><i class = 'fa fa-star'></i>
                                                 </div>
                                                 <h4 class="product-price">
                                                                                                 <del>$1,910.11</del>
@@ -2479,7 +2479,7 @@ body_theme1
                                     New French Elegant White Bubble Sle
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         <del>$500.78</del>
@@ -2508,7 +2508,7 @@ body_theme1
                                     Clothing Women 2021 New Fashion Pri
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         $66.18
@@ -2537,7 +2537,7 @@ body_theme1
                                     New Arrive Spring Fall Women Clothi
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         <del>$189.78</del>
@@ -2567,7 +2567,7 @@ body_theme1
                                     Hot Sale Women Clothing 2021 Design
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         <del>$100.00</del>
@@ -2597,7 +2597,7 @@ body_theme1
                                     B4301 2021 New Arrivals Wholesale H
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         <del>$201.01</del>
@@ -2627,7 +2627,7 @@ body_theme1
                                     2021 Summer Women Clothing Ropa Sex
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         <del>$189.78</del>
@@ -2656,7 +2656,7 @@ body_theme1
                                     Top Sale High Quality Newest Design
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         $69.55
@@ -2685,7 +2685,7 @@ body_theme1
                                     Casual Minimalist Tie Waist women c
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         <del>$189.78</del>
@@ -2715,7 +2715,7 @@ body_theme1
                                     Shein Womens Clothing 2021 Summer F
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         <del>$189.78</del>
@@ -2745,7 +2745,7 @@ body_theme1
                                     Women Women Fall 2021 Women Clothes
                                 </a></h3>
                                 <div class="rating-stars">
-                                <i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i><i class="far fa-star filled"></i>
+                                <i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i><i class="fa fa-star filled"></i>
                                 </div>
                                 <h4 class="product-price">
                                                                         <del>$189.78</del>
@@ -3150,19 +3150,15 @@ body_theme1
 
 
 
-<script>
-    var mainbs = {"is_announcement":"1","announcement_delay":"1.00","overlay":null};
-    var decimal_separator = '.';
-    var thousand_separator = ',';
-</script>
+
 
 <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
-<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/plugins.min.js"></script>
-<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/scripts.min.js"></script>
-<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/lazy.min.js"></script>
-<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/lazy.plugin.js"></script>
-<script type="text/javascript" src="https://geniusdevs.com/codecanyon/omnimart40/assets/front/js/myscript.js"></script>
+<script type="text/javascript" src="/assets/front/js/plugins.min.js"></script>
+<script type="text/javascript" src="/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script type="text/javascript" src="/assets/front/js/scripts.min.js"></script>
+<script type="text/javascript" src="/assets/front/js/lazy.min.js"></script>
+<script type="text/javascript" src="/assets/front/js/lazy.plugin.js"></script>
+<script type="text/javascript" src="/assets/front/js/myscript.js"></script>
 
 
 <script type="text/javascript">
@@ -3185,7 +3181,7 @@ body_theme1
             $.notify({
                 title: ` <strong>${title}</strong>`,
                 message: '',
-                icon: 'fas fa-check-circle'
+                icon: 'fa fa-check-circle'
                 },{
                 element: 'body',
                 position: null,
@@ -3221,7 +3217,7 @@ body_theme1
                 // options
                 title: ` <strong>${title}</strong>`,
                 message: '',
-                icon: 'fas fa-exclamation-triangle'
+                icon: 'fa fa-exclamation-triangle'
                 },{
                 // settings
                 element: 'body',

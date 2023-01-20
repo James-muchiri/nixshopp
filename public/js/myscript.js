@@ -1167,11 +1167,7 @@ $(function ($) {
         });
 
 
-        $('#submit_number').on('click', function (e) {
-            var link = $(this).data('href') + '?order_number=' + $('#order_number').val();
-            $('#track-order').load(link);
-            return false;
-        });
+       
 
     });
 

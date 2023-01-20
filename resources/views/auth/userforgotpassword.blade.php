@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Mirrored from geniusdevs.com/codecanyon/omnimart40/user/forgot by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Nov 2022 19:48:06 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="utf-8">
 <title>OmniMart -    Password Reset
@@ -1040,11 +1038,7 @@ body_theme4
 
 
 
-<script>
-    var mainbs = {"is_announcement":"1","announcement_delay":"1.00","overlay":null};
-    var decimal_separator = '.';
-    var thousand_separator = ',';
-</script>
+
 
 <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
 <script type="text/javascript" src="../assets/front/js/plugins.min.js"></script>
@@ -1075,7 +1069,7 @@ body_theme4
             $.notify({
                 title: ` <strong>${title}</strong>`,
                 message: '',
-                icon: 'fas fa-check-circle'
+                icon: 'fa fa-check-circle'
                 },{
                 element: 'body',
                 position: null,
@@ -1111,7 +1105,7 @@ body_theme4
                 // options
                 title: ` <strong>${title}</strong>`,
                 message: '',
-                icon: 'fas fa-exclamation-triangle'
+                icon: 'fa fa-exclamation-triangle'
                 },{
                 // settings
                 element: 'body',
@@ -1147,6 +1141,4 @@ body_theme4
 
 
 </body>
-
-<!-- Mirrored from geniusdevs.com/codecanyon/omnimart40/user/forgot by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Nov 2022 19:48:06 GMT -->
 </html>

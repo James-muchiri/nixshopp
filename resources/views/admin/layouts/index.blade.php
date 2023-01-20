@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>OmniMart</title>
+	<title>MiniMart</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon"  type="image/x-icon" href="/images/1629651232pre.png"/>
+    <link rel="icon"  type="image/x-icon" href="{{ asset('images/1629651232pre.png') }}"/>
 
 	<!-- Fonts and icons -->
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,28 +18,24 @@
 
     <link href="{{ asset('backend/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('backend/css/azzara.min.css') }}" rel="stylesheet">
-
     <link href="{{ asset('backend/css/tagify.css') }}" rel="stylesheet">
-
-
     <link href="{{ asset('backend/css/bootstrap-iconpicker.css') }}" rel="stylesheet">
-
     <link href="{{ asset('backend/css/magnific-popup.css') }}" rel="stylesheet">
-	<!-- Custom CSS -->
-
-    <link href="{{ asset('backend/css/custom.css') }}" rel="stylesheet">
-
-	<link rel="stylesheet" href="https://geniusdevs.com/codecanyon/omnimart40/assets/back/css/select2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
 
 
-    	<!--   Core JS Files   -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/jquery.3.6.0.min.js"></script>
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/popper.min.js"></script>
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/core/bootstrap.min.js"></script>
+	<!-- Custom CSS -->   
+    <link href="{{ asset('backend/css/custom.css') }}" rel="stylesheet">    
+	<link rel="stylesheet" href="{{ asset('backend/css/select2.css') }}">
+  
 
+    	<!--   Core JS Files   --> 
+  <script src="{{ asset('backend/js/jquery.3.6.0.min.js') }}"></script>
+	<script src="{{ asset('backend/js/popper.min.js') }}"></script>
+	<script src="{{ asset('backend/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('backend/js/main.js') }}"></script>
-
+    <style type="text/css">/* Chart.js */
+      @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style>
 </head>
 <body>
 	<div class="wrapper">
@@ -64,65 +59,53 @@
 
     </div>
 
-<script>
-    var mainbs = {"is_announcement":"1","announcement_delay":"1.00","overlay":null};
-</script>
-	<!--   Core JS Files   -->
+
+	
+  	<!-- jQuery UI  {{ asset('backend/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') }}    -->
+	<script src="{{ asset('backend/js/plugin/jquery-ui.min.js') }}"></script>
+	<script src="{{ asset('backend/js/plugin/jquery.ui.touch-punch.min.js') }}"></script>
+
+	<!-- jQuery Scrollbar    -->
+	<script src="{{ asset('backend/js/plugin/jquery.scrollbar.min.js') }} "></script>
+
+	<!-- Moment JS   -->
+	<script src="{{ asset('backend/js/plugin/moment.min.js') }}"></script>
+
+	<!-- Datatables  -->
+	<script src="{{ asset('backend/js/plugin/datatables.min.js') }}"></script>
+	<script src="{{ asset('backend/js/plugin/dataTables.bootstrap4.min.js') }}"></script>
 
 
 
-
-
-
-	<!-- jQuery UI -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-
-	<!-- jQuery Scrollbar -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-
-	<!-- Moment JS -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/moment/moment.min.js"></script>
-
-	<!-- Datatables -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/datatables/datatables.min.js"></script>
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/datatables/dataTables.bootstrap4.min.js"></script>
-
-	<!-- Bootstrap Notify -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
-
-
-	<!-- Bootstrap Notify -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+	<!-- Bootstrap Notify  -->
+	<script src="{{ asset('backend/js/plugin/bootstrap-notify.min.js') }}"></script>
 
 	<!-- Chartjs -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/chart.min.js"></script>
+	<script src="{{ asset('backend/js/plugin/chart.min.js') }}"></script>
 
-	<!-- Editor -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/editor.js"></script>
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/plugin/datepicker/bootstrap-datetimepicker.min.js"></script>
+	<!-- Editor   -->
+	<script src="{{ asset('backend/js/plugin/editor.js') }}"></script>
+    <script src="{{ asset('backend/js/plugin/bootstrap-datetimepicker.min.js') }}"></script>
 
-    <!-- Tagify -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/tagify.js"></script>
+    <!-- Tagify  -->
+    <script src="{{ asset('backend/js/tagify.js') }}"></script>
 
-    <!-- JS Color -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/jscolor.js"></script>
 
-    <!-- Magnific Popup -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/jquery.magnific-popup.min.js"></script>
+    <!-- Magnific Popup  -->
+    <script src="{{ asset('backend/js/jquery.magnific-popup.min.js') }}"></script>
 
-    <!-- Sortable -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/sortable.js"></script>
+    <!-- Sortable  -->
+    <script src="{{ asset('backend/js/sortable.js') }}"></script>
 
-    <!-- Icon Picker -->
-    <script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/bootstrap-iconpicker.bundle.min.js"></script>
+    <!-- Icon Picker   -->
+    <script src="{{ asset('backend/js/plugin/bootstrap-iconpicker.bundle.min.js') }}"></script>
 
 <!-- Azzara JS -->
 <script src="{{ asset('backend/js/ready.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
 
-	<!-- Custom JS -->
-	<script src="https://geniusdevs.com/codecanyon/omnimart40/assets/back/js/custom.js"></script>
+	<!-- Custom JS  -->
+	<script src="{{ asset('backend/js/custom.js') }}"></script>
 	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sumoselect/3.0.2/jquery.sumoselect.min.js"></script>
 
@@ -221,6 +204,93 @@ freeTiny.style.display = 'none';
 }
 
 </script>
+
+<script>
+
+  multipleLineChart = document.getElementById('multipleLineChart').getContext('2d'),
+  multipleLineChart2 = document.getElementById('multipleLineChart2').getContext('2d')
+
+
+      var myMultipleLineChart = new Chart(multipleLineChart, {
+    type: 'line',
+    data: {
+      labels: ['19 Jan','18 Jan','17 Jan','16 Jan','15 Jan','14 Jan','13 Jan','12 Jan','11 Jan','10 Jan','09 Jan','08 Jan','07 Jan','06 Jan','05 Jan','04 Jan','03 Jan','02 Jan','01 Jan','31 Dec','30 Dec','29 Dec','28 Dec','27 Dec','26 Dec','25 Dec','24 Dec','23 Dec','22 Dec','21 Dec',],
+      datasets: [{
+        label: "Product Sales",
+        borderColor: "#1d7af3",
+        pointBorderColor: "#FFF",
+        pointBackgroundColor: "#1d7af3",
+        pointBorderWidth: 2,
+        pointHoverRadius: 4,
+        pointHoverBorderWidth: 1,
+        pointRadius: 4,
+        backgroundColor: 'transparent',
+        fill: true,
+        borderWidth: 2,
+        data: ['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0',]
+      }]
+    },
+    options : {
+      responsive: true,
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
+      tooltips: {
+        bodySpacing: 4,
+        mode:"nearest",
+        intersect: 0,
+        position:"nearest",
+        xPadding:10,
+        yPadding:10,
+        caretPadding:10
+      },
+      layout:{
+        padding:{left:15,right:15,top:15,bottom:15}
+      }
+    }
+  });
+
+      var myMultipleLineChart2 = new Chart(multipleLineChart2, {
+    type: 'line',
+    data: {
+      labels: ['19 Jan','18 Jan','17 Jan','16 Jan','15 Jan','14 Jan','13 Jan','12 Jan','11 Jan','10 Jan','09 Jan','08 Jan','07 Jan','06 Jan','05 Jan','04 Jan','03 Jan','02 Jan','01 Jan','31 Dec','30 Dec','29 Dec','28 Dec','27 Dec','26 Dec','25 Dec','24 Dec','23 Dec','22 Dec','21 Dec'],
+      datasets: [ {
+        label: "Earning"+' Ksh',
+        borderColor: "#f3545d",
+        pointBorderColor: "#FFF",
+        pointBackgroundColor: "#f3545d",
+        pointBorderWidth: 2,
+        pointHoverRadius: 4,
+        pointHoverBorderWidth: 1,
+        pointRadius: 4,
+        backgroundColor: 'transparent',
+        fill: true,
+        borderWidth: 2,
+        data: ['0','0','0','0','0','0','0','0','0','0','5','3','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0']
+      }]
+    },
+    options : {
+      responsive: true,
+      maintainAspectRatio: false,
+      legend: {
+        display: false
+      },
+      tooltips: {
+        bodySpacing: 4,
+        mode:"nearest",
+        intersect: 0,
+        position:"nearest",
+        xPadding:10,
+        yPadding:10,
+        caretPadding:10
+      },
+      layout:{
+        padding:{left:15,right:15,top:15,bottom:15}
+      }
+    }
+  });
+
 
 </script>
 

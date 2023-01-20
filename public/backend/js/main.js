@@ -462,7 +462,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
                    '         <i class="fa fa-edit"></i>'+
                    '     </a>'+
                    '      <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/category/27">'+
-                   '         <i class="fa fa-trash-alt"></i>'+
+                   '         <i class="fa fa-trash"></i>'+
                    '      </a>'+
                    '   </div>'+
                    ' </td>'+
@@ -856,7 +856,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-      ' <i class="fa fa-trash-alt"></i>'+
+      ' <i class="fa fa-trash"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
@@ -1006,7 +1006,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-      ' <i class="fa fa-trash-alt"></i>'+
+      ' <i class="fa fa-trash"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
@@ -1159,7 +1159,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-      ' <i class="fa fa-trash-alt"></i>'+
+      ' <i class="fa fa-trash"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
@@ -1312,7 +1312,7 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 
       '<td>'+
       ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-      ' <i class="fa fa-trash-alt"></i>'+
+      ' <i class="fa fa-trash"></i>'+
       ' </a>'+
       '</td>'+
 '</tr>';
@@ -3600,7 +3600,7 @@ function flash_sales_product_table(){
 
         '<td>'+
         ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
-        ' <i class="fa fa-trash-alt"></i>'+
+        ' <i class="fa fa-trash"></i>'+
         ' </a>'+
         '</td>'+
   '</tr>';
