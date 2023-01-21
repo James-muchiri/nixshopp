@@ -17,8 +17,8 @@
                                
                                                                 
                                     @foreach ($sliders as $slider)
-                                    <div class="item" style="background: url('/uploads/{{$slider->photo}}')">
-
+                                    <div class="item" style="background-image: url('{{ asset('uploads')}}/{{$slider->photo}}');">
+                                        
     <div class="item-inner">
         <div class="from-bottom">
                                                             <div class="title text-body">{{$slider->title}}</div>
