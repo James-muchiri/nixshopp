@@ -645,6 +645,7 @@ class AdminController extends Controller
         $product->c_price = $request->discount_price;
         $product->p_price = $request->previous_price;
         $product->name = $request->name;
+        $product->type = $request->type;
         $product->slug = $request->slug;
         $product->image = $fileName;
         $product->short = $request->sort_details;

@@ -63,15 +63,15 @@
 
                                         <div class="form-group">
                                             <label for="title1">Title *</label>
-                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$header_banner1->title}}">
+                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$header_banner1->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle1">Subtitle </label>
-                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="{{$header_banner1->subtitle}}">
+                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="{{$header_banner1->subtitle??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="url1">URL 1 *</label>
-                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Url" value="{{$header_banner1->url}}">
+                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Url" value="{{$header_banner1->url??null}}">
                                         </div>
 
                                         <div class="form-group">
@@ -104,15 +104,15 @@
 
                                         <div class="form-group">
                                             <label for="title2">Title *</label>
-                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$header_banner2->title}}">
+                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$header_banner2->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle2">Subtitle </label>
-                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$header_banner1->subtitle}}">
+                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$header_banner1->subtitle??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="url2">URL 2 *</label>
-                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Url" value="{{$header_banner1->url}}">
+                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Url" value="{{$header_banner1->url??null}}">
                                         </div>
 
 
@@ -147,16 +147,16 @@
 
                                         <div class="form-group">
                                             <label for="title1">Title *</label>
-                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$banneer21->title}}">
+                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$banneer21->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle1">Subtitle *</label>
-                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle"value="{{$banneer21->subtitle}}">
+                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle"value="{{$banneer21->subtitle??null}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL 1 *</label>
-                                            <input type="text" name="firsturl1" class="form-control" id="firsturl1" placeholder="Enter Banner Url" value="{{$banneer21->url}}">
+                                            <input type="text" name="firsturl1" class="form-control" id="firsturl1" placeholder="Enter Banner Url" value="{{$banneer21->url??null}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -189,16 +189,16 @@
 
                                         <div class="form-group">
                                             <label for="title2">Title *</label>
-                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$banneer22->title}}">
+                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$banneer22->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle2">Subtitle *</label>
-                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$banneer22->subtitle}}">
+                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$banneer22->subtitle??null}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="firsturl2">URL 2 *</label>
-                                            <input type="text" name="firsturl2" class="form-control" id="firsturl2" placeholder="Enter Banner Url" value="{{$banneer22->url}}">
+                                            <input type="text" name="firsturl2" class="form-control" id="firsturl2" placeholder="Enter Banner Url" value="{{$banneer22->url??null}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -232,17 +232,17 @@
 
                                         <div class="form-group">
                                             <label for="title3">Title *</label>
-                                            <input type="text" name="title3" class="form-control" id="title3" placeholder="Enter Title" value="{{$banneer23->title}}">
+                                            <input type="text" name="title3" class="form-control" id="title3" placeholder="Enter Title" value="{{$banneer23->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle3">Subtitle *</label>
-                                            <input type="text" name="subtitle3" class="form-control" id="subtitle3" placeholder="Enter Subtitle" value="{{$banneer23->subtitle}}">
+                                            <input type="text" name="subtitle3" class="form-control" id="subtitle3" placeholder="Enter Subtitle" value="{{$banneer23->subtitle??null}}">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="firsturl3">URL 3 *</label>
-                                            <input type="text" name="firsturl3" class="form-control" id="firsturl3" placeholder="Enter Banner Url" value="{{$banneer23->url}}">
+                                            <input type="text" name="firsturl3" class="form-control" id="firsturl3" placeholder="Enter Banner Url" value="{{$banneer23->url??null}}">
                                         </div>
 
                                     <div class="form-group">
@@ -261,7 +261,7 @@
                                     <hr>
                                     <h2 class="">Category 1 : <b>     
                                         @if($Popular_categories)
-                                        {{    $Popular_categories->name }} 
+                                        {{    $Popular_categories->name??null }} 
                                         @endif      
                                  
                                     
@@ -273,7 +273,7 @@
 
                                             <option disabled selected="">Select Category</option>
                                                                                       @foreach ($category as $cat1)
-                                                                                      <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                                                                      <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                                                                       @endforeach
                                                                                     </select>
                                     </div>
@@ -294,7 +294,7 @@
                                     <hr>
                                     <h2 class="">Category 2 :<b>
                                         @if($Popular_categories2)
-                                        {{    $Popular_categories2->name }} 
+                                        {{    $Popular_categories2->name??null }} 
                                         @endif      
                                  
                                         
@@ -304,7 +304,7 @@
                                         <select name="bannercategory_id2" id="bannercategory_id2" data-href="/admin/get/subcategory" class="form-control">
                                             <option disabled selected="">Select Category</option>
                                             @foreach ($category as $cat1)
-                                            <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                            <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                             @endforeach
                                                                                 </select>
                                     </div>
@@ -323,7 +323,7 @@
                                     </div>
                                     <hr>
                                     <h2 class="">Category 3 : <b>     @if($Popular_categories3)
-                                        {{    $Popular_categories3->name }} 
+                                        {{    $Popular_categories3->name??null }} 
                                         @endif      
                                  </b></h2>
                                     <div class="form-group">
@@ -331,7 +331,7 @@
                                         <select name="bannercategory_id3" id="bannercategory_id3" data-href="/admin/get/subcategory" class="form-control">
                                             <option disabled selected="">Select Category</option>
                                             @foreach ($category as $cat1)
-                                            <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                            <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                             @endforeach
                                                                                 </select>
                                     </div>
@@ -350,7 +350,7 @@
                                     </div>
                                     <hr>
                                     <h2 class="">Category 4 :<b>      @if($Popular_categories4)
-                                        {{    $Popular_categories4->name }} 
+                                        {{    $Popular_categories4->name??null }} 
                                         @endif      
                                  </b></h2>
                                     <div class="form-group">
@@ -358,7 +358,7 @@
                                         <select name="bannercategory_id4" id="bannercategory_id4" data-href="/admin/get/subcategory" class="form-control">
                                             <option disabled selected="">Select Category</option>
                                             @foreach ($category as $cat1)
-                                            <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                            <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                             @endforeach
                                                                                   </select>
                                     </div>
@@ -410,16 +410,16 @@
 
                                         <div class="form-group">
                                             <label for="title1">Title *</label>
-                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title"  value="{{$banneer31->title}}">
+                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title"  value="{{$banneer31->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle1">Subtitle *</label>
-                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle"  value="{{$banneer31->subtitle}}">
+                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle"  value="{{$banneer31->subtitle??null}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL 1 *</label>
-                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Banner Url"  value="{{$banneer31->url}}">
+                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Banner Url"  value="{{$banneer31->url??null}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -453,16 +453,16 @@
 
                                         <div class="form-group">
                                             <label for="title2">Title *</label>
-                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title"  value="{{$banneer32->title}}">
+                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title"  value="{{$banneer32->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle2">Subtitle *</label>
-                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle"  value="{{$banneer32->subtitle}}">
+                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle"  value="{{$banneer32->subtitle??null}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL 2 *</label>
-                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Banner Url" value="{{$banneer32->url}}">
+                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Banner Url" value="{{$banneer32->url??null}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -495,17 +495,17 @@
 
                                         <div class="form-group">
                                             <label for="title3">Title *</label>
-                                            <input type="text" name="title3" class="form-control" id="title3" placeholder="Enter Title" value="{{$banneer33->title}}">
+                                            <input type="text" name="title3" class="form-control" id="title3" placeholder="Enter Title" value="{{$banneer33->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle3">Subtitle *</label>
-                                            <input type="text" name="subtitle3" class="form-control" id="subtitle3" placeholder="Enter Subtitle" value="{{$banneer33->subtitle}}">
+                                            <input type="text" name="subtitle3" class="form-control" id="subtitle3" placeholder="Enter Subtitle" value="{{$banneer33->subtitle??null}}">
                                         </div>
 
 
                                         <div class="form-group">
                                             <label for="url">URL 3 *</label>
-                                            <input type="text" name="url3" class="form-control" id="url3" placeholder="Enter Banner Url" value="{{$banneer33->url}}">
+                                            <input type="text" name="url3" class="form-control" id="url3" placeholder="Enter Banner Url" value="{{$banneer33->url??null}}">
                                         </div>
 
                                     <div class="form-group">
@@ -521,7 +521,7 @@
                                 <hr>
                                 <h2 class="">Category 1 : <b>
                                     
-                                    {{$Three_column_category->name}}</b></h2>
+                                    {{$Three_column_category->name??null}}</b></h2>
 
                                 <div class="form-group">
                                     <label for="category_id1">Select Category *</label>
@@ -529,7 +529,7 @@
 
                                         <option disabled selected="">Select Category</option>
                                                                                   @foreach ($category as $cat1)
-                                                                                  <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                                                                  <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                                                                   @endforeach
                                                                                 </select>
                                 </div>
@@ -548,13 +548,13 @@
                                 </div>
 
                                 <hr>
-                                <h2 class="">Category 2 :<b>{{$Three_column_category2->name}}</b></h2>
+                                <h2 class="">Category 2 :<b>{{$Three_column_category2->name??null}}</b></h2>
                                 <div class="form-group">
                                     <label for="category_id2">Select Category *</label>
                                     <select name="threecolcategory_id2" id="threecolcategory_id2" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
-                                        <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                        <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                         @endforeach
                                                                             </select>
                                 </div>
@@ -572,13 +572,13 @@
                                                                          </select>
                                 </div>
                                 <hr>
-                                <h2 class="">Category 3 :<b>{{$Three_column_category3->name}}</b></h2>
+                                <h2 class="">Category 3 :<b>{{$Three_column_category3->name??null}}</b></h2>
                                 <div class="form-group">
                                     <label for="category_id3">Select Category *</label>
                                     <select name="threecolcategory_id3" id="threecolcategory_id3" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
-                                        <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                        <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                         @endforeach
                                                                             </select>
                                 </div>
@@ -618,7 +618,7 @@
                                
                                 
                                     @if($Featured_categories1)
-                                    {{    $Featured_categories1->name }} 
+                                    {{    $Featured_categories1->name??null }} 
                                     @endif      
                              
                                 </b></h2>
@@ -629,7 +629,7 @@
 
                                         <option disabled selected="">Select Category</option>
                                                                                   @foreach ($category as $cat1)
-                                                                                  <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                                                                  <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                                                                   @endforeach
                                                                                 </select>
                                 </div>
@@ -653,7 +653,7 @@
                                 
                                 
                                     @if($Featured_categories2)
-                                    {{    $Featured_categories2->name }} 
+                                    {{    $Featured_categories2->name??null }} 
                                     @endif     
                                 
                                 </b></h2>
@@ -662,7 +662,7 @@
                                     <select name="featuredcategory_id2" id="featuredcategory_id2" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
-                                        <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                        <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                         @endforeach
                                                                             </select>
                                 </div>
@@ -683,7 +683,7 @@
                                 <h2 class="">Category 3 :<b>
                                     \
                                     @if($Featured_categories3)
-                                    {{    $Featured_categories3->name }} 
+                                    {{    $Featured_categories3->name??null }} 
                                     @endif     
                                 </b></h2>
                                 <div class="form-group">
@@ -691,7 +691,7 @@
                                     <select name="featuredcategory_id3" id="featuredcategory_id3" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
-                                        <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                        <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                         @endforeach
                                                                             </select>
                                 </div>
@@ -711,7 +711,7 @@
                                 <hr>
                                 <h2 class="">Category 4 :<b>
                                     @if($Featured_categories4)
-                                    {{    $Featured_categories4->name }} 
+                                    {{    $Featured_categories4->name??null }} 
                                     @endif     
                                 </b></h2>
                                 <div class="form-group">
@@ -719,7 +719,7 @@
                                     <select name="featuredcategory_id4" id="featuredcategory_id4" data-href="/admin/get/subcategory" class="form-control">
                                         <option disabled selected="">Select Category</option>
                                         @foreach ($category as $cat1)
-                                        <option value="{{$cat1->id}}">{{$cat1->name}}</option>
+                                        <option value="{{$cat1->id}}">{{$cat1->name??null}}</option>
                                         @endforeach
                                                                               </select>
                                 </div>
@@ -768,15 +768,15 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="title1">Title *</label>
-                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$banneer41->title}}">
+                                            <input type="text" name="title1" class="form-control" id="title1" placeholder="Enter Title" value="{{$banneer41->title??null}}">
                                         <div class="form-group">
                                             <label for="subtitle1">Subtitle *</label>
-                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="{{$banneer41->subtitle}}">
+                                            <input type="text" name="subtitle1" class="form-control" id="subtitle1" placeholder="Enter Subtitle" value="{{$banneer41->subtitle??null}}">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="url">URL 1 *</label>
-                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Banner Url" value="{{$banneer41->url}}">
+                                            <input type="text" name="url1" class="form-control" id="url1" placeholder="Enter Banner Url" value="{{$banneer41->url??null}}">
                                         </div>
                                         <div class="form-group">
                                             <button type="submit" class="btn btn-secondary ">Submit</button>
@@ -810,15 +810,15 @@
 
                                         <div class="form-group">
                                             <label for="title2">Title *</label>
-                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$banneer42->title}}">
+                                            <input type="text" name="title2" class="form-control" id="title2" placeholder="Enter Title" value="{{$banneer42->title??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="subtitle2">Subtitle *</label>
-                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$banneer42->subtitle}}">
+                                            <input type="text" name="subtitle2" class="form-control" id="subtitle2" placeholder="Enter Subtitle" value="{{$banneer42->subtitle??null}}">
                                         </div>
                                         <div class="form-group">
                                             <label for="url">URL 2 *</label>
-                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Banner Url" value="{{$banneer42->url}}">
+                                            <input type="text" name="url2" class="form-control" id="url2" placeholder="Enter Banner Url" value="{{$banneer42->url??null}}">
                                         </div>
 
                                     <div class="form-group">

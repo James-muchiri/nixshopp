@@ -225,6 +225,20 @@
                                                             <option value="3">No Tax</option>
                                                         </select>
                         </div>
+
+                        <div class="form-group">
+                            <label for="tax_id">Select Tax *</label>
+                            <select name="type" id="type" class="form-control">
+                                <option value="top_products">top_products</option>
+                                                            <option value="featured">featured</option>
+                                                            <option value="new_arrival">new_arrival</option>
+                                                            <option value="best_products">best_products</option>
+                                                        </select>
+                        </div>
+ 
+
+
+
                         <div class="form-group">
                             <label for="sku">SKU *</label>
                             <input type="text" name="sku" class="form-control" id="sku" placeholder="Enter SKU" value="">
