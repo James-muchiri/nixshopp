@@ -18,6 +18,7 @@ use App\Three_column_category;
 use App\Orders;
 use App\Payments_notification;
 use App\E_users;
+use App\Campaigns;
 use Response;
 use Redirect;
 class AdminController extends Controller
@@ -372,6 +373,22 @@ class AdminController extends Controller
 
         ]);
     }
+
+    public function  getCampaigns ()
+    {
+
+        $Campaigns = Campaigns::join('products', 'products.id','=','campaigns.product_id' )
+        ->get(['products.*']);
+        return response()->json([
+            "Campaigns" => $Campaigns,        ]);
+
+    
+
+
+
+    }
+
+
     public function  add_featured_product(Request $request){
 
 
@@ -447,6 +464,11 @@ class AdminController extends Controller
     }
     public function   campaign()
     {
+
+
+        
+
+
         return view('admin.campaign');
     }
     public function   review()
@@ -1205,6 +1227,34 @@ class AdminController extends Controller
     {
         return view('admin.subscribers_send_mail');
     } 
+
+
+    public function  campaignpost(Request $request){
+
+
+
+        $product = Campaigns::where('product_id', $request->camp_id)->first();
+        if($product){
+            return response()->json([
+                "status" => 200,
+                "message" => "action completed successfully",
     
+            ]); 
+        }
+        else {
+            
+        $camp = new Campaigns;
+        $camp->product_id = $request->camp_id;      
+        $camp->save();
+
+        return response()->json([
+            "status" => 200,
+            "message" => "action completed successfully",
+
+        ]);
+
+    }
+
+}
 
 }

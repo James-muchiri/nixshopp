@@ -5,6 +5,9 @@
 
 @section('content')
 
+
+
+
 <div class="page-title">
     <div class="container">
       <div class="row">
@@ -77,7 +80,7 @@
                 </div>
                 <div class="product-card-body">
 
-                    <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{$deal->child__categories_name}}</a></div>
+                    <div class="product-category"><a href="/shop?category=men-clothing">{{$deal->child__categories_name}}</a></div>
                     <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
                         {{$deal->name}}
                     </a></h3>

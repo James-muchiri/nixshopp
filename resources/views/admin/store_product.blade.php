@@ -2,7 +2,79 @@
 
 @section('content')
 
+<style>
 
+
+.upload__box {
+  padding: 10px;
+}
+.upload__inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.upload__btn {
+  display: inline-block;
+  font-weight: 600;
+  color: #fff!important;
+  text-align: center;
+  min-width: 86px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid;
+  background-color: #177dff!important;
+  border-color: #177dff!important;
+  border-radius: 10px;
+  line-height: 16px;
+  font-size: 14px;
+}
+.upload__btn:hover {
+  background-color: unset;
+  color: #4045ba;
+  transition: all 0.3s ease;
+}
+
+.upload__img-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.upload__img-box {
+  width: 200px;
+  padding: 0 10px;
+  margin-bottom: 12px;
+}
+.upload__img-close {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  line-height: 24px;
+  z-index: 1;
+  cursor: pointer;
+}
+.upload__img-close:after {
+  content: "✖";
+  font-size: 14px;
+  color: white;
+}
+
+.img-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 100%;
+}
+</style>
 <div class="container-fluid">
 
     <!-- Page Heading -->
@@ -61,24 +133,23 @@
                 </div>
                 <div class="card">
                     <div class="card-body">
-                        <div class="form-group pb-0  mb-0">
+             
+                 <div class="form-group pb-0  mb-0">
                             <label>Gallery Images </label>
                         </div>
-                        <div class="form-group pb-0 pt-0 mt-0 mb-0">
-                            <div id="gallery-images">
-                                <div class="single-image">
-                                    <img class="admin-img lg" src="">
-                                </div>
+                        <div class="form-group pb-0  mb-0">
+                        <div class="upload__box">
+                            <div class="upload__img-wrap"></div>
+                            <div class="upload__btn-box">
+                              <label class="upload__btn">
+                                Upload images
+                                <input type="file" accept="image/*" name="galleries[]"  multiple="" data-max_length="20" class="upload__inputfile">
+                              </label>
                             </div>
+                          
+                          </div>
                         </div>
-                        <div class="form-group position-relative ">
-                            <label class="file">
-                                <input type="file" accept="image/*" name="galleries[]" id="file" aria-label="File browser example" multiple="">
-                                <span class="file-custom text-left">Upload Image...</span>
-                            </label>
-                            <br>
-                            <span class="mt-1 text-info">Image Size Should Be 800 x 800. or square size</span>
-                        </div>
+                      
                     </div>
                 </div>
                 <div class="card">
@@ -97,12 +168,18 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="form-group mb-2">
-                            <label for="tags">Product Tags
-                                </label>
-                            <tags class="tagify  tags">
-                                <div contenteditable="" data-placeholder="Tags" class="tagify__input"></div>
-                            </tags><input type="text" name="tags" class="tags" id="tags" placeholder="Tags" value="">
-                        </div>
+
+
+                            <div class="col">
+                                <label for="meta_keywords">Product Tags
+                                    </label>
+                        
+                
+                <input type="text" name="tags" class="tags" id="meta_keywords" placeholder="Enter Tags" value="">
+                            </div>
+
+
+                     </div>
                         <div class="form-group">
                             <label class="switch-primary">
                                 <input type="checkbox" class="switch switch-bootstrap status radio-check" name="is_specification" value="1" checked="">
@@ -110,7 +187,7 @@
                                 <span class="switch-text">Specifications</span>
                             </label>
                         </div>
-                        {{-- <div id="specifications-section">
+                        <div id="specifications-section">
                             <div class="d-flex">
     
                                 <div class="flex-grow-1">
@@ -128,7 +205,7 @@
                                 </div>
                             </div>
     
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
           
@@ -254,7 +331,69 @@
     
     </div>
 
+<script>
+    jQuery(document).ready(function () {
+  ImgUpload();
+});
 
+function ImgUpload() {
+  var imgWrap = "";
+  var imgArray = [];
+
+  $('.upload__inputfile').each(function () {
+    $(this).on('change', function (e) {
+      imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+      var maxLength = $(this).attr('data-max_length');
+
+      var files = e.target.files;
+      var filesArr = Array.prototype.slice.call(files);
+      var iterator = 0;
+      filesArr.forEach(function (f, index) {
+
+        if (!f.type.match('image.*')) {
+          return;
+        }
+
+        if (imgArray.length > maxLength) {
+          return false
+        } else {
+          var len = 0;
+          for (var i = 0; i < imgArray.length; i++) {
+            if (imgArray[i] !== undefined) {
+              len++;
+            }
+          }
+          if (len > maxLength) {
+            return false;
+          } else {
+            imgArray.push(f);
+
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+              imgWrap.append(html);
+              iterator++;
+            }
+            reader.readAsDataURL(f);
+          }
+        }
+      });
+    });
+  });
+
+  $('body').on('click', ".upload__img-close", function (e) {
+    var file = $(this).parent().data("file");
+    for (var i = 0; i < imgArray.length; i++) {
+      if (imgArray[i].name === file) {
+        imgArray.splice(i, 1);
+        break;
+      }
+    }
+    $(this).parent().parent().remove();
+  });
+}
+
+</script>
 
 
 @stop

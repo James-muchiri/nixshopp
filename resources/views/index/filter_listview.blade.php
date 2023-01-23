@@ -79,7 +79,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                     <div class="product-card-inner">
                         <div class="product-card-body">
 
-                            <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{$product->child__categories_name}}</a></div>
+                            <div class="product-category"><a href="/shop?category=men-clothing">{{$product->child__categories_name}}</a></div>
                             <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
                                 {{$product->name}}
                             </a></h3>

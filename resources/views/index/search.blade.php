@@ -105,7 +105,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
          </div>
          <div class="product-card-body">
 
-             <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{$product->child__categories_name}}</a></div>
+             <div class="product-category"><a href="/shop?category=men-clothing">{{$product->child__categories_name}}</a></div>
              <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
                  {{$product->name}}
              </a></h3>
@@ -164,292 +164,48 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
           <section class="widget widget-categories card rounded p-4">
             <h3 class="widget-title">Shop Categories</h3>
             <ul id="category_list" class="category-scroll">
-                                    <li class="has-children">
-                  <a class="category_search" href="javascript:;" data-href="Women-Clothing">Women Clothing</a>
-
+              @foreach ($category as $cart_menu)
+                   <li class="has-children">
+           
+                  <a class="category_search" href="javascript:;" data-href="{{$cart_menu->id}}" href="#">{{$cart_menu->name}}
+                    <span><i class="fa fa-chevron-down"></i></span>
+            </a>
                     <ul id="subcategory_list">
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Womens-Underwear">Women's Underwear</a>
 
+                @foreach ($sub_category as $sub_cart_menu)
+                @if ($sub_cart_menu->category_id == $cart_menu->id)
+                  
+                                                    <li class="">
+                     
+                          <a class="subcategory" href="javascript:;" data-href="{{$sub_cart_menu->id}}">{{$sub_cart_menu->name}}</a>
+                       
+                       
                           <ul id="childcategory_list">
-                                                            <li class="">
+                                                     
+                            
+                            @foreach ($child_category as $child_cart_menu)
+                            @if ($child_cart_menu->subcategory_id == $sub_cart_menu->id)
+                            
+                            <li class="">
                               <a class="childcategory" href="javascript:;" data-href="Pajama-Sets">Pajama Sets</a>
-
+                              <a class="childcategory" href="javascript:;" data-href="{{$child_cart_menu->id}}">{{$child_cart_menu->name}}</a>
                             </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Women-Socks--Hosiery">Women Socks &amp; Hosiery</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Shapewer">Shapewer</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Bras">Bras</a>
-
-                            </li>
+                            @endif
+                       @endforeach
                                                         </ul>
                         </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Weddings--Events">Weddings &amp; Events</a>
+                                                 
+                                            
+                      
+                        @endif
+                        @endforeach
 
-                          <ul id="childcategory_list">
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Wedding-Dresses">Wedding Dresses</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Prom-Dresses">Prom Dresses</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Evening-Dresses">Evening Dresses</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Costumes">Costumes</a>
-
-                            </li>
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Bottoms">Bottoms</a>
-
-                          <ul id="childcategory_list">
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Leggings">Leggings</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Skirt">Skirt</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Jeans">Jeans</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Pants--Capris">Pants &amp; Capris</a>
-
-                            </li>
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Womens-Fashion">Women's Fashion</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Accessories">Accessories</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                </ul>
+                        
+                      </ul>
                   </li>
-                                    <li class="has-children">
-                  <a class="category_search" href="javascript:;" data-href="men-clothing">Men Clothing</a>
 
-                    <ul id="subcategory_list">
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Outerwear--Jackets">Outerwear &amp; Jackets</a>
+                  @endforeach
 
-                          <ul id="childcategory_list">
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Jackets">Jackets</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Sweaters">Sweaters</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Parkas">Parkas</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Down-Jackets">Down Jackets</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Suits--Blazers">Suits &amp; Blazers</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Shirt">Shirt</a>
-
-                            </li>
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Bottoms">Bottoms</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Underwear">Underwear</a>
-
-                          <ul id="childcategory_list">
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Boxers">Boxers</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Briefs">Briefs</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Long-Johns">Long Johns</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Sleep--Lounge">Sleep &amp; Lounge</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Pajama-Sets">Pajama Sets</a>
-
-                            </li>
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Accessories">Accessories</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                </ul>
-                  </li>
-                                    <li class="has-children active">
-                  <a class="category_search" href="javascript:;" data-href="Electronics">Electronics</a>
-
-                    <ul id="subcategory_list">
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Mobile-Phones">Mobile Phones</a>
-
-                          <ul id="childcategory_list">
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Cellphones">Cellphones</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="iPhones">iPhones</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Android-Phone">Android Phone</a>
-
-                            </li>
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Mobile-Phone-Accessories">Mobile Phone Accessories</a>
-
-                          <ul id="childcategory_list">
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Phone-Bags--Cases">Phone Bags &amp; Cases</a>
-
-                            </li>
-                                                            <li class="">
-                              <a class="childcategory" href="javascript:;" data-href="Mobile-Phone-Cables">Mobile Phone Cables</a>
-
-                            </li>
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Laptop">Laptop</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Computer">Computer</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Featured-Accessories">Featured Accessories</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="DSLR">DSLR</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                </ul>
-                  </li>
-                                    <li class="has-children">
-                  <a class="category_search" href="javascript:;" data-href="Vehicles--Accessories">Vehicles &amp; Accessories</a>
-
-                    <ul id="subcategory_list">
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Bike">Bike</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Car">Car</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                </ul>
-                  </li>
-                                    <li class="has-children">
-                  <a class="category_search" href="javascript:;" data-href="Beauty--Personal-Care">Beauty &amp; Personal Care</a>
-
-                    <ul id="subcategory_list">
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Hair-Weaves">Hair Weaves</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Makeup">Makeup</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Nail-Art--Tools">Nail Art &amp; Tools</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Skin-Care">Skin Care</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                    <li class="">
-                          <a class="subcategory" href="javascript:;" data-href="Personal-Care">Personal Care</a>
-
-                          <ul id="childcategory_list">
-                                                        </ul>
-                        </li>
-                                                </ul>
-                  </li>
-                                    <li class="has-children">
-                  <a class="category_search" href="javascript:;" data-href="Sports--Entertainment">Sports &amp; Entertainment</a>
-
-                    <ul id="subcategory_list">
-                                                </ul>
-                  </li>
-                                    <li class="has-children">
-                  <a class="category_search" href="javascript:;" data-href="Home--Garden">Home &amp; Garden</a>
-
-                    <ul id="subcategory_list">
-                                                </ul>
-                  </li>
                                 </ul>
           </section>
 

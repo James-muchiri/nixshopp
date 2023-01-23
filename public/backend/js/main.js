@@ -1343,6 +1343,106 @@ var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="butt
 }
 
 
+function getCampaigns(){
+
+console.log("hhft");
+    // AJAX code to submit form.
+    $.ajax({
+      type: "GET",
+      url: "/admin/getCampaigns", //call  to store form data
+
+
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function (data) {
+          console.log(data.Campaigns);
+          var t_data = "";
+
+        
+
+$.each(data.Campaigns, function (index, element) {
+
+
+  if (element.status == "enabled"){
+
+  var status = '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+    'Enabled'+
+  '</button>';
+}
+else{
+
+var status =  '<button class="btn btn-danger btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+  'Disabled'+
+'</button>';
+
+}
+
+
+  t_data = t_data +
+  '<tr role="row" class="odd">'+
+
+  ' <td>'+
+  '     <img src="/uploads/'+element.image+'" alt="Image Not Found">'+
+      ' </td>'+
+    '  <td>'+
+    element.name+
+        ' </td>'+
+    '  <td>'+
+    element.c_price+
+        ' </td>'+
+    ' <td>'+
+    '  <div class="dropdown">'+
+    status +
+            '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
+            ' <a class="dropdown-item" href="/admin/item/status/586/1">Publish</a>'+
+              '<a class="dropdown-item" href="/admin/item/status/586/0">Unpublish</a>'+
+              ' </div>'+
+            ' </div>'+
+          '</td>'+
+          '<td>'+
+          '<div class="dropdown">'+
+          '<button class="btn btn-success btn-sm  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'+
+              'Active'+
+                '</button>'+
+              '<div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownMenuButton">'+
+              '<a class="dropdown-item" href="/admin/campaign/status/40/1/is_feature">Active</a>'+
+                '<a class="dropdown-item" href="/admin/campaign/status/40/0/is_feature">Deactive</a>'+
+                '</div>'+
+              '</div>'+
+            '</td>'+
+
+      '<td>'+
+      ' <a class="btn btn-danger btn-sm " data-toggle="modal" data-target="#confirm-delete" href="javascript:;" data-href="/admin/campaign/40">'+
+      ' <i class="fa fa-trash"></i>'+
+      ' </a>'+
+      '</td>'+
+'</tr>';
+
+
+
+              });
+
+         
+
+          $("#getCampaigns_table").html("");
+          $("#getCampaigns_table").append(t_data);
+
+
+
+
+
+
+
+
+      },
+      error: function (xhr) {
+          console.log(xhr.responseText)
+      },
+
+  });
+
+}
 
 $(document).ready(function (e) {
     // Submit form data via Ajax
@@ -1388,6 +1488,48 @@ $(document).ready(function (e) {
 });
 
 
+$(document).ready(function (e) {
+    // Submit form data via Ajax
+    $("#admin_campaign").on('submit', function (e) {
+        e.preventDefault();
+
+
+
+            // AJAX code to submit form.
+            $.ajax({
+                type: "POST",
+                url: "/admin/campaign_post", //call  to store form data
+                data: new FormData($(this)[0]),
+                dataType: 'json',
+                contentType: false,
+                cache: false,
+                processData: false,
+                success: function (data) {
+                    console.log(data.message);
+
+                    if (data.status == 200) {
+                        toastr.success('success');
+                        $("#admin_campaign")[0].reset();
+                        getCampaigns();
+
+
+
+                    }
+
+
+
+
+                },
+                error: function (xhr) {
+                    console.log(xhr.responseText)
+                },
+
+            });
+
+
+    });
+
+});
 
 $(document).ready(function (e) {
     // Submit form data via Ajax

@@ -422,6 +422,7 @@ class ComposerStaticInita3abfe72bce397f4039538f2d865c538
     public static $classMap = array (
         'App\\Banners' => __DIR__ . '/../..' . '/app/Banners.php',
         'App\\Brands' => __DIR__ . '/../..' . '/app/Brands.php',
+        'App\\Campaigns' => __DIR__ . '/../..' . '/app/Campaigns.php',
         'App\\Category' => __DIR__ . '/../..' . '/app/Category.php',
         'App\\Child_Category' => __DIR__ . '/../..' . '/app/Child_Category.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',

@@ -24,7 +24,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
         </div>
             <div class="product-card-body">
 
-                <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{ $item->child__categories_name}}</a></div>
+                <div class="product-category"><a href="/shop?category=men-clothing">{{ $item->child__categories_name}}</a></div>
                 <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
                     {{ $item->name}}
                 </a></h3>

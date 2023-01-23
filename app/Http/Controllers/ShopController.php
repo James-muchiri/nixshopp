@@ -16,6 +16,8 @@ use App\wishlist;
 use App\Brands;
 use App\Orders;
 use App\Three_column_category;
+use App\Campaigns;
+use App\Popular_categories;
 use App\Http\Controllers\MpesaController;
 class ShopController extends Controller
 {
@@ -39,14 +41,18 @@ class ShopController extends Controller
         ->join('products', 'products.childcategory_id','=','three_column_categories.childcategory_id' )
         ->get(['child__categories.name as child__categories_name', 'products.*'])->groupBy('child__categories_name');
 
+        $popular_categories = Popular_categories::join('child__categories', 'child__categories.id','=','popular_categories.childcategory_id' )
+        ->get(['child__categories.name as child__categories_name', 'popular_categories.*']);
 
-        $deals=Products::join('child__categories', 'child__categories.id','=','products.childcategory_id' )
-        ->get(['child__categories.name as child__categories_name', 'products.*']);
-
+        // $deals=Products::join('child__categories', 'child__categories.id','=','products.childcategory_id' )
+        // ->get(['child__categories.name as child__categories_name', 'products.*']);
+        $deals = Campaigns::join('products', 'products.id','=','campaigns.product_id' )
+        ->get(['products.*']);
+       
 
        // return $Three_column_categories;
         return view('index.index', compact('sliders', 'sub_category', 'child_category',
-        'header_banners', 'genius_banner', 'genius_banner2', 'deals',
+        'header_banners', 'genius_banner', 'genius_banner2', 'deals','popular_categories',
          'genius_banner3', 'Featured_categories', 'category','Brands','Three_column_categories'
 
         ));
@@ -436,8 +442,9 @@ class ShopController extends Controller
         $category = Category::all();
         $sub_category = Sub_Category::all();
         $child_category = Child_Category::all();
+        $Brands = Brands::all();
 
-        return view('index.brands', compact('sub_category', 'child_category',
+        return view('index.brands', compact('sub_category', 'child_category','Brands',
        'category'
 
         ));
@@ -452,11 +459,32 @@ class ShopController extends Controller
         $category = Category::all();
         $sub_category = Sub_Category::all();
         $child_category = Child_Category::all();
-        $deals = Products::all();
+        $deals = Campaigns::join('products', 'products.id','=','campaigns.product_id' )
+        ->get(['products.*']);
         return view('index.campaign', compact('sub_category', 'child_category','deals',
        'category'
 
         ));
+
+    }
+    public function brandshow($dataId)
+
+    {
+
+  
+            $products = Products::where('brand_id', $dataId)->get();  
+
+  
+
+     
+        $category = Category::all();
+        $sub_category = Sub_Category::all();
+        $child_category = Child_Category::all();
+
+        return view('index.search', compact('sub_category', 'child_category','products',
+        'category'
+ 
+         ));
 
     }
 
@@ -1169,5 +1197,36 @@ public function cart_product1()
 
                 return view('index.track_order_submit', compact('order'));
 
+              }
+
+              public function product($dataId)
+              {
+          
+
+             //  $product = Products::find($dataId);
+             //->join('sub__categories', 'sub__categories.id','=','products.subcategory_id' )
+             //->join('categories', 'categories.id','=','products.category_id') 
+
+               $product = Products::where('products.id', $dataId)
+               ->join('child__categories', 'child__categories.id','=','products.childcategory_id' )
+               ->join('sub__categories', 'sub__categories.id','=','products.subcategory_id' )
+               ->join('categories', 'categories.id','=','products.category_id')             
+               ->get([
+                   'child__categories.name as child__categories_name',
+               'sub__categories.name as sub__categories_name',
+               'categories.name as categories_name',
+               'child__categories.id as child__categories_id',
+               'sub__categories.id as sub__categories_id',
+               'categories.id as categories_id',
+               'products.*'])->first();
+                    //return $product;
+                  $category = Category::all();
+                  $sub_category = Sub_Category::all();
+                  $child_category = Child_Category::all();
+        
+                  return view('index.product', compact('sub_category', 'child_category','product',
+                 'category'
+          
+                  ));
               }
 }

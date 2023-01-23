@@ -26,6 +26,7 @@ Route::get('/shop', 'ShopController@search')->name('shop');
 Route::get('/filter', 'ShopController@filter')->name('filter');
 Route::get('/brands', 'ShopController@brands');
 Route::get('/brands/{data}', 'ShopController@brandshow');
+Route::get('/product/{dataId}', 'ShopController@product');
 Route::get('/campaign', 'ShopController@campaign');
 Route::get('/track/order', 'ShopController@track_order');
 Route::get('/order/track/submit', 'ShopController@track_order_submit');
@@ -167,12 +168,15 @@ Route::post('/admin/store_brands', 'AdminController@store_brands');
 
 Route::get('/admin/stock/out/product', 'AdminController@stock_out')->name('stock_out');
 Route::get('/admin/campaign', 'AdminController@campaign')->name('campaign');
+Route::post('/admin/campaign_post', 'AdminController@campaignpost');
 Route::get('/admin/featured', 'AdminController@featured')->name('featured');
 Route::get('/admin/new-arrivals', 'AdminController@new_arrivals')->name('new-arrivals');
 Route::get('/admin/top-products', 'AdminController@top_products')->name('top-products');
 Route::get('/admin/best-products', 'AdminController@best_products')->name('best-products');
 Route::get('/admin/flash-sales', 'AdminController@flash_sales')->name('flash-sales');
 Route::get('/admin/d-o-w', 'AdminController@d_o_w')->name('d-o-w');
+Route::get('/admin/getCampaigns', 'AdminController@getCampaigns')->name('getCampaigns');
+
 
 Route::get('/admin/review', 'AdminController@review')->name('review');
 Route::get('/admin/orders', 'AdminController@orders')->name('orders');

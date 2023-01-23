@@ -123,8 +123,8 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                 </div>
                                     <div class="product-card-body">
 
-                                        <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{$deal->child__categories_name}}</a></div>
-                                        <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
+                                        <div class="product-category"><a href="/shop?category=men-clothing">{{$deal->child__categories_name}}</a></div>
+                                        <h3 class="product-title"><a href="product/{{$deal->id}}">
                                             {{$deal->name}}
                                         </a></h3>
                                         <div class="rating-stars">
@@ -233,11 +233,17 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                         <div class="section-title">
                             <h2 class="h3">Popular Categories</h2>
                             <div class="links" id="pop">
-                                                                <a class="category_get active" data-target="popular_category_view" data-href="get/Women-Clothing/popular_category/slider"  href="javascript:;" class="active">Women Clothing</a>
-                                                                <a class="category_get " data-target="popular_category_view" data-href="get/Women-Clothing/popular_category/slider"  href="javascript:;" class="">Men Clothing</a>
-                                                                <a class="category_get " data-target="popular_category_view" data-href="get/Women-Clothing/popular_category/slider"  href="javascript:;" class="">Electronics</a>
-                                                                <a class="category_get " data-target="popular_category_view" data-href="get/Women-Clothing/popular_category/slider"  href="javascript:;" class="">Beauty &amp; Personal Care</a>
-                                                            </div>
+
+                                @foreach ( $popular_categories as $index => $popular_category)
+                                <a class="category_get {{ $index == 0 ? 'active' : '' }}"  data-target="popular_category_view"  data-href="get/{{$popular_category->childcategory_id}}/popular_category/slider" href="javascript:;" >{{$popular_category->child__categories_name}}</a>
+               
+                                @endforeach
+
+
+                                                              
+                                                        
+                                                          
+                                                            </div> 
                         </div>
                     </div>
                 </div>
@@ -386,7 +392,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                         <div class="product-card-inner">
                                             <div class="product-card-body">
 
-                                                <div class="product-category"><a href="catalog2e44.html?category=men-clothing">Men Clothing</a></div>
+                                                <div class="product-category"><a href="/shop?category=men-clothing">Men Clothing</a></div>
                                                 <h3 class="product-title"><a href="product/Men-Leather-Jacket-Men-New-Men-High-Quality-Collar-Motorcycle-Punk-Leather-Jacket.html">
                                                     Men Leather Jacket Men New Men High Quality Collar
                                                 </a></h3>
@@ -616,7 +622,7 @@ echo  '<div class="product-badge product-badge2 bg-info"> '.$num.'%</div>';
                                                                                 </div>
                                                                                     <div class="product-card-body">
                                                                         
-                                                                                        <div class="product-category"><a href="catalog2e44.html?category=men-clothing">{{$post->child__categories_name}}</a></div>
+                                                                                        <div class="product-category"><a href="/shop?category=men-clothing">{{$post->child__categories_name}}</a></div>
                                                                                         <h3 class="product-title"><a href="product/sxJShirts-Menshirts-Mens-Cotton-Shirt-Factory-Direct-Various-Style-CustomizationTf.html">
                                                                                             {{$post->name}}
                                                                                         </a></h3>

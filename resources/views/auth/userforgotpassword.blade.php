@@ -285,7 +285,7 @@ body_theme4
                             </ul>
           </li>
                 <li class="has-children">
-            <a class="category_search" href="../catalog2e44.html?category=men-clothing">Men Clothing
+            <a class="category_search" href="..//shop?category=men-clothing">Men Clothing
                                     <span><i class="icon-chevron-down"></i></span>
                             </a>
             <ul id="subcategory_list">
@@ -564,7 +564,7 @@ body_theme4
                                                 </div>
                                     </div>
                             <div class="c-item">
-                    <a class="d-block navi-link" href="../catalog2e44.html?category=men-clothing">
+                    <a class="d-block navi-link" href="..//shop?category=men-clothing">
                         <img class="lazy" data-src="/images/1629616281pexels-moose-photos-1036627.jpg">
                         <span class="text-gray-dark">Men Clothing</span>
                                                 <i class="icon-chevron-right"></i>
