@@ -77,7 +77,7 @@ Route::post('/user/profile/update', 'ShopController@profile_update');
 
 
 
-// compare routes 
+// compare routes
 Route::get('/compare', 'ShopController@compare')->name('compare'); //compare view
 Route::get('/compare/product/{dataId}', 'ShopController@compare_product')->name('compare_product');//add product
 Route::get('/compare/product_remove/{dataId}', 'ShopController@compare_product_remove')->name('compare_product_remove');//remove product
@@ -103,7 +103,7 @@ Route::get('/cart/product/reduceByOne/{dataId}', 'ShopController@reduceByOne')->
 
 
 Route::get('/admin', 'AdminController@index')->name('admin');
-
+Route::get('/admin/login', 'Auth\LoginController@adminSignIn');
 
 
 

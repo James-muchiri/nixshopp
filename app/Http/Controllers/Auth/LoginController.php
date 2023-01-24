@@ -50,8 +50,13 @@ class LoginController extends Controller
    
 
 
+    
 
+    public function adminSignIn()
+    {
 
+        return view('auth.adminlogin');
+    }
     public function usersignIn(Request $request)
     {
         // dd(url()->current());
@@ -85,13 +90,52 @@ class LoginController extends Controller
 
            }
     }
+
+    public function adminsignInpost(Request $request)
+    {
+        // dd(url()->current());
+        // dd($request);
+        $this->validate($request, [
+            'email'   => 'required|email',
+            'password'  => 'required|min:3'
+           ]);
+
+        $details = [ 'email' => $request->email , 'password' => $request->password ];
+           if (Auth::guard('admin')->attempt($details)) {
+
+      
+            return response()->json([
+                "status" => 200,
+                "message" => "action completed successfully",
+    
+            ]);
+        }
+           else{
+                // return redirect()->back()->withInput()->withErrors(['password' => 'password does not exist',
+                //                                                 'email' => 'email does not exist']);
+
+
+                return response()->json([
+                    "status" => 202,
+                    "message" => "action completed successfully",
+        
+                ]);
+
+
+           }
+    }
     public function usersignOut(Request $request) {
         Auth::guard('e-users')->logout();
 
 
         return redirect('/user/login');
     }
+    public function adminsignOut(Request $request) {
+        Auth::guard('admin')->logout();
 
+
+        return redirect('/admin/login');
+    }
 
     public function admin_forgot_password()
     {

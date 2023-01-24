@@ -51,6 +51,11 @@ return [
             'provider' => 'e-users',
 
         ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admin',
+
+        ],
     ],
 
     /*
@@ -79,6 +84,11 @@ return [
         'e-users' => [
             'driver' => 'eloquent',
             'model' => App\E_users::class,
+        ],
+
+        'admin' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin::class,
         ],
 
         // 'users' => [
