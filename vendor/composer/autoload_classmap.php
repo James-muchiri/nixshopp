@@ -37,6 +37,8 @@ return array(
     'App\\Orders' => $baseDir . '/app/Orders.php',
     'App\\Payments_notification' => $baseDir . '/app/Payments_notification.php',
     'App\\Popular_categories' => $baseDir . '/app/Popular_categories.php',
+    'App\\Product_images' => $baseDir . '/app/Product_images.php',
+    'App\\Product_specification' => $baseDir . '/app/Product_specification.php',
     'App\\Products' => $baseDir . '/app/Products.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',

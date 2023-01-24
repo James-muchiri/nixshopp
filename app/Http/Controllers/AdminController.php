@@ -11,12 +11,14 @@ use App\Child_Category;
 use App\Brands;
 use App\Slider;
 use App\Products;
+use App\Product_images;
 use App\Banners;
 use App\Popular_categories;
 use App\Featured_categories;
 use App\Three_column_category;
 use App\Orders;
 use App\Payments_notification;
+use App\Product_specification;
 use App\E_users;
 use App\Campaigns;
 use Response;
@@ -647,6 +649,19 @@ class AdminController extends Controller
         ]);
     }
 
+    function random_strings($length_of_string)
+    {
+      
+        // String of all alphanumeric character
+        $str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      
+        // Shuffle the $str_result and returns substring
+        // of specified length
+        return substr(str_shuffle($str_result), 
+                           0, $length_of_string);
+    }
+
+
 
     public function store_product_post(Request $request){
 
@@ -655,6 +670,11 @@ class AdminController extends Controller
         $fileName = $request->name.'_pr'.'.'.$request->photo->extension();
 
         $request->photo->move(public_path('uploads'), $fileName);
+
+
+        
+
+
 
         $product = new Products;
         $product->category_id = $request->productcategory_id;
@@ -675,6 +695,42 @@ class AdminController extends Controller
         $product->tags = $request->tags;
         $product->save();
 
+
+
+        $files = $request->file('galleries');
+        foreach($files as $file){
+        $filename = $file->getClientOriginalName();
+        $extension = $file->getClientOriginalExtension();
+        $controler = new AdminController;
+        $image_name =  $controler->random_strings(6)."_".$product->id.".".$extension;    
+
+        $file->move(public_path('uploads'), $image_name);
+
+        $product_image = new Product_images;
+            $product_image->product_id = $product->id;
+            $product_image->product_image = $image_name ;
+            $product_image->save();
+
+        }
+
+
+
+        if($request->is_specification != null){
+
+            //  $collection = collect($request->specification_name);
+              $size = count($request->specification_name);
+  
+              for ($i = 0; $i < $size; $i++)
+              {
+                  $Product_specification = new Product_specification;
+                  $Product_specification->specification = $request->specification_name[$i];
+                  $Product_specification->description = $request->specification_description[$i];
+                  $Product_specification->product_id = $product->id;
+                  $Product_specification->save();
+           
+              }
+  
+          }
         return response()->json([
             "status" => 200,
             "message" => "action completed successfully",

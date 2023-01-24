@@ -127,7 +127,7 @@
                                 <span class="file-custom text-left">Upload Image...</span>
                             </label>
                             <br>
-                            <span class="mt-1 text-info">Image Size Should Be 800 x 800. or square size</span>
+                            <span class="mt-1 text-info" id="image-error" style="display:none; border-color: #f3545d!important;color: #f3545d!important;">Image is required</span>
                         </div>
                     </div>
                 </div>
@@ -156,12 +156,12 @@
                     <div class="card-body">
                         <div class="form-group">
                             <label for="sort_details">Short Description *</label>
-                            <textarea name="sort_details" id="sort_details" class="form-control" placeholder="Short Description"></textarea>
+                            <textarea name="sort_details" id="sort_details" class="form-control" placeholder="Short Description" required></textarea>
                         </div>
     
                         <div class="form-group">
                             <label for="details">Description *</label>
-                            <textarea name="addproduct_details" id="addproduct_details" class="form-control" ></textarea>
+                            <textarea name="addproduct_details" id="addproduct_details" class="form-control" required></textarea>
                         </div>
                     </div>
                 </div>
@@ -304,12 +304,13 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="tax_id">Select Tax *</label>
+                            <label for="tax_id">Select Product Type  *</label>
                             <select name="type" id="type" class="form-control">
                                 <option value="top_products">top_products</option>
                                                             <option value="featured">featured</option>
                                                             <option value="new_arrival">new_arrival</option>
                                                             <option value="best_products">best_products</option>
+                                                            <option value="undefined">Undefined Product</option>
                                                         </select>
                         </div>
  

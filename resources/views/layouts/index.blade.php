@@ -64,7 +64,9 @@
 
     <!-- Preloader Start -->
     <div id="preloader">
-        <img src="assets/images/16388581681_D-ZiKd0B00tdifaB2X3tKQ.gif" alt="Loading...">
+        <img src="{{ asset('images/preloading.gif') }}"  alt="Loading...">
+
+        
     </div>
 
     <!-- Preloader endif -->

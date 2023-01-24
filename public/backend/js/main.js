@@ -1704,7 +1704,7 @@ $(document).ready(function (e) {
 
         curInputs = next_fs.find("input[type='text']");
         isValid = true;
-        console.log(curInputs);
+        console.log("validation");
         for (var i = 0; i < curInputs.length; i++) {
             //  console.log(curInputs[i].value);
             if (!curInputs[i].value) {
@@ -1712,7 +1712,25 @@ $(document).ready(function (e) {
                 $(curInputs[i]).closest(".form-group").addClass("has-error");
                 //   console.log(curInputs[i].value);
             }
+            else{
+                $(curInputs[i]).closest(".form-group").removeClass("has-error");
+            }
         }
+
+        if(document.getElementById("file").files.length == 0 ){
+            isValid = false;
+            
+            document.getElementById("image-error").style.display = 'block';
+        }
+        else
+        {
+            document.getElementById("image-error").style.display = 'none';
+
+        }
+
+        
+
+
         if (isValid) {
 
             // AJAX code to submit form.

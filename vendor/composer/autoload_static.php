@@ -451,6 +451,8 @@ class ComposerStaticInita3abfe72bce397f4039538f2d865c538
         'App\\Orders' => __DIR__ . '/../..' . '/app/Orders.php',
         'App\\Payments_notification' => __DIR__ . '/../..' . '/app/Payments_notification.php',
         'App\\Popular_categories' => __DIR__ . '/../..' . '/app/Popular_categories.php',
+        'App\\Product_images' => __DIR__ . '/../..' . '/app/Product_images.php',
+        'App\\Product_specification' => __DIR__ . '/../..' . '/app/Product_specification.php',
         'App\\Products' => __DIR__ . '/../..' . '/app/Products.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
