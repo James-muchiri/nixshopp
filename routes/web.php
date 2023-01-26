@@ -104,6 +104,8 @@ Route::get('/cart/product/reduceByOne/{dataId}', 'ShopController@reduceByOne')->
 
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/admin/login', 'Auth\LoginController@adminSignIn');
+Route::get('/admin/login-submit', 'Auth\LoginController@adminSignIn');
+
 
 
 
