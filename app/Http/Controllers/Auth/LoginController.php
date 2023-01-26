@@ -100,7 +100,7 @@ class LoginController extends Controller
             'password'  => 'required|min:3'
            ]);
 
-        $details = [ 'email' => $request->email , 'password' => $request->password ];
+        $details = [ 'email' => $request->email , 'password' => $request->password];
            if (Auth::guard('admin')->attempt($details)) {
 
       

@@ -15,6 +15,14 @@ class CreateAdminsTable extends Migration
     {
         Schema::create('admins', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('tel_no')->unique();
+            $table->unsignedTinyInteger('is_super_admin')->default(0);
+            $table->enum('status', ['blocked', 'unblocked'])->default('unblocked');
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');            
+            $table->rememberToken();
             $table->timestamps();
         });
     }
