@@ -18,7 +18,7 @@
 
         <div class="wrapper wrapper-login">
             <div class="container container-login animated fadeIn">
-                <h3 class="text-center">Sign In To Admin</h3>
+                <h3 class="text-center">Admin Reset Password </h3>
                 <div class="login-form">
 
                     <form id="adminlogin" >
@@ -29,20 +29,14 @@
                             <input id="username" name="email" type="email" class="form-control input-border-bottom" value="admin@gmail.com">
                             <label for="username" class="placeholder">Email Address</label>
                         </div>
-                        <div class="form-group form-floating-label">
-                            <input id="password" name="password" type="password" class="form-control input-border-bottom" value="password">
-                            <label for="password" class="placeholder">Password</label>
-                            <div class="show-password">
-                                <i class="flaticon-interface"></i>
-                            </div>
-                        </div>
+                      
 
                         <div class="row justify-content-center form-sub m-0">
-                            <a href="/admin/forgot" class="link float-right">Forget Password ?</a>
+                            <a href="/admin/login" class="link float-right">Back to login</a>
                         </div>
 
                         <div class="form-action mb-3">
-                            <button type="submit" class="btn btn-secondary  btn-login">Sign In</button>
+                            <button type="submit" class="btn btn-secondary  btn-login">Reset Password</button>
                         </div>
 
                     </form>
@@ -101,14 +95,14 @@
                         $.ajax({
                             type: "POST",
 
-                            url: "/admin/login-submit", //call  to store form data
+                            url: "/admin/reset-password", //call  to store form data
                             data: formData
                             , dataType: 'json'
                             , contentType: false
                             , cache: false
                             , processData: false
                             , success: function(data) {
-                                console.log(data.status);
+                                console.log(data);
 
                                 if (data.status == 200) {
                                     toastr.success('Login success');

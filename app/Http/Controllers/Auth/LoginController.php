@@ -150,7 +150,12 @@ class LoginController extends Controller
     $admin = Admin::where('email', $request->email)->first();
 
     if(!$admin){
- return redirect()->back()->withInput()->withErrors(['email' => 'email does not exist']);
+
+ return response()->json([
+    "status" => 202,
+    "message" => "email does not exist",
+
+]);
     }
     else{
 
@@ -173,17 +178,35 @@ class LoginController extends Controller
         ];
 
 //   return view('emails.reserPassword', compact(['data' ]));
-   Mail::to($request->email)->send(new ResetPasswordRequest($data));
-   return redirect()->back()->with('success', 'Reset password link has been sent to your email');
+ //   Mail::to($request->email)->send(new ResetPasswordRequest($data));
+   return response()->json([
+    "status" => 202,
+    "message" => "check your email".$token,
+
+]);
 
     }
 
 
 }
 
-public function resetPassword($token, $email)
+public function admin_resetPassword($token, $email)
 {
 
+
+       $updatePassword = DB::table('password_resets')
+    ->where([
+      'email' => $email,
+      'token' => $token,
+    ])->first();
+
+        if(!$updatePassword){
+
+        return view('auth.error')->with('error', 'Invalid token!');
+
+        }
+
+      
 
     return view('auth.admin_reset_password', compact(['email', 'token' ]));
 
@@ -198,6 +221,7 @@ public function reset_Password(Request $request)
         'password_confirm' => 'required'
     ]);
 
+
     $updatePassword = DB::table('password_resets')
     ->where([
       'email' => $request->email,
@@ -205,16 +229,26 @@ public function reset_Password(Request $request)
     ])->first();
 
         if(!$updatePassword){
-        return redirect()->back()->with('error', 'Invalid token!');
+            return response()->json([
+            "status" => 200,
+            "message" => "Invalid token!",
+        
+        ]);
 
         }
+       
 
 $user = Admin::where('email', $request->email)
 ->update(['password' => Hash::make($request->password)]);
 
 DB::table('password_resets')->where(['email'=> $request->email])->delete();
 
-return redirect('/adminSignIn')->with('message', 'Your password has been changed!');
+
+return response()->json([
+    "status" => 200,
+    "message" => "Your password has been changed!",
+
+]);
 }
 public function logout(Request $request) {
     Auth::logout();

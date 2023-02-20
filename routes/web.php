@@ -105,6 +105,10 @@ Route::get('/cart/product/reduceByOne/{dataId}', 'ShopController@reduceByOne')->
 Route::get('/admin', 'AdminController@index')->name('admin');
 Route::get('/admin/login', 'Auth\LoginController@adminSignIn');
 Route::post('/admin/login-submit', 'Auth\LoginController@adminsignInpost');
+Route::get('/admin/forgot', 'Auth\LoginController@admin_forgot_password');
+Route::post('/admin/reset-password', 'Auth\LoginController@admin_rest_password');
+Route::get('/admin/resetPassword/{token}/{email}', 'Auth\LoginController@admin_resetPassword');
+Route::post('/admin/reset_Password', 'Auth\LoginController@reset_Password_admin');
 
 
 
