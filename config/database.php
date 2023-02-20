@@ -3,11 +3,11 @@
 use Illuminate\Support\Str;
 
 
-// $url = 'mysql://b12a2ae68f8c58:d6524970@us-cdbr-east-05.cleardb.net/heroku_c2b98283e772c3a?';
-// $host = $url["host"] ?? null;
-// $username = $url["user"] ?? null;
-// $password = $url["pass"] ?? null;
-// $database = 'heroku_c2b98283e772c3a';
+$url = 'mysql://b12a2ae68f8c58:d6524970@us-cdbr-east-05.cleardb.net/heroku_c2b98283e772c3a?';
+$host = $url["host"] ?? null;
+$username = $url["user"] ?? null;
+$password = $url["pass"] ?? null;
+$database = 'heroku_c2b98283e772c3a';
 
 
 
